@@ -2,16 +2,17 @@ using UnityEngine;
 
 public class NewMonoBehaviourScript : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public GameObject[] prefabs;
+    void Awake()
+    {
+        prefabs = Resources.LoadAll<GameObject>("Prefabs");
+    }
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        foreach(GameObject prefab in prefabs)
+        {
+            
+        }
     }
 }
 //prefablar instantiate edilecek array liste toplanacak
