@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using UnityEngine;
 
 public class NewMonoBehaviourScript : MonoBehaviour
@@ -11,8 +12,8 @@ public class NewMonoBehaviourScript : MonoBehaviour
     {
         foreach(GameObject prefab in prefabs)
         {
-            
+            Instantiate(prefab,Vector3.zero,quaternion.identity);
         }
     }
 }
-//prefablar instantiate edilecek array liste toplanacak
+
