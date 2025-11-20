@@ -1,9 +1,13 @@
 using Unity.Mathematics;
+using UnityEditor.PackageManager;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using Random = UnityEngine.Random;
 
 public class prefabManager : MonoBehaviour
 {
+    private Transform _selectObject;
+    private float _distance;
     public GameObject[] prefabs;
     //denemelik
     public int spawnCount=10;
@@ -15,6 +19,32 @@ public class prefabManager : MonoBehaviour
     {
         SpawnObjects();
     }
+    void Update()
+    {
+        Mouse mouse =Mouse.current;
+        if (mouse == null)
+        return;
+        {
+            Ray  ray = Camera.main.ScreenPointToRay(mouse.position.ReadValue());
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit))
+            {
+                _selectObject = hit.transform;
+                _distance = hit.distance;
+            }
+        }
+        if(mouse.leftButton.isPressed && _selectObject !=null)
+        {
+            Ray ray = Camera.main.ScreenPointToRay(mouse.position.ReadValue());
+            Vector3 targetPos = ray.GetPoint(_distance);
+            _selectObject.position=targetPos;
+        }
+        if (mouse.leftButton.wasReleasedThisFrame)
+        {
+            _selectObject=null;
+        }
+    }
+
     void SpawnObjects()
     {
         
