@@ -1172,10 +1172,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: apple
       objectReference: {fileID: 0}
-    - target: {fileID: 5447911256226605517, guid: c2c4e6774e94ec4468e0d3eb7217189c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

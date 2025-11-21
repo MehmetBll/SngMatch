@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4670530509603697527}
   m_Layer: 0
   m_Name: apple
-  m_TagString: Untagged
+  m_TagString: Draggable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,6 +99,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b6f671a479a47f846a4fff871cbdf78c, type: 3}
       propertyPath: m_Name
       value: apple
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b6f671a479a47f846a4fff871cbdf78c, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b6f671a479a47f846a4fff871cbdf78c, type: 3}
       propertyPath: m_IsActive

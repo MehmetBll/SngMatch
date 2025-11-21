@@ -1,8 +1,8 @@
 using Unity.Mathematics;
-using UnityEditor.PackageManager;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using Random = UnityEngine.Random;
+using UnityEngine.InputSystem;
+using UnityEditor.PackageManager;
 
 public class prefabManager : MonoBehaviour
 {
@@ -24,27 +24,42 @@ public class prefabManager : MonoBehaviour
         Mouse mouse =Mouse.current;
         if (mouse == null)
         return;
+        if (mouse.leftButton.wasPressedThisFrame)
         {
             Ray  ray = Camera.main.ScreenPointToRay(mouse.position.ReadValue());
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit))
+            if (Physics.Raycast(ray, out RaycastHit hit))
             {
-                _selectObject = hit.transform;
+                Transform draggable = GetDraggableRoot(hit.transform);
+                if(draggable !=null)
+            {
+                _selectObject = draggable;
                 _distance = hit.distance;
             }
+            }
         }
+
         if(mouse.leftButton.isPressed && _selectObject !=null)
         {
             Ray ray = Camera.main.ScreenPointToRay(mouse.position.ReadValue());
             Vector3 targetPos = ray.GetPoint(_distance);
             _selectObject.position=targetPos;
         }
+
         if (mouse.leftButton.wasReleasedThisFrame)
         {
             _selectObject=null;
         }
     }
+    Transform GetDraggableRoot(Transform t)
+    {
+        if(t.CompareTag("Draggable"))
+        return t;
 
+        if(t.parent != null && t.parent.CompareTag("Draggable"))
+        return t.parent;
+
+        return null;
+    }
     void SpawnObjects()
     {
         
@@ -57,10 +72,11 @@ public class prefabManager : MonoBehaviour
             );
         foreach(GameObject prefab in prefabs)
         {
-            Instantiate(prefab,randomPoz,Quaternion.identity);
+           GameObject spawned = Instantiate(prefab,randomPoz,Quaternion.identity);
         }
     
         }
     }
 }
+//raycast araştırıldı pekiştirilecek sonrasında mouse ile tıklandığında (collaider lara) ve tıklama devam ettiğinde mouseyi takip edecek bir raycast fonk. yazılacak 
 

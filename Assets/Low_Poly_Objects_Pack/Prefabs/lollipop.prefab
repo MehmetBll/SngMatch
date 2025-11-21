@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7552622564499861890}
   m_Layer: 0
   m_Name: lollipop
-  m_TagString: Untagged
+  m_TagString: Draggable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23,6 +23,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7177504808648928056}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -30,13 +31,13 @@ Transform:
   m_Children:
   - {fileID: 8235420050271001339}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &8484974775774821648
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 7552622564499861890}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1c088de4cfe6388468f21a12f5f6fd4e, type: 3}
@@ -100,10 +101,23 @@ PrefabInstance:
       value: lollipop
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1c088de4cfe6388468f21a12f5f6fd4e, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1c088de4cfe6388468f21a12f5f6fd4e, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1c088de4cfe6388468f21a12f5f6fd4e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8484974775774821658}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1c088de4cfe6388468f21a12f5f6fd4e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8484974775774821662}
   m_SourcePrefab: {fileID: 100100000, guid: 1c088de4cfe6388468f21a12f5f6fd4e, type: 3}
 --- !u!4 &8235420050271001339 stripped
 Transform:
@@ -122,10 +136,21 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8719468381309763649}
-  serializedVersion: 2
+  serializedVersion: 5
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -139,9 +164,17 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8719468381309763649}
   m_Material: {fileID: 13400000, guid: 37f21d359d99e734fbe9fe66454222ae, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -739388774725168467, guid: 5f9edf44fabd86c449f3720312b0ee57, type: 3}
