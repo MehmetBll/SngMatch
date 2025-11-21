@@ -78,5 +78,4 @@ public class prefabManager : MonoBehaviour
         }
     }
 }
-//raycast araştırıldı pekiştirilecek sonrasında mouse ile tıklandığında (collaider lara) ve tıklama devam ettiğinde mouseyi takip edecek bir raycast fonk. yazılacak 
-
+//layermask eklenecek walls collaiderleri engellemeyecek mouse ile tıkladığım ojeler ışınlanmayacak mousemin iölecinde kalacak şekilde ayarlanacak büyük ihtimal xyz 0 a gidiyor 
