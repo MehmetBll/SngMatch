@@ -9,6 +9,7 @@ public class prefabManager : MonoBehaviour
     private Transform _selectObject;
     private float _distance;
     public GameObject[] prefabs;
+    public LayerMask draggableMask;
     //denemelik
     public int spawnCount=10;
     public float posX = 7f;
@@ -23,11 +24,11 @@ public class prefabManager : MonoBehaviour
     {
         Mouse mouse =Mouse.current;
         if (mouse == null)
-        return;
+            return;
         if (mouse.leftButton.wasPressedThisFrame)
         {
             Ray  ray = Camera.main.ScreenPointToRay(mouse.position.ReadValue());
-            if (Physics.Raycast(ray, out RaycastHit hit))
+            if (Physics.Raycast(ray, out RaycastHit hit, 100f, draggableMask))
             {
                 Transform draggable = GetDraggableRoot(hit.transform);
                 if(draggable !=null)

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5025656158894542287}
   - component: {fileID: 8219469761296646762}
   - component: {fileID: 6194027814802831008}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: pot_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

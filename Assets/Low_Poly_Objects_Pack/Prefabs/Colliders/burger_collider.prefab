@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9197111058547481435}
   - component: {fileID: 5191920650088158462}
   - component: {fileID: 8064151546777428020}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: burger_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2566418233537701111}
   - component: {fileID: 1455335977858280274}
   - component: {fileID: 3735334662021996440}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: popIt_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

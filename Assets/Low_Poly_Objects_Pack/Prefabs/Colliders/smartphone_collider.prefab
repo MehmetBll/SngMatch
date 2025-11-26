@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5867385238314006534}
   - component: {fileID: 7404753815064065955}
   - component: {fileID: 4694456245355823977}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: smartphone_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

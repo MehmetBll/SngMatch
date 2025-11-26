@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 910205049141632004}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: headphones
   m_TagString: Draggable
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 94d134ac9cce14a40b6290b1ad9e9b1c, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 94d134ac9cce14a40b6290b1ad9e9b1c, type: 3}
       propertyPath: m_IsActive

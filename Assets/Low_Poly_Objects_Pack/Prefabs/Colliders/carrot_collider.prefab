@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6697449739070393474}
   - component: {fileID: 7736555895502258983}
   - component: {fileID: 5528506991293315053}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: carrot_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

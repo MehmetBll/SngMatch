@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8225341782009134047}
   - component: {fileID: 5010698032884888698}
   - component: {fileID: 7092435050151198896}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: watermelon_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

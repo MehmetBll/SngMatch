@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2886534178638381492}
   - component: {fileID: 2279063441376071185}
   - component: {fileID: 4054413213207116507}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: christmasLollipop_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

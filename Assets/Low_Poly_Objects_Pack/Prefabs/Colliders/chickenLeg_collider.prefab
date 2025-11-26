@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6290934532489572174}
   - component: {fileID: 6981204173270835435}
   - component: {fileID: 5118006161497953313}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: chickenLeg_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

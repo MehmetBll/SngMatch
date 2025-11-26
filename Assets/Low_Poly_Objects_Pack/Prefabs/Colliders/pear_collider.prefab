@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8919296690429073393}
   - component: {fileID: 5505772040920537172}
   - component: {fileID: 7749738151446867102}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: pear_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

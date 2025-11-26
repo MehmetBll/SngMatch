@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3794340544962366537}
   - component: {fileID: 218405933537493996}
   - component: {fileID: 2657994885403506470}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: dynamite_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

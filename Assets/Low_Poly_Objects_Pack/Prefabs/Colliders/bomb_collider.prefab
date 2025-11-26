@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5853292240265234410}
   - component: {fileID: 7391754794576136271}
   - component: {fileID: 4715337647035300997}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: bomb_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

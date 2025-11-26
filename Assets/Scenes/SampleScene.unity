@@ -641,6 +641,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   prefabs:
   - {fileID: 5447911256226605517, guid: c2c4e6774e94ec4468e0d3eb7217189c, type: 3}
+  draggableMask:
+    serializedVersion: 2
+    m_Bits: 64
   spawnCount: 100
   posX: 5
   posY: 15

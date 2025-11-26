@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7020837382561691351}
   - component: {fileID: 6251240320740129138}
   - component: {fileID: 8152688205565562296}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: idol_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

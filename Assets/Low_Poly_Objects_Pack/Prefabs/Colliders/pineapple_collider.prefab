@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6874625822576820597}
   - component: {fileID: 7550364311108210384}
   - component: {fileID: 5705144970159372826}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: pineapple_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4750759546047769917}
   - component: {fileID: 8521317609113002648}
   - component: {fileID: 5883172802670286418}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: "\u0441herry_collider"
   m_TagString: Draggable
   m_Icon: {fileID: 0}
