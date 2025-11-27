@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3425915718387648785}
   - component: {fileID: 1739682089233761972}
   - component: {fileID: 4593778193037767294}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: donut_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

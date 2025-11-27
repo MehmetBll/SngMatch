@@ -9,11 +9,11 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - draggableMask
+  - floorMask
   - Water
   - UI
-  - DraggableLayer
-  - 
+  - draggableMask
+  - draggableMask
   - 
   - 
   - 

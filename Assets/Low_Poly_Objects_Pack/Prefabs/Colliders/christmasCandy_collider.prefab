@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7311014443041637609}
   - component: {fileID: 5970132032430295884}
   - component: {fileID: 8448432093282746246}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: christmasCandy_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

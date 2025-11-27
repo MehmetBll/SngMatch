@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6325311082254833662}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: pot
   m_TagString: Draggable
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1647c5def79dcf14fbfed6dec25f1fad, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1647c5def79dcf14fbfed6dec25f1fad, type: 3}
       propertyPath: m_IsActive

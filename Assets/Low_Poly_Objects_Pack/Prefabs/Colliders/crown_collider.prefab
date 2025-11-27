@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8093503865091720234}
   - component: {fileID: 5187651402440379279}
   - component: {fileID: 6925069748951908165}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: crown_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

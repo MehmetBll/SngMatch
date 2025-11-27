@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1842957571977861937}
   - component: {fileID: 3331638639910474900}
   - component: {fileID: 709507127190003806}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: skateboard_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

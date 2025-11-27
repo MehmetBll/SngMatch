@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6821623639088328631}
   - component: {fileID: 7567346016958767122}
   - component: {fileID: 5683659630351979736}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: dice_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

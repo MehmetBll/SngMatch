@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4670530509603697527}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: apple
   m_TagString: Draggable
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b6f671a479a47f846a4fff871cbdf78c, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b6f671a479a47f846a4fff871cbdf78c, type: 3}
       propertyPath: m_IsActive

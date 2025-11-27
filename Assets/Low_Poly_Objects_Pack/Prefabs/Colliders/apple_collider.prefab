@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5148536213200875573}
   - component: {fileID: 8132548737665712016}
   - component: {fileID: 6284890604695276378}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: apple_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

@@ -620,7 +620,7 @@ GameObject:
   m_Component:
   - component: {fileID: 549376963}
   - component: {fileID: 549376962}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: PrefabsManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -644,16 +644,10 @@ MonoBehaviour:
   draggableMask:
     serializedVersion: 2
     m_Bits: 64
-  cam: {fileID: 330585545}
-  floorMask:
-    serializedVersion: 2
-    m_Bits: 0
-  draggableTag: Draggable
   spawnCount: 100
-  posX: 7
-  posY: 10
-  posZ: 12
-  objectHeight: 0.5
+  posX: 5
+  posY: 15
+  posZ: 10
 --- !u!4 &549376963
 Transform:
   m_ObjectHideFlags: 0

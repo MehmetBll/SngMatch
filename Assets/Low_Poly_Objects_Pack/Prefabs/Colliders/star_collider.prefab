@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5152832645919130867}
   - component: {fileID: 8083207516336737110}
   - component: {fileID: 6325768713762258844}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: star_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

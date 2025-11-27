@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5917595042671338911}
   - component: {fileID: 7327460789320067642}
   - component: {fileID: 4779631514836426480}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: tomato_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

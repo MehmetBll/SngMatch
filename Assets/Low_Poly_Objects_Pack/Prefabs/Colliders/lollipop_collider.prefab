@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2237385185127234483}
   - component: {fileID: 2928204444350149654}
   - component: {fileID: 1101100578528100572}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: lollipop_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

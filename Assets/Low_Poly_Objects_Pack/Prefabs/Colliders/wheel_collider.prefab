@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2968130189512553430}
   - component: {fileID: 2206536472965495923}
   - component: {fileID: 4142122478801373369}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: wheel_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

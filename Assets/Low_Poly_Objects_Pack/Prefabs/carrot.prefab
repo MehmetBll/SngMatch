@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9195499204964155231}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: carrot
   m_TagString: Draggable
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9d8c6bc4c5a6b6e47bf1f8b015085594, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9d8c6bc4c5a6b6e47bf1f8b015085594, type: 3}
       propertyPath: m_IsActive
