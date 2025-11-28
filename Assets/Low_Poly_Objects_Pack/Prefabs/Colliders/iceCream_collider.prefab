@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2913071753438548822}
   - component: {fileID: 2288555139233144051}
   - component: {fileID: 4046030785112844345}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: iceCream_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

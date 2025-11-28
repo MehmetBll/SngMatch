@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1506149959655271434}
   - component: {fileID: 2542617331263579055}
   - component: {fileID: 337145123695974245}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: beachBall_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

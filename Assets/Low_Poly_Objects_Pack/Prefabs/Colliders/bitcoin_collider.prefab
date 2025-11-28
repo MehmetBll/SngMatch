@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5764454236022555578}
   - component: {fileID: 8669621711451311135}
   - component: {fileID: 6896234007382538453}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: bitcoin_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

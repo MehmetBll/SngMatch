@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8078178632370544648}
   - component: {fileID: 5166947360849784749}
   - component: {fileID: 6940144290320816999}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: headphones_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2498966128354735841}
   - component: {fileID: 1513710720638662980}
   - component: {fileID: 3667390972063305102}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: garlic_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3964957857844033658}
   - component: {fileID: 47718527018268639}
   - component: {fileID: 2832043945606775573}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: soccerBall_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

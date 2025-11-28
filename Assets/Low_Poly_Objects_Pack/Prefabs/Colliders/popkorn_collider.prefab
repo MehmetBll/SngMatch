@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7870348362979287929}
   - component: {fileID: 6527619898116025564}
   - component: {fileID: 9039345674288289814}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: popkorn_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

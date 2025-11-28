@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8254557918164654718}
   - component: {fileID: 4981490418187802075}
   - component: {fileID: 7117156829180223761}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: frenchFries_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

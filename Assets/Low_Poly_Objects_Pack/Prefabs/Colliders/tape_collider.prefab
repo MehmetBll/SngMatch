@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4050577256614893163}
   - component: {fileID: 1124018748039207374}
   - component: {fileID: 2917671002572942596}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: tape_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}

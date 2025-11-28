@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7526819579274463986}
   - component: {fileID: 6907247571871401303}
   - component: {fileID: 8664800733385978269}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: fryingPan_collider
   m_TagString: Draggable
   m_Icon: {fileID: 0}
