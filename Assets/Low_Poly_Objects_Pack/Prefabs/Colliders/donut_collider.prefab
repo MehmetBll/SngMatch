@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3425915718387648785}
   - component: {fileID: 1739682089233761972}
   - component: {fileID: 4593778193037767294}
+  - component: {fileID: -7482292867485479599}
   m_Layer: 6
   m_Name: donut_collider
   m_TagString: Draggable
@@ -89,3 +90,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-7482292867485479599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2648288780265198507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f27fcd75416c24b4ba9b0c056a2f8ca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::objectId
+  matchId: 0
+  originalPosition: {x: 0, y: 0, z: 0}
