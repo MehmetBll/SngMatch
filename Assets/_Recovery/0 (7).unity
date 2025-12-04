@@ -175,6 +175,7 @@ MonoBehaviour:
   returnRandomRadius: 0.5
   returnDuration: 1
   processDelay: 0.05
+  useRootObjectFromCollaider: 1
 --- !u!4 &107111007
 Transform:
   m_ObjectHideFlags: 0
@@ -1153,6 +1154,7 @@ MonoBehaviour:
   returnRandomRadius: 0.5
   returnDuration: 1
   processDelay: 0.05
+  useRootObjectFromCollaider: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

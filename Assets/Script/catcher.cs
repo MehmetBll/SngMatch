@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics.Geometry;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class SideCatcher3D : MonoBehaviour
 {
@@ -9,74 +11,129 @@ public class SideCatcher3D : MonoBehaviour
     public float returnRandomRadius = 0.5f;
     public float returnDuration = 1.0f;
     public float processDelay = 0.05f;
+    public bool useRootObjectFromCollaider = true;
+    private bool isProcessing = false;
     private List<GameObject> inside = new List<GameObject>();
     private void OnTriggerEnter(Collider other)
     {
         var go = other.gameObject;
-        if (!IsValidCandidate(go)) return;
+        if (!IsValidCandidate(go)) 
+            return;
 
         if (!inside.Contains(go))
             inside.Add(go);
 
-        if (inside.Count >= 2)
+        if (inside.Count >= 2 && !isProcessing)
             StartCoroutine(DelayedProcessPairs());
     }
 
     private void OnTriggerExit(Collider other)
     {
-        var go = other.gameObject;
+        var go = useRootObjectFromCollaider ? other.transform.root.gameObject : other.gameObject;
         if (inside.Contains(go))
             inside.Remove(go);
     }
 
     private bool IsValidCandidate(GameObject go)
     {
-        if (useTagComparison) return true;
+        if (useTagComparison) 
+            return true;
         return go.GetComponent<objectId>() != null;
     }
 
     private IEnumerator DelayedProcessPairs()
     {
+        isProcessing = true;
         yield return new WaitForSeconds(processDelay);
         TryProcessPairs();
+        isProcessing = false;
     }
 
     private void TryProcessPairs()
     {
+        inside.RemoveAll(x=> x == null);
+        //
+        var tDestroy = new List<GameObject>();
+        var tReturn = new List<GameObject>();
+
         while (inside.Count >= 2)
         {
-            var a = inside[0];
-            var b = inside[1];
-
-            if (a == null) { inside.RemoveAt(0); continue; }
-            if (b == null) { inside.RemoveAt(1); continue; }
-
-            bool isMatch = false;
-            if (useTagComparison)
+            inside.RemoveAll(x => x == null);
+            if (inside.Count < 2)
+                break;
+                int i = Random.Range(0, inside.Count);
+            GameObject a = inside[i];
+            if (a == null)
             {
-                isMatch = (a.tag == b.tag);
+                inside[i] = null;
+                continue;
+            }
+
+            int matchIndex = -1;
+            for (int j = 0; j < inside.Count; j++)
+            {
+                if (j == i) continue;
+                GameObject b = inside[j];
+                if (b == null) continue;
+
+                bool isMatch = false;
+                if (useTagComparison)
+                {
+                    isMatch = a.tag == b.tag;
+                }
+                else
+                {
+                    var ma = a.GetComponent<objectId>();
+                    var mb = b.GetComponent<objectId>();
+                    if (ma != null && mb != null)
+                        isMatch = ma.matchId == mb.matchId;
+                }
+
+                if (isMatch)
+                {
+                    matchIndex = j;
+                    break;
+                }
+            }
+
+            if (matchIndex != -1)
+            {
+                GameObject bObj = inside[matchIndex];
+                tDestroy.Add(a);
+                tDestroy.Add(bObj);
+
+                inside[i] = null;
+                inside[matchIndex] = null;
             }
             else
             {
-                var ma = a.GetComponent<objectId>();
-                var mb = b.GetComponent<objectId>();
-                if (ma != null && mb != null)
-                    isMatch = (ma.matchId == mb.matchId);
+                tReturn.Add(a);
+                inside[i] = null;
             }
 
-            inside.RemoveAt(1);
-            inside.RemoveAt(0);
+            inside.RemoveAll(x => x == null);
+        }
 
-            if (isMatch)
+        if (inside.Count > 0)
+        {
+            foreach (var go in inside)
             {
-                Destroy(a);
-                Destroy(b);
+                if (go != null)
+                    tReturn.Add(go);
             }
-            else
-            {
-                StartCoroutine(ReturnToPlayArea(a));
-                StartCoroutine(ReturnToPlayArea(b));
-            }
+            inside.Clear();
+        }
+
+        foreach (var g in tDestroy)
+        {
+            if (g != null)
+                Destroy(g);
+        }
+
+        foreach (var g in tReturn)
+        {
+            if (g != null)
+                StartCoroutine(ReturnToPlayArea(g));
         }
     }
 
@@ -138,11 +195,10 @@ public class SideCatcher3D : MonoBehaviour
             if (m != null)
                 baseTarget = m.originalPosition;
             else
-                baseTarget = Vector3.zero;
+                baseTarget = transform.position;
         }
 
-        Vector3 rand = Random.insideUnitSphere * returnRandomRadius;
-        if (rand.y < 0) rand.y = -rand.y;
-        return baseTarget + rand;
+        Vector3 randomOffset = Random.insideUnitSphere * returnRandomRadius;
+        return baseTarget + randomOffset;
     }
 }

@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2468746837659715600}
+  - component: {fileID: 1185280977198249552}
   m_Layer: 6
   m_Name: beachBall
   m_TagString: Draggable
@@ -32,6 +33,20 @@ Transform:
   - {fileID: 2372841328356434218}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1185280977198249552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2956912805063938730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f27fcd75416c24b4ba9b0c056a2f8ca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::objectId
+  matchId: 3
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1001 &2838604637092726465
 PrefabInstance:
   m_ObjectHideFlags: 0

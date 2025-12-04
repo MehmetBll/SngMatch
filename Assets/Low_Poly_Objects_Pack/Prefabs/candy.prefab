@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4417347361463728511}
+  - component: {fileID: -2831533389773844052}
   m_Layer: 6
   m_Name: candy
   m_TagString: Draggable
@@ -32,6 +33,20 @@ Transform:
   - {fileID: 2944327627348842881}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-2831533389773844052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3892872225606181829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f27fcd75416c24b4ba9b0c056a2f8ca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::objectId
+  matchId: 8
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1001 &3411163485311237738
 PrefabInstance:
   m_ObjectHideFlags: 0
