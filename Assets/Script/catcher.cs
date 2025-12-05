@@ -12,32 +12,55 @@ public class SideCatcher3D : MonoBehaviour
     public float returnDuration = 1.0f;
     public float processDelay = 0.05f;
     public bool useRootObjectFromCollaider = true;
-    private bool isProcessing = false;
-    private List<GameObject> inside = new List<GameObject>();
+    public bool requireNonZeroMatchId = true;
+    private List<objectId> inside = new List<objectId>();
+
     private void OnTriggerEnter(Collider other)
     {
-        var go = other.gameObject;
-        if (!IsValidCandidate(go)) 
+        var go = other.transform.root.gameObject;
+        if(go == null)
             return;
 
-        if (!inside.Contains(go))
-            inside.Add(go);
+        objectId objectId = go.GetComponent<objectId>();
+        if(objectId == null)
+            return;
 
-        if (inside.Count >= 2 && !isProcessing)
-            StartCoroutine(DelayedProcessPairs());
+        if (!inside.Contains(objectId))
+            inside.Add(objectId);
+
+        if (inside.Count >= 2)
+        {
+            var obj1 = inside[0];
+            var obj2 = inside[1];
+                
+            int objId1 = obj1.matchId;
+            int objId2 = obj2.matchId;
+
+            if(objId1 == objId2)
+            {
+                inside.RemoveAt(0);
+                inside.RemoveAt(1);
+                Destroy(obj1);
+                Destroy(obj2);
+            }
+            else
+            {
+                // obj1 ve obj2 yi yukarı fırlat
+            }
+        }
+        //    StartCoroutine(DelayedProcessPairs());
     }
 
-    private void OnTriggerExit(Collider other)
+/*    private void OnTriggerExit(Collider other)
     {
         var go = useRootObjectFromCollaider ? other.transform.root.gameObject : other.gameObject;
         if (inside.Contains(go))
             inside.Remove(go);
+            Debug.Log("catcherden çikti");
     }
 
     private bool IsValidCandidate(GameObject go)
     {
-        if (useTagComparison) 
-            return true;
         return go.GetComponent<objectId>() != null;
     }
 
@@ -76,20 +99,20 @@ public class SideCatcher3D : MonoBehaviour
                 GameObject b = inside[j];
                 if (b == null) continue;
 
-                bool isMatch = false;
+                bool IsMatch = false;
                 if (useTagComparison)
                 {
-                    isMatch = a.tag == b.tag;
+                    IsMatch = a.tag == b.tag;
                 }
                 else
                 {
                     var ma = a.GetComponent<objectId>();
                     var mb = b.GetComponent<objectId>();
                     if (ma != null && mb != null)
-                        isMatch = ma.matchId == mb.matchId;
+                        IsMatch = ma.matchId == mb.matchId;
                 }
 
-                if (isMatch)
+                if (IsMatch)
                 {
                     matchIndex = j;
                     break;
@@ -186,9 +209,7 @@ public class SideCatcher3D : MonoBehaviour
         Vector3 baseTarget = Vector3.zero;
 
         if (returnPoint != null)
-        {
             baseTarget = returnPoint.position;
-        }
         else
         {
             var m = go.GetComponent<objectId>();
@@ -200,5 +221,5 @@ public class SideCatcher3D : MonoBehaviour
 
         Vector3 randomOffset = Random.insideUnitSphere * returnRandomRadius;
         return baseTarget + randomOffset;
-    }
+    }*/
 }

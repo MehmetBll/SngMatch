@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2468746837659715600}
-  - component: {fileID: 1185280977198249552}
+  - component: {fileID: 8707485768243170307}
   m_Layer: 6
   m_Name: beachBall
   m_TagString: Draggable
@@ -33,7 +33,7 @@ Transform:
   - {fileID: 2372841328356434218}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1185280977198249552
+--- !u!114 &8707485768243170307
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -45,8 +45,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27fcd75416c24b4ba9b0c056a2f8ca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::objectId
-  matchId: 3
+  matchId: 4
   originalPosition: {x: 0, y: 0, z: 0}
+  prefabName: beachB
 --- !u!1001 &2838604637092726465
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -137,9 +138,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c0ed0fd6f18a2f146b1cf3679212ce16, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2838604637092726467}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c0ed0fd6f18a2f146b1cf3679212ce16, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1024842731462300145}
   m_SourcePrefab: {fileID: 100100000, guid: c0ed0fd6f18a2f146b1cf3679212ce16, type: 3}
 --- !u!4 &2372841328356434218 stripped
 Transform:
@@ -200,17 +198,3 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2340539706369390899, guid: f22ee1b68a1dbd7429194c48958a760c, type: 3}
---- !u!114 &1024842731462300145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3145155422336154512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f27fcd75416c24b4ba9b0c056a2f8ca6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::objectId
-  matchId: 3
-  originalPosition: {x: 0, y: 0, z: 0}

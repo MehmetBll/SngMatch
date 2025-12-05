@@ -46,7 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::objectId
   matchId: 0
-  originalPosition: {x: 0, y: 0, z: 0}
+  originalPosition: {x: 1, y: 0, z: 0}
+  prefabName: apple
 --- !u!1001 &5351718498172763491
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -137,9 +138,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b6f671a479a47f846a4fff871cbdf78c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5351718498172763489}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b6f671a479a47f846a4fff871cbdf78c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5491839124517304521}
   m_SourcePrefab: {fileID: 100100000, guid: b6f671a479a47f846a4fff871cbdf78c, type: 3}
 --- !u!1 &5081316363158700082 stripped
 GameObject:
@@ -195,20 +193,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 1815096989281337824, guid: c96236b476663ad489e7a7a24021e8e6, type: 3}
---- !u!114 &5491839124517304521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5081316363158700082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f27fcd75416c24b4ba9b0c056a2f8ca6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::objectId
-  matchId: 0
-  originalPosition: {x: 0, y: 1, z: 0}
 --- !u!4 &5606883558942841480 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b6f671a479a47f846a4fff871cbdf78c, type: 3}

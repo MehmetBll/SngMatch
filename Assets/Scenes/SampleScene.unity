@@ -175,6 +175,8 @@ MonoBehaviour:
   returnRandomRadius: 0.5
   returnDuration: 1
   processDelay: 0.05
+  useRootObjectFromCollaider: 1
+  requireNonZeroMatchId: 1
 --- !u!4 &107111007
 Transform:
   m_ObjectHideFlags: 0
@@ -1130,7 +1132,7 @@ Transform:
   m_GameObject: {fileID: 2133210056}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.9, y: 0, z: -13.8}
+  m_LocalPosition: {x: 0, y: 0, z: -13.8}
   m_LocalScale: {x: 8, y: 0.5, z: 8}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1153,6 +1155,8 @@ MonoBehaviour:
   returnRandomRadius: 0.5
   returnDuration: 1
   processDelay: 0.05
+  useRootObjectFromCollaider: 1
+  requireNonZeroMatchId: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
