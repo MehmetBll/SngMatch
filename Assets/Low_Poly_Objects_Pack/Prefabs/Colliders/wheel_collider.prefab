@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2968130189512553430}
   - component: {fileID: 2206536472965495923}
   - component: {fileID: 4142122478801373369}
-  - component: {fileID: 9029942928412591821}
   m_Layer: 6
   m_Name: wheel_collider
   m_TagString: Draggable
@@ -90,17 +89,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &9029942928412591821
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2484643403509426540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f27fcd75416c24b4ba9b0c056a2f8ca6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::objectId
-  matchId: 0
-  originalPosition: {x: 0, y: 0, z: 0}

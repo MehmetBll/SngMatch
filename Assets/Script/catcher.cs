@@ -1,7 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics.Geometry;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.Rendering;
 
 public class SideCatcher3D : MonoBehaviour
@@ -13,6 +16,7 @@ public class SideCatcher3D : MonoBehaviour
     public float processDelay = 0.05f;
     public bool useRootObjectFromCollaider = true;
     public bool requireNonZeroMatchId = true;
+    public float throwUpForce = 5f;
     private List<objectId> inside = new List<objectId>();
 
     private void OnTriggerEnter(Collider other)
@@ -24,6 +28,8 @@ public class SideCatcher3D : MonoBehaviour
         objectId objectId = go.GetComponent<objectId>();
         if(objectId == null)
             return;
+        if (requireNonZeroMatchId && objectId.matchId == 0)
+            return;
 
         if (!inside.Contains(objectId))
             inside.Add(objectId);
@@ -33,23 +39,58 @@ public class SideCatcher3D : MonoBehaviour
             var obj1 = inside[0];
             var obj2 = inside[1];
                 
+            if(obj1 == null || obj2 == null)
+            {
+                inside.RemoveAll(x => x == null);
+                    return;
+            }
             int objId1 = obj1.matchId;
             int objId2 = obj2.matchId;
 
-            if(objId1 == objId2)
+            if(objId1 == objId2 && (!requireNonZeroMatchId || objId1 != 0))
             {
-                inside.RemoveAt(0);
-                inside.RemoveAt(1);
-                Destroy(obj1);
-                Destroy(obj2);
+                inside.Remove(obj1);
+                inside.Remove(obj2);
+
+                if(obj1.gameObject != null)
+                Destroy(obj1.gameObject);
+                if(obj2.gameObject != null)
+                    Destroy(obj2.gameObject);
             }
             else
             {
                 // obj1 ve obj2 yi yukarı fırlat
+                if (obj1 != null)
+                    throwUp(obj1);
+                if (obj2 != null)
+                    throwUp(obj2);
+                    inside.Remove(obj1);
+                    inside.Remove(obj2);
+
             }
         }
         //    StartCoroutine(DelayedProcessPairs());
     }
+    private void throwUp(objectId oid)
+    {
+        if (oid == null)
+            return;
+            GameObject go = oid.gameObject;
+        if (go == null)
+            return;
+            var rb = go.GetComponent<Rigidbody>();
+            if ( rb != null)
+        {
+            rb.linearVelocity = Vector3.zero;
+            rb.AddForce(Vector3.up * throwUpForce, ForceMode.Impulse);
+        }
+        else
+        {
+            go.transform.position += Vector3.up * 0.5f;
+        }
+    }
+
+
 
 /*    private void OnTriggerExit(Collider other)
     {

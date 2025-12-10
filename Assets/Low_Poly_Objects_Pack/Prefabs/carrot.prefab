@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9195499204964155231}
-  - component: {fileID: 4920310951702725499}
   m_Layer: 6
   m_Name: carrot
   m_TagString: Draggable
@@ -33,21 +32,6 @@ Transform:
   - {fileID: 4911318901508537869}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4920310951702725499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8419243529392760293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f27fcd75416c24b4ba9b0c056a2f8ca6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::objectId
-  matchId: 10
-  originalPosition: {x: 0, y: 0, z: 0}
-  prefabName: carrot
 --- !u!1001 &4873523685147711974
 PrefabInstance:
   m_ObjectHideFlags: 0

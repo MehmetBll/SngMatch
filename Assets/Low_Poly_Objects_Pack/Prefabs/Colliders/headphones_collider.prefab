@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8078178632370544648}
   - component: {fileID: 5166947360849784749}
   - component: {fileID: 6940144290320816999}
-  - component: {fileID: 8625131653446641263}
   m_Layer: 6
   m_Name: headphones_collider
   m_TagString: Draggable
@@ -90,17 +89,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8625131653446641263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8885782410951178930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f27fcd75416c24b4ba9b0c056a2f8ca6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::objectId
-  matchId: 0
-  originalPosition: {x: 0, y: 0, z: 0}
