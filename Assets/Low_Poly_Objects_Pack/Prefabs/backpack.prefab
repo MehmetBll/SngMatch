@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5096819593698036421}
+  - component: {fileID: -3226885643832392217}
   m_Layer: 6
   m_Name: backpack
   m_TagString: Draggable
@@ -32,6 +33,21 @@ Transform:
   - {fileID: 7393273069241628138}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-3226885643832392217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5616088541985443967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f27fcd75416c24b4ba9b0c056a2f8ca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::objectId
+  matchId: 2
+  originalPosition: {x: 0, y: 0, z: 0}
+  prefabName: backP
 --- !u!1001 &6994257149860155905
 PrefabInstance:
   m_ObjectHideFlags: 0

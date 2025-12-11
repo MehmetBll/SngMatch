@@ -22,19 +22,21 @@ public class prefabManager : MonoBehaviour
     public float posX = 7f;
     public float posY = 10f;
     public float posZ = 12f;
-    public float objectHeight = 0.5f;
+    public float objectHeight = 5f;
 
     void Start()
     {
         cam= Camera.main;
         SpawnObjects();
-        HandleMouse();
-        HandleTouch();
     }
     void Update()
     {
-        
-        Vector2 screenPos = Pointer.current.position.ReadValue();
+        HandleMouse();
+        HandleTouch();
+        Vector2 screenPos;
+        if(Pointer.current != null)
+    {
+        screenPos = Pointer.current.position.ReadValue();
 
         Ray ray = cam.ScreenPointToRay(screenPos);
         if (_target == null)
@@ -46,17 +48,19 @@ public class prefabManager : MonoBehaviour
                     if(hit.collider.CompareTag(draggableTag))
                     {
                         _target =hit.collider.transform;
+                        _target.position = new Vector3(_target.position.x, objectHeight, _target.position.z);
                         _offset = _target.position - hit.point;
                     }
                 }
             }
         }
         else
+        
         {
             if (Physics.Raycast(ray, out RaycastHit floorHit, 200f, floorMask))
             {
                 Vector3 newPos = floorHit.point + _offset;
-                _target.position = new Vector3(newPos.x, _target.position.y, newPos.z);
+                _target.position = new Vector3(newPos.x, objectHeight, newPos.z);
             }
             if(!Pointer.current.press.isPressed)
             {
@@ -64,6 +68,7 @@ public class prefabManager : MonoBehaviour
             }
         }
     }
+}
      void HandleMouse()
     {
         if (Mouse.current == null) 
@@ -107,6 +112,9 @@ public class prefabManager : MonoBehaviour
 
             if (_selectedObject != null)
             {
+                Vector3 pos= _selectedObject.position;
+                pos.y = objectHeight;
+
                 _offset = _selectedObject.position - hit.point;
             }
         }
@@ -146,9 +154,13 @@ public class prefabManager : MonoBehaviour
                 Random.Range(posY, posY),
                 Random.Range(-posZ, posZ)
             );
+
         foreach(GameObject prefab in prefabs)
         {
            GameObject spawned = Instantiate(prefab,randomPoz,Quaternion.identity);
+           Vector3 p = spawned.transform.position;
+           p.y = objectHeight;
+           spawned.transform.position = p;
         }
     
         }
