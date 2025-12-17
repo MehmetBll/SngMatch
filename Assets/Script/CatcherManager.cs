@@ -1,6 +1,8 @@
 using UnityEngine;
 using Vector3 = UnityEngine.Vector3;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine.AI;
 
 public class CatcherManager : MonoBehaviour
 {
@@ -64,7 +66,6 @@ public class CatcherManager : MonoBehaviour
         heldObject = oid;
         TryProcessPairWithOtherCatcher();
     }
-
     private void OnTriggerExit(Collider other)
     {
         var go = useRootObjectFromCollaider ? other.transform.root.gameObject : other.gameObject;
@@ -97,12 +98,10 @@ public class CatcherManager : MonoBehaviour
         int id1 = obj1.matchId;
         int id2 = obj2.matchId;
 
-        if (id1 == id2 && (!requireNonZeroMatchId || id1 != 0))
+        if (id1 == id2)
         {
-            if (obj1.gameObject != null) 
-                Destroy(obj1.gameObject);
-            if (obj2.gameObject != null)
-                 Destroy(obj2.gameObject);
+            Destroy(obj1.gameObject);
+            Destroy(obj2.gameObject);
         }
         else
         {
@@ -118,19 +117,16 @@ public class CatcherManager : MonoBehaviour
     private void ThrowUp(objectId oid)
     {
         if (oid == null) return;
-        GameObject go = oid.gameObject;
-        if (go == null) return;
+         Rigidbody rb = oid.GetComponent<Rigidbody>();
+        if(rb == null)
+            return;
 
-        var rb = go.GetComponent<Rigidbody>();
-        if (rb != null)
-        {
-            rb.linearVelocity = Vector3.zero;
-            rb.AddForce(Vector3.up * throwUpForce, ForceMode.Impulse);
-        }
-        else
-        {
-            go.transform.position += Vector3.up * 0.5f;
-        }
+        rb.velocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
+
+        float zForce = Random.Range(1f, 3f);
+
+        rb.AddForce(Vector3.forward * zForce, ForceMode.Impulse);
     }
 }
     
