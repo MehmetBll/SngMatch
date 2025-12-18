@@ -117,16 +117,24 @@ public class CatcherManager : MonoBehaviour
     private void ThrowUp(objectId oid)
     {
         if (oid == null) return;
-         Rigidbody rb = oid.GetComponent<Rigidbody>();
+         Rigidbody rb = oid.GetComponentInChildren<Rigidbody>();
         if(rb == null)
+        {
+            Debug.LogError("child rb yok");
             return;
+        }
+            
+        rb.isKinematic = false;
+        rb.useGravity = true;
 
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
 
-        float zForce = Random.Range(1f, 3f);
+        Vector3 dir = new Vector3(0.5f, 1f,3f).normalized;
+        rb.AddForce(dir * 7f, ForceMode.Impulse);
 
-        rb.AddForce(Vector3.forward * zForce, ForceMode.Impulse);
+       Debug.Log("Throwup called");
+       
     }
 }
     

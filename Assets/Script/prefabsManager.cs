@@ -1,10 +1,7 @@
-using Unity.Mathematics;
 using UnityEngine;
 using Random = UnityEngine.Random;
 using UnityEngine.InputSystem;
-using UnityEditor.PackageManager;
-using UnityEditor;
-using System.Security.Principal;
+
 
 public class prefabManager : MonoBehaviour
 {
@@ -12,6 +9,8 @@ public class prefabManager : MonoBehaviour
     private float _distance;
     private Transform _target;
     private Vector3 _offset;
+    private Rigidbody rb;
+    private CWalls[] WallsController;
     public GameObject[] prefabs;
     public LayerMask draggableMask;
     public Camera cam; 
@@ -24,10 +23,12 @@ public class prefabManager : MonoBehaviour
     public float posZ = 12f;
     public float objectHeight = 5f;
 
+    [System.Obsolete]
     void Start()
     {
         cam= Camera.main;
         SpawnObjects();
+        WallsController = FindObjectsOfType<CWalls>();
     }
     void Update()
     {
@@ -77,15 +78,23 @@ public class prefabManager : MonoBehaviour
 
         if (mouse.leftButton.wasPressedThisFrame)
         {
-            Debug.Log("girdi");TrySelect(mouse.position.ReadValue());
-        }
+            TrySelect(mouse.position.ReadValue());
+            if(_selectedObject != null)
+            foreach (var wall in WallsController)
+                wall.SetWallsActive(false); 
             
+            
+        }
 
         if (mouse.leftButton.isPressed && _selectedObject != null)
             Drag(mouse.position.ReadValue());
 
         if (mouse.leftButton.wasReleasedThisFrame)
-            _selectedObject = null;
+        {
+            if(_selectedObject = null)
+            foreach (var wall in WallsController)
+                wall.SetWallsActive(true);
+        }
     }
     void HandleTouch()
     {
@@ -95,12 +104,19 @@ public class prefabManager : MonoBehaviour
 
         if (t.press.wasPressedThisFrame)
             TrySelect(t.position.ReadValue());
+            if(_selectedObject != null)
+            foreach (var wall in WallsController)
+                wall.SetWallsActive(false);
 
         if (t.press.isPressed && _selectedObject != null)
             Drag(t.position.ReadValue());
 
         if (t.press.wasReleasedThisFrame)
-            _selectedObject = null;
+        {
+            if(_selectedObject = null)
+            foreach (var wall in WallsController)
+                wall.SetWallsActive(true);
+        }
     }
     void TrySelect(Vector2 screenPos)
     {
