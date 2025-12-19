@@ -10,7 +10,7 @@ public class prefabManager : MonoBehaviour
     private Transform _target;
     private Vector3 _offset;
     private Rigidbody rb;
-    private CWalls[] WallsController;
+    private CWalls wallsController;
     public GameObject[] prefabs;
     public LayerMask draggableMask;
     public Camera cam; 
@@ -28,31 +28,46 @@ public class prefabManager : MonoBehaviour
     {
         cam= Camera.main;
         SpawnObjects();
-        WallsController = FindObjectsOfType<CWalls>();
+        wallsController = FindObjectOfType<CWalls>();
     }
     void Update()
     {
         HandleMouse();
         HandleTouch();
-        Vector2 screenPos;
+        Vector2 screenPos = Pointer.current.position.ReadValue();
+        Ray ray = cam.ScreenPointToRay(screenPos);
         if(Pointer.current != null)
     {
-        screenPos = Pointer.current.position.ReadValue();
-
-        Ray ray = cam.ScreenPointToRay(screenPos);
         if (_target == null)
         {
-            if(Pointer.current.press.isPressed)
-            {
-                if(Physics.Raycast(ray,out RaycastHit hit, 100f))
+            if (Pointer.current.press.wasPressedThisFrame){
+                if(Physics.Raycast(ray,out RaycastHit hit, 100f,draggableMask))
                 {
                     if(hit.collider.CompareTag(draggableTag))
                     {
                         _target =hit.collider.transform;
-                        _target.position = new Vector3(_target.position.x, objectHeight, _target.position.z);
                         _offset = _target.position - hit.point;
+                        Vector3 pos= _target.position;
+                        pos.y = objectHeight;
+                        _target.position = pos;
+
+                        wallsController?.SetWallsActive(false);
                     }
                 }
+            }
+            if(Pointer.current.press.isPressed && _target != null)
+            {
+                if (Physics.Raycast(ray, out RaycastHit floorHit, 200f, floorMask))
+                {
+                    Vector3 newPos = floorHit.point + _offset;
+                    _target.position = newPos;
+                    newPos.y = objectHeight;
+                }
+            }
+            if(Pointer.current.press.wasReleasedThisFrame && _target != null)
+            {
+                wallsController?.SetWallsActive(false);
+                _target = null;
             }
         } 
         else
@@ -80,8 +95,8 @@ public class prefabManager : MonoBehaviour
         {
             TrySelect(mouse.position.ReadValue());
             if(_selectedObject != null)
-            foreach (var wall in WallsController)
-                wall.SetWallsActive(false); 
+            
+                wallsController?.SetWallsActive(false); 
             
             
         }
@@ -91,9 +106,8 @@ public class prefabManager : MonoBehaviour
 
         if (mouse.leftButton.wasReleasedThisFrame)
         {
-            if(_selectedObject = null)
-            foreach (var wall in WallsController)
-                wall.SetWallsActive(true);
+            if(_selectedObject != null)
+            wallsController?.SetWallsActive(true);
         }
     }
     void HandleTouch()
@@ -105,17 +119,15 @@ public class prefabManager : MonoBehaviour
         if (t.press.wasPressedThisFrame)
             TrySelect(t.position.ReadValue());
             if(_selectedObject != null)
-            foreach (var wall in WallsController)
-                wall.SetWallsActive(false);
+            wallsController.SetWallsActive(false);
 
         if (t.press.isPressed && _selectedObject != null)
             Drag(t.position.ReadValue());
 
         if (t.press.wasReleasedThisFrame)
         {
-            if(_selectedObject = null)
-            foreach (var wall in WallsController)
-                wall.SetWallsActive(true);
+            if(_selectedObject != null)
+            wallsController.SetWallsActive(true);
         }
     }
     void TrySelect(Vector2 screenPos)

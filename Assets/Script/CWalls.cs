@@ -4,6 +4,10 @@ using UnityEngine;
 public class CWalls : MonoBehaviour
 {
 private Collider[] wallColliders;
+private void Start()
+    {
+        SetWallsActive(true);
+    }
 
     private void Awake()
     {
@@ -16,4 +20,5 @@ private Collider[] wallColliders;
             col.enabled = active;
         }
     }
+    
 }

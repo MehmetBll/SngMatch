@@ -482,6 +482,8 @@ MonoBehaviour:
   processDelay: 0.05
   throwUpForce: 5
   returnPoint: {fileID: 0}
+  cWalls:
+  - {fileID: 1335810022}
 --- !u!4 &343553254
 Transform:
   m_ObjectHideFlags: 0
@@ -878,6 +880,18 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1473173519084569906, guid: dc188f97215b9044da9bbb72207bf07f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473173519084569907, guid: dc188f97215b9044da9bbb72207bf07f, type: 3}
+      propertyPath: m_Name
+      value: CWalls
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473173519084569907, guid: dc188f97215b9044da9bbb72207bf07f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1473173519084569911, guid: dc188f97215b9044da9bbb72207bf07f, type: 3}
       propertyPath: m_LocalScale.z
       value: 30
@@ -927,7 +941,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1473173518674256445, guid: dc188f97215b9044da9bbb72207bf07f, type: 3}
       insertIndex: 2
       addedObject: {fileID: 322674548}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1473173519084569907, guid: dc188f97215b9044da9bbb72207bf07f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1335810026}
   m_SourcePrefab: {fileID: 100100000, guid: dc188f97215b9044da9bbb72207bf07f, type: 3}
 --- !u!1 &832575517
 GameObject:
@@ -1018,7 +1035,8 @@ MonoBehaviour:
   returnDuration: 1
   processDelay: 0.05
   throwUpForce: 5
-  returnPoint: {fileID: 0}
+  returnPoint: {fileID: 107111007}
+  cWalls: []
 --- !u!65 &907015616
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1173,6 +1191,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 927008754}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1335810022 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1473173519084569907, guid: dc188f97215b9044da9bbb72207bf07f, type: 3}
+  m_PrefabInstance: {fileID: 687920956}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1335810026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335810022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47732dadd6712ab419363ba8ceaa7fd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CWalls
 --- !u!1 &1425221051
 GameObject:
   m_ObjectHideFlags: 0
@@ -1384,7 +1419,8 @@ MonoBehaviour:
   returnDuration: 1
   processDelay: 0.05
   throwUpForce: 5
-  returnPoint: {fileID: 0}
+  returnPoint: {fileID: 107111007}
+  cWalls: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

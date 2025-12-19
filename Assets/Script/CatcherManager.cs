@@ -16,8 +16,10 @@ public class CatcherManager : MonoBehaviour
     public float processDelay = 0.05f;
     public float throwUpForce = 5f;
     public Transform returnPoint; 
+    public GameObject[] cWalls;
     private static CatcherManager CatcherL;
     private static CatcherManager CatcherR;
+    private Collider[] wallColliders;
 
     private objectId heldObject;
 
@@ -112,12 +114,27 @@ public class CatcherManager : MonoBehaviour
         this.heldObject = null;
         other.heldObject = null;
     }
+    void SetCWallsActive(bool state)
+    {
+     if(wallColliders == null)
+        return;
+        foreach (var col in wallColliders)
+        {
+            if (wallColliders != null)
+            {
+                col.enabled = state;
+            }
+        }
+    }
 
     [System.Obsolete]
     private void ThrowUp(objectId oid)
     {
         if (oid == null) return;
-         Rigidbody rb = oid.GetComponentInChildren<Rigidbody>();
+
+        SetCWallsActive(false);
+
+        Rigidbody rb = oid.GetComponentInChildren<Rigidbody>();
         if(rb == null)
         {
             Debug.LogError("child rb yok");
@@ -130,7 +147,7 @@ public class CatcherManager : MonoBehaviour
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
 
-        Vector3 dir = new Vector3(0.5f, 1f,3f).normalized;
+        Vector3 dir = new Vector3(0.5f, 2f,3f).normalized;
         rb.AddForce(dir * 7f, ForceMode.Impulse);
 
        Debug.Log("Throwup called");
