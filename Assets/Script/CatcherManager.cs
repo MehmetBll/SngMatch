@@ -3,6 +3,7 @@ using Vector3 = UnityEngine.Vector3;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine.AI;
+using System.Collections;
 
 public class CatcherManager : MonoBehaviour
 {
@@ -116,15 +117,37 @@ public class CatcherManager : MonoBehaviour
     }
     void SetCWallsActive(bool state)
     {
-     if(wallColliders == null)
-        return;
-        foreach (var col in wallColliders)
+        if (cWalls == null)
+            return;
+
+        foreach (GameObject wall in cWalls)
         {
-            if (wallColliders != null)
-            {
-                col.enabled = state;
-            }
+            if (wall != null)
+                wall.SetActive(state);
         }
+    }
+    [System.Obsolete]
+    private IEnumerator ThrowUpRoutine(objectId oid)
+    {
+        SetCWallsActive(false);
+        Rigidbody rb = oid.GetComponentInChildren<Rigidbody>();
+        if (rb == null)
+        {
+            Debug.LogError("child rb yok");
+            SetCWallsActive(true);
+            yield break;
+        }
+        rb.isKinematic = false;
+        rb.useGravity = true;
+        rb.velocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
+
+        Vector3 dir = new Vector3(0.5f, 2f, 3f).normalized;
+        rb.AddForce(dir * throwUpForce, ForceMode.Impulse);
+         Debug.Log("Throwup started");
+        yield return new WaitForSeconds(1.0f);
+        SetCWallsActive(true);
+        Debug.Log("Throwup ended and walls reactivated");
     }
 
     [System.Obsolete]
@@ -132,7 +155,7 @@ public class CatcherManager : MonoBehaviour
     {
         if (oid == null) return;
 
-        SetCWallsActive(false);
+        StartCoroutine(ThrowUpRoutine(oid));
 
         Rigidbody rb = oid.GetComponentInChildren<Rigidbody>();
         if(rb == null)

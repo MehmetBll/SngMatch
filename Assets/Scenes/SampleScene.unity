@@ -1036,7 +1036,8 @@ MonoBehaviour:
   processDelay: 0.05
   throwUpForce: 5
   returnPoint: {fileID: 107111007}
-  cWalls: []
+  cWalls:
+  - {fileID: 1335810022}
 --- !u!65 &907015616
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1420,7 +1421,8 @@ MonoBehaviour:
   processDelay: 0.05
   throwUpForce: 5
   returnPoint: {fileID: 107111007}
-  cWalls: []
+  cWalls:
+  - {fileID: 1335810022}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
