@@ -48,6 +48,9 @@ MonoBehaviour:
   matchId: 9
   originalPosition: {x: 0, y: 0, z: 0}
   prefabName: candy
+  destroyEffect: {fileID: 3918499482145084978, guid: 4dffd9fdbdf8ed3488e9d6e1d393fad0, type: 3}
+  pieceCount: 12
+  effectColor: {r: 0.8156863, g: 0.1254902, b: 0.5647059, a: 1}
 --- !u!1001 &3411163485311237738
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -48,6 +48,9 @@ MonoBehaviour:
   matchId: 1
   originalPosition: {x: 0, y: 0, z: 0}
   prefabName: apple
+  destroyEffect: {fileID: 3918499482145084978, guid: 4dffd9fdbdf8ed3488e9d6e1d393fad0, type: 3}
+  pieceCount: 12
+  effectColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1001 &5351718498172763491
 PrefabInstance:
   m_ObjectHideFlags: 0

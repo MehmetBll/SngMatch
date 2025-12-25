@@ -48,6 +48,9 @@ MonoBehaviour:
   matchId: 3
   originalPosition: {x: 0, y: 0, z: 0}
   prefabName: banana
+  destroyEffect: {fileID: 3918499482145084978, guid: 4dffd9fdbdf8ed3488e9d6e1d393fad0, type: 3}
+  pieceCount: 12
+  effectColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!1001 &1367416194398227630
 PrefabInstance:
   m_ObjectHideFlags: 0
