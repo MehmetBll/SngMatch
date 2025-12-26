@@ -162,7 +162,7 @@ public class CatcherManager : MonoBehaviour
         rb.AddForce(throwDir * throwUpForce, ForceMode.Impulse);
         rb.AddTorque(Random.insideUnitSphere * 5f , ForceMode.Impulse);
 
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(0.5f);
         SetCWallsActive(true);
 
     }
