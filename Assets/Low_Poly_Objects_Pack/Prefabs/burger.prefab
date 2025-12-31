@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: -3143385019998050394}
   m_Layer: 6
   m_Name: burger
-  m_TagString: Draggable
+  m_TagString: Catchable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48,7 +48,6 @@ MonoBehaviour:
   matchId: 8
   originalPosition: {x: 0, y: 0, z: 0}
   prefabName: burger
-  destroyEffect: {fileID: 3918499482145084978, guid: 4dffd9fdbdf8ed3488e9d6e1d393fad0, type: 3}
   pieceCount: 12
   effectColor: {r: 0.7660377, g: 0.44675335, b: 0, a: 1}
 --- !u!1001 &484150183813538391

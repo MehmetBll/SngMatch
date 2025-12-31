@@ -22,9 +22,9 @@ public class CatcherManager : MonoBehaviour
     public Transform returnPoint; 
     public Material pieceMaterial;  
     public GameObject[] cWalls;
+    public GameManager gameManager;
     private static CatcherManager CatcherL;
     private static CatcherManager CatcherR;
-    private Collider[] wallColliders;
 
     private objectId heldObject;
 
@@ -72,6 +72,11 @@ public class CatcherManager : MonoBehaviour
 
         heldObject = oid;
         TryProcessPairWithOtherCatcher();
+        if (other.CompareTag("Catchable"))
+        {
+            gameManager.ObjectCaught();
+            Destroy(heldObject.gameObject);
+        }
     }
     private void OnTriggerExit(Collider other)
     {
@@ -138,32 +143,32 @@ public class CatcherManager : MonoBehaviour
     private IEnumerator ThrowUpRoutine(objectId oid)
     {
         SetCWallsActive(false);
-        Rigidbody rb = oid.GetComponentInChildren<Rigidbody>();
+        Rigidbody   rb = oid.GetComponentInChildren<Rigidbody>();
         if (rb == null)
         {
             Debug.LogError("child rb yok");
             SetCWallsActive(true);
             yield break;
         }
-        rb.isKinematic = false;
-        rb.useGravity = true;
+            rb.isKinematic = false;
+            rb.useGravity = true;
 
-        rb.velocity = Vector3.zero;
-        rb.angularVelocity = Vector3.zero;
+            rb.velocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
 
-       float sideOffset = Random.Range(-1f , 1f);
+            float sideOffset = Random.Range(-1f , 1f);
 
-       Vector3 throwDir =
-       Vector3.up * Random.Range(1.5f, 2.5f) +
-       Vector3.forward * Random.Range(2f, 3f) +
-         Vector3.right * sideOffset;
+            Vector3 throwDir =
+            Vector3.up * Random.Range(1.5f, 2.5f) +
+            Vector3.forward * Random.Range(2f, 3f) +
+            Vector3.right * sideOffset;
 
-         throwDir.Normalize();
-        rb.AddForce(throwDir * throwUpForce, ForceMode.Impulse);
-        rb.AddTorque(Random.insideUnitSphere * 5f , ForceMode.Impulse);
+            throwDir.Normalize();
+            rb.AddForce(throwDir * throwUpForce, ForceMode.Impulse);
+            rb.AddTorque(Random.insideUnitSphere * 5f , ForceMode.Impulse);
 
-        yield return new WaitForSeconds(0.5f);
-        SetCWallsActive(true);
+            yield return new WaitForSeconds(0.5f);
+            SetCWallsActive(true);
 
     }
 

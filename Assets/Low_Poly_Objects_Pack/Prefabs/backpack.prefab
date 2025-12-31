@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: -3226885643832392217}
   m_Layer: 6
   m_Name: backpack
-  m_TagString: Draggable
+  m_TagString: Catchable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48,7 +48,6 @@ MonoBehaviour:
   matchId: 2
   originalPosition: {x: 0, y: 0, z: 0}
   prefabName: backP
-  destroyEffect: {fileID: 3918499482145084978, guid: 4dffd9fdbdf8ed3488e9d6e1d393fad0, type: 3}
   pieceCount: 12
   effectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
 --- !u!1001 &6994257149860155905
