@@ -680,7 +680,9 @@ MonoBehaviour:
   floorMask:
     serializedVersion: 2
     m_Bits: 8
-  draggableTag: Draggable
+  DraggableLayer:
+    serializedVersion: 2
+    m_Bits: 0
   spawnCount: 2
   posX: 7
   posY: 10
@@ -1019,7 +1021,7 @@ MonoBehaviour:
   pieceMaterial: {fileID: 2100000, guid: a73010964e96ccf4b8896600025d35a7, type: 2}
   cWalls:
   - {fileID: 1335810022}
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 2131876457}
 --- !u!65 &907015616
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1459,8 +1461,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   gameTime: 100
-  totalObjects: 10
-  caughtObjects: 2
+  totalObjects: 20
+  caughtObjects: 20
   timerText: {fileID: 2126731578}
 --- !u!4 &2131876458
 Transform:
@@ -1613,7 +1615,7 @@ MonoBehaviour:
   pieceMaterial: {fileID: 2100000, guid: a73010964e96ccf4b8896600025d35a7, type: 2}
   cWalls:
   - {fileID: 1335810022}
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 2131876457}
 --- !u!1001 &1129239619668426559
 PrefabInstance:
   m_ObjectHideFlags: 0
