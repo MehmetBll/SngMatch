@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5096819593698036421}
-  - component: {fileID: -3226885643832392217}
+  - component: {fileID: 9128180262103438594}
   m_Layer: 6
   m_Name: backpack
   m_TagString: Catchable
@@ -33,7 +33,7 @@ Transform:
   - {fileID: 7393273069241628138}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-3226885643832392217
+--- !u!114 &9128180262103438594
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -47,9 +47,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::objectId
   matchId: 2
   originalPosition: {x: 0, y: 0, z: 0}
-  prefabName: backP
+  prefabName: backpack
   pieceCount: 12
-  effectColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  effectColor: {r: 0.41176474, g: 0.43921572, b: 0.47058827, a: 1}
 --- !u!1001 &6994257149860155905
 PrefabInstance:
   m_ObjectHideFlags: 0

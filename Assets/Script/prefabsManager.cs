@@ -10,12 +10,14 @@ public class prefabManager : MonoBehaviour
     private Transform _target;
     private Vector3 _offset;
     private Rigidbody rb;
+    private GameObject _selectedObj;
     private CWalls wallsController;
     public GameObject[] prefabs;
     public LayerMask draggableMask;
     public Camera cam; 
     public LayerMask floorMask;
-    public string draggableTag = "Draggable";
+   public LayerMask DraggableLayer;
+
     //denemelik
     public int spawnCount=10;
     public float posX = 7f;
@@ -43,7 +45,7 @@ public class prefabManager : MonoBehaviour
             if (Pointer.current.press.wasPressedThisFrame){
                 if(Physics.Raycast(ray,out RaycastHit hit, 100f,draggableMask))
                 {
-                    if(hit.collider.CompareTag(draggableTag))
+                    
                     {
                         _target =hit.collider.transform;
                         _offset = _target.position - hit.point;
@@ -142,6 +144,9 @@ public class prefabManager : MonoBehaviour
             {
                 Vector3 pos= _selectedObject.position;
                 pos.y = objectHeight;
+                _selectedObject.position = pos;
+
+                wallsController?.SetWallsActive(false);
 
                 _offset = _selectedObject.position - hit.point;
             }
@@ -164,9 +169,12 @@ public class prefabManager : MonoBehaviour
     }
     Transform GetDraggableRoot(Transform t)
     {
-        if (t.CompareTag("Draggable")) 
+       int DraggableLayer = LayerMask.NameToLayer("Draggable");
+       if (t.gameObject.layer == DraggableLayer)
             return t;
-        if (t.parent != null && t.parent.CompareTag("Draggable")) return t.parent;
+            
+        if(t.parent != null&& t.parent.gameObject.layer == DraggableLayer)
+            return t.parent;
 
         return null;
     }

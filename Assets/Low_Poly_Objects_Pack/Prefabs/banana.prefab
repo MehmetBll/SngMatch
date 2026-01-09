@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 635622548132221113}
-  - component: {fileID: 3085263495090890379}
+  - component: {fileID: -4566235611456615331}
   m_Layer: 6
   m_Name: banana
   m_TagString: Catchable
@@ -33,7 +33,7 @@ Transform:
   - {fileID: 1544928967138765637}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3085263495090890379
+--- !u!114 &-4566235611456615331
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -49,7 +49,7 @@ MonoBehaviour:
   originalPosition: {x: 0, y: 0, z: 0}
   prefabName: banana
   pieceCount: 12
-  effectColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  effectColor: {r: 0.7490196, g: 0.65882355, b: 0.18431373, a: 1}
 --- !u!1001 &1367416194398227630
 PrefabInstance:
   m_ObjectHideFlags: 0

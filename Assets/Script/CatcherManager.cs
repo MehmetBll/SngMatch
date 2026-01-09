@@ -72,11 +72,6 @@ public class CatcherManager : MonoBehaviour
 
         heldObject = oid;
         TryProcessPairWithOtherCatcher();
-        if (other.CompareTag("Catchable"))
-        {
-            gameManager.ObjectCaught();
-            Destroy(heldObject.gameObject);
-        }
     }
     private void OnTriggerExit(Collider other)
     {
@@ -118,6 +113,8 @@ public class CatcherManager : MonoBehaviour
 
             Destroy(obj1.gameObject);
             Destroy(obj2.gameObject);
+
+            gameManager.CaughtDestroy();
         }
         else
         {
@@ -128,6 +125,7 @@ public class CatcherManager : MonoBehaviour
         this.heldObject = null;
         other.heldObject = null;
     }
+
     void SetCWallsActive(bool state)
     {
         if (cWalls == null)
@@ -139,6 +137,7 @@ public class CatcherManager : MonoBehaviour
                 wall.SetActive(state);
         }
     }
+
     [System.Obsolete]
     private IEnumerator ThrowUpRoutine(objectId oid)
     {

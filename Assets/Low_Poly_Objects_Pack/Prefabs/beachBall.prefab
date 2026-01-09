@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2468746837659715600}
-  - component: {fileID: 3332237403897145415}
+  - component: {fileID: 449114654057798129}
   m_Layer: 6
   m_Name: beachBall
   m_TagString: Catchable
@@ -33,7 +33,7 @@ Transform:
   - {fileID: 2372841328356434218}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3332237403897145415
+--- !u!114 &449114654057798129
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -47,9 +47,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::objectId
   matchId: 4
   originalPosition: {x: 0, y: 0, z: 0}
-  prefabName: ball
+  prefabName: beachBall
   pieceCount: 12
-  effectColor: {r: 1, g: 0, b: 0, a: 1}
+  effectColor: {r: 0.74509805, g: 0.2784314, b: 0.34117648, a: 1}
 --- !u!1001 &2838604637092726465
 PrefabInstance:
   m_ObjectHideFlags: 0

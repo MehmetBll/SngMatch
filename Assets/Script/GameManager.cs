@@ -1,4 +1,5 @@
 using System.Threading;
+using JetBrains.Annotations;
 using TMPro;
 using UnityEditor.IMGUI.Controls;
 using UnityEngine;
@@ -11,7 +12,7 @@ public class GameManager : MonoBehaviour
     public int caughtObjects;
     public TextMeshProUGUI timerText;
     private bool _gameEnd = false;
-
+    private int destroyOb = 0;
          void Start()
          {
             _timer = gameTime;
@@ -21,17 +22,18 @@ public class GameManager : MonoBehaviour
          {
             if (_gameEnd) return;
             _timer -= Time.deltaTime;
+            _timer = Mathf.Max(_timer, 0f);
             UpdateTimerUI();
 
             if (_timer <= 0f)
         {
             GameLost();
         }
+
          }
          void UpdateTimerUI()
          {
             timerText.text = Mathf.Ceil(_timer).ToString();
-            _timer = Mathf.Max(_timer, 0f);
          }
          public void ObjectCaught()
          {
@@ -48,7 +50,18 @@ public class GameManager : MonoBehaviour
          }
          void GameLost()
          {
+            if(_gameEnd) 
+               return;
             _gameEnd = true;
             Debug.Log("Game Lost!");
          }
+      public void CaughtDestroy()
+   {
+      destroyOb +=2;
+      if (destroyOb >= totalObjects && !_gameEnd)
+      {
+          GameWon();
+          //Time.timeScale = 0f;
+      }
+   }
 }
