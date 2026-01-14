@@ -28,6 +28,8 @@ public class CatcherManager : MonoBehaviour
 
     private objectId heldObject;
 
+
+//sol veya sağ catcherin aktif olduğunu bilmek için
     private void OnEnable()
     {
         RegisterInstance();
@@ -37,7 +39,7 @@ public class CatcherManager : MonoBehaviour
     {
         UnregisterInstance();
     }
-
+    //
     private void RegisterInstance()
     {
         if (isRight)
@@ -59,20 +61,23 @@ public class CatcherManager : MonoBehaviour
     }
 
     [System.Obsolete]
+    //obje catchere girerse bu kod satırı çaılışır
     private void OnTriggerEnter(Collider other)
     {
+        //obje child mi yoksa root mu ona bakıyor ona göre doğru objeyi alıyor
         var go = useRootObjectFromCollaider ? other.transform.root.gameObject : other.gameObject;
         if (go == null) return;
-
+        //objenin eşleşen id si varmı diye bakar
         var oid = go.GetComponent<objectId>();
         if (oid == null) return;
         if (requireNonZeroMatchId && oid.matchId == 0) return;
-
+        //catcher doluysa yeni objeyi almaz
         if (heldObject != null) return;
-
+        //catcher objeyi aldıktan sonra diğer objenin aynı id li obje olup olmadığını kontrol ediyor
         heldObject = oid;
         TryProcessPairWithOtherCatcher();
     }
+    
     private void OnTriggerExit(Collider other)
     {
         var go = useRootObjectFromCollaider ? other.transform.root.gameObject : other.gameObject;
@@ -88,13 +93,14 @@ public class CatcherManager : MonoBehaviour
     [System.Obsolete]
     private void TryProcessPairWithOtherCatcher()
     {
+        //objenin olmadığı karşı catcheri bulşur
         CatcherManager other = isRight ? CatcherL : CatcherR;
         if (other == null) return;
         if (other.heldObject == null) return;
 
         var obj1 = this.heldObject;
         var obj2 = other.heldObject;
-
+        //iki tarafta dolu değilse işlem yapmaması için tek catcher 
         if (obj1 == null || obj2 == null)
         {
             if (obj1 == null) this.heldObject = null;
@@ -104,13 +110,13 @@ public class CatcherManager : MonoBehaviour
 
         int id1 = obj1.matchId;
         int id2 = obj2.matchId;
-
+        //id 1 ve id2 li objeler eşleşiyor ise:
         if (id1 == id2)
         {
-            
+            //parçala
             BreakPieces(obj1);
             BreakPieces(obj2);
-
+            //yok et
             Destroy(obj1.gameObject);
             Destroy(obj2.gameObject);
 
@@ -118,6 +124,7 @@ public class CatcherManager : MonoBehaviour
         }
         else
         {
+            //yalnış eşleşme varsa fırlatır
             ThrowUp(obj1);
             ThrowUp(obj2);
         }
@@ -125,7 +132,7 @@ public class CatcherManager : MonoBehaviour
         this.heldObject = null;
         other.heldObject = null;
     }
-
+    //CWalls objelerini açar kapatır
     void SetCWallsActive(bool state)
     {
         if (cWalls == null)
@@ -141,7 +148,9 @@ public class CatcherManager : MonoBehaviour
     [System.Obsolete]
     private IEnumerator ThrowUpRoutine(objectId oid)
     {
+        //duvarları obje fırlatılır veya mouse ile tutularsa kapatır
         SetCWallsActive(false);
+        //donuk ve bir anda ebjeler fırlatılmasın diye fiziksel bir hava katar 
         Rigidbody   rb = oid.GetComponentInChildren<Rigidbody>();
         if (rb == null)
         {
@@ -163,9 +172,10 @@ public class CatcherManager : MonoBehaviour
             Vector3.right * sideOffset;
 
             throwDir.Normalize();
+            //objeleri rasgele bir yere fırlatır yukarıdada nekadar bir mesafeye atılacağı var
             rb.AddForce(throwDir * throwUpForce, ForceMode.Impulse);
             rb.AddTorque(Random.insideUnitSphere * 5f , ForceMode.Impulse);
-
+            //0.5 saniye sonra duvarları geri açar
             yield return new WaitForSeconds(0.5f);
             SetCWallsActive(true);
 
@@ -175,7 +185,7 @@ public class CatcherManager : MonoBehaviour
     private void ThrowUp(objectId oid)
     {
         if (oid == null) return;
-
+        //asıl fırlatma kısmı bura
         StartCoroutine(ThrowUpRoutine(oid));
 
         Rigidbody rb = oid.GetComponentInChildren<Rigidbody>();
@@ -192,19 +202,19 @@ public class CatcherManager : MonoBehaviour
         rb.angularVelocity = Vector3.zero;
 
         Vector3 dir = new Vector3(0.5f, 2f,3f).normalized;
-        rb.AddForce(dir * 7f, ForceMode.Impulse);
 
        Debug.Log("Throwup called");
        
     }
     void BreakPieces(objectId oid)
     {
+        
          Renderer rend = oid.GetComponentInChildren<Renderer>();
            if (rend == null) 
                 return;
 
                 Vector3 center = rend.bounds.center;
-
+        //küçük küreler oluşturur
         for(int i =0; i<oid.pieceCount; i++)
         {
                 Vector3 spawnPos = center + Random.insideUnitSphere * 0.5f;
@@ -218,15 +228,18 @@ public class CatcherManager : MonoBehaviour
                 rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
 
                 Vector3 forceDir = (spawnPos - center).normalized;
+                //patlatma hissi verir 
                 rb.AddForce(forceDir * Random.Range(2f, 5f), ForceMode.Impulse);
                 rb.AddTorque(Random.insideUnitSphere * 5f);
 
                 Renderer r =piece.GetComponent<Renderer>();
 
+                //her objeye göre renk olutur
                 Material matInstance = new Material(pieceMaterial);
                 matInstance.color = oid.effectColor;
                 r.material = matInstance;
 
+                //2 saniye sonra parçalar yok olur
                 Destroy(piece, 2.0f);
         }
     }

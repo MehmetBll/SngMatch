@@ -28,31 +28,42 @@ public class prefabManager : MonoBehaviour
     [System.Obsolete]
     void Start()
     {
+        //raycst cam main camerayı referans alaır,spawn oyunun başında objeleri spawn eder,cwalls duvarları kontrol eden scripti sahnede bulur
         cam= Camera.main;
         SpawnObjects();
         wallsController = FindObjectOfType<CWalls>();
     }
     void Update()
     {
+        //handle mouse ve touch input sistemi ile her frame kontrol eder
         HandleMouse();
         HandleTouch();
         Vector2 screenPos = Pointer.current.position.ReadValue();
         Ray ray = cam.ScreenPointToRay(screenPos);
+        //input aktifmi diye kontrol eder
         if(Pointer.current != null)
     {
+        //obje tutulmuyorsa
         if (_target == null)
         {
+            //buranın geneli zaten kamerayı referans alarak ray yollar ve objeleri mouse veya el ile hareket ettirmeyi sağlar
+            //ilk objenin tutulduğu kısımda bura çalışır
             if (Pointer.current.press.wasPressedThisFrame){
+                //draggable layere çarpar  
                 if(Physics.Raycast(ray,out RaycastHit hit, 100f,draggableMask))
                 {
                     
                     {
+                        //hangi objenin tutulduğu ve target objenin deydiği nokta alınıyor
                         _target =hit.collider.transform;
                         _offset = _target.position - hit.point;
+
                         Vector3 pos= _target.position;
+                        //objeyi inspectorda yazdığım yükseklikte tutar
                         pos.y = objectHeight;
                         _target.position = pos;
 
+                        //objeleri sürüklerken duvvarı kapatır
                         wallsController?.SetWallsActive(false);
                     }
                 }
