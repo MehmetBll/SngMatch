@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     private float _timer;
     public int totalObjects;
     public int caughtObjects;
+    public GameObject gameWon;
+    public GameObject gameLost;
     public TextMeshProUGUI timerText;
     private bool _gameEnd = false;
     private int destroyOb = 0;
@@ -17,6 +19,8 @@ public class GameManager : MonoBehaviour
          {
             _timer = gameTime;
             UpdateTimerUI();
+            gameWon.SetActive(false);
+            gameLost.SetActive(false);
          }
          void Update()
          {
@@ -29,6 +33,7 @@ public class GameManager : MonoBehaviour
         {
             GameLost();
         }
+
 
          }
          void UpdateTimerUI()
@@ -45,8 +50,11 @@ public class GameManager : MonoBehaviour
          }
          void GameWon()
          {
+            if(_gameEnd) 
+               return;
             _gameEnd = true;
             Debug.Log("Game Won!");
+            gameWon.SetActive(true);
          }
          void GameLost()
          {
@@ -54,7 +62,9 @@ public class GameManager : MonoBehaviour
                return;
             _gameEnd = true;
             Debug.Log("Game Lost!");
+            gameLost.SetActive(true);
          }
+
       public void CaughtDestroy()
    {
       destroyOb +=2;
