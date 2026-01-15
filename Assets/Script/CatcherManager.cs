@@ -1,12 +1,7 @@
 using UnityEngine;
 using Vector3 = UnityEngine.Vector3;
-using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEngine.AI;
 using System.Collections;
-using System.Xml.Serialization;
-using UnityEngine.SocialPlatforms.GameCenter;
-using UnityEngine.Analytics;
+
 
 public class CatcherManager : MonoBehaviour
 {
@@ -73,13 +68,14 @@ public class CatcherManager : MonoBehaviour
         if (requireNonZeroMatchId && oid.matchId == 0) return;
         //catcher doluysa yeni objeyi almaz
         if (heldObject != null) return;
-        //catcher objeyi aldıktan sonra diğer objenin aynı id li obje olup olmadığını kontrol ediyor
+        //catcher objeyi aldıktan sonra diğer objenin aynı id li obje olup olmadığını kontrol eder
         heldObject = oid;
         TryProcessPairWithOtherCatcher();
     }
     
     private void OnTriggerExit(Collider other)
     {
+        //obje catcherden çıkarsa bu kod çalışır
         var go = useRootObjectFromCollaider ? other.transform.root.gameObject : other.gameObject;
         if (go == null) return;
 
@@ -165,7 +161,7 @@ public class CatcherManager : MonoBehaviour
             rb.angularVelocity = Vector3.zero;
 
             float sideOffset = Random.Range(-1f , 1f);
-
+            //fırlatma yönü
             Vector3 throwDir =
             Vector3.up * Random.Range(1.5f, 2.5f) +
             Vector3.forward * Random.Range(2f, 3f) +
@@ -208,7 +204,7 @@ public class CatcherManager : MonoBehaviour
     }
     void BreakPieces(objectId oid)
     {
-        
+           
          Renderer rend = oid.GetComponentInChildren<Renderer>();
            if (rend == null) 
                 return;
@@ -225,6 +221,7 @@ public class CatcherManager : MonoBehaviour
 
                 Rigidbody rb = piece.AddComponent<Rigidbody>();
                 rb.mass = 0.1f;
+                //daha gerçekçi fizik için
                 rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
 
                 Vector3 forceDir = (spawnPos - center).normalized;

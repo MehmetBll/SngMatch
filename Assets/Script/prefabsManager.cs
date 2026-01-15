@@ -6,19 +6,14 @@ using UnityEngine.InputSystem;
 public class prefabManager : MonoBehaviour
 {
     private Transform _selectedObject;
-    private float _distance;
     private Transform _target;
     private Vector3 _offset;
-    private Rigidbody rb;
-    private GameObject _selectedObj;
     private CWalls wallsController;
     public GameObject[] prefabs;
     public LayerMask draggableMask;
     public Camera cam; 
     public LayerMask floorMask;
    public LayerMask DraggableLayer;
-
-    //denemelik
     public int spawnCount=10;
     public float posX = 7f;
     public float posY = 10f;
@@ -70,13 +65,17 @@ public class prefabManager : MonoBehaviour
             }
             if(Pointer.current.press.isPressed && _target != null)
             {
+                //objeyi sürükleme kısmı
                 if (Physics.Raycast(ray, out RaycastHit floorHit, 200f, floorMask))
                 {
+                    //yeni pozisyonu hesaplar
                     Vector3 newPos = floorHit.point + _offset;
+                    //belirlediğim yükseklikte tutar
                     _target.position = newPos;
                     newPos.y = objectHeight;
                 }
             }
+            //objeyi bıraktığı kısım
             if(Pointer.current.press.wasReleasedThisFrame && _target != null)
             {
                 wallsController?.SetWallsActive(false);
@@ -86,8 +85,10 @@ public class prefabManager : MonoBehaviour
         else
         
         {
+            //objeyi sürükleme kısmı
             if (Physics.Raycast(ray, out RaycastHit floorHit, 200f, floorMask))
             {
+                //yeni pozisyonu bulur
                 Vector3 newPos = floorHit.point + _offset;
                 _target.position = new Vector3(newPos.x, objectHeight, newPos.z);
             }
@@ -106,6 +107,7 @@ public class prefabManager : MonoBehaviour
 
         if (mouse.leftButton.wasPressedThisFrame)
         {
+            //mouse pozisyonuna göre objeyi seçer
             TrySelect(mouse.position.ReadValue());
             if(_selectedObject != null)
             
@@ -113,7 +115,7 @@ public class prefabManager : MonoBehaviour
             
             
         }
-
+        //obje mouseyi takip edere 
         if (mouse.leftButton.isPressed && _selectedObject != null)
             Drag(mouse.position.ReadValue());
 
@@ -183,7 +185,7 @@ public class prefabManager : MonoBehaviour
        int DraggableLayer = LayerMask.NameToLayer("Draggable");
        if (t.gameObject.layer == DraggableLayer)
             return t;
-            
+            //objenin draggable layeri varmı yomu diye kontrol eder
         if(t.parent != null&& t.parent.gameObject.layer == DraggableLayer)
             return t.parent;
 
@@ -205,6 +207,7 @@ public class prefabManager : MonoBehaviour
         foreach(GameObject prefab in prefabs)
         {
            GameObject spawned = Instantiate(prefab,randomPoz,Quaternion.identity);
+           //objeyi inspectorda girdiğim yükseklikte spawn eder
            Vector3 p = spawned.transform.position;
            p.y = objectHeight;
            spawned.transform.position = p;

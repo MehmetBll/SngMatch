@@ -1,8 +1,7 @@
-using System.Threading;
-using JetBrains.Annotations;
+using System.Collections;
 using TMPro;
-using UnityEditor.IMGUI.Controls;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -25,6 +24,7 @@ public class GameManager : MonoBehaviour
          void Update()
          {
             if (_gameEnd) return;
+            //zamanlayıcının zamanınını düşürür
             _timer -= Time.deltaTime;
             _timer = Mathf.Max(_timer, 0f);
             UpdateTimerUI();
@@ -38,7 +38,13 @@ public class GameManager : MonoBehaviour
          }
          void UpdateTimerUI()
          {
+            //zamnalayıcının ekranda gözükmesi için
             timerText.text = Mathf.Ceil(_timer).ToString();
+         }
+         public void ResetGame()
+         {
+            //oyunu resetler 
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
          }
          public void ObjectCaught()
          {
@@ -68,6 +74,7 @@ public class GameManager : MonoBehaviour
       public void CaughtDestroy()
    {
       destroyOb +=2;
+      //tüm objeleri yakaladımı diye kontrol eder yakaladıysa GameWon olur
       if (destroyOb >= totalObjects && !_gameEnd)
       {
           GameWon();

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2382763860726550641}
   m_Layer: 6
   m_Name: burger
-  m_TagString: Draggable
+  m_TagString: Catchable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
