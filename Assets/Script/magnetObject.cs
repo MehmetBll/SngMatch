@@ -5,41 +5,34 @@ public class magnetObject : MonoBehaviour
 {
 private Rigidbody rb;
 private Transform targetCatcher;
-private float pullSpeed;
-private bool isPulled = false;
+private bool isMagnetized = false;
+public float magnetSpeed = 5f;
 
-    void Start()
+    void Awake()
     {
-        
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>(); 
     }
-    //objeyi çekmeye başlar
-    [System.Obsolete]
-    public void StartMagnet(Transform catcherTransform, float speed)
+
+         void Update()
+         {
+            if(!isMagnetized) 
+                return;
+                transform.position = Vector3.Lerp(
+               transform.position,
+               targetCatcher.position,
+               Time.deltaTime * magnetSpeed);
+         }
+         public void magnetize(Transform center)
     {
-        targetCatcher = catcherTransform;
-        pullSpeed = speed;
-        isPulled = true;
+        targetCatcher = center;
+        isMagnetized = true;
+        rb.isKinematic = true; 
+        rb.angularVelocity = Vector3.zero;
+        //fiziksel olan hareketleri kapatır
+        rb.linearVelocity = Vector3.zero;
         rb.useGravity = false;
-        rb.drag = 5f;
-        isPulled = true;
+        
     }
-    //objeyi eski haline getirir
-    [System.Obsolete]
-    public void StopMagnet()
-    {
-        targetCatcher = null;
-        rb.useGravity = true;
-        rb.drag = 0f;
-        isPulled = false;
-    }
-    //objeyi çekme işlemi
-    void FixedUpdate()
-    {
-        if (!isPulled || targetCatcher == null)
-            return;
 
-        Vector3 dir = targetCatcher.position - rb.position;
-        rb.linearVelocity = dir * pullSpeed;
-    }
+    
 }
