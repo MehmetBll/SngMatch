@@ -68,8 +68,9 @@ public class CatcherManager : MonoBehaviour
         if (requireNonZeroMatchId && oid.matchId == 0) return;
         //catcher doluysa yeni objeyi almaz
         if (heldObject != null) return;
-        //catcher objeyi aldıktan sonra diğer objenin aynı id li obje olup olmadığını kontrol eder
+        
         heldObject = oid;
+        //diğer catchere giren objeyi kontrol eder
         TryProcessPairWithOtherCatcher();
     }
     
@@ -116,6 +117,7 @@ public class CatcherManager : MonoBehaviour
             Destroy(obj1.gameObject);
             Destroy(obj2.gameObject);
 
+            
             gameManager.CaughtDestroy();
         }
         else

@@ -17,6 +17,7 @@ public float magnetSpeed = 5f;
          {
             if(!isMagnetized) 
                 return;
+                
                 transform.position = Vector3.Lerp(
                transform.position,
                targetCatcher.position,

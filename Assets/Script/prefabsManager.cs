@@ -216,3 +216,4 @@ public class prefabManager : MonoBehaviour
         }
     }
 }
+//magnet kısmı tamamlanacak end menu kısmı yapılack genel bir check up yapılacak

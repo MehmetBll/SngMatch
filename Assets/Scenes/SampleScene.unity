@@ -2338,7 +2338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3d8cf4a471e3cf40aac5ec034763495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  gameTime: 10
+  gameTime: 30
   totalObjects: 20
   caughtObjects: 20
   gameWon: {fileID: 2052811698}
