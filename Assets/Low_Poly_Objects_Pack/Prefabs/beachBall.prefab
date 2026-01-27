@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2468746837659715600}
   - component: {fileID: 449114654057798129}
+  - component: {fileID: -3943457032047049853}
   m_Layer: 6
   m_Name: beachBall
   m_TagString: Catchable
@@ -50,6 +51,19 @@ MonoBehaviour:
   prefabName: beachBall
   pieceCount: 12
   effectColor: {r: 0.74509805, g: 0.2784314, b: 0.34117648, a: 1}
+--- !u!114 &-3943457032047049853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2956912805063938730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 342f87f650e7fe74f874b773fadaad61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::magnetObject
+  magnetSpeed: 5
 --- !u!1001 &2838604637092726465
 PrefabInstance:
   m_ObjectHideFlags: 0

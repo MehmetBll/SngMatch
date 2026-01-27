@@ -18,6 +18,7 @@ public class CatcherManager : MonoBehaviour
     public Material pieceMaterial;  
     public GameObject[] cWalls;
     public GameManager gameManager;
+    public Transform centerPoint;
     private static CatcherManager CatcherL;
     private static CatcherManager CatcherR;
 
@@ -68,6 +69,12 @@ public class CatcherManager : MonoBehaviour
         if (requireNonZeroMatchId && oid.matchId == 0) return;
         //catcher doluysa yeni objeyi almaz
         if (heldObject != null) return;
+
+        var magnet= go.GetComponent<magnetObject>();
+        if(magnet != null)
+        {
+            magnet.magnetize(centerPoint);
+        }
         
         heldObject = oid;
         //diğer catchere giren objeyi kontrol eder
@@ -182,11 +189,20 @@ public class CatcherManager : MonoBehaviour
     [System.Obsolete]
     private void ThrowUp(objectId oid)
     {
+        
         if (oid == null) return;
         //asıl fırlatma kısmı bura
         StartCoroutine(ThrowUpRoutine(oid));
 
         Rigidbody rb = oid.GetComponentInChildren<Rigidbody>();
+        
+        var magnet= oid.GetComponent<magnetObject>();
+       if(magnet != null)
+       {
+            magnet.demagnetize();
+            Debug.Log("demagnetize called");
+
+       }
         if(rb == null)
         {
             Debug.LogError("child rb yok");

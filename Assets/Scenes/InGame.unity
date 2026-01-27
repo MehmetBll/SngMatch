@@ -687,13 +687,14 @@ MonoBehaviour:
   requireNonZeroMatchId: 1
   returnRandomRadius: 0.5
   returnDuration: 1
-  processDelay: 0.05
+  processDelay: 0.1
   throwUpForce: 5
   returnPoint: {fileID: 0}
   pieceMaterial: {fileID: 0}
   cWalls:
   - {fileID: 1335810022}
   gameManager: {fileID: 2131876457}
+  centerPoint: {fileID: 0}
 --- !u!4 &343553254
 Transform:
   m_ObjectHideFlags: 0
@@ -1455,11 +1456,12 @@ MonoBehaviour:
   returnDuration: 1
   processDelay: 0.05
   throwUpForce: 5
-  returnPoint: {fileID: 107111007}
+  returnPoint: {fileID: 0}
   pieceMaterial: {fileID: 2100000, guid: a73010964e96ccf4b8896600025d35a7, type: 2}
   cWalls:
   - {fileID: 1335810022}
   gameManager: {fileID: 2131876457}
+  centerPoint: {fileID: 907015619}
 --- !u!65 &907015616
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2491,11 +2493,12 @@ MonoBehaviour:
   returnDuration: 1
   processDelay: 0.05
   throwUpForce: 5
-  returnPoint: {fileID: 107111007}
+  returnPoint: {fileID: 0}
   pieceMaterial: {fileID: 2100000, guid: a73010964e96ccf4b8896600025d35a7, type: 2}
   cWalls:
   - {fileID: 1335810022}
   gameManager: {fileID: 2131876457}
+  centerPoint: {fileID: 2133210060}
 --- !u!1001 &1129239619668426559
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4670530509603697527}
   - component: {fileID: 2398200291854597733}
+  - component: {fileID: 3349718323696787927}
   m_Layer: 6
   m_Name: apple
   m_TagString: Catchable
@@ -50,6 +51,19 @@ MonoBehaviour:
   prefabName: apple
   pieceCount: 12
   effectColor: {r: 0.3921569, g: 0.5921569, b: 0.19215688, a: 1}
+--- !u!114 &3349718323696787927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5447911256226605517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 342f87f650e7fe74f874b773fadaad61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::magnetObject
+  magnetSpeed: 5
 --- !u!1001 &5351718498172763491
 PrefabInstance:
   m_ObjectHideFlags: 0

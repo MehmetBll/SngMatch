@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4417347361463728511}
   - component: {fileID: 2522872686995566650}
+  - component: {fileID: -1624598439831952616}
   m_Layer: 6
   m_Name: candy
   m_TagString: Catchable
@@ -50,6 +51,19 @@ MonoBehaviour:
   prefabName: candy
   pieceCount: 12
   effectColor: {r: 0.69411767, g: 0.2901961, b: 0.4156863, a: 1}
+--- !u!114 &-1624598439831952616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3892872225606181829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 342f87f650e7fe74f874b773fadaad61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::magnetObject
+  magnetSpeed: 5
 --- !u!1001 &3411163485311237738
 PrefabInstance:
   m_ObjectHideFlags: 0
