@@ -70,9 +70,9 @@ public class CatcherManager : MonoBehaviour
         //catcher doluysa yeni objeyi almaz
         if (heldObject != null) return;
 
-        var magnet= go.GetComponent<magnetObject>();
+        var magnet= go.GetComponentInChildren<magnetObject>();
         if(magnet != null)
-        {
+        {   //objeyi centerpoint e çeker
             magnet.magnetize(centerPoint);
         }
         
@@ -195,8 +195,8 @@ public class CatcherManager : MonoBehaviour
         StartCoroutine(ThrowUpRoutine(oid));
 
         Rigidbody rb = oid.GetComponentInChildren<Rigidbody>();
-        
-        var magnet= oid.GetComponent<magnetObject>();
+        //demagnetizeyi çağırıyo
+        var magnet= oid.GetComponentInChildren<magnetObject>();
        if(magnet != null)
        {
             magnet.demagnetize();

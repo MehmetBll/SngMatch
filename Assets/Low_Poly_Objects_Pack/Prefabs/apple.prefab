@@ -63,6 +63,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 342f87f650e7fe74f874b773fadaad61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::magnetObject
+  childObject: {fileID: 4670530509603697527}
   magnetSpeed: 5
 --- !u!1001 &5351718498172763491
 PrefabInstance:
