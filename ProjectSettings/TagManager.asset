@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Draggable
   - Catchable
+  - Magnetable
   layers:
   - Default
   - TransparentFX

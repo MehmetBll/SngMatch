@@ -1,27 +1,22 @@
 using UnityEngine;
 using Vector3 = UnityEngine.Vector3;
 using System.Collections;
+using System.Reflection.Emit;
 
 
 public class CatcherManager : MonoBehaviour
 {
     public bool isRight = false;
-
-    public bool useTagComparison = false;
     public bool useRootObjectFromCollaider = true;
     public bool requireNonZeroMatchId = true;
-    public float returnRandomRadius = 0.5f;  
-    public float returnDuration = 1.0f;
-    public float processDelay = 0.05f;
     public float throwUpForce = 5f;
-    public Transform returnPoint; 
     public Material pieceMaterial;  
     public GameObject[] cWalls;
     public GameManager gameManager;
     public Transform centerPoint;
     private static CatcherManager CatcherL;
     private static CatcherManager CatcherR;
-
+    public float magnetSpeed = 10f;
     private objectId heldObject;
 
 
@@ -70,11 +65,19 @@ public class CatcherManager : MonoBehaviour
         //catcher doluysa yeni objeyi almaz
         if (heldObject != null) return;
 
-        var magnet= go.GetComponentInChildren<magnetObject>();
-        if(magnet != null)
-        {   //objeyi centerpoint e çeker
-            magnet.magnetize(centerPoint);
+        if(!other.CompareTag("Catchable")) return;
+        Rigidbody rb = oid.GetComponentInChildren<Rigidbody>();
+        if(rb == null)
+        {
+            rb.isKinematic = true;
+            rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+            Debug.LogError("child rb yok");
+            return;
         }
+
+        Vector3 dir = (centerPoint.position - rb.position).normalized;
+        rb.MovePosition(rb.position + dir * magnetSpeed * Time.fixedDeltaTime);
         
         heldObject = oid;
         //diğer catchere giren objeyi kontrol eder
@@ -195,14 +198,6 @@ public class CatcherManager : MonoBehaviour
         StartCoroutine(ThrowUpRoutine(oid));
 
         Rigidbody rb = oid.GetComponentInChildren<Rigidbody>();
-        //demagnetizeyi çağırıyo
-        var magnet= oid.GetComponentInChildren<magnetObject>();
-       if(magnet != null)
-       {
-            magnet.demagnetize();
-            Debug.Log("demagnetize called");
-
-       }
         if(rb == null)
         {
             Debug.LogError("child rb yok");
