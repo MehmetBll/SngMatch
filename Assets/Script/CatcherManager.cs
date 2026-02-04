@@ -14,11 +14,17 @@ public class CatcherManager : MonoBehaviour
     public GameObject[] cWalls;
     public GameManager gameManager;
     public Transform centerPoint;
+    public float magnetSpeed = 10f;
+    private BoxCollider _box;
     private static CatcherManager CatcherL;
     private static CatcherManager CatcherR;
-    public float magnetSpeed = 10f;
     private objectId heldObject;
+    private Transform root;
 
+private void Awake()
+    {
+        _box = GetComponent<BoxCollider>();
+    }
 
 //sol veya sağ catcherin aktif olduğunu bilmek için
     private void OnEnable()
@@ -65,19 +71,23 @@ public class CatcherManager : MonoBehaviour
         //catcher doluysa yeni objeyi almaz
         if (heldObject != null) return;
 
-        if(!other.CompareTag("Catchable")) return;
-        Rigidbody rb = oid.GetComponentInChildren<Rigidbody>();
+        if(!other.CompareTag("Catchable")) 
+            return;
+       Transform objRoot = other.transform.root;
+        Rigidbody rb = objRoot.GetComponentInChildren<Rigidbody>();
         if(rb == null)
         {
-            rb.isKinematic = true;
-            rb.linearVelocity = Vector3.zero;
-            rb.angularVelocity = Vector3.zero;
-            Debug.LogError("child rb yok");
-            return;
+           rb.velocity = Vector3.zero;
+           rb.angularVelocity = Vector3.zero;
+           rb.isKinematic = true;
         }
+        //objeyi catcherin ortasına çeker
+        Vector3 center = _box.bounds.center;
 
-        Vector3 dir = (centerPoint.position - rb.position).normalized;
-        rb.MovePosition(rb.position + dir * magnetSpeed * Time.fixedDeltaTime);
+       objRoot.transform.localPosition = center;
+
+       objRoot.transform.localRotation = Quaternion.identity;
+
         
         heldObject = oid;
         //diğer catchere giren objeyi kontrol eder
@@ -196,7 +206,7 @@ public class CatcherManager : MonoBehaviour
         if (oid == null) return;
         //asıl fırlatma kısmı bura
         StartCoroutine(ThrowUpRoutine(oid));
-
+        //fizik katar
         Rigidbody rb = oid.GetComponentInChildren<Rigidbody>();
         if(rb == null)
         {
