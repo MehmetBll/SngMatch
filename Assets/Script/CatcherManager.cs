@@ -70,24 +70,6 @@ private void Awake()
         if (requireNonZeroMatchId && oid.matchId == 0) return;
         //catcher doluysa yeni objeyi almaz
         if (heldObject != null) return;
-
-        if(!other.CompareTag("Catchable")) 
-            return;
-       Transform objRoot = other.transform.root;
-        Rigidbody rb = objRoot.GetComponentInChildren<Rigidbody>();
-        if(rb == null)
-        {
-           rb.velocity = Vector3.zero;
-           rb.angularVelocity = Vector3.zero;
-           rb.isKinematic = true;
-        }
-        //objeyi catcherin ortasına çeker
-        Vector3 center = _box.bounds.center;
-
-       objRoot.transform.localPosition = center;
-
-       objRoot.transform.localRotation = Quaternion.identity;
-
         
         heldObject = oid;
         //diğer catchere giren objeyi kontrol eder
