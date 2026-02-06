@@ -15,16 +15,11 @@ public class CatcherManager : MonoBehaviour
     public GameManager gameManager;
     public Transform centerPoint;
     public float magnetSpeed = 10f;
-    private BoxCollider _box;
     private static CatcherManager CatcherL;
     private static CatcherManager CatcherR;
     private objectId heldObject;
-    private Transform root;
+    private objectId firstItem;
 
-private void Awake()
-    {
-        _box = GetComponent<BoxCollider>();
-    }
 
 //sol veya sağ catcherin aktif olduğunu bilmek için
     private void OnEnable()
@@ -70,6 +65,26 @@ private void Awake()
         if (requireNonZeroMatchId && oid.matchId == 0) return;
         //catcher doluysa yeni objeyi almaz
         if (heldObject != null) return;
+
+        objectId item = other.GetComponent<objectId>();
+        if (item == null)
+            return;
+        if(firstItem == null)
+        {
+            firstItem = item;
+        }
+        else
+        {
+            if (firstItem.id == item.id)
+            {
+                ScoreManager.Instance.AddScore(firstItem.score);
+                ScoreManager.Instance.AddScore(item.score);
+
+                Destroy(firstItem.gameObject);
+                Destroy(item.gameObject);
+            }
+            firstItem = null;
+        }
         
         heldObject = oid;
         //diğer catchere giren objeyi kontrol eder

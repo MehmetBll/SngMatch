@@ -46,6 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::objectId
   matchId: 3
+  id: 3
+  score: 10
   originalPosition: {x: 0, y: 0, z: 0}
   prefabName: banana
   pieceCount: 12

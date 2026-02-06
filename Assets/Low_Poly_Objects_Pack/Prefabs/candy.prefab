@@ -46,6 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::objectId
   matchId: 9
+  id: 9
+  score: 10
   originalPosition: {x: 0, y: 0, z: 0}
   prefabName: candy
   pieceCount: 12

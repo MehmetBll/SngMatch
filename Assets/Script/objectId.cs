@@ -3,11 +3,16 @@ using UnityEngine;
 public class objectId : MonoBehaviour
 {
 public int matchId = 0;
+public int id;
+public int score = 10;
 public Vector3 originalPosition;
 public string prefabName;
 public int pieceCount = 12;
 public Color effectColor = Color.white;
-    private void Awake()
+
+         public int scoreValue { get; internal set; }
+
+         private void Awake()
     {
         originalPosition = transform.position;
         prefabName = gameObject.name;
