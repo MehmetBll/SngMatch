@@ -18,7 +18,6 @@ public class CatcherManager : MonoBehaviour
     private static CatcherManager CatcherL;
     private static CatcherManager CatcherR;
     private objectId heldObject;
-    private objectId firstItem;
 
 
 //sol veya sağ catcherin aktif olduğunu bilmek için
@@ -65,26 +64,6 @@ public class CatcherManager : MonoBehaviour
         if (requireNonZeroMatchId && oid.matchId == 0) return;
         //catcher doluysa yeni objeyi almaz
         if (heldObject != null) return;
-
-        objectId item = other.GetComponent<objectId>();
-        if (item == null)
-            return;
-        if(firstItem == null)
-        {
-            firstItem = item;
-        }
-        else
-        {
-            if (firstItem.id == item.id)
-            {
-                ScoreManager.Instance.AddScore(firstItem.score);
-                ScoreManager.Instance.AddScore(item.score);
-
-                Destroy(firstItem.gameObject);
-                Destroy(item.gameObject);
-            }
-            firstItem = null;
-        }
         
         heldObject = oid;
         //diğer catchere giren objeyi kontrol eder
@@ -127,6 +106,10 @@ public class CatcherManager : MonoBehaviour
         //id 1 ve id2 li objeler eşleşiyor ise:
         if (id1 == id2)
         {
+            //skor ekle
+            int scoreValue = obj1.score + obj2.score;
+            //score instantiate
+            ScoreManager.Instance.AddScore(scoreValue);
             //parçala
             BreakPieces(obj1);
             BreakPieces(obj2);

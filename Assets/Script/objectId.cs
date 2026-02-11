@@ -3,7 +3,6 @@ using UnityEngine;
 public class objectId : MonoBehaviour
 {
 public int matchId = 0;
-public int id;
 public int score = 10;
 public Vector3 originalPosition;
 public string prefabName;
