@@ -108,8 +108,8 @@ public class CatcherManager : MonoBehaviour
         {
             //skor ekle
             int scoreValue = obj1.score + obj2.score;
-            //score instantiate
-            ScoreManager.Instance.AddScore(scoreValue);
+            //combo sistemini tetikle
+            ScoreManager.Instance.AddScore(scoreValue, true);
             //parçala
             BreakPieces(obj1);
             BreakPieces(obj2);
@@ -117,11 +117,12 @@ public class CatcherManager : MonoBehaviour
             Destroy(obj1.gameObject);
             Destroy(obj2.gameObject);
 
-            
             gameManager.CaughtDestroy();
         }
         else
         {
+            //yanlış eşleşme varsa combo'yu sıfırla
+            ScoreManager.Instance.ResetCombo();
             //yalnış eşleşme varsa fırlatır
             ThrowUp(obj1);
             ThrowUp(obj2);
