@@ -2207,7 +2207,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 00
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2972,9 +2972,9 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 152126871}
   - {fileID: 687920956}
-  - {fileID: 549376963}
   - {fileID: 8864363124862943263}
   - {fileID: 1129239619668426559}
+  - {fileID: 549376963}
   - {fileID: 343553254}
   - {fileID: 107111007}
   - {fileID: 2131876458}

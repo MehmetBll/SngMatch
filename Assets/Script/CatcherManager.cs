@@ -218,7 +218,7 @@ public class CatcherManager : MonoBehaviour
         for(int i =0; i<oid.pieceCount; i++)
         {
                 Vector3 spawnPos = center + Random.insideUnitSphere * 0.5f;
-
+             //küçük küreler oluşturur
                 GameObject piece = GameObject.CreatePrimitive(PrimitiveType.Sphere);
                 piece.transform.position = spawnPos;
                 piece.transform.localScale = Vector3.one * 0.2f;
