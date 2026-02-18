@@ -9,7 +9,7 @@ public class CatcherManager : MonoBehaviour
     public bool isRight = false;
     public bool useRootObjectFromCollaider = true;
     public bool requireNonZeroMatchId = true;
-    public float throwUpForce = 5f;
+    public float throwUpForce = 12f;
     public Material pieceMaterial;  
     public GameObject[] cWalls;
     public GameManager gameManager;
@@ -183,28 +183,45 @@ public class CatcherManager : MonoBehaviour
     [System.Obsolete]
     private void ThrowUp(objectId oid)
     {
-        
         if (oid == null) return;
-        //asıl fırlatma kısmı bura
-        StartCoroutine(ThrowUpRoutine(oid));
+        
+        // Duvarları hemen aç (açılırsa, kapatılabilir)
+        SetCWallsActive(false);
+        
         //fizik katar
         Rigidbody rb = oid.GetComponentInChildren<Rigidbody>();
         if(rb == null)
         {
             Debug.LogError("child rb yok");
+            SetCWallsActive(true); // Hata durumunda duvarları aç
             return;
         }
-            
+        
         rb.isKinematic = false;
         rb.useGravity = true;
-
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
 
-        Vector3 dir = new Vector3(0.5f, 2f,3f).normalized;
+        // Fırlatma yönü
+        float sideOffset = Random.Range(-1f, 1f);
+        Vector3 throwDir =
+            Vector3.up * Random.Range(1.5f, 2.5f) +
+            Vector3.forward * Random.Range(2f, 3f) +
+            Vector3.right * sideOffset;
 
-       Debug.Log("Throwup called");
-       
+        throwDir.Normalize();
+        rb.AddForce(throwDir * throwUpForce, ForceMode.Impulse);
+        rb.AddTorque(Random.insideUnitSphere * 5f, ForceMode.Impulse);
+        
+        // Coroutine ile duvarları belirli süre açık tut sonra kapa
+        StartCoroutine(ResetWallsAfterDelay(1.2f));
+        Debug.Log("Throwup called");
+    }
+    
+    private IEnumerator ResetWallsAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SetCWallsActive(true);
     }
     void BreakPieces(objectId oid)
     {

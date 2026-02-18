@@ -7,6 +7,7 @@ public class ScoreManager : MonoBehaviour
     public static ScoreManager Instance;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI comboText; // Combo UI için
+    public TextMeshProUGUI comboTimerText; // Combo süresi göstergesi
     public int score;
 
     [Header("Combo Settings")]
@@ -35,6 +36,13 @@ public class ScoreManager : MonoBehaviour
             {
                 ResetCombo();
             }
+            UpdateComboTimerText();
+        }
+        else
+        {
+            // combo kapalıysa zaman göstergesini temizle
+            if (comboTimerText != null)
+                comboTimerText.text = "";
         }
     }
 
@@ -50,7 +58,7 @@ public class ScoreManager : MonoBehaviour
         {
             ResetCombo();
         }
-
+        //her comboda çarpan ekler
         int multiplier = Mathf.Max(1, comboCount);
         score += value * multiplier;
         scoreText.text = score.ToString();
@@ -70,9 +78,30 @@ public class ScoreManager : MonoBehaviour
         if (comboText != null)
         {
             if (comboCount > 1)
+            //combo olursa combu ui ını gösterir ve yazar
                 comboText.text = $"Combo: {comboCount}x";
             else
+            //combo yoksa ui ı gizler v sıfırlar
                 comboText.text = "";
+        }
+        UpdateComboTimerText();
+    }
+
+
+    private void UpdateComboTimerText()
+    {
+        if (comboTimerText == null)
+            return;
+
+        if (comboActive)
+        {
+            //combo olursa combo süresini aktif eder 
+            float remaining = Mathf.Max(0f, comboTimeout - comboTimer);
+            comboTimerText.text = $"{remaining:0.00}s";
+        }
+        else
+        {
+            comboTimerText.text = "";
         }
     }
 
