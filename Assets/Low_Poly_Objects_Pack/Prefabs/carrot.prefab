@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9195499204964155231}
   - component: {fileID: 1084362912039569088}
+  - component: {fileID: 1014187312116522911}
   m_Layer: 6
   m_Name: carrot
   m_TagString: Catchable
@@ -46,12 +47,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::objectId
   matchId: 10
-  id: 10
   score: 10
   originalPosition: {x: 0, y: 0, z: 0}
   prefabName: carrot
   pieceCount: 12
   effectColor: {r: 0.7176471, g: 0.4039216, b: 0.16470589, a: 1}
+--- !u!114 &1014187312116522911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8419243529392760293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 342f87f650e7fe74f874b773fadaad61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::magnetObject
+  magnetSpeed: 5
 --- !u!1001 &4873523685147711974
 PrefabInstance:
   m_ObjectHideFlags: 0

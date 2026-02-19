@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 635622548132221113}
   - component: {fileID: -4566235611456615331}
+  - component: {fileID: -5669420087875921401}
   m_Layer: 6
   m_Name: banana
   m_TagString: Catchable
@@ -46,12 +47,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::objectId
   matchId: 3
-  id: 3
   score: 10
   originalPosition: {x: 0, y: 0, z: 0}
   prefabName: banana
   pieceCount: 12
   effectColor: {r: 0.7490196, g: 0.65882355, b: 0.18431373, a: 1}
+--- !u!114 &-5669420087875921401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259519909637523971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 342f87f650e7fe74f874b773fadaad61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::magnetObject
+  magnetSpeed: 5
 --- !u!1001 &1367416194398227630
 PrefabInstance:
   m_ObjectHideFlags: 0

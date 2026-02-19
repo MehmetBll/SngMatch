@@ -10,7 +10,7 @@ public class CatcherManager : MonoBehaviour
     public bool useRootObjectFromCollaider = true;
     public bool requireNonZeroMatchId = true;
     public float throwUpForce = 12f;
-    public Material pieceMaterial;  
+    public Material pieceMaterial;
     public GameObject[] cWalls;
     public GameManager gameManager;
     public Transform centerPoint;
@@ -20,7 +20,7 @@ public class CatcherManager : MonoBehaviour
     private objectId heldObject;
 
 
-//sol veya sağ catcherin aktif olduğunu bilmek için
+    //sol veya sağ catcherin aktif olduğunu bilmek için
     private void OnEnable()
     {
         RegisterInstance();
@@ -51,7 +51,6 @@ public class CatcherManager : MonoBehaviour
         }
     }
 
-    [System.Obsolete]
     //obje catchere girerse bu kod satırı çaılışır
     private void OnTriggerEnter(Collider other)
     {
@@ -64,12 +63,57 @@ public class CatcherManager : MonoBehaviour
         if (requireNonZeroMatchId && oid.matchId == 0) return;
         //catcher doluysa yeni objeyi almaz
         if (heldObject != null) return;
-        
+
         heldObject = oid;
+        PlaceObjectAtCatcherCenter(oid);
         //diğer catchere giren objeyi kontrol eder
         TryProcessPairWithOtherCatcher();
     }
-    
+
+    private void PlaceObjectAtCatcherCenter(objectId oid)
+    {
+        if (oid == null) return;
+
+        // centerPoint yoksa oluştur
+        if (centerPoint == null) EnsureCenterPointExists();
+
+        // Eğer obje üzerinde magnetObject script'i varsa (root veya child) onun magnetize metodunu kullan
+        var mag = oid.GetComponentInChildren<magnetObject>();
+        if (mag != null)
+        {
+            mag.magnetize(centerPoint);
+            return;
+        }
+
+        // Aksi halde root (prefab kökü) parent'la ve rigidbody'i sabitle
+        Transform root = oid.transform.root;
+        root.SetParent(centerPoint);
+        root.localPosition = Vector3.zero;
+        root.localRotation = Quaternion.identity;
+
+        Debug.Log($"[PlaceObjectAtCatcherCenter] root='{root.name}' rootPos={root.position} centerPos={centerPoint.position}");
+        Rigidbody rb = root.GetComponentInChildren<Rigidbody>();
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+            rb.isKinematic = true;
+            rb.useGravity = false;
+        }
+    }
+
+    // Eğer inspector'da centerPoint atanmadıysa, catcher altında bir empty GameObject oluştur
+    void EnsureCenterPointExists()
+    {
+        if (centerPoint != null) return;
+
+        GameObject go = new GameObject(isRight ? "CatcherCenter_R" : "CatcherCenter_L");
+        go.transform.SetParent(this.transform);
+        go.transform.localPosition = Vector3.zero;
+        go.transform.localRotation = Quaternion.identity;
+        centerPoint = go.transform;
+    }
+
     private void OnTriggerExit(Collider other)
     {
         //obje catcherden çıkarsa bu kod çalışır
@@ -80,10 +124,11 @@ public class CatcherManager : MonoBehaviour
         if (oid == null) return;
 
         if (heldObject == oid)
+        {
             heldObject = null;
+        }
     }
 
-    [System.Obsolete]
     private void TryProcessPairWithOtherCatcher()
     {
         //objenin olmadığı karşı catcheri bulşur
@@ -150,56 +195,54 @@ public class CatcherManager : MonoBehaviour
         //duvarları obje fırlatılır veya mouse ile tutularsa kapatır
         SetCWallsActive(false);
         //donuk ve bir anda ebjeler fırlatılmasın diye fiziksel bir hava katar 
-        Rigidbody   rb = oid.GetComponentInChildren<Rigidbody>();
+        Rigidbody rb = oid.GetComponentInChildren<Rigidbody>();
         if (rb == null)
         {
             Debug.LogError("child rb yok");
             SetCWallsActive(true);
             yield break;
         }
-            rb.isKinematic = false;
-            rb.useGravity = true;
+        rb.isKinematic = false;
+        rb.useGravity = true;
 
-            rb.velocity = Vector3.zero;
-            rb.angularVelocity = Vector3.zero;
+        rb.velocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
 
-            float sideOffset = Random.Range(-1f , 1f);
-            //fırlatma yönü
-            Vector3 throwDir =
-            Vector3.up * Random.Range(1.5f, 2.5f) +
-            Vector3.forward * Random.Range(2f, 3f) +
-            Vector3.right * sideOffset;
+        float sideOffset = Random.Range(-1f, 1f);
+        //fırlatma yönü
+        Vector3 throwDir =
+        Vector3.up * Random.Range(1.5f, 2.5f) +
+        Vector3.forward * Random.Range(2f, 3f) +
+        Vector3.right * sideOffset;
 
-            throwDir.Normalize();
-            //objeleri rasgele bir yere fırlatır yukarıdada nekadar bir mesafeye atılacağı var
-            rb.AddForce(throwDir * throwUpForce, ForceMode.Impulse);
-            rb.AddTorque(Random.insideUnitSphere * 5f , ForceMode.Impulse);
-            //0.5 saniye sonra duvarları geri açar
-            yield return new WaitForSeconds(0.5f);
-            SetCWallsActive(true);
+        throwDir.Normalize();
+        //objeleri rasgele bir yere fırlatır yukarıdada nekadar bir mesafeye atılacağı var
+        rb.AddForce(throwDir * throwUpForce, ForceMode.Impulse);
+        rb.AddTorque(Random.insideUnitSphere * 5f, ForceMode.Impulse);
+        //0.5 saniye sonra duvarları geri açar
+        yield return new WaitForSeconds(0.5f);
+        SetCWallsActive(true);
 
     }
 
-    [System.Obsolete]
     private void ThrowUp(objectId oid)
     {
         if (oid == null) return;
-        
         // Duvarları hemen aç (açılırsa, kapatılabilir)
         SetCWallsActive(false);
-        
+
         //fizik katar
         Rigidbody rb = oid.GetComponentInChildren<Rigidbody>();
-        if(rb == null)
+        if (rb == null)
         {
             Debug.LogError("child rb yok");
             SetCWallsActive(true); // Hata durumunda duvarları aç
             return;
         }
-        
+
         rb.isKinematic = false;
         rb.useGravity = true;
-        rb.velocity = Vector3.zero;
+        rb.linearVelocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
 
         // Fırlatma yönü
@@ -212,12 +255,12 @@ public class CatcherManager : MonoBehaviour
         throwDir.Normalize();
         rb.AddForce(throwDir * throwUpForce, ForceMode.Impulse);
         rb.AddTorque(Random.insideUnitSphere * 5f, ForceMode.Impulse);
-        
+
         // Coroutine ile duvarları belirli süre açık tut sonra kapa
         StartCoroutine(ResetWallsAfterDelay(1.2f));
         Debug.Log("Throwup called");
     }
-    
+
     private IEnumerator ResetWallsAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
@@ -225,42 +268,41 @@ public class CatcherManager : MonoBehaviour
     }
     void BreakPieces(objectId oid)
     {
-           
-         Renderer rend = oid.GetComponentInChildren<Renderer>();
-           if (rend == null) 
-                return;
 
-                Vector3 center = rend.bounds.center;
+        Renderer rend = oid.GetComponentInChildren<Renderer>();
+        if (rend == null)
+            return;
+
+        Vector3 center = rend.bounds.center;
         //küçük küreler oluşturur
-        for(int i =0; i<oid.pieceCount; i++)
+        for (int i = 0; i < oid.pieceCount; i++)
         {
-                Vector3 spawnPos = center + Random.insideUnitSphere * 0.5f;
-             //küçük küreler oluşturur
-                GameObject piece = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-                piece.transform.position = spawnPos;
-                piece.transform.localScale = Vector3.one * 0.2f;
+            Vector3 spawnPos = center + Random.insideUnitSphere * 0.5f;
+            //küçük küreler oluşturur
+            GameObject piece = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+            piece.transform.position = spawnPos;
+            piece.transform.localScale = Vector3.one * 0.2f;
 
-                Rigidbody rb = piece.AddComponent<Rigidbody>();
-                rb.mass = 0.1f;
-                //daha gerçekçi fizik için
-                rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
+            Rigidbody rb = piece.AddComponent<Rigidbody>();
+            rb.mass = 0.1f;
+            //daha gerçekçi fizik için
+            rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
 
-                Vector3 forceDir = (spawnPos - center).normalized;
-                //patlatma hissi verir 
-                rb.AddForce(forceDir * Random.Range(2f, 5f), ForceMode.Impulse);
-                rb.AddTorque(Random.insideUnitSphere * 5f);
+            Vector3 forceDir = (spawnPos - center).normalized;
+            //patlatma hissi verir 
+            rb.AddForce(forceDir * Random.Range(2f, 5f), ForceMode.Impulse);
+            rb.AddTorque(Random.insideUnitSphere * 5f);
 
-                Renderer r =piece.GetComponent<Renderer>();
+            Renderer r = piece.GetComponent<Renderer>();
 
-                //her objeye göre renk olutur
-                Material matInstance = new Material(pieceMaterial);
-                matInstance.color = oid.effectColor;
-                r.material = matInstance;
+            //her objeye göre renk olutur
+            Material matInstance = new Material(pieceMaterial);
+            matInstance.color = oid.effectColor;
+            r.material = matInstance;
 
-                //2 saniye sonra parçalar yok olur
-                Destroy(piece, 2.0f);
+            //2 saniye sonra parçalar yok olur
+            Destroy(piece, 2.0f);
         }
     }
-    
+
 }
-    

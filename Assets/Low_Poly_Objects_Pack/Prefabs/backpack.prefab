@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5096819593698036421}
   - component: {fileID: 9128180262103438594}
+  - component: {fileID: -1539082703397024289}
   m_Layer: 6
   m_Name: backpack
   m_TagString: Catchable
@@ -46,12 +47,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::objectId
   matchId: 2
-  id: 2
   score: 10
   originalPosition: {x: 0, y: 0, z: 0}
   prefabName: backpack
   pieceCount: 12
   effectColor: {r: 0.41176474, g: 0.43921572, b: 0.47058827, a: 1}
+--- !u!114 &-1539082703397024289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5616088541985443967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 342f87f650e7fe74f874b773fadaad61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::magnetObject
+  magnetSpeed: 5
 --- !u!1001 &6994257149860155905
 PrefabInstance:
   m_ObjectHideFlags: 0
