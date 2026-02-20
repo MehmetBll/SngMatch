@@ -17,7 +17,6 @@ public class CatcherManager : MonoBehaviour
     public float magnetSpeed = 10f;
     private static CatcherManager CatcherL;
     private static CatcherManager CatcherR;
-    private objectId heldObject;
 
 
     //sol veya sağ catcherin aktif olduğunu bilmek için
@@ -60,12 +59,16 @@ public class CatcherManager : MonoBehaviour
         //objenin eşleşen id si varmı diye bakar
         var oid = go.GetComponent<objectId>();
         if (oid == null) return;
+        // Eğer nesne zaten başka bir catcher tarafından tutuluyorsa yeni catcher almaz
+        if (oid.isHeld) return;
         if (requireNonZeroMatchId && oid.matchId == 0) return;
-        //catcher doluysa yeni objeyi almaz
-        if (heldObject != null) return;
+        // Eğer bu catcher zaten bir nesneye sahipse yeni bir nesne almaz
+        if (GetObjectInCenter() != null) return;
 
-        heldObject = oid;
+        // Nesneyi merkeze koy ve isHeld işaretle
         PlaceObjectAtCatcherCenter(oid);
+        oid.isHeld = true;
+
         //diğer catchere giren objeyi kontrol eder
         TryProcessPairWithOtherCatcher();
     }
@@ -123,9 +126,11 @@ public class CatcherManager : MonoBehaviour
         var oid = go.GetComponent<objectId>();
         if (oid == null) return;
 
-        if (heldObject == oid)
+        // Eğer bu obje artık centerPoint altında değilse isHeld'i temizle
+        var objInCenter = GetObjectInCenter();
+        if (objInCenter == null || objInCenter != oid)
         {
-            heldObject = null;
+            oid.isHeld = false;
         }
     }
 
@@ -134,17 +139,10 @@ public class CatcherManager : MonoBehaviour
         //objenin olmadığı karşı catcheri bulşur
         CatcherManager other = isRight ? CatcherL : CatcherR;
         if (other == null) return;
-        if (other.heldObject == null) return;
 
-        var obj1 = this.heldObject;
-        var obj2 = other.heldObject;
-        //iki tarafta dolu değilse işlem yapmaması için tek catcher 
-        if (obj1 == null || obj2 == null)
-        {
-            if (obj1 == null) this.heldObject = null;
-            if (obj2 == null) other.heldObject = null;
-            return;
-        }
+        var obj1 = GetObjectInCenter();
+        var obj2 = other.GetObjectInCenter();
+        if (obj1 == null || obj2 == null) return;
 
         int id1 = obj1.matchId;
         int id2 = obj2.matchId;
@@ -159,6 +157,9 @@ public class CatcherManager : MonoBehaviour
             BreakPieces(obj1);
             BreakPieces(obj2);
             //yok et
+            // yok etmeden önce isHeld flag'lerini temizle (destroy edilecek olsa bile)
+            obj1.isHeld = false;
+            obj2.isHeld = false;
             Destroy(obj1.gameObject);
             Destroy(obj2.gameObject);
 
@@ -169,12 +170,12 @@ public class CatcherManager : MonoBehaviour
             //yanlış eşleşme varsa combo'yu sıfırla
             ScoreManager.Instance.ResetCombo();
             //yalnış eşleşme varsa fırlatır
+            // yanlış eşleşme: serbest bırak ve fırlat
+            obj1.isHeld = false;
+            obj2.isHeld = false;
             ThrowUp(obj1);
             ThrowUp(obj2);
         }
-
-        this.heldObject = null;
-        other.heldObject = null;
     }
     //CWalls objelerini açar kapatır
     void SetCWallsActive(bool state)
@@ -187,6 +188,13 @@ public class CatcherManager : MonoBehaviour
             if (wall != null)
                 wall.SetActive(state);
         }
+    }
+
+    // centerPoint altında parent edilmiş bir `objectId` döndürür (yoksa null)
+    private objectId GetObjectInCenter()
+    {
+        if (centerPoint == null) return null;
+        return centerPoint.GetComponentInChildren<objectId>();
     }
 
     [System.Obsolete]

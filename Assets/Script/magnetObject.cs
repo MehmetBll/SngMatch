@@ -1,71 +1,109 @@
 using UnityEngine;
-using Vector3 = UnityEngine.Vector3;
+using System.Collections;
 
 public class magnetObject : MonoBehaviour
 {
+   [Tooltip("Objenin catchere doğru hareket etme hızı (birim/saniye)")]
+   public float magnetSpeed = 12f;
+
+   [Tooltip("Merkezde sabitlenme eşiği (dünya birimleri)")]
+   public float snapDistance = 0.05f;
+
+   // Rigidbody referansı (prefab kökündeki veya çocuklarından biri)
    private Rigidbody rb;
-   private Transform targetCatcher;
-   // root object (prefab root) and its original parent
+   // Prefab kökü (root) ve orijinal parent'ı
    private Transform rootObject;
-   private Transform originalRootParent;
+   private Transform originalParent;
+   // Aktif manyetize coroutine'i
+   private Coroutine magnetRoutine;
+   // Nesnenin şu anda manyetize olup olmadığını tutar
    private bool isMagnetized;
+   // Tutulduğunda kullanılan geçici holder kaldırıldı; doğrudan prefab kökünü center'a parent ediyoruz
 
    void Awake()
    {
-      // operate on the prefab root so children follow correctly
       rootObject = transform.root;
-      originalRootParent = rootObject.parent;
+      originalParent = rootObject.parent;
       rb = rootObject.GetComponentInChildren<Rigidbody>();
    }
-
-   void FixedUpdate()
-   {
-      if (!isMagnetized || targetCatcher == null) return;
-
-      // Ensure the root stays exactly at the catcher center
-      if (rootObject != null)
-         rootObject.localPosition = Vector3.zero;
-   }
-
    public void magnetize(Transform center)
    {
+      if (center == null) return;
       if (isMagnetized) return;
+      if (magnetRoutine != null) StopCoroutine(magnetRoutine);
+      magnetRoutine = StartCoroutine(MagnetizeRoutine(center));
+   }
+
+   IEnumerator MagnetizeRoutine(Transform center)
+   {
       isMagnetized = true;
-      targetCatcher = center;
 
-        // Debug: konumları yaz
-        if (rootObject != null)
-        {
-           Debug.Log($"[magnetize] root='{rootObject.name}' rootPos={rootObject.position} centerPos={center.position} parentBefore={rootObject.parent}");
-           rootObject.SetParent(center);
-           rootObject.localPosition = Vector3.zero;
-           rootObject.localRotation = Quaternion.identity;
-           Debug.Log($"[magnetize] after parent rootPos={rootObject.position} localPos={rootObject.localPosition} parentNow={rootObject.parent}");
-        }
+      // Sonraki adım için mevcut parent'ı kaydet (sonra geri döndürülecek)
+      originalParent = rootObject.parent;
 
+      // Fiziksel hareketi kapat, böylece transform'u doğrudan taşıyabiliriz
       if (rb != null)
       {
          rb.linearVelocity = Vector3.zero;
          rb.angularVelocity = Vector3.zero;
          rb.isKinematic = true;
          rb.useGravity = false;
+         rb.detectCollisions = false;
       }
-   }
 
+      // Geçici olarak parent'tan ayır; dünya uzayında merkeze doğru hareket edelim
+      rootObject.SetParent(null, true);
+
+      // Hedefe yumuşakça yaklaş
+      while (center != null)
+      {
+         float dist = Vector3.Distance(rootObject.position, center.position);
+         if (dist <= snapDistance) break;
+         rootObject.position = Vector3.MoveTowards(rootObject.position, center.position, magnetSpeed * Time.deltaTime);
+         rootObject.rotation = Quaternion.Slerp(rootObject.rotation, center.rotation, 12f * Time.deltaTime);
+         yield return null;
+      }
+
+      if (center != null)
+      {
+         // Doğrudan center'a parent et ve tam olarak hizala
+         rootObject.SetParent(center, true);
+         rootObject.localPosition = Vector3.zero;
+         rootObject.localRotation = Quaternion.identity;
+      }
+
+      // Catcher tarafından tutulurken fizik kapalı kalsın
+      if (rb != null)
+      {
+         rb.isKinematic = true;
+         rb.useGravity = false;
+         rb.detectCollisions = false;
+      }
+
+      magnetRoutine = null;
+   }
    public void demagnetize()
    {
       if (!isMagnetized) return;
       isMagnetized = false;
-      targetCatcher = null;
+      if (magnetRoutine != null)
+      {
+         StopCoroutine(magnetRoutine);
+         magnetRoutine = null;
+      }
 
-      // restore original parent (could be null)
+      // Orijinal parent'ı geri yükle
       if (rootObject != null)
-         rootObject.SetParent(originalRootParent);
+         rootObject.SetParent(originalParent, true);
 
+      // artık holder cleanup gerekli değil (hiçbir holder oluşturulmuyor)
+
+      // Fiziği yeniden etkinleştir
       if (rb != null)
       {
          rb.isKinematic = false;
          rb.useGravity = true;
+         rb.detectCollisions = true;
       }
    }
 }

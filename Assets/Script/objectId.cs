@@ -9,6 +9,9 @@ public string prefabName;
 public int pieceCount = 12;
 public Color effectColor = Color.white;
 
+    // Bu nesnenin şu anda bir catcher tarafından tutulup tutulmadığını belirtir
+    public bool isHeld = false;
+
          public int scoreValue { get; internal set; }
 
          private void Awake()
