@@ -15,6 +15,8 @@ public class CatcherManager : MonoBehaviour
     public GameManager gameManager;
     public Transform centerPoint;
     public float magnetSpeed = 10f;
+    // currently held object (if any) to avoid relying on trigger race conditions
+    private objectId heldObject;
     private static CatcherManager CatcherL;
     private static CatcherManager CatcherR;
 
@@ -53,21 +55,19 @@ public class CatcherManager : MonoBehaviour
     //obje catchere girerse bu kod satırı çaılışır
     private void OnTriggerEnter(Collider other)
     {
-        //obje child mi yoksa root mu ona bakıyor ona göre doğru objeyi alıyor
-        var go = useRootObjectFromCollaider ? other.transform.root.gameObject : other.gameObject;
-        if (go == null) return;
-        //objenin eşleşen id si varmı diye bakar
-        var oid = go.GetComponent<objectId>();
+        // get the objectId from the collider's parent hierarchy
+        var oid = other.GetComponentInParent<objectId>();
         if (oid == null) return;
         // Eğer nesne zaten başka bir catcher tarafından tutuluyorsa yeni catcher almaz
         if (oid.isHeld) return;
         if (requireNonZeroMatchId && oid.matchId == 0) return;
         // Eğer bu catcher zaten bir nesneye sahipse yeni bir nesne almaz
-        if (GetObjectInCenter() != null) return;
+        if (heldObject != null) return;
 
         // Nesneyi merkeze koy ve isHeld işaretle
         PlaceObjectAtCatcherCenter(oid);
         oid.isHeld = true;
+        heldObject = oid;
 
         //diğer catchere giren objeyi kontrol eder
         TryProcessPairWithOtherCatcher();
@@ -103,6 +103,8 @@ public class CatcherManager : MonoBehaviour
             rb.isKinematic = true;
             rb.useGravity = false;
         }
+        // ensure our heldObject points to this oid
+        heldObject = oid;
     }
 
     // Eğer inspector'da centerPoint atanmadıysa, catcher altında bir empty GameObject oluştur
@@ -119,18 +121,14 @@ public class CatcherManager : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        //obje catcherden çıkarsa bu kod çalışır
-        var go = useRootObjectFromCollaider ? other.transform.root.gameObject : other.gameObject;
-        if (go == null) return;
-
-        var oid = go.GetComponent<objectId>();
+        // when a collider exits, determine the object and release it only if it was ours
+        var oid = other.GetComponentInParent<objectId>();
         if (oid == null) return;
 
-        // Eğer bu obje artık centerPoint altında değilse isHeld'i temizle
-        var objInCenter = GetObjectInCenter();
-        if (objInCenter == null || objInCenter != oid)
+        if (heldObject == oid)
         {
             oid.isHeld = false;
+            heldObject = null;
         }
     }
 
@@ -139,7 +137,6 @@ public class CatcherManager : MonoBehaviour
         //objenin olmadığı karşı catcheri bulşur
         CatcherManager other = isRight ? CatcherL : CatcherR;
         if (other == null) return;
-
         var obj1 = GetObjectInCenter();
         var obj2 = other.GetObjectInCenter();
         if (obj1 == null || obj2 == null) return;
@@ -160,6 +157,9 @@ public class CatcherManager : MonoBehaviour
             // yok etmeden önce isHeld flag'lerini temizle (destroy edilecek olsa bile)
             obj1.isHeld = false;
             obj2.isHeld = false;
+            // clear held references on both catchers
+            this.heldObject = null;
+            other.heldObject = null;
             Destroy(obj1.gameObject);
             Destroy(obj2.gameObject);
 
@@ -173,6 +173,9 @@ public class CatcherManager : MonoBehaviour
             // yanlış eşleşme: serbest bırak ve fırlat
             obj1.isHeld = false;
             obj2.isHeld = false;
+            // clear held references
+            this.heldObject = null;
+            other.heldObject = null;
             ThrowUp(obj1);
             ThrowUp(obj2);
         }
@@ -193,6 +196,7 @@ public class CatcherManager : MonoBehaviour
     // centerPoint altında parent edilmiş bir `objectId` döndürür (yoksa null)
     private objectId GetObjectInCenter()
     {
+        if (heldObject != null) return heldObject;
         if (centerPoint == null) return null;
         return centerPoint.GetComponentInChildren<objectId>();
     }

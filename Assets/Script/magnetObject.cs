@@ -3,6 +3,9 @@ using System.Collections;
 
 public class magnetObject : MonoBehaviour
 {
+   // Bu sınıf: Bir nesnenin catcher merkezine doğru yumuşakça hareket etmesini sağlar
+   // - `magnetize(Transform center)` çağrıldığında nesne merkez noktasına doğru gider ve parent edilir
+   // - `demagnetize()` çağrıldığında orijinal parent geri yüklenir ve fizik yeniden etkinleşir
    [Tooltip("Objenin catchere doğru hareket etme hızı (birim/saniye)")]
    public float magnetSpeed = 12f;
 
@@ -84,6 +87,7 @@ public class magnetObject : MonoBehaviour
    }
    public void demagnetize()
    {
+      // Manyetizasyonu kaldırır: parent geri, fizik açık
       if (!isMagnetized) return;
       isMagnetized = false;
       if (magnetRoutine != null)
