@@ -15,7 +15,6 @@ public class CatcherManager : MonoBehaviour
     public GameManager gameManager;
     public Transform centerPoint;
     public float magnetSpeed = 10f;
-    // currently held object (if any) to avoid relying on trigger race conditions
     private objectId heldObject;
     private static CatcherManager CatcherL;
     private static CatcherManager CatcherR;
@@ -88,8 +87,8 @@ public class CatcherManager : MonoBehaviour
             return;
         }
 
-        // Aksi halde root (prefab kökü) parent'la ve rigidbody'i sabitle
-        Transform root = oid.transform.root;
+        // Aksi halde prefab kökünü doğru şekilde bul, parent'la ve rigidbody'i sabitle
+        Transform root = FindPrefabRoot(oid.transform);
         root.SetParent(centerPoint);
         root.localPosition = Vector3.zero;
         root.localRotation = Quaternion.identity;
@@ -107,15 +106,34 @@ public class CatcherManager : MonoBehaviour
         heldObject = oid;
     }
 
+    // Find the topmost transform that still belongs to the same prefab/instance
+    private Transform FindPrefabRoot(Transform t)
+    {
+        if (t == null) return null;
+        var oid = t.GetComponentInParent<objectId>();
+        if (oid == null) return t.root;
+
+        Transform current = oid.transform;
+        while (current.parent != null && current.parent.GetComponentInChildren<objectId>() == oid)
+        {
+            current = current.parent;
+        }
+        return current;
+    }
+
     // Eğer inspector'da centerPoint atanmadıysa, catcher altında bir empty GameObject oluştur
     void EnsureCenterPointExists()
     {
         if (centerPoint != null) return;
 
+        // Create a world-space center point at fixed X/Z and align Y with the catcher
+        // Right catcher -> x = 2.5, Left catcher -> x = -2.5. Z = -13.5.
         GameObject go = new GameObject(isRight ? "CatcherCenter_R" : "CatcherCenter_L");
-        go.transform.SetParent(this.transform);
-        go.transform.localPosition = Vector3.zero;
-        go.transform.localRotation = Quaternion.identity;
+        Vector3 worldPos = new Vector3(isRight ? 2.5f : -2.5f, this.transform.position.y, -13.5f);
+        // Keep the center in world root to avoid unintended local offsets from parent transforms
+        go.transform.SetParent(null);
+        go.transform.position = worldPos;
+        go.transform.rotation = Quaternion.identity;
         centerPoint = go.transform;
     }
 
@@ -232,7 +250,7 @@ public class CatcherManager : MonoBehaviour
         rb.AddForce(throwDir * throwUpForce, ForceMode.Impulse);
         rb.AddTorque(Random.insideUnitSphere * 5f, ForceMode.Impulse);
         //0.5 saniye sonra duvarları geri açar
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.20f);
         SetCWallsActive(true);
 
     }

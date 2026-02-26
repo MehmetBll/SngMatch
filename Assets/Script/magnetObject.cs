@@ -25,8 +25,24 @@ public class magnetObject : MonoBehaviour
 
    void Awake()
    {
-      rootObject = transform.root;
-      originalParent = rootObject.parent;
+      // Determine the correct prefab root (not necessarily transform.root) so the whole
+      // instance moves when magnetized. If an objectId exists in parents, climb up
+      // while the same objectId is still present in the parent's children.
+      var oid = GetComponentInParent<objectId>();
+      if (oid != null)
+      {
+         rootObject = oid.transform;
+         while (rootObject.parent != null && rootObject.parent.GetComponentInChildren<objectId>() == oid)
+         {
+            rootObject = rootObject.parent;
+         }
+         originalParent = rootObject.parent;
+      }
+      else
+      {
+         rootObject = transform.root;
+         originalParent = rootObject.parent;
+      }
       rb = rootObject.GetComponentInChildren<Rigidbody>();
    }
    public void magnetize(Transform center)
