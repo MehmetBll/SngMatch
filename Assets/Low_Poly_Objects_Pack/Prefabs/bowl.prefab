@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 53882011598769916}
   - component: {fileID: -1903326851569308395}
-  - component: {fileID: -3034321971405358446}
   m_Layer: 6
   m_Name: bowl
   m_TagString: Catchable
@@ -52,19 +51,7 @@ MonoBehaviour:
   prefabName: bowl
   pieceCount: 12
   effectColor: {r: 0.82745105, g: 0.59607846, b: 0.16078432, a: 1}
---- !u!114 &-3034321971405358446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 861522112262739014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 342f87f650e7fe74f874b773fadaad61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::magnetObject
-  magnetSpeed: 5
+  isHeld: 0
 --- !u!1001 &3838446909226175478
 PrefabInstance:
   m_ObjectHideFlags: 0

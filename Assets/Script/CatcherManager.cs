@@ -14,7 +14,6 @@ public class CatcherManager : MonoBehaviour
     public GameObject[] cWalls;
     public GameManager gameManager;
     public Transform centerPoint;
-    public float magnetSpeed = 10f;
     private objectId heldObject;
     private static CatcherManager CatcherL;
     private static CatcherManager CatcherR;
@@ -63,78 +62,11 @@ public class CatcherManager : MonoBehaviour
         // Eğer bu catcher zaten bir nesneye sahipse yeni bir nesne almaz
         if (heldObject != null) return;
 
-        // Nesneyi merkeze koy ve isHeld işaretle
-        PlaceObjectAtCatcherCenter(oid);
         oid.isHeld = true;
         heldObject = oid;
 
         //diğer catchere giren objeyi kontrol eder
         TryProcessPairWithOtherCatcher();
-    }
-
-    private void PlaceObjectAtCatcherCenter(objectId oid)
-    {
-        if (oid == null) return;
-
-        // centerPoint yoksa oluştur
-        if (centerPoint == null) EnsureCenterPointExists();
-
-        // Eğer obje üzerinde magnetObject script'i varsa (root veya child) onun magnetize metodunu kullan
-        var mag = oid.GetComponentInChildren<magnetObject>();
-        if (mag != null)
-        {
-            mag.magnetize(centerPoint);
-            return;
-        }
-
-        // Aksi halde prefab kökünü doğru şekilde bul, parent'la ve rigidbody'i sabitle
-        Transform root = FindPrefabRoot(oid.transform);
-        root.SetParent(centerPoint);
-        root.localPosition = Vector3.zero;
-        root.localRotation = Quaternion.identity;
-
-        Debug.Log($"[PlaceObjectAtCatcherCenter] root='{root.name}' rootPos={root.position} centerPos={centerPoint.position}");
-        Rigidbody rb = root.GetComponentInChildren<Rigidbody>();
-        if (rb != null)
-        {
-            rb.linearVelocity = Vector3.zero;
-            rb.angularVelocity = Vector3.zero;
-            rb.isKinematic = true;
-            rb.useGravity = false;
-        }
-        // ensure our heldObject points to this oid
-        heldObject = oid;
-    }
-
-    // Find the topmost transform that still belongs to the same prefab/instance
-    private Transform FindPrefabRoot(Transform t)
-    {
-        if (t == null) return null;
-        var oid = t.GetComponentInParent<objectId>();
-        if (oid == null) return t.root;
-
-        Transform current = oid.transform;
-        while (current.parent != null && current.parent.GetComponentInChildren<objectId>() == oid)
-        {
-            current = current.parent;
-        }
-        return current;
-    }
-
-    // Eğer inspector'da centerPoint atanmadıysa, catcher altında bir empty GameObject oluştur
-    void EnsureCenterPointExists()
-    {
-        if (centerPoint != null) return;
-
-        // Create a world-space center point at fixed X/Z and align Y with the catcher
-        // Right catcher -> x = 2.5, Left catcher -> x = -2.5. Z = -13.5.
-        GameObject go = new GameObject(isRight ? "CatcherCenter_R" : "CatcherCenter_L");
-        Vector3 worldPos = new Vector3(isRight ? 2.5f : -2.5f, this.transform.position.y, -13.5f);
-        // Keep the center in world root to avoid unintended local offsets from parent transforms
-        go.transform.SetParent(null);
-        go.transform.position = worldPos;
-        go.transform.rotation = Quaternion.identity;
-        centerPoint = go.transform;
     }
 
     private void OnTriggerExit(Collider other)

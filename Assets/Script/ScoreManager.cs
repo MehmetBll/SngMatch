@@ -10,6 +10,12 @@ public class ScoreManager : MonoBehaviour
     public TextMeshProUGUI comboTimerText; // Combo süresi göstergesi
     public int score;
 
+    // Para sistemi
+    public int money = 0;
+    public TextMeshProUGUI moneyText;
+    [Tooltip("Kaç para verileceğini belirlemek için her bir score puanı başına çarpan (ör: 0.1 = her 10 skor için 1 para)")]
+    public float moneyPerScore = 0.1f;
+
     [Header("Combo Settings")]
     public float comboTimeout = 2.0f; // Combo sıfırlanma süresi (saniye)
     private int comboCount = 0;
@@ -24,6 +30,7 @@ public class ScoreManager : MonoBehaviour
         }
         else
             Destroy(gameObject);
+        UpdateMoneyText();
     }
 
     private void Update()
@@ -62,6 +69,12 @@ public class ScoreManager : MonoBehaviour
         int multiplier = Mathf.Max(1, comboCount);
         score += value * multiplier;
         scoreText.text = score.ToString();
+        // Para kazancı hesapla: skor * combonun çarpanı * para başına skor çarpanı
+        int moneyGain = Mathf.CeilToInt(value * multiplier * moneyPerScore);
+        if (moneyGain > 0)
+        {
+            AddMoney(moneyGain);
+        }
         UpdateComboText();
     }
 
@@ -71,6 +84,19 @@ public class ScoreManager : MonoBehaviour
         comboActive = false;
         comboTimer = 0f;
         UpdateComboText();
+    }
+
+    public void AddMoney(int amount)
+    {
+        if (amount <= 0) return;
+        money += amount;
+        UpdateMoneyText();
+    }
+
+    private void UpdateMoneyText()
+    {
+        if (moneyText == null) return;
+        moneyText.text = money.ToString();
     }
 
     private void UpdateComboText()
