@@ -93,6 +93,19 @@ public class ScoreManager : MonoBehaviour
         UpdateMoneyText();
     }
 
+    // para varsa harcar ve olduğu yerden devam eder yoksa harcamaz ve false döner
+    public bool TrySpendMoney(int amount)
+    {
+        if (amount <= 0) return true;
+        if (money >= amount)
+        {
+            money -= amount;
+            UpdateMoneyText();
+            return true;
+        }
+        return false;
+    }
+
     private void UpdateMoneyText()
     {
         if (moneyText == null) return;

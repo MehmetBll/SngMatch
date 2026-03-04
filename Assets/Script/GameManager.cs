@@ -12,6 +12,10 @@ public class GameManager : MonoBehaviour
     public GameObject gameWon;
     public GameObject gameLost;
     public TextMeshProUGUI timerText;
+   [Header("Continue Settings")] 
+   public int continueCost = 20;
+   public float continueTimeBonus = 20f;
+   public TextMeshProUGUI continueMessageText; // temporary message for insufficient funds
     private bool _gameEnd = false;
     private int destroyOb = 0;
          void Start()
@@ -70,6 +74,50 @@ public class GameManager : MonoBehaviour
             Debug.Log("Game Lost!");
             gameLost.SetActive(true);
          }
+
+      // Non-restarting continue: resume gameplay from the current state by spending money
+      public void ContinueFromLost()
+      {
+         if (ScoreManager.Instance == null)
+         {
+            StartCoroutine(ShowTempMessage("Para yetmiyor"));
+            return;
+         }
+
+         if (ScoreManager.Instance.TrySpendMoney(continueCost))
+         {
+            // Spend successful: resume the game without reloading the scene
+            _gameEnd = false;
+            _timer += continueTimeBonus;
+            if (gameLost != null)
+               gameLost.SetActive(false);
+            Time.timeScale = 1f; // ensure game is unpaused
+            Debug.Log("Continued game by spending money (no restart).");
+         }
+         else
+         {
+            // Not enough money: show temporary message
+            StartCoroutine(ShowTempMessage("Para yetmiyor"));
+         }
+      }
+
+      // Keep the old name for compatibility; it now forwards to ContinueFromLost
+      public void TryContinue()
+      {
+         ContinueFromLost();
+      }
+
+      private System.Collections.IEnumerator ShowTempMessage(string msg)
+      {
+         if (continueMessageText == null)
+            yield break;
+
+         continueMessageText.text = msg;
+         continueMessageText.gameObject.SetActive(true);
+         yield return new WaitForSeconds(2f);
+         continueMessageText.text = "";
+         continueMessageText.gameObject.SetActive(false);
+      }
 
       public void CaughtDestroy()
    {
