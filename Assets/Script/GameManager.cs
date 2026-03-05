@@ -12,10 +12,11 @@ public class GameManager : MonoBehaviour
     public GameObject gameWon;
     public GameObject gameLost;
     public TextMeshProUGUI timerText;
-   [Header("Continue Settings")] 
+   [Header("Devam Ayarları")] 
    public int continueCost = 20;
    public float continueTimeBonus = 20f;
-   public TextMeshProUGUI continueMessageText; // temporary message for insufficient funds
+   public TextMeshProUGUI continueMessageText; // yetersiz bakiye için geçici mesaj
+   public TextMeshProUGUI continueCostText; // buton üzerinde veya UI'da gösterilecek ücret
     private bool _gameEnd = false;
     private int destroyOb = 0;
          void Start()
@@ -24,7 +25,21 @@ public class GameManager : MonoBehaviour
             UpdateTimerUI();
             gameWon.SetActive(false);
             gameLost.SetActive(false);
+            UpdateContinueCostUI();
          }
+
+   private void OnValidate()
+   {
+      UpdateContinueCostUI();
+   }
+
+   private void UpdateContinueCostUI()
+   {
+      if (continueCostText != null)
+      {
+         continueCostText.text = "Devam Et (" + continueCost.ToString() + "$)";
+      }
+   }
          void Update()
          {
             if (_gameEnd) return;
@@ -75,7 +90,7 @@ public class GameManager : MonoBehaviour
             gameLost.SetActive(true);
          }
 
-      // Non-restarting continue: resume gameplay from the current state by spending money
+      // Yeniden başlatmadan devam: para harcanarak oyuna kaldığı yerden devam et
       public void ContinueFromLost()
       {
          if (ScoreManager.Instance == null)
@@ -84,24 +99,24 @@ public class GameManager : MonoBehaviour
             return;
          }
 
-         if (ScoreManager.Instance.TrySpendMoney(continueCost))
+            if (ScoreManager.Instance.TrySpendMoney(continueCost))
          {
-            // Spend successful: resume the game without reloading the scene
+            // Para başarıyla harcandı: sahneyi yeniden yüklemeden oyuna devam et
             _gameEnd = false;
             _timer += continueTimeBonus;
             if (gameLost != null)
                gameLost.SetActive(false);
-            Time.timeScale = 1f; // ensure game is unpaused
-            Debug.Log("Continued game by spending money (no restart).");
+               // oyun kaldığı yerden devam eder (timeScale ile oynanmaz)
+               Debug.Log("Para harcayarak devam edildi (yeniden başlatma yok).");
          }
          else
          {
-            // Not enough money: show temporary message
+            // Yetersiz para: geçici mesaj göster
             StartCoroutine(ShowTempMessage("Para yetmiyor"));
          }
       }
 
-      // Keep the old name for compatibility; it now forwards to ContinueFromLost
+      // Uyumluluk için eski adı koru; şimdi ContinueFromLost()'a yönlendirir
       public void TryContinue()
       {
          ContinueFromLost();
