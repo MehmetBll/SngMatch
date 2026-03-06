@@ -104,10 +104,15 @@ public class GameManager : MonoBehaviour
             // Para başarıyla harcandı: sahneyi yeniden yüklemeden oyuna devam et
             _gameEnd = false;
             _timer += continueTimeBonus;
-            if (gameLost != null)
-               gameLost.SetActive(false);
+               if (gameLost != null)
+               {
+                  gameLost.SetActive(false);
+               }
+               // ücret iki katına çıkar (sonraki devam için)
+               continueCost = Mathf.Max(1, continueCost * 2);
+               UpdateContinueCostUI();
                // oyun kaldığı yerden devam eder (timeScale ile oynanmaz)
-               Debug.Log("Para harcayarak devam edildi (yeniden başlatma yok).");
+               Debug.Log("Para harcayarak devam edildi (yeniden başlatma yok). Yeni devam ücreti: " + continueCost);
          }
          else
          {
