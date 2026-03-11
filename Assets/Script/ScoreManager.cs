@@ -37,7 +37,7 @@ public class ScoreManager : MonoBehaviour
     {
         if (comboActive)
         {
-          //combo aktifse zamanlayıcı artar ve belli sürede combo sıfrlanır
+            //combo aktifse zamanlayıcı artar ve belli sürede combo sıfrlanır
             comboTimer += Time.deltaTime;
             if (comboTimer > comboTimeout)
             {
@@ -117,10 +117,10 @@ public class ScoreManager : MonoBehaviour
         if (comboText != null)
         {
             if (comboCount > 1)
-            //combo olursa combu ui ını gösterir ve yazar
+                //combo olursa combu ui ını gösterir ve yazar
                 comboText.text = $"Combo: {comboCount}x";
             else
-            //combo yoksa ui ı gizler v sıfırlar
+                //combo yoksa ui ı gizler v sıfırlar
                 comboText.text = "";
         }
         UpdateComboTimerText();

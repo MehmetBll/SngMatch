@@ -11,10 +11,10 @@ public class prefabManager : MonoBehaviour
     private CWalls wallsController;
     public GameObject[] prefabs;
     public LayerMask draggableMask;
-    public Camera cam; 
+    public Camera cam;
     public LayerMask floorMask;
-   public LayerMask DraggableLayer;
-    public int spawnCount=10;
+    public LayerMask DraggableLayer;
+    public int spawnCount = 10;
     public float posX = 7f;
     public float posY = 10f;
     public float posZ = 12f;
@@ -24,7 +24,7 @@ public class prefabManager : MonoBehaviour
     void Start()
     {
         //raycst cam main camerayı referans alaır,spawn oyunun başında objeleri spawn eder,cwalls duvarları kontrol eden scripti sahnede bulur
-        cam= Camera.main;
+        cam = Camera.main;
         SpawnObjects();
         wallsController = FindObjectOfType<CWalls>();
     }
@@ -36,72 +36,73 @@ public class prefabManager : MonoBehaviour
         Vector2 screenPos = Pointer.current.position.ReadValue();
         Ray ray = cam.ScreenPointToRay(screenPos);
         //input aktifmi diye kontrol eder
-        if(Pointer.current != null)
-    {
-        //obje tutulmuyorsa
-        if (_target == null)
+        if (Pointer.current != null)
         {
-            //buranın geneli zaten kamerayı referans alarak ray yollar ve objeleri mouse veya el ile hareket ettirmeyi sağlar
-            //ilk objenin tutulduğu kısımda bura çalışır
-            if (Pointer.current.press.wasPressedThisFrame){
-                //draggable layere çarpar  
-                if(Physics.Raycast(ray,out RaycastHit hit, 100f,draggableMask))
+            //obje tutulmuyorsa
+            if (_target == null)
+            {
+                //buranın geneli zaten kamerayı referans alarak ray yollar ve objeleri mouse veya el ile hareket ettirmeyi sağlar
+                //ilk objenin tutulduğu kısımda bura çalışır
+                if (Pointer.current.press.wasPressedThisFrame)
                 {
-                    
+                    //draggable layere çarpar  
+                    if (Physics.Raycast(ray, out RaycastHit hit, 100f, draggableMask))
                     {
-                        //hangi objenin tutulduğu ve target objenin deydiği nokta alınıyor
-                        _target =hit.collider.transform;
-                        _offset = _target.position - hit.point;
 
-                        Vector3 pos= _target.position;
-                        //objeyi inspectorda yazdığım yükseklikte tutar
-                        pos.y = objectHeight;
-                        _target.position = pos;
+                        {
+                            //hangi objenin tutulduğu ve target objenin deydiği nokta alınıyor
+                            _target = hit.collider.transform;
+                            _offset = _target.position - hit.point;
 
-                        //objeleri sürüklerken duvvarı kapatır
-                        wallsController?.SetWallsActive(false);
+                            Vector3 pos = _target.position;
+                            //objeyi inspectorda yazdığım yükseklikte tutar
+                            pos.y = objectHeight;
+                            _target.position = pos;
+
+                            //objeleri sürüklerken duvvarı kapatır
+                            wallsController?.SetWallsActive(false);
+                        }
                     }
                 }
+                if (Pointer.current.press.isPressed && _target != null)
+                {
+                    //objeyi sürükleme kısmı
+                    if (Physics.Raycast(ray, out RaycastHit floorHit, 200f, floorMask))
+                    {
+                        //yeni pozisyonu hesaplar
+                        Vector3 newPos = floorHit.point + _offset;
+                        //belirlediğim yükseklikte tutar
+                        _target.position = newPos;
+                        newPos.y = objectHeight;
+                    }
+                }
+                //objeyi bıraktığı kısım
+                if (Pointer.current.press.wasReleasedThisFrame && _target != null)
+                {
+                    wallsController?.SetWallsActive(false);
+                    _target = null;
+                }
             }
-            if(Pointer.current.press.isPressed && _target != null)
+            else
+
             {
                 //objeyi sürükleme kısmı
                 if (Physics.Raycast(ray, out RaycastHit floorHit, 200f, floorMask))
                 {
-                    //yeni pozisyonu hesaplar
+                    //yeni pozisyonu bulur
                     Vector3 newPos = floorHit.point + _offset;
-                    //belirlediğim yükseklikte tutar
-                    _target.position = newPos;
-                    newPos.y = objectHeight;
+                    _target.position = new Vector3(newPos.x, objectHeight, newPos.z);
                 }
-            }
-            //objeyi bıraktığı kısım
-            if(Pointer.current.press.wasReleasedThisFrame && _target != null)
-            {
-                wallsController?.SetWallsActive(false);
-                _target = null;
-            }
-        } 
-        else
-        
-        {
-            //objeyi sürükleme kısmı
-            if (Physics.Raycast(ray, out RaycastHit floorHit, 200f, floorMask))
-            {
-                //yeni pozisyonu bulur
-                Vector3 newPos = floorHit.point + _offset;
-                _target.position = new Vector3(newPos.x, objectHeight, newPos.z);
-            }
-            if(!Pointer.current.press.isPressed)
-            {
-                _target = null;
+                if (!Pointer.current.press.isPressed)
+                {
+                    _target = null;
+                }
             }
         }
     }
-}
-     void HandleMouse()
+    void HandleMouse()
     {
-        if (Mouse.current == null) 
+        if (Mouse.current == null)
             return;
         var mouse = Mouse.current;
 
@@ -109,11 +110,11 @@ public class prefabManager : MonoBehaviour
         {
             //mouse pozisyonuna göre objeyi seçer
             TrySelect(mouse.position.ReadValue());
-            if(_selectedObject != null)
-            
-                wallsController?.SetWallsActive(false); 
-            
-            
+            if (_selectedObject != null)
+
+                wallsController?.SetWallsActive(false);
+
+
         }
         //obje mouseyi takip edere 
         if (mouse.leftButton.isPressed && _selectedObject != null)
@@ -121,19 +122,19 @@ public class prefabManager : MonoBehaviour
 
         if (mouse.leftButton.wasReleasedThisFrame)
         {
-            if(_selectedObject != null)
-            wallsController?.SetWallsActive(true);
+            if (_selectedObject != null)
+                wallsController?.SetWallsActive(true);
         }
     }
     void HandleTouch()
     {
-        if (Touchscreen.current == null) 
+        if (Touchscreen.current == null)
             return;
         var t = Touchscreen.current.primaryTouch;
 
         if (t.press.wasPressedThisFrame)
             TrySelect(t.position.ReadValue());
-            if(_selectedObject != null)
+        if (_selectedObject != null)
             wallsController.SetWallsActive(false);
 
         if (t.press.isPressed && _selectedObject != null)
@@ -141,8 +142,8 @@ public class prefabManager : MonoBehaviour
 
         if (t.press.wasReleasedThisFrame)
         {
-            if(_selectedObject != null)
-            wallsController.SetWallsActive(true);
+            if (_selectedObject != null)
+                wallsController.SetWallsActive(true);
         }
     }
     void TrySelect(Vector2 screenPos)
@@ -155,7 +156,7 @@ public class prefabManager : MonoBehaviour
 
             if (_selectedObject != null)
             {
-                Vector3 pos= _selectedObject.position;
+                Vector3 pos = _selectedObject.position;
                 pos.y = objectHeight;
                 _selectedObject.position = pos;
 
@@ -182,11 +183,11 @@ public class prefabManager : MonoBehaviour
     }
     Transform GetDraggableRoot(Transform t)
     {
-       int DraggableLayer = LayerMask.NameToLayer("Draggable");
-       if (t.gameObject.layer == DraggableLayer)
+        int DraggableLayer = LayerMask.NameToLayer("Draggable");
+        if (t.gameObject.layer == DraggableLayer)
             return t;
-            //objenin draggable layeri varmı yomu diye kontrol eder
-        if(t.parent != null&& t.parent.gameObject.layer == DraggableLayer)
+        //objenin draggable layeri varmı yomu diye kontrol eder
+        if (t.parent != null && t.parent.gameObject.layer == DraggableLayer)
             return t.parent;
 
         return null;
@@ -195,24 +196,24 @@ public class prefabManager : MonoBehaviour
 
     void SpawnObjects()
     {
-        
-            for (int i = 0; i < spawnCount; i++)
+
+        for (int i = 0; i < spawnCount; i++)
         {
             Vector3 randomPoz = new Vector3(
-                Random.Range(-posX,posX),
+                Random.Range(-posX, posX),
                 Random.Range(posY, posY),
                 Random.Range(-posZ, posZ)
             );
 
-        foreach(GameObject prefab in prefabs)
-        {
-           GameObject spawned = Instantiate(prefab,randomPoz,Quaternion.identity);
-           //objeyi inspectorda girdiğim yükseklikte spawn eder
-           Vector3 p = spawned.transform.position;
-           p.y = objectHeight;
-           spawned.transform.position = p;
-        }
-    
+            foreach (GameObject prefab in prefabs)
+            {
+                GameObject spawned = Instantiate(prefab, randomPoz, Quaternion.identity);
+                //objeyi inspectorda girdiğim yükseklikte spawn eder
+                Vector3 p = spawned.transform.position;
+                p.y = objectHeight;
+                spawned.transform.position = p;
+            }
+
         }
     }
 }
