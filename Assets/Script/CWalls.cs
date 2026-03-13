@@ -4,6 +4,7 @@ using UnityEngine;
 public class CWalls : MonoBehaviour
 {
 private Collider[] wallColliders;
+private Collider GetCollider;
 private void Start()
     {
         SetWallsActive(true);
