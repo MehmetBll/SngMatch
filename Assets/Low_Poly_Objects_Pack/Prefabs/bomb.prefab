@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8391209355120454672}
   - component: {fileID: 24138567361958788}
+  - component: {fileID: 3824348093478241821}
   m_Layer: 6
   m_Name: bomb
   m_TagString: Catchable
@@ -52,6 +53,18 @@ MonoBehaviour:
   pieceCount: 12
   effectColor: {r: 0.30980393, g: 0.36078432, b: 0.43529415, a: 1}
   isHeld: 0
+--- !u!114 &3824348093478241821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9167148371076708010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55cbc5708ae0f4823ab141b5f1cb0925, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MagnetObject
 --- !u!1001 &7946243711141300930
 PrefabInstance:
   m_ObjectHideFlags: 0
