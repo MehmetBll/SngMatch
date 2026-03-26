@@ -15,7 +15,6 @@ public class CatcherManager : MonoBehaviour
     public GameManager gameManager;
     public Transform centerPoint;
     private objectId heldObject;
-    private Transform heldRoot;
     private static CatcherManager CatcherL;
     private static CatcherManager CatcherR;
 
@@ -65,13 +64,6 @@ public class CatcherManager : MonoBehaviour
 
         oid.isHeld = true;
         heldObject = oid;
-        // heldRoot olarak prefab'ın root transform'unu sakla
-        heldRoot = GetRootTransform(oid);
-
-        // Nesneyi catcherin merkezine hizala ve fiziğini/collider'larını devre dışı bırak
-        HoldObject(oid);
-
-        //diğer catchere giren objeyi kontrol eder
         TryProcessPairWithOtherCatcher();
     }
 
@@ -83,11 +75,8 @@ public class CatcherManager : MonoBehaviour
 
         if (heldObject == oid)
         {
-            // Nesne triggerımızdan ayrıldığında serbest bırak ve fiziği eski haline getir
-            ReleaseObject(oid);
             oid.isHeld = false;
             heldObject = null;
-            heldRoot = null;
         }
     }
 
@@ -128,12 +117,6 @@ public class CatcherManager : MonoBehaviour
         {
             //yanlış eşleşme varsa combo'yu sıfırla
             ScoreManager.Instance.ResetCombo();
-            //yalnış eşleşme varsa fırlatır
-            // yanlış eşleşme: serbest bırak ve fırlat
-            // Önce objelerin merkezden ayrılmasını ve fiziğin eski haline getirilmesini sağla
-            ReleaseObject(obj1);
-            ReleaseObject(obj2);
-
             obj1.isHeld = false;
             obj2.isHeld = false;
             // clear held references
@@ -145,73 +128,11 @@ public class CatcherManager : MonoBehaviour
         }
     }
 
-    // Nesneyi catcher merkezine parent'la, fiziğini durdur ve collider'larını devre dışı bırak (nesne sabit kalsın)
-    private void HoldObject(objectId oid)
-    {
-        if (oid == null || centerPoint == null) return;
-        // Prefab root'una göre işle (objectId child üzerindeyse root'u hedefle)
-        Transform root = GetRootTransform(oid);
-        if (root == null) return;
+    // Centere çekme/parent işlemleri kaldırıldı — nesnelerin fiziklerine dokunulmuyor.
 
-        // Objeyi dünya konumunu catcher merkezine ayarla
-        root.position = centerPoint.position;
-        root.rotation = centerPoint.rotation;
+    // ReleaseObject removed — physics not altered by catcher anymore.
 
-        // Root ve altındaki tüm Rigidbody'leri bul ve dondur
-        Rigidbody[] rbs = root.GetComponentsInChildren<Rigidbody>();
-        foreach (var rb in rbs)
-        {
-            if (rb == null) continue;
-            rb.linearVelocity = Vector3.zero;
-            rb.angularVelocity = Vector3.zero;
-            rb.isKinematic = true;
-            rb.useGravity = false;
-            rb.detectCollisions = false;
-        }
-        // heldRoot'u güncelle
-        heldRoot = root;
-    }
-
-    // Fiziği ve collider'ları geri yükle, ardından merkezden unparent et
-    private void ReleaseObject(objectId oid)
-    {
-        if (oid == null) return;
-        Transform root = GetRootTransform(oid);
-        if (root != null)
-        {
-            Rigidbody[] rbs = root.GetComponentsInChildren<Rigidbody>();
-            foreach (var rb in rbs)
-            {
-                if (rb == null) continue;
-                rb.isKinematic = false;
-                rb.useGravity = true;
-                rb.linearVelocity = Vector3.zero;
-                rb.angularVelocity = Vector3.zero;
-                rb.detectCollisions = true;
-            }
-        }
-        heldRoot = null;
-    }
-
-    private Transform GetRootTransform(objectId oid)
-    {
-        if (oid == null) return null;
-        Transform t = oid.transform;
-        Transform lastWithRb = null;
-        Transform cur = t;
-        // Yukarı doğru çıkarken en üstteki, Rigidbody içeren ancestor'ı bul
-        while (cur != null)
-        {
-            if (cur.GetComponentInChildren<Rigidbody>() != null)
-            {
-                lastWithRb = cur;
-                cur = cur.parent;
-                continue;
-            }
-            break;
-        }
-        return lastWithRb ?? t;
-    }
+    // GetRootTransform removed — not needed when not reparenting objects.
 
     //CWalls objelerini açar kapatır
     void SetCWallsActive(bool state)
@@ -226,12 +147,10 @@ public class CatcherManager : MonoBehaviour
         }
     }
 
-    // centerPoint altında parent edilmiş bir `objectId` döndürür (yoksa null)
+    // Return the object currently tracked by this catcher (no centering search).
     private objectId GetObjectInCenter()
     {
-        if (heldObject != null) return heldObject;
-        if (centerPoint == null) return null;
-        return centerPoint.GetComponentInChildren<objectId>();
+        return heldObject;
     }
 
     [System.Obsolete]
@@ -265,7 +184,7 @@ public class CatcherManager : MonoBehaviour
         rb.AddForce(throwDir * throwUpForce, ForceMode.Impulse);
         rb.AddTorque(Random.insideUnitSphere * 5f, ForceMode.Impulse);
         //0.5 saniye sonra duvarları geri açar
-        yield return new WaitForSeconds(0.20f);
+        yield return new WaitForSeconds(0.5f);
         SetCWallsActive(true);
 
     }
