@@ -153,7 +153,6 @@ public class CatcherManager : MonoBehaviour
         return heldObject;
     }
 
-    [System.Obsolete]
     private IEnumerator ThrowUpRoutine(objectId oid)
     {
         //duvarları obje fırlatılır veya mouse ile tutularsa kapatır
@@ -169,7 +168,7 @@ public class CatcherManager : MonoBehaviour
         rb.isKinematic = false;
         rb.useGravity = true;
 
-        rb.velocity = Vector3.zero;
+        rb.linearVelocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
 
         float sideOffset = Random.Range(-1f, 1f);

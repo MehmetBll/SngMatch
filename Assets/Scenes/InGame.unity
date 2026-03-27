@@ -330,7 +330,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8284049441938720454, guid: b5a6696f4c885e549982ef545f89d1fa, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.78
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 8284049441938720454, guid: b5a6696f4c885e549982ef545f89d1fa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -503,8 +503,8 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 97.5
-  field of view: 70.00001
-  orthographic: 1
+  field of view: 71
+  orthographic: 0
   orthographic size: 17.8
   m_Depth: -1
   m_CullingMask:
@@ -1045,7 +1045,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2131876457}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: TryContinue
+        m_MethodName: ResetGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2057,14 +2057,14 @@ RectTransform:
   m_GameObject: {fileID: 1093380834}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -5}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 2}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1597229351}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -101, y: -259.8}
+  m_AnchoredPosition: {x: -384, y: -599}
   m_SizeDelta: {x: 200, y: 238}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1145336763
@@ -2200,7 +2200,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -298, y: 458}
+  m_AnchoredPosition: {x: -533, y: 1013}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1174062104
@@ -2605,7 +2605,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 228.4, y: 456.6}
+  m_AnchoredPosition: {x: 305, y: 1037}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1335810022 stripped
@@ -2730,10 +2730,10 @@ MonoBehaviour:
   comboText: {fileID: 1593340309}
   comboTimerText: {fileID: 1093380835}
   score: 0
-  money: 0
+  money: 2
   moneyText: {fileID: 1145336764}
   moneyPerScore: 0.1
-  comboTimeout: 3
+  comboTimeout: 5
 --- !u!4 &1574091679
 Transform:
   m_ObjectHideFlags: 0
@@ -2783,7 +2783,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 173.6, y: -298.8}
+  m_AnchoredPosition: {x: 173.6, y: -625}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1593340309
@@ -3396,7 +3396,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -154, y: 466}
+  m_AnchoredPosition: {x: -154, y: 985}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2126731578
@@ -3527,7 +3527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3d8cf4a471e3cf40aac5ec034763495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  gameTime: 10
+  gameTime: 50
   totalObjects: 20
   caughtObjects: 20
   gameWon: {fileID: 2052811698}
@@ -3852,9 +3852,9 @@ SceneRoots:
   - {fileID: 1129239619668426559}
   - {fileID: 549376963}
   - {fileID: 343553254}
+  - {fileID: 1574091679}
   - {fileID: 2131876458}
   - {fileID: 107111007}
   - {fileID: 500605914}
   - {fileID: 1597229351}
   - {fileID: 848078697}
-  - {fileID: 1574091679}
