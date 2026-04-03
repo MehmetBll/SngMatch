@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
    public GameObject gameWon;
    public GameObject gameLost;
    public TextMeshProUGUI timerText;
+   [Header("Powerups")]
+   public float comboFreezeDuration = 2f; // saniye
    [Header("Devam Ayarları")]
    public int continueCost = 20;
    public float continueTimeBonus = 20f;
@@ -148,5 +150,13 @@ public class GameManager : MonoBehaviour
          GameWon();
          //Time.timeScale = 0f;
       }
+   }
+
+   // UI butonuna bağlanacak: combo zamanlayıcısını belirtilen süre dondurur
+   public void UseComboFreeze()
+   {
+      if (ScoreManager.Instance == null) return;
+      ScoreManager.Instance.PauseCombo(comboFreezeDuration);
+      Debug.Log("Combo dondurucu kullanıldı: " + comboFreezeDuration + "s");
    }
 }

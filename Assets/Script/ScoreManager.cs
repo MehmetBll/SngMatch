@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -21,6 +22,7 @@ public class ScoreManager : MonoBehaviour
     private int comboCount = 0;
     private float comboTimer = 0f;
     private bool comboActive = false;
+    private bool comboPaused = false;
 
     private void Awake()
     {
@@ -38,10 +40,13 @@ public class ScoreManager : MonoBehaviour
         if (comboActive)
         {
             //combo aktifse zamanlayıcı artar ve belli sürede combo sıfrlanır
-            comboTimer += Time.deltaTime;
-            if (comboTimer > comboTimeout)
+            if (!comboPaused)
             {
-                ResetCombo();
+                comboTimer += Time.deltaTime;
+                if (comboTimer > comboTimeout)
+                {
+                    ResetCombo();
+                }
             }
             UpdateComboTimerText();
         }
@@ -126,6 +131,22 @@ public class ScoreManager : MonoBehaviour
         UpdateComboTimerText();
     }
 
+    // Belirtilen süre boyunca combo zamanlayıcısını dondurur (ör: güç-up)
+    public void PauseCombo(float duration)
+    {
+        if (!comboActive || comboPaused || duration <= 0f) return;
+        StartCoroutine(PauseComboCoroutine(duration));
+    }
+
+    private IEnumerator PauseComboCoroutine(float duration)
+    {
+        comboPaused = true;
+        UpdateComboTimerText();
+        yield return new WaitForSeconds(duration);
+        comboPaused = false;
+        UpdateComboTimerText();
+    }
+
 
     private void UpdateComboTimerText()
     {
@@ -136,7 +157,10 @@ public class ScoreManager : MonoBehaviour
         {
             //combo olursa combo süresini aktif eder 
             float remaining = Mathf.Max(0f, comboTimeout - comboTimer);
-            comboTimerText.text = $"{remaining:0.00}s";
+            if (comboPaused)
+                comboTimerText.text = $"{remaining:0.00}s (Donduruldu)";
+            else
+                comboTimerText.text = $"{remaining:0.00}s";
         }
         else
         {
