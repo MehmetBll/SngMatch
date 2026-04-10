@@ -11,6 +11,9 @@ public class GameManager : MonoBehaviour
    public int caughtObjects;
    public GameObject gameWon;
    public GameObject gameLost;
+   [Header("UI Panels")]
+   public GameObject settingsPanel;
+   public GameObject exitPanel; // onay paneli veya çıkış penceresi
    public TextMeshProUGUI timerText;
    [Header("Powerups")]
    public float comboFreezeDuration = 2f; // saniye
@@ -25,8 +28,12 @@ public class GameManager : MonoBehaviour
    {
       _timer = gameTime;
       UpdateTimerUI();
-      gameWon.SetActive(false);
-      gameLost.SetActive(false);
+      if (gameWon != null) gameWon.SetActive(false);
+      else Debug.LogWarning("GameManager.gameWon is not assigned in the inspector.");
+      if (gameLost != null) gameLost.SetActive(false);
+      else Debug.LogWarning("GameManager.gameLost is not assigned in the inspector.");
+      if (settingsPanel != null) settingsPanel.SetActive(false);
+      if (exitPanel != null) exitPanel.SetActive(false);
       UpdateContinueCostUI();
    }
 
@@ -81,7 +88,14 @@ public class GameManager : MonoBehaviour
          return;
       _gameEnd = true;
       Debug.Log("Game Won!");
-      gameWon.SetActive(true);
+      if (gameWon != null)
+      {
+         gameWon.SetActive(true);
+      }
+      else
+      {
+         Debug.LogWarning("GameManager.gameWon is not assigned in the inspector.");
+      }
    }
    void GameLost()
    {
@@ -89,7 +103,14 @@ public class GameManager : MonoBehaviour
          return;
       _gameEnd = true;
       Debug.Log("Game Lost!");
-      gameLost.SetActive(true);
+      if (gameLost != null)
+      {
+         gameLost.SetActive(true);
+      }
+      else
+      {
+         Debug.LogWarning("GameManager.gameLost is not assigned in the inspector.");
+      }
    }
 
    // Yeniden başlatmadan devam: para harcanarak oyuna kaldığı yerden devam et
@@ -152,6 +173,65 @@ public class GameManager : MonoBehaviour
       }
    }
 
+   // Settings panel toggle
+   public void ToggleSettingsPanel()
+   {
+      if (settingsPanel == null) return;
+      settingsPanel.SetActive(!settingsPanel.activeSelf);
+   }
+
+   // Button handler: open the settings panel
+   public void OnSettingsButtonPressed()
+   {
+      OpenSettingsPanel();
+   }
+
+   // Button handler: close the settings panel (e.g. Exit button inside panel)
+   public void OnSettingsExitButtonPressed()
+   {
+      CloseSettingsPanel();
+   }
+
+   public void OpenSettingsPanel()
+   {
+      if (settingsPanel == null) return;
+      settingsPanel.SetActive(true);
+   }
+
+   public void CloseSettingsPanel()
+   {
+      if (settingsPanel == null) return;
+      settingsPanel.SetActive(false);
+   }
+
+   // Exit panel (confirmation) toggle
+   public void ToggleExitPanel()
+   {
+      if (exitPanel == null) return;
+      exitPanel.SetActive(!exitPanel.activeSelf);
+   }
+
+   public void OpenExitPanel()
+   {
+      if (exitPanel == null) return;
+      exitPanel.SetActive(true);
+   }
+
+   public void CloseExitPanel()
+   {
+      if (exitPanel == null) return;
+      exitPanel.SetActive(false);
+   }
+
+   // UI'deki Çıkış butonuna bağlayın
+   public void ExitGame()
+   {
+#if UNITY_EDITOR
+      UnityEditor.EditorApplication.isPlaying = false;
+#else
+      Application.Quit();
+#endif
+   }
    // UI butonuna bağlanacak: combo zamanlayıcısını belirtilen süre dondurur
    public void UseComboFreeze()
    {
