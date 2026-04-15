@@ -61,7 +61,6 @@ Assets/Script/
  objectId.cs
  prefabsManager.cs
  ScoreManager.cs
- SelectBG.cs
 Assets/TextMesh Pro/Examples & Extras/Scripts/
  Benchmark01.cs
  Benchmark01_UGUI.cs

@@ -2,6 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -22,6 +23,11 @@ public class GameManager : MonoBehaviour
    public float continueTimeBonus = 20f;
    public TextMeshProUGUI continueMessageText; // yetersiz bakiye için geçici mesaj
    public TextMeshProUGUI continueCostText; // buton üzerinde veya UI'da gösterilecek ücret
+      [Header("Floor Selection")]
+      public SpriteRenderer floorSpriteRenderer;
+      public Image floorUIImage;
+      public Image[] bgImages;
+      public GameObject floorObject; // floor prefab veya floor GameObject (cube child içerir)
    private bool _gameEnd = false;
    private int destroyOb = 0;
    void Start()
@@ -35,6 +41,17 @@ public class GameManager : MonoBehaviour
       if (settingsPanel != null) settingsPanel.SetActive(false);
       if (exitPanel != null) exitPanel.SetActive(false);
       UpdateContinueCostUI();
+      // Eğer inspector'da atanmadıysa, floorObject üzerinden child SpriteRenderer veya Image bağla
+      if (floorSpriteRenderer == null && floorObject != null)
+      {
+         floorSpriteRenderer = floorObject.GetComponentInChildren<SpriteRenderer>();
+         if (floorSpriteRenderer == null)
+            Debug.LogWarning("GameManager: floorObject içinde SpriteRenderer bulunamadı.");
+      }
+      if (floorUIImage == null && floorObject != null)
+      {
+         floorUIImage = floorObject.GetComponentInChildren<Image>();
+      }
    }
 
    private void OnValidate()
@@ -67,7 +84,14 @@ public class GameManager : MonoBehaviour
    void UpdateTimerUI()
    {
       //zamnalayıcının ekranda gözükmesi için
-      timerText.text = Mathf.Ceil(_timer).ToString();
+      if (timerText != null)
+      {
+         timerText.text = Mathf.Ceil(_timer).ToString();
+      }
+      else
+      {
+         Debug.LogWarning("GameManager: 'timerText' inspector'da atanmamış. Timer UI güncellenemiyor.");
+      }
    }
    public void ResetGame()
    {
@@ -239,4 +263,31 @@ public class GameManager : MonoBehaviour
       ScoreManager.Instance.PauseCombo(comboFreezeDuration);
       Debug.Log("Combo dondurucu kullanıldı: " + comboFreezeDuration + "s");
    }
+
+    // UI üzerinden floor sprite'ını BG görsellerinden ayarlamak için
+    public void SetFloorSpriteByIndex(int index)
+    {
+       if (bgImages == null) return;
+       if (index < 0 || index >= bgImages.Length) return;
+
+       Sprite s = bgImages[index]?.sprite;
+       if (s == null) return;
+
+       if (floorUIImage != null) floorUIImage.sprite = s;
+       if (floorSpriteRenderer != null) floorSpriteRenderer.sprite = s;
+    }
+
+    // Doğrudan bir Image referansından floor'u ayarlamak için
+    public void SetFloorFromImage(Image img)
+    {
+       if (img == null || img.sprite == null) return;
+       if (floorUIImage != null) floorUIImage.sprite = img.sprite;
+       if (floorSpriteRenderer != null) floorSpriteRenderer.sprite = img.sprite;
+    }
+
+    // Kolay bağlama için index bazlı kısa metodlar (Inspector'da doğrudan seçmek için)
+    public void SetBG0() { SetFloorSpriteByIndex(0); }
+    public void SetBG1() { SetFloorSpriteByIndex(1); }
+    public void SetBG2() { SetFloorSpriteByIndex(2); }
+    public void SetBG3() { SetFloorSpriteByIndex(3); }
 }
