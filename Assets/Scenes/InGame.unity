@@ -1053,7 +1053,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 401299703}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2131876457}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SetBG2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &401299703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1442,7 +1454,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 455801536}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2131876457}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SetBG1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &455801536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1742,6 +1766,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 654738601}
   m_CullTransparentMesh: 1
+--- !u!1 &669576248 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 240160990347520544, guid: b5a6696f4c885e549982ef545f89d1fa, type: 3}
+  m_PrefabInstance: {fileID: 152126871}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &687920956
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3524,7 +3553,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1170416863}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2131876457}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SetBG0
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1170416863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4996,7 +5037,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1800673919}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2131876457}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SetBG3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1800673919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5790,8 +5843,8 @@ MonoBehaviour:
   continueTimeBonus: 10
   continueMessageText: {fileID: 2009762078}
   continueCostText: {fileID: 1744727325}
-  floorSpriteRenderer: {fileID: 0}
-  floorUIImage: {fileID: 1018506443}
+  floorUIImageObject: {fileID: 669576248}
+  changeOnlyFromButtons: 1
   bgImages:
   - {fileID: 1147755317}
   - {fileID: 1456149995}

@@ -24,8 +24,13 @@ public class GameManager : MonoBehaviour
    public TextMeshProUGUI continueMessageText; // yetersiz bakiye için geçici mesaj
    public TextMeshProUGUI continueCostText; // buton üzerinde veya UI'da gösterilecek ücret
       [Header("Floor Selection")]
-      public SpriteRenderer floorSpriteRenderer;
-      public Image floorUIImage;
+      // artık inspector'da görünmesin; sahnedeki floorObject'tan veya prefab'tan runtime'ta bulunur
+      private SpriteRenderer floorSpriteRenderer;
+      // Atanabilecek: sahnedeki Image içeren GameObject veya prefab (Image içeren)
+      public GameObject floorUIImageObject;
+      private Image _floorUIImageComp;
+      // Eğer true ise sadece buton tıklamasıyla floor değiştirilebilir
+      public bool changeOnlyFromButtons = true;
       public Image[] bgImages;
       public GameObject floorObject; // floor prefab veya floor GameObject (cube child içerir)
    private bool _gameEnd = false;
@@ -48,15 +53,53 @@ public class GameManager : MonoBehaviour
          if (floorSpriteRenderer == null)
             Debug.LogWarning("GameManager: floorObject içinde SpriteRenderer bulunamadı.");
       }
-      if (floorUIImage == null && floorObject != null)
+      if (_floorUIImageComp == null)
       {
-         floorUIImage = floorObject.GetComponentInChildren<Image>();
+         if (floorUIImageObject != null)
+         {
+            // Eğer inspector'a bir prefab (asset) atadıysanız, prefab.asset'in scene'i geçerli olmayacaktır.
+            // Bu durumda runtime'da prefab'ın bir örneğini oluşturup Image bileşenini ondan alıyoruz.
+            if (Application.isPlaying && !floorUIImageObject.scene.IsValid())
+            {
+               Canvas c = FindFirstObjectByType<Canvas>();
+               GameObject parent = c != null ? c.gameObject : null;
+               GameObject inst = parent != null ? Instantiate(floorUIImageObject, parent.transform) : Instantiate(floorUIImageObject);
+               inst.name = floorUIImageObject.name + "_inst";
+               _floorUIImageComp = inst.GetComponentInChildren<Image>();
+            }
+            else
+            {
+               _floorUIImageComp = floorUIImageObject.GetComponentInChildren<Image>();
+            }
+         }
+         if (_floorUIImageComp == null && floorObject != null)
+         {
+            _floorUIImageComp = floorObject.GetComponentInChildren<Image>();
+         }
       }
    }
 
    private void OnValidate()
    {
       UpdateContinueCostUI();
+      // Edit-time automatic assignment so the inspector field won't stay empty
+      if (floorSpriteRenderer == null && floorObject != null)
+      {
+         floorSpriteRenderer = floorObject.GetComponentInChildren<SpriteRenderer>();
+         if (floorSpriteRenderer == null)
+            Debug.LogWarning("GameManager: floorObject içinde SpriteRenderer bulunamadı.");
+      }
+      if (_floorUIImageComp == null)
+      {
+         if (floorUIImageObject != null)
+         {
+            _floorUIImageComp = floorUIImageObject.GetComponentInChildren<Image>();
+         }
+         if (_floorUIImageComp == null && floorObject != null)
+         {
+            _floorUIImageComp = floorObject.GetComponentInChildren<Image>();
+         }
+      }
    }
 
    private void UpdateContinueCostUI()
@@ -273,16 +316,24 @@ public class GameManager : MonoBehaviour
        Sprite s = bgImages[index]?.sprite;
        if (s == null) return;
 
-       if (floorUIImage != null) floorUIImage.sprite = s;
-       if (floorSpriteRenderer != null) floorSpriteRenderer.sprite = s;
+       ApplyFloorSprite(s, true);
     }
 
     // Doğrudan bir Image referansından floor'u ayarlamak için
     public void SetFloorFromImage(Image img)
     {
        if (img == null || img.sprite == null) return;
-       if (floorUIImage != null) floorUIImage.sprite = img.sprite;
-       if (floorSpriteRenderer != null) floorSpriteRenderer.sprite = img.sprite;
+       ApplyFloorSprite(img.sprite, true);
+    }
+
+    // Merkezi işlem: sadece buton tıklamasıyla değişim izni verilebilir
+    private void ApplyFloorSprite(Sprite s, bool fromButton)
+    {
+       if (s == null) return;
+       if (changeOnlyFromButtons && !fromButton) return;
+
+      if (_floorUIImageComp != null) _floorUIImageComp.sprite = s;
+       if (floorSpriteRenderer != null) floorSpriteRenderer.sprite = s;
     }
 
     // Kolay bağlama için index bazlı kısa metodlar (Inspector'da doğrudan seçmek için)
