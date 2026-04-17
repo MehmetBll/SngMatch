@@ -81,7 +81,7 @@ public class ContinueUIBuilder : MonoBehaviour
             GameObject label = new GameObject("Text");
             label.transform.SetParent(btnGO.transform, false);
             var labelTMP = label.AddComponent<TextMeshProUGUI>();
-            labelTMP.text = $"Devam ({gm.continueCost} altın)";
+            labelTMP.text = $"Devam ({gm.continueCost} altin)";
             labelTMP.alignment = TextAlignmentOptions.Center;
             labelTMP.fontSize = 22;
             RectTransform lr = labelTMP.GetComponent<RectTransform>();
