@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4406476480266484184}
   - component: {fileID: 2382763860726550641}
+  - component: {fileID: -6536013490891575383}
   m_Layer: 6
   m_Name: burger
   m_TagString: Catchable
@@ -52,6 +53,18 @@ MonoBehaviour:
   pieceCount: 12
   effectColor: {r: 0.7490196, g: 0.49411768, b: 0.25882354, a: 1}
   isHeld: 0
+--- !u!114 &-6536013490891575383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3921830088254284642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55cbc5708ae0f4823ab141b5f1cb0925, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MagnetObject
 --- !u!1001 &484150183813538391
 PrefabInstance:
   m_ObjectHideFlags: 0
