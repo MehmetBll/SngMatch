@@ -302,7 +302,7 @@ Transform:
   m_GameObject: {fileID: 107111004}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.5, y: 0.5, z: -13.5}
+  m_LocalPosition: {x: 2.5, y: 0.5, z: -19.04}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1084,6 +1084,7 @@ MonoBehaviour:
   useRootObjectFromCollaider: 1
   requireNonZeroMatchId: 1
   throwUpForce: 10
+  throwUpStateDuration: 1.2
   pieceMaterial: {fileID: 0}
   cWalls:
   - {fileID: 1335810022}
@@ -1690,7 +1691,7 @@ Transform:
   m_GameObject: {fileID: 500605912}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.5, y: 0.5, z: -13.5}
+  m_LocalPosition: {x: -2.5, y: 0.5, z: -19.29}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2730,6 +2731,7 @@ MonoBehaviour:
   useRootObjectFromCollaider: 1
   requireNonZeroMatchId: 1
   throwUpForce: 10
+  throwUpStateDuration: 1.2
   pieceMaterial: {fileID: 2100000, guid: a73010964e96ccf4b8896600025d35a7, type: 2}
   cWalls:
   - {fileID: 1335810022}
@@ -4694,6 +4696,10 @@ MonoBehaviour:
   comboText: {fileID: 1593340309}
   comboTimerText: {fileID: 1093380835}
   score: 0
+  winSessionScoreText: {fileID: 0}
+  winTotalScoreText: {fileID: 0}
+  loseSessionScoreText: {fileID: 0}
+  loseTotalScoreText: {fileID: 0}
   money: 2
   moneyText: {fileID: 1145336764}
   moneyPerScore: 0.1
@@ -6108,7 +6114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3d8cf4a471e3cf40aac5ec034763495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  gameTime: 20
+  gameTime: 100
   totalObjects: 20
   caughtObjects: 20
   gameWon: {fileID: 2052811698}
@@ -6278,6 +6284,7 @@ MonoBehaviour:
   useRootObjectFromCollaider: 1
   requireNonZeroMatchId: 1
   throwUpForce: 10
+  throwUpStateDuration: 1.2
   pieceMaterial: {fileID: 2100000, guid: a73010964e96ccf4b8896600025d35a7, type: 2}
   cWalls:
   - {fileID: 1335810022}

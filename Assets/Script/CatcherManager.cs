@@ -1,10 +1,18 @@
 using UnityEngine;
 using Vector3 = UnityEngine.Vector3;
 using System.Collections;
+using System.Collections.Generic;
 
 /// <remarks>Catcher islemleri: trigger, eslesme, firlatma ve parcalama.</remarks>
 public class CatcherManager : MonoBehaviour
 {
+    private enum CatcherState
+    {
+        Idle,
+        Magnet,
+        ThrowUp
+    }
+
     [Header("Catcher Ayarlari")]
     [Tooltip("Sag tarafli catcher mi")]
     public bool isRight = false;
@@ -14,6 +22,8 @@ public class CatcherManager : MonoBehaviour
     public bool requireNonZeroMatchId = true;
     [Tooltip("Fırlatma gucu (impulse)")]
     public float throwUpForce = 10f;
+    [Tooltip("Firlatmadan sonra magnet tekrar devreye girmeden once beklenecek sure")]
+    public float throwUpStateDuration = 1.2f;
     [Tooltip("Parcalari icin kullanılacak materyal (opsiyonel)")]
     public Material pieceMaterial;
     [Tooltip("Catcher tarafindaki duvarlari kontrol eden objeler")]
@@ -25,6 +35,8 @@ public class CatcherManager : MonoBehaviour
 
     private objectId heldObject;
     private Rigidbody heldRigidbody;
+    private CatcherState currentState = CatcherState.Idle;
+    private static readonly HashSet<objectId> ThrowingObjects = new HashSet<objectId>();
     private static CatcherManager CatcherL;
     private static CatcherManager CatcherR;
 
@@ -37,7 +49,7 @@ public class CatcherManager : MonoBehaviour
     /// <remarks>Tutulan objeyi catcher merkezinde sabit tutar.</remarks>
     private void FixedUpdate()
     {
-        if (heldObject == null) return;
+        if (currentState != CatcherState.Magnet || heldObject == null) return;
         LockHeldObjectToCenter();
     }
 
@@ -68,8 +80,9 @@ public class CatcherManager : MonoBehaviour
         // Collider'in ust hiyerarsisinden objectId alinir
         var oid = other.GetComponentInParent<objectId>();
         if (oid == null) return;
+        if (currentState != CatcherState.Idle) return;
         // Eger nesne zaten baska bir catcher tarafindan tutuluyorsa yeni catcher almaz
-        if (oid.isHeld) return;
+        if (oid.isHeld || ThrowingObjects.Contains(oid)) return;
         if (requireNonZeroMatchId && oid.matchId == 0) return;
         // Eger bu catcher zaten bir nesneye sahipse yeni bir nesne almaz
         if (heldObject != null) return;
@@ -126,6 +139,7 @@ public class CatcherManager : MonoBehaviour
     /// <remarks>Objeyi catcher merkezine alir ve fizik ile kaymasini engeller.</remarks>
     private void HoldObject(objectId oid)
     {
+        currentState = CatcherState.Magnet;
         oid.isHeld = true;
         heldObject = oid;
         heldRigidbody = oid.GetComponentInChildren<Rigidbody>();
@@ -149,6 +163,25 @@ public class CatcherManager : MonoBehaviour
 
         heldObject = null;
         heldRigidbody = null;
+        currentState = CatcherState.Idle;
+    }
+
+    /// <remarks>Firlatma baslamadan once magnet referanslarini state'i serbest birakmadan temizler.</remarks>
+    private void ReleaseHeldObjectForThrow(objectId oid)
+    {
+        if (oid != null)
+        {
+            oid.isHeld = false;
+            ThrowingObjects.Add(oid);
+        }
+
+        if (heldObject == oid)
+        {
+            heldObject = null;
+            heldRigidbody = null;
+        }
+
+        currentState = CatcherState.ThrowUp;
     }
 
     /// <remarks>Objenin gorunen merkezini catcher merkezine hizalar.</remarks>
@@ -203,6 +236,7 @@ public class CatcherManager : MonoBehaviour
     /// <remarks>Firlatma coroutine'i: fizik ve duvar kontrolu yapar.</remarks>
     private IEnumerator ThrowUpRoutine(objectId oid)
     {
+        ReleaseHeldObjectForThrow(oid);
         // duvarlari obje firlatilir veya mouse ile tutulursa kapatir
         SetCWallsActive(false);
         // donuk ve bir anda objeler firlatilmasin diye fiziksel bir hava katar
@@ -210,6 +244,8 @@ public class CatcherManager : MonoBehaviour
         if (rb == null)
         {
             Debug.LogError("child rb yok");
+            ThrowingObjects.Remove(oid);
+            currentState = CatcherState.Idle;
             SetCWallsActive(true);
             yield break;
         }
@@ -225,8 +261,10 @@ public class CatcherManager : MonoBehaviour
         // objeleri rasgele bir yere firlatir, yukarida da ne kadar bir mesafeye atilacagi var
         rb.AddForce(throwDir * throwUpForce, ForceMode.Impulse);
         rb.AddTorque(Random.insideUnitSphere * 5f, ForceMode.Impulse);
-        // 0.5 saniye sonra duvarlari geri acar
-        yield return new WaitForSeconds(0.5f);
+        Debug.Log("Atis yapildi");
+        yield return new WaitForSeconds(throwUpStateDuration);
+        ThrowingObjects.Remove(oid);
+        currentState = CatcherState.Idle;
         SetCWallsActive(true);
     }
 
@@ -234,36 +272,7 @@ public class CatcherManager : MonoBehaviour
     private void ThrowUp(objectId oid)
     {
         if (oid == null) return;
-        // Duvarlari hemen ac (acilursa, kapatilabilir)
-        SetCWallsActive(false);
-        // fizik katar
-        Rigidbody rb = oid.GetComponentInChildren<Rigidbody>();
-        if (rb == null)
-        {
-            Debug.LogError("child rb yok");
-            SetCWallsActive(true); // Hata durumunda duvarlari ac
-            return;
-        }
-        rb.isKinematic = false;
-        rb.useGravity = true;
-        rb.linearVelocity = Vector3.zero;
-        rb.angularVelocity = Vector3.zero;
-        // Firlatma yonu
-        float sideOffset = Random.Range(-1f, 1f);
-        Vector3 throwDir = Vector3.up * Random.Range(1.5f, 2.5f) + Vector3.forward * Random.Range(2f, 3f) + Vector3.right * sideOffset;
-        throwDir.Normalize();
-        rb.AddForce(throwDir * throwUpForce, ForceMode.Impulse);
-        rb.AddTorque(Random.insideUnitSphere * 5f, ForceMode.Impulse);
-        // Coroutine ile duvarlari belirli sure acik tut sonra kapa
-        StartCoroutine(ResetWallsAfterDelay(1.2f));
-        Debug.Log("Atis yapildi");
-    }
-
-    /// <remarks>Belirtilen gecikme sonra duvarlari tekrar acar.</remarks>
-    private IEnumerator ResetWallsAfterDelay(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        SetCWallsActive(true);
+        StartCoroutine(ThrowUpRoutine(oid));
     }
 
     /// <remarks>Objeyi parcalara ayirarak gecici parcaciklar olusturur.</remarks>
