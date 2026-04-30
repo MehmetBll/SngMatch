@@ -1737,9 +1737,20 @@ MonoBehaviour:
   - {fileID: 3921830088254284642, guid: 4350a22b45fa0fa47b61037edfd3b6cd, type: 3}
   - {fileID: 3892872225606181829, guid: a6750df4b5e61d240aa88199b8eb0c7a, type: 3}
   - {fileID: 8419243529392760293, guid: 217f3583d5f5e9a4b859272da42dbe87, type: 3}
+  - {fileID: 6767445686803682217, guid: 59488165d1e4fa240af2e280cd36b4e3, type: 3}
+  - {fileID: 3721536348172106020, guid: 7907a779c0520ea4ca4c1295aab35102, type: 3}
+  - {fileID: 5064062252041441048, guid: 46c99a223417c474d8e30a279274b7a9, type: 3}
+  - {fileID: 5488999123205451769, guid: 34144b1623b85bd46b68475a71aac1d1, type: 3}
+  - {fileID: 8133645373440369921, guid: 272bccd7d3ad9ae4d992e9169ed5d1d6, type: 3}
+  - {fileID: 2071377171004096656, guid: 963028a3464ae62448b27b5caf27ac3c, type: 3}
+  - {fileID: 8427897605922716037, guid: e0a5b1f41fade044f9bc0385a50cbb71, type: 3}
+  - {fileID: 3343708194656902469, guid: b127ed464d2f0634482d6231c443a4ed, type: 3}
+  - {fileID: 1592751902686494245, guid: 9eb1e8d8bc222724aad1384327bfae45, type: 3}
+  - {fileID: 4264076140944702099, guid: b54b10f873501064e8509a0ba4db019b, type: 3}
+  - {fileID: 5121364717566330878, guid: 78a4837bf3b291240bdc6af78bc99d21, type: 3}
   spawnCount: 2
   posX: 7
-  posY: 10
+  posY: 5
   posZ: 10
   objectHeight: 3
   draggableMask:
@@ -6115,8 +6126,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   gameTime: 100
-  totalObjects: 20
-  caughtObjects: 20
+  totalObjects: 42
+  caughtObjects: 42
   gameWon: {fileID: 2052811698}
   gameLost: {fileID: 773966989}
   settingsPanel: {fileID: 1018506441}
@@ -6126,7 +6137,7 @@ MonoBehaviour:
   timerText: {fileID: 2126731578}
   comboFreezeDuration: 2
   continueCost: 20
-  continueTimeBonus: 10
+  continueTimeBonus: 15
   continueMessageText: {fileID: 2009762078}
   continueCostText: {fileID: 1744727325}
   extraUses: 1

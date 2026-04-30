@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5552086653898937762}
+  - component: {fileID: -3071648784872343078}
   m_Layer: 6
   m_Name: christmasLollipop
   m_TagString: Draggable
@@ -26,12 +27,31 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 7, y: 7, z: 7}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6853616013085080285}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-3071648784872343078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5064062252041441048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f27fcd75416c24b4ba9b0c056a2f8ca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::objectId
+  matchId: 13
+  score: 10
+  originalPosition: {x: 0, y: 0, z: 0}
+  prefabName: chrlol
+  pieceCount: 12
+  effectColor: {r: 0.73333335, g: 0.6, b: 0.7058824, a: 1}
+  isHeld: 0
 --- !u!1001 &6383384143469747510
 PrefabInstance:
   m_ObjectHideFlags: 0

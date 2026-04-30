@@ -174,6 +174,7 @@ struct HashSet_1_t4A2F2B74276D0AD3ED0F873045BD61E9504ECAE2;
 struct HashSet_1_t7339109B23CAC1C7B695498778D7AC8166F04AF7;
 struct HashSet_1_tEFC6605F7DE53F71946C33FD371E53C3100F2178;
 struct HashSet_1_t5DD20B42149A11AEBF12A75505306E6EFC34943A;
+struct HashSet_1_t20E218B2F4982CF3DE13175226456EE03F500F55;
 struct HashSet_1_t0F16759FF079A28DCA2DCF39BA6A61B5D502A475;
 struct IDictionary_2_t9EEEAF0B710AF76755805D919F60C2D2556B66EC;
 struct IEnumerable_1_t349E66EC5F09B881A8E52EE40A1AB9EC60E08E44;
@@ -1899,14 +1900,7 @@ struct Enumerator_tEBE2FC08BC63FE5F952A4D1EF1CC7DD230042C60  : public RuntimeObj
 	CaptureCollection_t38405272BD6A6DA77CD51487FD39624C6E95CC93* ____collection;
 	int32_t ____index;
 };
-struct U3CResetWallsAfterDelayU3Ed__27_t0095DFC99DE3599150E848958EF856C00ED9B06E  : public RuntimeObject
-{
-	int32_t ___U3CU3E1__state;
-	RuntimeObject* ___U3CU3E2__current;
-	float ___delay;
-	CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* ___U3CU3E4__this;
-};
-struct U3CThrowUpRoutineU3Ed__25_t23344586EFD286F32B1627E8F6CCAD4835265920  : public RuntimeObject
+struct U3CThrowUpRoutineU3Ed__30_tC9E75AC4C1DE08D407A504F8190077AC7476FBCC  : public RuntimeObject
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
@@ -19951,6 +19945,10 @@ struct Unit_tAE478BD661DB092BBD04163BD94D5868EB99666F
 {
 	int32_t ___value__;
 };
+struct CatcherState_t76A69F1D422D1C6D17994C1102C3BE0C6C2E7189 
+{
+	int32_t ___value__;
+};
 struct ColorTweenMode_t2FB56A4B8B7595F3E1330EBC015560E2DAE5F69A 
 {
 	int32_t ___value__;
@@ -28825,12 +28823,14 @@ struct CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4  : public MonoBe
 	bool ___useRootObjectFromCollaider;
 	bool ___requireNonZeroMatchId;
 	float ___throwUpForce;
+	float ___throwUpStateDuration;
 	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___pieceMaterial;
 	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___cWalls;
 	GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* ___gameManager;
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___centerPoint;
 	objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* ___heldObject;
 	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___heldRigidbody;
+	int32_t ___currentState;
 };
 struct ChatController_t21BE953E1D5ADF0BA9F3B03C205203CADDC64C15  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -32653,6 +32653,7 @@ struct TMP_SpriteAsset_t81F779E6F705CE190DC0D1F93A954CB8B1774B39_StaticFields
 };
 struct CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_StaticFields
 {
+	HashSet_1_t20E218B2F4982CF3DE13175226456EE03F500F55* ___ThrowingObjects;
 	CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* ___CatcherL;
 	CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* ___CatcherR;
 };
@@ -36792,13 +36793,13 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7815[9] =
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,0,0,0,0,0,};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7817[4] = 
 {
-	static_cast<int32_t>(offsetof(U3CResetWallsAfterDelayU3Ed__27_t0095DFC99DE3599150E848958EF856C00ED9B06E, ___U3CU3E1__state)),static_cast<int32_t>(offsetof(U3CResetWallsAfterDelayU3Ed__27_t0095DFC99DE3599150E848958EF856C00ED9B06E, ___U3CU3E2__current)),static_cast<int32_t>(offsetof(U3CResetWallsAfterDelayU3Ed__27_t0095DFC99DE3599150E848958EF856C00ED9B06E, ___delay)),static_cast<int32_t>(offsetof(U3CResetWallsAfterDelayU3Ed__27_t0095DFC99DE3599150E848958EF856C00ED9B06E, ___U3CU3E4__this)),};
+	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7818[4] = 
 {
-	static_cast<int32_t>(offsetof(U3CThrowUpRoutineU3Ed__25_t23344586EFD286F32B1627E8F6CCAD4835265920, ___U3CU3E1__state)),static_cast<int32_t>(offsetof(U3CThrowUpRoutineU3Ed__25_t23344586EFD286F32B1627E8F6CCAD4835265920, ___U3CU3E2__current)),static_cast<int32_t>(offsetof(U3CThrowUpRoutineU3Ed__25_t23344586EFD286F32B1627E8F6CCAD4835265920, ___U3CU3E4__this)),static_cast<int32_t>(offsetof(U3CThrowUpRoutineU3Ed__25_t23344586EFD286F32B1627E8F6CCAD4835265920, ___oid)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7819[12] = 
+	static_cast<int32_t>(offsetof(U3CThrowUpRoutineU3Ed__30_tC9E75AC4C1DE08D407A504F8190077AC7476FBCC, ___U3CU3E1__state)),static_cast<int32_t>(offsetof(U3CThrowUpRoutineU3Ed__30_tC9E75AC4C1DE08D407A504F8190077AC7476FBCC, ___U3CU3E2__current)),static_cast<int32_t>(offsetof(U3CThrowUpRoutineU3Ed__30_tC9E75AC4C1DE08D407A504F8190077AC7476FBCC, ___U3CU3E4__this)),static_cast<int32_t>(offsetof(U3CThrowUpRoutineU3Ed__30_tC9E75AC4C1DE08D407A504F8190077AC7476FBCC, ___oid)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7819[15] = 
 {
-	static_cast<int32_t>(offsetof(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4, ___isRight)),static_cast<int32_t>(offsetof(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4, ___useRootObjectFromCollaider)),static_cast<int32_t>(offsetof(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4, ___requireNonZeroMatchId)),static_cast<int32_t>(offsetof(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4, ___throwUpForce)),static_cast<int32_t>(offsetof(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4, ___pieceMaterial)),static_cast<int32_t>(offsetof(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4, ___cWalls)),static_cast<int32_t>(offsetof(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4, ___gameManager)),static_cast<int32_t>(offsetof(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4, ___centerPoint)),static_cast<int32_t>(offsetof(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4, ___heldObject)),static_cast<int32_t>(offsetof(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4, ___heldRigidbody)),static_cast<int32_t>(offsetof(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_StaticFields, ___CatcherL)),static_cast<int32_t>(offsetof(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_StaticFields, ___CatcherR)),};
+	static_cast<int32_t>(offsetof(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4, ___isRight)),static_cast<int32_t>(offsetof(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4, ___useRootObjectFromCollaider)),static_cast<int32_t>(offsetof(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4, ___requireNonZeroMatchId)),static_cast<int32_t>(offsetof(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4, ___throwUpForce)),static_cast<int32_t>(offsetof(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4, ___throwUpStateDuration)),static_cast<int32_t>(offsetof(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4, ___pieceMaterial)),static_cast<int32_t>(offsetof(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4, ___cWalls)),static_cast<int32_t>(offsetof(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4, ___gameManager)),static_cast<int32_t>(offsetof(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4, ___centerPoint)),static_cast<int32_t>(offsetof(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4, ___heldObject)),static_cast<int32_t>(offsetof(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4, ___heldRigidbody)),static_cast<int32_t>(offsetof(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4, ___currentState)),static_cast<int32_t>(offsetof(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_StaticFields, ___ThrowingObjects)),static_cast<int32_t>(offsetof(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_StaticFields, ___CatcherL)),static_cast<int32_t>(offsetof(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_StaticFields, ___CatcherR)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7820[3] = 
 {
 	static_cast<int32_t>(offsetof(ContinueUIBuilder_t3293BF6C9C58B8D8BCDD7B20B6DC6ABC2266ACC9, ___btnGO)),static_cast<int32_t>(offsetof(ContinueUIBuilder_t3293BF6C9C58B8D8BCDD7B20B6DC6ABC2266ACC9, ___messageText)),static_cast<int32_t>(offsetof(ContinueUIBuilder_t3293BF6C9C58B8D8BCDD7B20B6DC6ABC2266ACC9, ___gm)),};

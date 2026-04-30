@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2678775705606948863}
+  - component: {fileID: 4561093267816418286}
   m_Layer: 6
   m_Name: fish
   m_TagString: Draggable
@@ -26,12 +27,31 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6822343913864585764}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4561093267816418286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3343708194656902469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f27fcd75416c24b4ba9b0c056a2f8ca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::objectId
+  matchId: 20
+  score: 10
+  originalPosition: {x: 0, y: 0, z: 0}
+  prefabName: fish
+  pieceCount: 12
+  effectColor: {r: 0.14117648, g: 0.33333334, b: 0.4392157, a: 1}
+  isHeld: 0
 --- !u!1001 &6424223076217456079
 PrefabInstance:
   m_ObjectHideFlags: 0

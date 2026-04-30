@@ -193,6 +193,7 @@ struct HashSet_1_t4A2F2B74276D0AD3ED0F873045BD61E9504ECAE2;
 struct HashSet_1_t7339109B23CAC1C7B695498778D7AC8166F04AF7;
 struct HashSet_1_tEFC6605F7DE53F71946C33FD371E53C3100F2178;
 struct HashSet_1_t5DD20B42149A11AEBF12A75505306E6EFC34943A;
+struct HashSet_1_t20E218B2F4982CF3DE13175226456EE03F500F55;
 struct HashSet_1_t0F16759FF079A28DCA2DCF39BA6A61B5D502A475;
 struct IDictionary_2_t9EEEAF0B710AF76755805D919F60C2D2556B66EC;
 struct IEnumerable_1_t349E66EC5F09B881A8E52EE40A1AB9EC60E08E44;
@@ -2911,14 +2912,7 @@ struct Enumerator_tEBE2FC08BC63FE5F952A4D1EF1CC7DD230042C60  : public RuntimeObj
 	CaptureCollection_t38405272BD6A6DA77CD51487FD39624C6E95CC93* ____collection;
 	int32_t ____index;
 };
-struct U3CResetWallsAfterDelayU3Ed__27_t0095DFC99DE3599150E848958EF856C00ED9B06E  : public RuntimeObject
-{
-	int32_t ___U3CU3E1__state;
-	RuntimeObject* ___U3CU3E2__current;
-	float ___delay;
-	CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* ___U3CU3E4__this;
-};
-struct U3CThrowUpRoutineU3Ed__25_t23344586EFD286F32B1627E8F6CCAD4835265920  : public RuntimeObject
+struct U3CThrowUpRoutineU3Ed__30_tC9E75AC4C1DE08D407A504F8190077AC7476FBCC  : public RuntimeObject
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
@@ -24905,6 +24899,10 @@ struct Unit_tAE478BD661DB092BBD04163BD94D5868EB99666F
 {
 	int32_t ___value__;
 };
+struct CatcherState_t76A69F1D422D1C6D17994C1102C3BE0C6C2E7189 
+{
+	int32_t ___value__;
+};
 struct ColorTweenCallback_tA3F6E0BB4EBAA1CFB97539807CE8C9BB7C851F53  : public UnityEvent_1_tF4BE0B078FD22C6D76548861637E94AB782888C9
 {
 };
@@ -35500,12 +35498,14 @@ struct CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4  : public MonoBe
 	bool ___useRootObjectFromCollaider;
 	bool ___requireNonZeroMatchId;
 	float ___throwUpForce;
+	float ___throwUpStateDuration;
 	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___pieceMaterial;
 	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___cWalls;
 	GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* ___gameManager;
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___centerPoint;
 	objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* ___heldObject;
 	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___heldRigidbody;
+	int32_t ___currentState;
 };
 struct ChatController_t21BE953E1D5ADF0BA9F3B03C205203CADDC64C15  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -39880,6 +39880,7 @@ struct TMP_SpriteAsset_t81F779E6F705CE190DC0D1F93A954CB8B1774B39_StaticFields
 };
 struct CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_StaticFields
 {
+	HashSet_1_t20E218B2F4982CF3DE13175226456EE03F500F55* ___ThrowingObjects;
 	CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* ___CatcherL;
 	CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* ___CatcherR;
 };
@@ -44905,9 +44906,9 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize7815 = { sizeof(int32_t)+ si
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize7816;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize7816 = { sizeof(U3CModuleU3E_tBB65183F1134474D09FF49B95625D25472B9BA8B), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize7817;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize7817 = { sizeof(U3CResetWallsAfterDelayU3Ed__27_t0095DFC99DE3599150E848958EF856C00ED9B06E), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize7817 = { sizeof(int32_t)+ sizeof(RuntimeObject), sizeof(int32_t), 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize7818;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize7818 = { sizeof(U3CThrowUpRoutineU3Ed__25_t23344586EFD286F32B1627E8F6CCAD4835265920), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize7818 = { sizeof(U3CThrowUpRoutineU3Ed__30_tC9E75AC4C1DE08D407A504F8190077AC7476FBCC), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize7819;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize7819 = { sizeof(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4), -1, sizeof(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_StaticFields), 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize7820;
