@@ -7,15 +7,28 @@ using UnityEngine;
 public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager Instance;
+    private const string SessionScoreLabel = "El skoru: ";
+    private const string TotalScoreLabel = "Total Skor: ";
 
     [Header("Skor UI")]
-    [Tooltip("Ana skor Text (TMP)")]
-    public TextMeshProUGUI scoreText;
+    [Tooltip("Ek session skor Text'i (TMP)")]
+    public TextMeshProUGUI MainScoreText;
     [Tooltip("Combo metni (TMP)")]
     public TextMeshProUGUI comboText; // Combo UI icin
     [Tooltip("Combo suresi gostergesi (TMP)")]
     public TextMeshProUGUI comboTimerText; // Combo suresi gostergesi
     public int score;
+    // Bu oturumda kazanilan (bu oyun/round) puan
+    private int sessionScore = 0;
+    [Header("End Game UI")]
+    [Tooltip("Win paneli: bu oturumun puani (TMP)")]
+    public TextMeshProUGUI winSessionScoreText;
+    [Tooltip("Win paneli: toplam kaydedilmis puan (TMP)")]
+    public TextMeshProUGUI winTotalScoreText;
+    [Tooltip("Lose paneli: bu oturumun puani (TMP)")]
+    public TextMeshProUGUI loseSessionScoreText;
+    [Tooltip("Lose paneli: toplam kaydedilmis puan (TMP)")]
+    public TextMeshProUGUI loseTotalScoreText;
 
     [Header("Para Sistemi")]
     [Tooltip("Mevcut para miktari (runtime)")]
@@ -42,6 +55,10 @@ public class ScoreManager : MonoBehaviour
         }
         else
             Destroy(gameObject);
+        // Load persistent total score (kalici skor) ve UI guncelle
+        int saved = PlayerPrefs.GetInt("TotalScore", 0);
+        score = saved;
+        UpdateScoreText();
         UpdateMoneyText();
     }
 
@@ -84,8 +101,13 @@ public class ScoreManager : MonoBehaviour
         }
         // her comboda carpan ekler
         int multiplier = Mathf.Max(1, comboCount);
-        score += value * multiplier;
-        scoreText.text = score.ToString();
+        int gained = value * multiplier;
+        sessionScore += gained;
+        score += gained;
+        // Kaydet: her skor artışında kalıcı toplamı PlayerPrefs'e yaz
+        PlayerPrefs.SetInt("TotalScore", score);
+        PlayerPrefs.Save();
+        UpdateScoreText();
         // Para kazanci hesapla: skor * combonun carpani * para basina skor carpani
         int moneyGain = Mathf.CeilToInt(value * multiplier * moneyPerScore);
         if (moneyGain > 0)
@@ -93,6 +115,38 @@ public class ScoreManager : MonoBehaviour
             AddMoney(moneyGain);
         }
         UpdateComboText();
+    }
+
+    /// <remarks>Score UI guncelleme yardimcisi.</remarks>
+    private void UpdateScoreText()
+    {
+        if (MainScoreText != null)
+            MainScoreText.text = SessionScoreLabel + sessionScore;
+    }
+
+    /// <remarks>Oyun bittiginde end-game panellerindeki TMP'leri gunceller.
+    /// Inspector'da win/lose panelindeki TextMeshProUGUI referanslarini atayabilirsiniz.</remarks>
+    public void UpdateEndGameTexts()
+    {
+        // Win paneli
+        if (winSessionScoreText != null)
+            winSessionScoreText.text = SessionScoreLabel + sessionScore;
+        if (winTotalScoreText != null)
+            winTotalScoreText.text = TotalScoreLabel + score;
+        // Lose paneli
+        if (loseSessionScoreText != null)
+            loseSessionScoreText.text = SessionScoreLabel + sessionScore;
+        if (loseTotalScoreText != null)
+            loseTotalScoreText.text = TotalScoreLabel + score;
+    }
+
+    /// <remarks>Test veya ayarlar icin kalici skoru sifirlar.</remarks>
+    public void ResetPersistentScore()
+    {
+        PlayerPrefs.DeleteKey("TotalScore");
+        PlayerPrefs.Save();
+        score = 0;
+        UpdateScoreText();
     }
 
     /// <remarks>Combo bilgisini sifirlar.</remarks>

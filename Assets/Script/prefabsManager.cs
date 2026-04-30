@@ -60,7 +60,13 @@ public class prefabManager : MonoBehaviour
             {
                 if (Physics.Raycast(ray, out RaycastHit hit, 100f, draggableMask))
                 {
-                    _target = hit.collider.transform;
+                    _target = GetDraggableRoot(hit.transform);
+                    if (_target == null || IsHeldByCatcher(_target))
+                    {
+                        _target = null;
+                        return;
+                    }
+
                     _offset = _target.position - hit.point;
                     Vector3 pos = _target.position;
                     pos.y = objectHeight;
@@ -71,6 +77,12 @@ public class prefabManager : MonoBehaviour
 
             if (Pointer.current.press.isPressed && _target != null)
             {
+                if (IsHeldByCatcher(_target))
+                {
+                    _target = null;
+                    return;
+                }
+
                 if (Physics.Raycast(ray, out RaycastHit floorHit, 200f, floorMask))
                 {
                     Vector3 newPos = floorHit.point + _offset;
@@ -87,6 +99,12 @@ public class prefabManager : MonoBehaviour
         }
         else
         {
+            if (IsHeldByCatcher(_target))
+            {
+                _target = null;
+                return;
+            }
+
             if (Physics.Raycast(ray, out RaycastHit floorHit, 200f, floorMask))
             {
                 Vector3 newPos = floorHit.point + _offset;
@@ -136,6 +154,12 @@ public class prefabManager : MonoBehaviour
             _selectedObject = GetDraggableRoot(hit.transform);
             if (_selectedObject != null)
             {
+                if (IsHeldByCatcher(_selectedObject))
+                {
+                    _selectedObject = null;
+                    return;
+                }
+
                 Vector3 pos = _selectedObject.position;
                 pos.y = objectHeight;
                 _selectedObject.position = pos;
@@ -148,6 +172,12 @@ public class prefabManager : MonoBehaviour
     /// <remarks>Suruklenen objeyi dunyadaki plane uzerinde hareket ettirir.</remarks>
     void Drag(Vector2 screenPos)
     {
+        if (IsHeldByCatcher(_selectedObject))
+        {
+            _selectedObject = null;
+            return;
+        }
+
         Ray ray = Camera.main.ScreenPointToRay(screenPos);
         Plane plane = new Plane(Vector3.up, new Vector3(0, objectHeight, 0));
         if (plane.Raycast(ray, out float enter))
@@ -166,6 +196,14 @@ public class prefabManager : MonoBehaviour
         if (t.gameObject.layer == layer) return t;
         if (t.parent != null && t.parent.gameObject.layer == layer) return t.parent;
         return null;
+    }
+
+    /// <remarks>Catcher tarafindan tutulan objeyi drag sistemi tekrar hareket ettirmez.</remarks>
+    bool IsHeldByCatcher(Transform t)
+    {
+        if (t == null) return false;
+        objectId oid = t.GetComponentInParent<objectId>();
+        return oid != null && oid.isHeld;
     }
 
     /// <remarks>Inspector ayarlarına gore ornek prefablar spawn eder.</remarks>

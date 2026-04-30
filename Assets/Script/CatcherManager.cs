@@ -1,7 +1,6 @@
 using UnityEngine;
 using Vector3 = UnityEngine.Vector3;
 using System.Collections;
-using System.Reflection.Emit;
 
 /// <remarks>Catcher islemleri: trigger, eslesme, firlatma ve parcalama.</remarks>
 public class CatcherManager : MonoBehaviour
@@ -14,7 +13,7 @@ public class CatcherManager : MonoBehaviour
     [Tooltip("MatchId 0 olanlar eslesme icin dikkate alinsin mi")]
     public bool requireNonZeroMatchId = true;
     [Tooltip("Fırlatma gucu (impulse)")]
-    public float throwUpForce = 12f;
+    public float throwUpForce = 10f;
     [Tooltip("Parcalari icin kullanılacak materyal (opsiyonel)")]
     public Material pieceMaterial;
     [Tooltip("Catcher tarafindaki duvarlari kontrol eden objeler")]
@@ -25,6 +24,7 @@ public class CatcherManager : MonoBehaviour
     public Transform centerPoint;
 
     private objectId heldObject;
+    private Rigidbody heldRigidbody;
     private static CatcherManager CatcherL;
     private static CatcherManager CatcherR;
 
@@ -34,9 +34,18 @@ public class CatcherManager : MonoBehaviour
     /// <remarks>Script devre disi kalinca instance kaydini siler.</remarks>
     private void OnDisable() { UnregisterInstance(); }
 
+    /// <remarks>Tutulan objeyi catcher merkezinde sabit tutar.</remarks>
+    private void FixedUpdate()
+    {
+        if (heldObject == null) return;
+        LockHeldObjectToCenter();
+    }
+
     /// <remarks>Bu catcher icin statik referansi ayarlar.</remarks>
     private void RegisterInstance()
     {
+        if (!HasEnabledTriggerCollider()) return;
+
         if (isRight) CatcherR = this; else CatcherL = this;
     }
 
@@ -65,23 +74,8 @@ public class CatcherManager : MonoBehaviour
         // Eger bu catcher zaten bir nesneye sahipse yeni bir nesne almaz
         if (heldObject != null) return;
 
-        oid.isHeld = true;
-        heldObject = oid;
+        HoldObject(oid);
         TryProcessPairWithOtherCatcher();
-    }
-
-    /// <remarks>Trigger cikisinda eger bizim tuttugumuz obje ise serbest birakir.</remarks>
-    private void OnTriggerExit(Collider other)
-    {
-        // Bir collider cikarken, objeyi belirle ve yalnizca bizim tuttugumuz objeyse serbest birak
-        var oid = other.GetComponentInParent<objectId>();
-        if (oid == null) return;
-
-        if (heldObject == oid)
-        {
-            oid.isHeld = false;
-            heldObject = null;
-        }
     }
 
     /// <remarks>Karsi catcher ile eslesme kontrolu yapar ve sonucu isler.</remarks>
@@ -108,11 +102,9 @@ public class CatcherManager : MonoBehaviour
             BreakPieces(obj2);
             // yok et
             // yok etmeden once isHeld flag'lerini temizle (destroy edilecek olsa bile)
-            obj1.isHeld = false;
-            obj2.isHeld = false;
             // clear held references on both catchers
-            this.heldObject = null;
-            other.heldObject = null;
+            this.ClearHeldObject();
+            other.ClearHeldObject();
             Destroy(obj1.gameObject);
             Destroy(obj2.gameObject);
 
@@ -122,20 +114,79 @@ public class CatcherManager : MonoBehaviour
         {
             // yanlis eslesme varsa combo'yu sifirla
             ScoreManager.Instance.ResetCombo();
-            obj1.isHeld = false;
-            obj2.isHeld = false;
             // clear held references
-            this.heldObject = null;
-            other.heldObject = null;
+            this.ClearHeldObject();
+            other.ClearHeldObject();
             // sonra firlat
             ThrowUp(obj1);
             ThrowUp(obj2);
         }
     }
 
-    // Centere cekme/parent islemleri kaldirildi -- nesnelerin fiziklerine dokunulmuyor.
-    // ReleaseObject removed -- physics not altered by catcher anymore.
-    // GetRootTransform removed -- not needed when not reparenting objects.
+    /// <remarks>Objeyi catcher merkezine alir ve fizik ile kaymasini engeller.</remarks>
+    private void HoldObject(objectId oid)
+    {
+        oid.isHeld = true;
+        heldObject = oid;
+        heldRigidbody = oid.GetComponentInChildren<Rigidbody>();
+
+        if (heldRigidbody != null)
+        {
+            heldRigidbody.linearVelocity = Vector3.zero;
+            heldRigidbody.angularVelocity = Vector3.zero;
+            heldRigidbody.useGravity = false;
+            heldRigidbody.isKinematic = true;
+        }
+
+        LockHeldObjectToCenter();
+    }
+
+    /// <remarks>Tutulan obje referanslarini temizler.</remarks>
+    private void ClearHeldObject()
+    {
+        if (heldObject != null)
+            heldObject.isHeld = false;
+
+        heldObject = null;
+        heldRigidbody = null;
+    }
+
+    /// <remarks>Objenin gorunen merkezini catcher merkezine hizalar.</remarks>
+    private void LockHeldObjectToCenter()
+    {
+        if (heldObject == null) return;
+
+        Vector3 targetPosition = centerPoint != null ? centerPoint.position : transform.position;
+        Renderer renderer = heldObject.GetComponentInChildren<Renderer>();
+        Vector3 currentCenter = renderer != null
+            ? renderer.bounds.center
+            : heldRigidbody != null ? heldRigidbody.position : heldObject.transform.position;
+        Vector3 delta = targetPosition - currentCenter;
+
+        if (delta.sqrMagnitude < 0.000001f)
+            return;
+
+        heldObject.transform.position += delta;
+
+        if (heldRigidbody != null)
+        {
+            heldRigidbody.linearVelocity = Vector3.zero;
+            heldRigidbody.angularVelocity = Vector3.zero;
+        }
+    }
+
+    /// <remarks>Eslesme kaydina sadece sahnedeki gercek catcher trigger'larini alir.</remarks>
+    private bool HasEnabledTriggerCollider()
+    {
+        Collider[] colliders = GetComponentsInChildren<Collider>();
+        foreach (Collider col in colliders)
+        {
+            if (col != null && col.enabled && col.isTrigger)
+                return true;
+        }
+
+        return false;
+    }
 
     // CWalls objelerini acar kapatir
     /// <remarks>Ilgili duvar objelerinin aktifligini ayarlar.</remarks>

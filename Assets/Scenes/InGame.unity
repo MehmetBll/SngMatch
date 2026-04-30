@@ -550,7 +550,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -372, y: 1096}
+  m_AnchoredPosition: {x: -346.9, y: 1096}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &213540684
@@ -629,7 +629,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -904734652, guid: 527700daf5914fb4eab057ae05d343c1, type: 3}
+  m_Sprite: {fileID: -454354955, guid: e9d7e779115bd6e4d8c83df105102cde, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1083,12 +1083,12 @@ MonoBehaviour:
   isRight: 0
   useRootObjectFromCollaider: 1
   requireNonZeroMatchId: 1
-  throwUpForce: 5
+  throwUpForce: 10
   pieceMaterial: {fileID: 0}
   cWalls:
   - {fileID: 1335810022}
   gameManager: {fileID: 2131876457}
-  centerPoint: {fileID: 0}
+  centerPoint: {fileID: 343553254}
 --- !u!4 &343553254
 Transform:
   m_ObjectHideFlags: 0
@@ -2729,7 +2729,7 @@ MonoBehaviour:
   isRight: 1
   useRootObjectFromCollaider: 1
   requireNonZeroMatchId: 1
-  throwUpForce: 5
+  throwUpForce: 10
   pieceMaterial: {fileID: 2100000, guid: a73010964e96ccf4b8896600025d35a7, type: 2}
   cWalls:
   - {fileID: 1335810022}
@@ -4253,7 +4253,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 19.900002, y: 0, z: 111.72656, w: 0}
+  m_margin: {x: 19.900002, y: 0, z: 4.4750366, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4690,7 +4690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61e230a0c983acf4eb20f8b26efe7039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScoreManager
-  scoreText: {fileID: 1188614631}
+  MainScoreText: {fileID: 1188614631}
   comboText: {fileID: 1593340309}
   comboTimerText: {fileID: 1093380835}
   score: 0
@@ -6277,7 +6277,7 @@ MonoBehaviour:
   isRight: 0
   useRootObjectFromCollaider: 1
   requireNonZeroMatchId: 1
-  throwUpForce: 5
+  throwUpForce: 10
   pieceMaterial: {fileID: 2100000, guid: a73010964e96ccf4b8896600025d35a7, type: 2}
   cWalls:
   - {fileID: 1335810022}
