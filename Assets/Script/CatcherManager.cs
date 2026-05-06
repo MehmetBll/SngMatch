@@ -203,8 +203,11 @@ public class CatcherManager : MonoBehaviour
 
         if (heldRigidbody != null)
         {
-            heldRigidbody.linearVelocity = Vector3.zero;
-            heldRigidbody.angularVelocity = Vector3.zero;
+            if (!heldRigidbody.isKinematic)
+            {
+                heldRigidbody.linearVelocity = Vector3.zero;
+                heldRigidbody.angularVelocity = Vector3.zero;
+            }
         }
     }
 

@@ -93,9 +93,8 @@ extern void objectId_IsMatch_m457646E30E6004F40A4F5FBE0F907B434679E8A8 (void);
 extern void objectId__ctor_m1302C35A81E2DE5A45B8DD2609AE57F313CCE12D (void);
 extern void prefabManager_Start_m2998E372E6BF960174E716B6601CBCAFEF982E77 (void);
 extern void prefabManager_Update_m1621FC40C87E42D37278F35629FD283A24CAEF0F (void);
-extern void prefabManager_HandleMouse_mBA195C9C9063FCCEEF1DAF434F4F5E90E7FA8D5A (void);
-extern void prefabManager_HandleTouch_m02F69D9596008D34081D87A18A7965009CC71CF0 (void);
 extern void prefabManager_TrySelect_mD2AA72E4E15B1B29D42AF90540921EC5EC3CF030 (void);
+extern void prefabManager_ReleaseSelection_m0BB00DD1AFE8C6E92A1DB4B9984D1A68620DF646 (void);
 extern void prefabManager_Drag_m816A22BFDD050606E35D3BE4FBE418FF53731E61 (void);
 extern void prefabManager_GetDraggableRoot_m335EBC56A00CD339FEB8B43CCA51A5EF4E06156F (void);
 extern void prefabManager_IsHeldByCatcher_m5E31EAE980BF28458B4A2A57CFEE34F952F66549 (void);
@@ -390,7 +389,7 @@ extern void U3CWarpTextU3Ed__8_MoveNext_mCE7A826C5E4854C2C509C77BD18F5A9B6D691B0
 extern void U3CWarpTextU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD80368E9B7E259311C03E406B75161ED6F7618E3 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19 (void);
-static Il2CppMethodPointer s_methodPointers[383] = 
+static Il2CppMethodPointer s_methodPointers[382] = 
 {
 	CatcherManager_OnEnable_mA3D834010DB2D1FB91E8AC57BFEC8BABD5639838,
 	CatcherManager_OnDisable_m2BF089699111CAA25DDFD9E7E34A03CC69A65919,
@@ -478,9 +477,8 @@ static Il2CppMethodPointer s_methodPointers[383] =
 	objectId__ctor_m1302C35A81E2DE5A45B8DD2609AE57F313CCE12D,
 	prefabManager_Start_m2998E372E6BF960174E716B6601CBCAFEF982E77,
 	prefabManager_Update_m1621FC40C87E42D37278F35629FD283A24CAEF0F,
-	prefabManager_HandleMouse_mBA195C9C9063FCCEEF1DAF434F4F5E90E7FA8D5A,
-	prefabManager_HandleTouch_m02F69D9596008D34081D87A18A7965009CC71CF0,
 	prefabManager_TrySelect_mD2AA72E4E15B1B29D42AF90540921EC5EC3CF030,
+	prefabManager_ReleaseSelection_m0BB00DD1AFE8C6E92A1DB4B9984D1A68620DF646,
 	prefabManager_Drag_m816A22BFDD050606E35D3BE4FBE418FF53731E61,
 	prefabManager_GetDraggableRoot_m335EBC56A00CD339FEB8B43CCA51A5EF4E06156F,
 	prefabManager_IsHeldByCatcher_m5E31EAE980BF28458B4A2A57CFEE34F952F66549,
@@ -776,7 +774,7 @@ static Il2CppMethodPointer s_methodPointers[383] =
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42,
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19,
 };
-static const int32_t s_InvokerIndices[383] = 
+static const int32_t s_InvokerIndices[382] = 
 {
 	13220,
 	13220,
@@ -864,9 +862,8 @@ static const int32_t s_InvokerIndices[383] =
 	13220,
 	13220,
 	13220,
-	13220,
-	13220,
 	10232,
+	13220,
 	10232,
 	8620,
 	7109,
@@ -1166,7 +1163,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	383,
+	382,
 	s_methodPointers,
 	0,
 	NULL,

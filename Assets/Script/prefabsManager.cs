@@ -6,7 +6,6 @@ using UnityEngine.InputSystem;
 public class prefabManager : MonoBehaviour
 {
     private Transform _selectedObject;
-    private Transform _target;
     private Vector3 _offset;
     private CWalls wallsController;
 
@@ -38,7 +37,7 @@ public class prefabManager : MonoBehaviour
     void Start()
     {
         // raycast: cam main camerayi referans alir, spawn oyunun basinda objeleri spawn eder, cwalls duvarlari kontrol eden scripti sahnede bulur
-        cam = Camera.main;
+        if (cam == null) cam = Camera.main;
         SpawnObjects();
         wallsController = FindAnyObjectByType<CWalls>();
     }
@@ -46,139 +45,63 @@ public class prefabManager : MonoBehaviour
     /// <remarks>Input okuma ve obje surukleme mantigini isler.</remarks>
     void Update()
     {
-        // handle mouse ve touch input sistemi ile her frame kontrol eder
-        HandleMouse();
-        HandleTouch();
         if (Pointer.current == null) return;
+
         Vector2 screenPos = Pointer.current.position.ReadValue();
-        Ray ray = cam.ScreenPointToRay(screenPos);
 
-        // obje tutulmuyorsa veya tutuyorsa farkli islem
-        if (_target == null)
-        {
-            if (Pointer.current.press.wasPressedThisFrame)
-            {
-                if (Physics.Raycast(ray, out RaycastHit hit, 100f, draggableMask))
-                {
-                    _target = GetDraggableRoot(hit.transform);
-                    if (_target == null || IsHeldByCatcher(_target))
-                    {
-                        _target = null;
-                        return;
-                    }
-
-                    _offset = _target.position - hit.point;
-                    Vector3 pos = _target.position;
-                    pos.y = objectHeight;
-                    _target.position = pos;
-                    wallsController?.SetWallsActive(false);
-                }
-            }
-
-            if (Pointer.current.press.isPressed && _target != null)
-            {
-                if (IsHeldByCatcher(_target))
-                {
-                    _target = null;
-                    return;
-                }
-
-                if (Physics.Raycast(ray, out RaycastHit floorHit, 200f, floorMask))
-                {
-                    Vector3 newPos = floorHit.point + _offset;
-                    newPos.y = objectHeight;
-                    _target.position = newPos;
-                }
-            }
-
-            if (Pointer.current.press.wasReleasedThisFrame && _target != null)
-            {
-                wallsController?.SetWallsActive(true);
-                _target = null;
-            }
-        }
-        else
-        {
-            if (IsHeldByCatcher(_target))
-            {
-                _target = null;
-                return;
-            }
-
-            if (Physics.Raycast(ray, out RaycastHit floorHit, 200f, floorMask))
-            {
-                Vector3 newPos = floorHit.point + _offset;
-                _target.position = new Vector3(newPos.x, objectHeight, newPos.z);
-            }
-            if (!Pointer.current.press.isPressed) _target = null;
-        }
-    }
-
-    /// <remarks>Mouse inputlarini isleyip secme ve suruklemeyi kontrol eder.</remarks>
-    void HandleMouse()
-    {
-        if (Mouse.current == null) return;
-        var mouse = Mouse.current;
-        if (mouse.leftButton.wasPressedThisFrame)
-        {
-            TrySelect(mouse.position.ReadValue());
-            if (_selectedObject != null) wallsController?.SetWallsActive(false);
-        }
-        if (mouse.leftButton.isPressed && _selectedObject != null) Drag(mouse.position.ReadValue());
-        if (mouse.leftButton.wasReleasedThisFrame)
-        {
-            if (_selectedObject != null) wallsController?.SetWallsActive(true);
-        }
-    }
-
-    /// <remarks>Touch inputlarini isleyip secme ve suruklemeyi kontrol eder.</remarks>
-    void HandleTouch()
-    {
-        if (Touchscreen.current == null) return;
-        var t = Touchscreen.current.primaryTouch;
-        if (t.press.wasPressedThisFrame) TrySelect(t.position.ReadValue());
-        if (_selectedObject != null) wallsController?.SetWallsActive(false);
-        if (t.press.isPressed && _selectedObject != null) Drag(t.position.ReadValue());
-        if (t.press.wasReleasedThisFrame)
-        {
-            if (_selectedObject != null) wallsController?.SetWallsActive(true);
-        }
+        if (Pointer.current.press.wasPressedThisFrame) TrySelect(screenPos);
+        if (Pointer.current.press.isPressed && _selectedObject != null) Drag(screenPos);
+        if (Pointer.current.press.wasReleasedThisFrame) ReleaseSelection();
     }
 
     /// <remarks>Raycast ile draggable objeyi secer ve offset hesaplar.</remarks>
     void TrySelect(Vector2 screenPos)
     {
-        Ray ray = Camera.main.ScreenPointToRay(screenPos);
-        if (Physics.Raycast(ray, out RaycastHit hit, 500f, draggableMask))
-        {
-            _selectedObject = GetDraggableRoot(hit.transform);
-            if (_selectedObject != null)
-            {
-                if (IsHeldByCatcher(_selectedObject))
-                {
-                    _selectedObject = null;
-                    return;
-                }
+        ReleaseSelection();
 
-                Vector3 pos = _selectedObject.position;
-                pos.y = objectHeight;
-                _selectedObject.position = pos;
-                wallsController?.SetWallsActive(false);
-                _offset = _selectedObject.position - hit.point;
-            }
+        Camera activeCamera = cam != null ? cam : Camera.main;
+        if (activeCamera == null) return;
+
+        Ray ray = activeCamera.ScreenPointToRay(screenPos);
+        if (!Physics.Raycast(ray, out RaycastHit hit, 500f, draggableMask)) return;
+
+        Transform draggableRoot = GetDraggableRoot(hit.transform);
+        if (draggableRoot == null || IsHeldByCatcher(draggableRoot)) return;
+
+        _selectedObject = draggableRoot;
+
+        Vector3 pos = _selectedObject.position;
+        pos.y = objectHeight;
+        _selectedObject.position = pos;
+        _offset = _selectedObject.position - hit.point;
+        wallsController?.SetWallsActive(false);
+    }
+
+    /// <remarks>Secili objeyi birakir ve duvarlari tekrar aktif eder.</remarks>
+    void ReleaseSelection()
+    {
+        if (_selectedObject != null)
+        {
+            wallsController?.SetWallsActive(true);
+            _selectedObject = null;
         }
     }
 
     /// <remarks>Suruklenen objeyi dunyadaki plane uzerinde hareket ettirir.</remarks>
     void Drag(Vector2 screenPos)
     {
+        if (_selectedObject == null) return;
+
         if (IsHeldByCatcher(_selectedObject))
         {
-            _selectedObject = null;
+            ReleaseSelection();
             return;
         }
 
-        Ray ray = Camera.main.ScreenPointToRay(screenPos);
+        Camera activeCamera = cam != null ? cam : Camera.main;
+        if (activeCamera == null) return;
+
+        Ray ray = activeCamera.ScreenPointToRay(screenPos);
         Plane plane = new Plane(Vector3.up, new Vector3(0, objectHeight, 0));
         if (plane.Raycast(ray, out float enter))
         {
