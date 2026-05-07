@@ -56,6 +56,7 @@ Assets/Script/
  CWalls.cs
  GameManager.cs
  MagnetObject.cs
+ MenuManager.cs
  objectId.cs
  prefabsManager.cs
  ScoreManager.cs
