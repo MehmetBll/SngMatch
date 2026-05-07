@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-/// <remarks>Oyun yonetimi: zaman, paneller, devam ve zemin islemleri.</remarks>
+/// <summary>Oyun süresi, kazanma/kaybetme, devam etme ve panel akışını yönetir.</summary>
 public class GameManager : MonoBehaviour
 {
    [Header("Genel Ayarlar")]
@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
    [Tooltip("Ayar paneli GameObject'i (opsiyonel)")]
    public GameObject settingsPanel;
    [Tooltip("Cikis onay paneli (opsiyonel)")]
-   public GameObject exitPanel; // onay paneli veya cikis penceresi
+   public GameObject exitPanel;
 
    [Tooltip("Ayar paneli acildiginda Time.timeScale olarak atanacak deger. 0 dogrudan atamak UI etkilesimlerini engelliyorsa kucuk bir deger kullanin.")]
    public float pauseTimeScale = 1f;
@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
 
    [Header("Guclendirmeler")]
    [Tooltip("Combo dondurucu suresi (saniye)")]
-   public float comboFreezeDuration = 2f; // saniye
+   public float comboFreezeDuration = 2f;
 
    [Header("Devam Ayarlari")]
    [Tooltip("Bir devam icin gereken para miktari")]
@@ -44,9 +44,9 @@ public class GameManager : MonoBehaviour
    [Tooltip("Devam etmede eklenecek sure (saniye)")]
    public float continueTimeBonus = 20f;
    [Tooltip("Devam icin gecerli gecici mesaj Text (TMP)")]
-   public TextMeshProUGUI continueMessageText; // yetersiz bakiye icin gecici mesaj
+   public TextMeshProUGUI continueMessageText;
    [Tooltip("Devam butonundaki ucret Text (TMP)")]
-   public TextMeshProUGUI continueCostText; // buton uzerinde veya UI'da gosterilecek ucret
+   public TextMeshProUGUI continueCostText;
 
    [Header("Extra Haklari")]
    [Tooltip("Bir oyuncunun sahip oldugu ekstra kullanma hak sayisi (adet)")]
@@ -62,27 +62,26 @@ public class GameManager : MonoBehaviour
    public TextMeshProUGUI extraTargetTimerText;
 
    [Header("Zemin Secimi")]
-   // artik inspector'da gorunmesin; sahnedeki floorObject'tan veya prefab'tan runtime'ta bulunur
-   // 3D floor prefab icindeki cube gibi obje icin Renderer kullaniyoruz (MeshRenderer/SkinnedMeshRenderer)
    private Renderer floorRenderer;
-   // Atanabilecek: sahnedeki Image iceren GameObject veya prefab (Image iceren)
+   [Tooltip("Sahnedeki veya prefab olarak atanmis zemin UI Image objesi")]
    public GameObject floorUIImageObject;
    private Image _floorUIImageComp;
-   // Eger true ise sadece buton tiklamasiyla floor degistirilebilir
+   [Tooltip("True ise zemin sadece UI butonlari uzerinden degistirilir")]
    public bool changeOnlyFromButtons = true;
+   [Tooltip("Zemin secimi icin kullanilacak arka plan Image referanslari")]
    public Image[] bgImages;
-   public GameObject floorObject; // floor prefab veya floor GameObject (cube child icerir)
+   [Tooltip("3D floor prefab'i veya sahnedeki floor GameObject'i")]
+   public GameObject floorObject;
 
    private bool _gameEnd = false;
    private int destroyOb = 0;
-   // zaman olcegini geri almak icin saklanan deger
    private float _prevTimeScale = 1f;
    private bool _pausedBySettings = false;
    private Coroutine _freezeCoroutine = null;
    private bool _isFrozenBySettings = false;
 
-   /// <remarks>Baslangicta timer ve referanslari ayarlar.</remarks>
-   void Start()
+   /// <summary>Oyun başlangıcında süreyi, panelleri, zemin referanslarını ve ekstra hakkı hazırlar.</summary>
+   private void Start()
    {
       _timer = gameTime;
       UpdateTimerUI();
@@ -94,7 +93,6 @@ public class GameManager : MonoBehaviour
       if (exitPanel != null) exitPanel.SetActive(false);
       UpdateContinueCostUI();
 
-      // Eger inspector'da atanmadiysa, floorObject uzerinden child SpriteRenderer veya Image bagla
       if (floorRenderer == null && floorObject != null)
       {
          floorRenderer = floorObject.GetComponentInChildren<Renderer>();
@@ -106,8 +104,6 @@ public class GameManager : MonoBehaviour
       {
          if (floorUIImageObject != null)
          {
-            // Eger inspector'a bir prefab (asset) atadiysaniz, prefab.asset'in scene'i gecerli olmayacaktir.
-            // Bu durumda runtime'da prefab'in bir ornegini olusturup Image bilesenini ondan aliyoruz.
             if (Application.isPlaying && !floorUIImageObject.scene.IsValid())
             {
                Canvas c = FindFirstObjectByType<Canvas>();
@@ -126,19 +122,17 @@ public class GameManager : MonoBehaviour
          {
             _floorUIImageComp = floorObject.GetComponentInChildren<Image>();
          }
-
-         // extra haklarini baslangicta ayarla
-         _extraRemaining = Mathf.Max(0, extraUses);
-         if (extraButtonObject != null)
-            extraButtonObject.SetActive(_extraRemaining > 0);
       }
+
+      _extraRemaining = Mathf.Max(0, extraUses);
+      if (extraButtonObject != null)
+         extraButtonObject.SetActive(_extraRemaining > 0);
    }
 
-   /// <remarks>Inspector degisikliklerinde edit-time atamalari gunceller.</remarks>
+   /// <summary>Inspector değişikliklerinde değerleri güvenli aralıkta tutar ve referansları tazeler.</summary>
    private void OnValidate()
    {
       UpdateContinueCostUI();
-      // Edit-time automatic assignment so the inspector field won't stay empty
       extraUses = Mathf.Max(0, extraUses);
       if (floorRenderer == null && floorObject != null)
       {
@@ -159,7 +153,7 @@ public class GameManager : MonoBehaviour
       }
    }
 
-   /// <remarks>Devam butonu ucret metnini gunceller.</remarks>
+   /// <summary>Devam butonundaki ücret yazısını günceller.</summary>
    private void UpdateContinueCostUI()
    {
       if (continueCostText != null)
@@ -167,11 +161,12 @@ public class GameManager : MonoBehaviour
          continueCostText.text = "Devam Et (" + continueCost.ToString() + "$)";
       }
    }
-   /// <remarks>Her frame oyun zamanlayicisini gunceller ve kayip kontrolleri yapar.</remarks>
-   void Update()
+
+   /// <summary>Her frame süreyi azaltır; süre biterse kaybetme durumunu başlatır.</summary>
+   private void Update()
    {
       if (_gameEnd) return;
-      // zamanlayicinin zamanini dusurur
+
       _timer -= Time.deltaTime;
       _timer = Mathf.Max(_timer, 0f);
       UpdateTimerUI();
@@ -180,12 +175,11 @@ public class GameManager : MonoBehaviour
       {
          GameLost();
       }
-
    }
-   /// <remarks>Timer metnini ekranda gunceller.</remarks>
-   void UpdateTimerUI()
+
+   /// <summary>Süre değerini ekrandaki timer yazısına basar.</summary>
+   private void UpdateTimerUI()
    {
-      // zamanlayicinin ekranda gorunmesi icin
       if (timerText != null)
       {
          timerText.text = Mathf.Ceil(_timer).ToString();
@@ -195,13 +189,14 @@ public class GameManager : MonoBehaviour
          Debug.LogWarning("GameManager: 'timerText' inspector'da atanmamis. Timer UI guncellenemiyor.");
       }
    }
-   /// <remarks>Oyunu yeniden yukleyerek sifirlar.</remarks>
+
+   /// <summary>Aktif sahneyi yeniden yükleyerek oyunu sıfırlar.</summary>
    public void ResetGame()
    {
-      // oyunu resetler
       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
    }
-   /// <remarks>Bir obje yakalandiginda sayaci artirir.</remarks>
+
+   /// <summary>Yakalanan obje sayısını artırır ve toplam hedefe ulaşınca oyunu kazandırır.</summary>
    public void ObjectCaught()
    {
       caughtObjects++;
@@ -210,8 +205,9 @@ public class GameManager : MonoBehaviour
          GameWon();
       }
    }
-   /// <remarks>Oyun kazanma durumunu ayarlar.</remarks>
-   void GameWon()
+
+   /// <summary>Oyunu kazanıldı olarak bitirir ve kazanma panelini açar.</summary>
+   private void GameWon()
    {
       if (_gameEnd)
          return;
@@ -226,8 +222,9 @@ public class GameManager : MonoBehaviour
          Debug.LogWarning("GameManager.gameWon inspector'da atanmis degil.");
       }
    }
-   /// <remarks>Oyun kaybetme durumunu ayarlar.</remarks>
-   void GameLost()
+
+   /// <summary>Oyunu kaybedildi olarak bitirir ve kaybetme panelini açar.</summary>
+   private void GameLost()
    {
       if (_gameEnd)
          return;
@@ -243,8 +240,7 @@ public class GameManager : MonoBehaviour
       }
    }
 
-   // Yeniden baslatmadan devam: para harcanarak oyuna kaldigi yerden devam et
-   /// <remarks>Para harcanarak oyuna kaldigi yerden devam eder.</remarks>
+   /// <summary>Yeterli para varsa kaybetme ekranından oyuna süre ekleyerek devam eder.</summary>
    public void ContinueFromLost()
    {
       if (ScoreManager.Instance == null)
@@ -255,35 +251,31 @@ public class GameManager : MonoBehaviour
 
       if (ScoreManager.Instance.TrySpendMoney(continueCost))
       {
-         // Para basariyla harcandi: sahneyi yeniden yuklemeden oyuna devam et
          _gameEnd = false;
          _timer += continueTimeBonus;
          if (gameLost != null)
          {
             gameLost.SetActive(false);
          }
-         // ucret iki katina cikar (sonraki devam icin)
+
          continueCost = Mathf.Max(1, continueCost * 2);
          UpdateContinueCostUI();
-         // oyun kaldigi yerden devam eder (timeScale ile oynanmaz)
          Debug.Log("Para harcayarak devam edildi (yeniden baslatma yok). Yeni devam ucreti: " + continueCost);
       }
       else
       {
-         // Yetersiz para: gecici mesaj goster
          StartCoroutine(ShowTempMessage("Para yetmiyor"));
       }
    }
 
-   // Uyumluluk icin eski adi koru; simdi ContinueFromLost()'a yonlendirir
-   /// <remarks>Uyumluluk icin devam metodunu cagiran sarmalayıcı.</remarks>
+   /// <summary>Devam butonları için ContinueFromLost metodunu çağıran kısa yoldur.</summary>
    public void TryContinue()
    {
       ContinueFromLost();
    }
 
-   /// <remarks>Gecici mesaj gosterir (TMP) ve sonradan gizler.</remarks>
-   private System.Collections.IEnumerator ShowTempMessage(string msg)
+   /// <summary>Kısa süreli bilgilendirme mesajını gösterip gizler.</summary>
+   private IEnumerator ShowTempMessage(string msg)
    {
       if (continueMessageText == null)
          yield break;
@@ -295,45 +287,40 @@ public class GameManager : MonoBehaviour
       continueMessageText.gameObject.SetActive(false);
    }
 
-   /// <remarks>Yakalanan nesne sayisini arttirir ve galibiyeti kontrol eder.</remarks>
+   /// <summary>Eşleşip yok edilen obje sayısını artırır; hedef tamamlanınca oyunu kazandırır.</summary>
    public void CaughtDestroy()
    {
       destroyOb += 2;
-      // tum objeleri yakaladi mi diye kontrol eder, yakaladiysa GameWon olur
       if (destroyOb >= totalObjects && !_gameEnd)
       {
          GameWon();
-         // Time.timeScale = 0f;
       }
    }
 
-   // Settings panel toggle
-   /// <remarks>Settings panelini acar/kapatir.</remarks>
+   /// <summary>Ayar panelini açıksa kapatır, kapalıysa açar.</summary>
    public void ToggleSettingsPanel()
    {
       if (settingsPanel == null) return;
       if (settingsPanel.activeSelf) CloseSettingsPanel(); else OpenSettingsPanel();
    }
 
-   // Button handler: open the settings panel
-   /// <remarks>Settings acma butonunun Unity event handler'i.</remarks>
+   /// <summary>Ayarlar butonundan çağrılır ve ayar panelini açar.</summary>
    public void OnSettingsButtonPressed()
    {
       OpenSettingsPanel();
    }
 
-   // Button handler: close the settings panel (e.g. Exit button inside panel)
-   /// <remarks>Settings paneli icindeki cikis butonunun handler'i.</remarks>
+   /// <summary>Ayar panelindeki çıkış/kapat butonundan çağrılır.</summary>
    public void OnSettingsExitButtonPressed()
    {
       CloseSettingsPanel();
    }
 
-   /// <remarks>Settings panelini acar, zamani yavaslatir ve freeze coroutine baslatir.</remarks>
+   /// <summary>Ayar panelini açar, zamanı önce ayarlanan değere çeker sonra dondurur.</summary>
    public void OpenSettingsPanel()
    {
       if (settingsPanel == null) return;
-      // yalnizca oyun devam ediyorsa zamani yavaslat (inspectordan ayarlanabilir deger kullan)
+
       if (!_gameEnd && Time.timeScale != pauseTimeScale)
       {
          _prevTimeScale = Time.timeScale;
@@ -341,17 +328,17 @@ public class GameManager : MonoBehaviour
          _pausedBySettings = true;
       }
       settingsPanel.SetActive(true);
-      // belirlenen gecikme sonra tamamen dondurmak icin coroutine baslat
+
       if (_freezeCoroutine != null) StopCoroutine(_freezeCoroutine);
       _freezeCoroutine = StartCoroutine(FreezeAfterDelay());
    }
 
-   /// <remarks>Settings panelini kapatir ve zamani eski haline getirir.</remarks>
+   /// <summary>Ayar panelini kapatır ve oyun zamanını eski haline getirir.</summary>
    public void CloseSettingsPanel()
    {
       if (settingsPanel == null) return;
       settingsPanel.SetActive(false);
-      // eger hala gecikmeli donma coroutine'i calisiyorsa iptal et
+
       if (_freezeCoroutine != null)
       {
          StopCoroutine(_freezeCoroutine);
@@ -365,8 +352,8 @@ public class GameManager : MonoBehaviour
       }
    }
 
-   /// <remarks>Gercek-sure bekleyip zamani tamamen dondurur (Time.timeScale=0).</remarks>
-   private System.Collections.IEnumerator FreezeAfterDelay()
+   /// <summary>Ayar paneli açık kalırsa kısa bekleme sonrası zamanı tamamen durdurur.</summary>
+   private IEnumerator FreezeAfterDelay()
    {
       yield return new WaitForSecondsRealtime(freezeDelay);
       if (settingsPanel == null || !settingsPanel.activeSelf)
@@ -379,30 +366,28 @@ public class GameManager : MonoBehaviour
       _freezeCoroutine = null;
    }
 
-   // Exit panel (confirmation) toggle
-   /// <remarks>Exit onay panelini acar/kapatir.</remarks>
+   /// <summary>Çıkış onay panelini açar veya kapatır.</summary>
    public void ToggleExitPanel()
    {
       if (exitPanel == null) return;
       exitPanel.SetActive(!exitPanel.activeSelf);
    }
 
-   /// <remarks>Exit onay panelini acar.</remarks>
+   /// <summary>Çıkış onay panelini açar.</summary>
    public void OpenExitPanel()
    {
       if (exitPanel == null) return;
       exitPanel.SetActive(true);
    }
 
-   /// <remarks>Exit onay panelini kapatir.</remarks>
+   /// <summary>Çıkış onay panelini kapatır.</summary>
    public void CloseExitPanel()
    {
       if (exitPanel == null) return;
       exitPanel.SetActive(false);
    }
 
-   // UI'deki Cikis butonuna baglayin
-   /// <remarks>Editor veya build icin oyunu kapatma handler'i.</remarks>
+   /// <summary>Editörde play modunu durdurur, build içinde uygulamadan çıkar.</summary>
    public void ExitGame()
    {
 #if UNITY_EDITOR
@@ -411,8 +396,8 @@ public class GameManager : MonoBehaviour
       Application.Quit();
 #endif
    }
-   // UI butonuna baglanacak: combo zamanlayicisini belirtilen sure dondurur
-   /// <remarks>Combo zamanlayicisini belirtilen sure dondurur.</remarks>
+
+   /// <summary>Aktif combo süresini belirlenen süre kadar dondurur.</summary>
    public void UseComboFreeze()
    {
       if (ScoreManager.Instance == null) return;
@@ -420,8 +405,7 @@ public class GameManager : MonoBehaviour
       Debug.Log("Combo Freeze kullanildi: " + comboFreezeDuration + "s");
    }
 
-   // UI butonuna baglanacak: ekstra zaman haklarini kullanir
-   /// <remarks>Bir kereye mahsus ekstra zaman hakki kullanir.</remarks>
+   /// <summary>Hak varsa oyuna ekstra süre ekler ve hak bitince butonu kapatır.</summary>
    public void UseExtraTimeOnce()
    {
       if (_gameEnd) return;
@@ -431,7 +415,7 @@ public class GameManager : MonoBehaviour
          return;
       }
       _extraRemaining--;
-      // Hedef text atanmissa, onunkine ekle; degilse ana timer'a ekle
+
       float newTimeValue = _timer;
       if (extraTargetTimerText != null)
       {
@@ -441,7 +425,7 @@ public class GameManager : MonoBehaviour
          }
       }
       newTimeValue += extraTimeAmount;
-      // Uygula ana timer'a da yaz
+
       _timer = newTimeValue;
       if (timerText != null)
          timerText.text = Mathf.Ceil(_timer).ToString();
@@ -459,8 +443,7 @@ public class GameManager : MonoBehaviour
       Debug.Log("Extra time used: " + extraTimeAmount + "s, remaining: " + _extraRemaining);
    }
 
-   // UI uzerinden floor sprite'ini BG gorsellerinden ayarlamak icin
-   /// <remarks>Index ile bgImages dizisinden sprite secip zemine uygular.</remarks>
+   /// <summary>Verilen index ile bgImages listesinden zemin görseli seçer.</summary>
    public void SetFloorSpriteByIndex(int index)
    {
       if (bgImages == null) return;
@@ -472,32 +455,30 @@ public class GameManager : MonoBehaviour
       ApplyFloorSprite(s, true);
    }
 
-   // Dogrudan bir Image referansindan floor'u ayarlamak icin
-   /// <remarks>Verilen Image bileşenindeki sprite'i zemine uygular.</remarks>
+   /// <summary>Verilen Image üzerindeki sprite'ı zemin görseli olarak uygular.</summary>
    public void SetFloorFromImage(Image img)
    {
       if (img == null || img.sprite == null) return;
       ApplyFloorSprite(img.sprite, true);
    }
 
-   // Merkezi islem: sadece buton tiklamasiyla degisim izni verilebilir
-   /// <remarks>Sprite'tan texture alir ve 3D floor materyaline atar (URP/STD uyumlu).</remarks>
+   /// <summary>Seçilen sprite'ı UI zeminine ve varsa 3D floor materyaline uygular.</summary>
    private void ApplyFloorSprite(Sprite s, bool fromButton)
    {
       if (s == null) return;
       if (changeOnlyFromButtons && !fromButton) return;
 
       if (_floorUIImageComp != null) _floorUIImageComp.sprite = s;
-      // 3D floor icin sprite'tan texture alip floor materyaline uygula (varsa)
+
       if (floorRenderer != null && s.texture != null)
       {
-         Material[] mats = floorRenderer.materials; // renderer.materials returns instances
+         Material[] mats = floorRenderer.materials;
          bool applied = false;
          for (int i = 0; i < mats.Length; i++)
          {
             Material mat = mats[i];
             if (mat == null) continue;
-            // URP/HDRP ve yeni shader'larda bazen '_BaseMap' kullaniliyor
+
             if (mat.HasProperty("_BaseMap"))
             {
                mat.SetTexture("_BaseMap", s.texture);
@@ -520,7 +501,6 @@ public class GameManager : MonoBehaviour
          }
          if (applied)
          {
-            // yeniden ata ki instance materyaller guncellensin
             floorRenderer.materials = mats;
          }
          else
@@ -530,10 +510,12 @@ public class GameManager : MonoBehaviour
       }
    }
 
-   // Kolay baglama icin index bazli kisa metodlar (Inspector'da dogrudan secmek icin)
-   /// <remarks>Kisa BG atama yardimci metodlari.</remarks>
+   /// <summary>Birinci zemin görselini seçer.</summary>
    public void SetBG0() { SetFloorSpriteByIndex(0); }
+   /// <summary>İkinci zemin görselini seçer.</summary>
    public void SetBG1() { SetFloorSpriteByIndex(1); }
+   /// <summary>Üçüncü zemin görselini seçer.</summary>
    public void SetBG2() { SetFloorSpriteByIndex(2); }
+   /// <summary>Dördüncü zemin görselini seçer.</summary>
    public void SetBG3() { SetFloorSpriteByIndex(3); }
 }

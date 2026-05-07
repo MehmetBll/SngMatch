@@ -2,20 +2,19 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-// Creates a Continue button and a TMP message at runtime.
-// Button is visible only when GameManager.gameLost is active.
+/// <summary>Devam butonu ve mesaj yazısı eksikse bunları oyun başında otomatik oluşturur.</summary>
 public class ContinueUIBuilder : MonoBehaviour
 {
-    private GameObject btnGO;
+    private GameObject buttonObject;
     private TextMeshProUGUI messageText;
     private GameManager gm;
 
-    void Awake()
+    /// <summary>Canvas, devam mesajı ve devam butonunu hazırlar; butonu GameManager'a bağlar.</summary>
+    private void Awake()
     {
         gm = FindFirstObjectByType<GameManager>();
         if (gm == null) return;
 
-        // Ensure there's a Canvas
         Canvas canvas = FindFirstObjectByType<Canvas>();
         if (canvas == null)
         {
@@ -26,7 +25,6 @@ public class ContinueUIBuilder : MonoBehaviour
             canvasGO.AddComponent<GraphicRaycaster>();
         }
 
-        // Create message TMP if none assigned
         if (gm.continueMessageText == null)
         {
             GameObject msgGO = new GameObject("ContinueMessage");
@@ -49,20 +47,19 @@ public class ContinueUIBuilder : MonoBehaviour
             messageText = gm.continueMessageText;
         }
 
-        // Create a Continue button (prefer parent under gameLost panel if available)
         if (GameObject.Find("ContinueButton") == null)
         {
-            btnGO = new GameObject("ContinueButton");
-            // Parent under gameLost panel if provided, otherwise canvas
+            buttonObject = new GameObject("ContinueButton");
             if (gm.gameLost != null)
-                btnGO.transform.SetParent(gm.gameLost.transform, false);
+                buttonObject.transform.SetParent(gm.gameLost.transform, false);
             else
-                btnGO.transform.SetParent(canvas.transform, false);
-            var image = btnGO.AddComponent<Image>();
+                buttonObject.transform.SetParent(canvas.transform, false);
+
+            var image = buttonObject.AddComponent<Image>();
             image.color = new Color(0.9f, 0.9f, 0.9f, 0.95f);
-            var btn = btnGO.AddComponent<Button>();
-            RectTransform br = btnGO.GetComponent<RectTransform>();
-            // If parent is gameLost panel, position near center-bottom; otherwise place above bottom center of screen
+            var btn = buttonObject.AddComponent<Button>();
+            RectTransform br = buttonObject.GetComponent<RectTransform>();
+
             if (gm.gameLost != null)
             {
                 br.anchorMin = new Vector2(0.5f, 0.5f);
@@ -79,7 +76,7 @@ public class ContinueUIBuilder : MonoBehaviour
             }
 
             GameObject label = new GameObject("Text");
-            label.transform.SetParent(btnGO.transform, false);
+            label.transform.SetParent(buttonObject.transform, false);
             var labelTMP = label.AddComponent<TextMeshProUGUI>();
             labelTMP.text = $"Devam ({gm.continueCost} altin)";
             labelTMP.alignment = TextAlignmentOptions.Center;
@@ -91,23 +88,22 @@ public class ContinueUIBuilder : MonoBehaviour
             labelTMP.color = Color.black;
 
             btn.onClick.AddListener(() => { gm.TryContinue(); });
-            // If parented under gameLost, button visibility is controlled by that panel.
-            if (gm.gameLost == null) btnGO.SetActive(false);
+            if (gm.gameLost == null) buttonObject.SetActive(false);
         }
         else
         {
-            btnGO = GameObject.Find("ContinueButton");
-            if (gm.gameLost == null) btnGO.SetActive(false);
+            buttonObject = GameObject.Find("ContinueButton");
+            if (gm.gameLost == null) buttonObject.SetActive(false);
         }
     }
 
-    void Update()
+    /// <summary>Devam butonunun görünürlüğünü kaybetme panelinin durumuna göre günceller.</summary>
+    private void Update()
     {
         if (gm == null) return;
-        // If button is not parented under gameLost, toggle it manually based on gameLost state
-        if (btnGO != null && gm.gameLost != null && btnGO.transform.parent != gm.gameLost.transform)
+        if (buttonObject != null && gm.gameLost != null && buttonObject.transform.parent != gm.gameLost.transform)
         {
-            btnGO.SetActive(gm.gameLost.activeSelf);
+            buttonObject.SetActive(gm.gameLost.activeSelf);
         }
     }
 }

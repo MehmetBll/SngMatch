@@ -1,6 +1,6 @@
 using UnityEngine;
 
-/// <remarks>Obje metadata: match id, skor, parca sayisi ve runtime durum.</remarks>
+/// <summary>Objenin eşleşme kimliğini, skor değerini ve efekt bilgilerini tutar.</summary>
 public class objectId : MonoBehaviour
 {
     [Header("Obje Verileri")]
@@ -16,28 +16,25 @@ public class objectId : MonoBehaviour
     public int pieceCount = 12;
     [Tooltip("Parca/efekt rengi")]
     public Color effectColor = Color.white;
-
-    // Bu nesnenin su anda bir catcher tarafindan tutulup tutulmadigini belirtir
     [Tooltip("Runtime: nesne catcher tarafindan tutuluyor mu")]
     public bool isHeld = false;
 
-    public int scoreValue { get; internal set; }
-
-    /// <remarks>Baslangicta orijinal pozisyon ve prefab adini kaydeder.</remarks>
+    /// <summary>Obje oluşunca başlangıç pozisyonunu ve prefab adını kaydeder.</summary>
     private void Awake()
     {
         originalPosition = transform.position;
         prefabName = gameObject.name;
     }
-    /// <remarks>Iki objectId'nin eslesip eslesmedigini kontrol eder.</remarks>
+
+    /// <summary>Başka bir objectId ile eşleşip eşleşmediğini kontrol eder.</summary>
     public bool IsMatch(objectId other, bool requireNonZero = true)
     {
         if (other == null) return false;
         if (requireNonZero)
         {
-            if (this.matchId == 0 || other.matchId == 0)
+            if (matchId == 0 || other.matchId == 0)
                 return false;
         }
-        return this.matchId == other.matchId;
+        return matchId == other.matchId;
     }
 }

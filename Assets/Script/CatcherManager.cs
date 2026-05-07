@@ -1,9 +1,8 @@
 using UnityEngine;
-using Vector3 = UnityEngine.Vector3;
 using System.Collections;
 using System.Collections.Generic;
 
-/// <remarks>Catcher islemleri: trigger, eslesme, firlatma ve parcalama.</remarks>
+/// <summary>Catcher bölgelerinde objeyi tutar, karşı catcher ile eşleşmeyi kontrol eder.</summary>
 public class CatcherManager : MonoBehaviour
 {
     private enum CatcherState
@@ -16,15 +15,13 @@ public class CatcherManager : MonoBehaviour
     [Header("Catcher Ayarlari")]
     [Tooltip("Sag tarafli catcher mi")]
     public bool isRight = false;
-    [Tooltip("Collider'dan root object kullanilsin mi")]
-    public bool useRootObjectFromCollaider = true;
     [Tooltip("MatchId 0 olanlar eslesme icin dikkate alinsin mi")]
     public bool requireNonZeroMatchId = true;
-    [Tooltip("Fırlatma gucu (impulse)")]
+    [Tooltip("Firlatma gucu (impulse)")]
     public float throwUpForce = 10f;
     [Tooltip("Firlatmadan sonra magnet tekrar devreye girmeden once beklenecek sure")]
     public float throwUpStateDuration = 1.2f;
-    [Tooltip("Parcalari icin kullanılacak materyal (opsiyonel)")]
+    [Tooltip("Parcalar icin kullanilacak materyal (opsiyonel)")]
     public Material pieceMaterial;
     [Tooltip("Catcher tarafindaki duvarlari kontrol eden objeler")]
     public GameObject[] cWalls;
@@ -40,20 +37,20 @@ public class CatcherManager : MonoBehaviour
     private static CatcherManager CatcherL;
     private static CatcherManager CatcherR;
 
-    // sol veya sag catcherin aktif oldugunu bilmek icin
-    /// <remarks>Script aktif olunca instance kayit eder.</remarks>
+    /// <summary>Script aktifleşince sol veya sağ catcher referansını kaydeder.</summary>
     private void OnEnable() { RegisterInstance(); }
-    /// <remarks>Script devre disi kalinca instance kaydini siler.</remarks>
+
+    /// <summary>Script kapanınca kayıtlı catcher referansını temizler.</summary>
     private void OnDisable() { UnregisterInstance(); }
 
-    /// <remarks>Tutulan objeyi catcher merkezinde sabit tutar.</remarks>
+    /// <summary>Tutulan objeyi fizik adımlarında catcher merkezinde sabit tutar.</summary>
     private void FixedUpdate()
     {
         if (currentState != CatcherState.Magnet || heldObject == null) return;
         LockHeldObjectToCenter();
     }
 
-    /// <remarks>Bu catcher icin statik referansi ayarlar.</remarks>
+    /// <summary>Bu catcher'ı sol veya sağ taraf olarak statik kayda alır.</summary>
     private void RegisterInstance()
     {
         if (!HasEnabledTriggerCollider()) return;
@@ -61,7 +58,7 @@ public class CatcherManager : MonoBehaviour
         if (isRight) CatcherR = this; else CatcherL = this;
     }
 
-    /// <remarks>Bu catcher icin statik referansi temizler.</remarks>
+    /// <summary>Bu catcher'ın statik kaydını güvenli şekilde siler.</summary>
     private void UnregisterInstance()
     {
         if (isRight)
@@ -74,27 +71,23 @@ public class CatcherManager : MonoBehaviour
         }
     }
 
-    /// <remarks>Trigger girisinde objeyi isler ve eslesmeyi denetler.</remarks>
+    /// <summary>Trigger'a giren geçerli objeyi yakalar ve eşleşme kontrolünü başlatır.</summary>
     private void OnTriggerEnter(Collider other)
     {
-        // Collider'in ust hiyerarsisinden objectId alinir
         var oid = other.GetComponentInParent<objectId>();
         if (oid == null) return;
         if (currentState != CatcherState.Idle) return;
-        // Eger nesne zaten baska bir catcher tarafindan tutuluyorsa yeni catcher almaz
         if (oid.isHeld || ThrowingObjects.Contains(oid)) return;
         if (requireNonZeroMatchId && oid.matchId == 0) return;
-        // Eger bu catcher zaten bir nesneye sahipse yeni bir nesne almaz
         if (heldObject != null) return;
 
         HoldObject(oid);
         TryProcessPairWithOtherCatcher();
     }
 
-    /// <remarks>Karsi catcher ile eslesme kontrolu yapar ve sonucu isler.</remarks>
+    /// <summary>İki catcher'daki objeleri karşılaştırır; doğruysa yok eder, yanlışsa fırlatır.</summary>
     private void TryProcessPairWithOtherCatcher()
     {
-        // objenin olmadigi karsi catcheri bulur
         CatcherManager other = isRight ? CatcherL : CatcherR;
         if (other == null) return;
         var obj1 = GetObjectInCenter();
@@ -103,20 +96,14 @@ public class CatcherManager : MonoBehaviour
 
         int id1 = obj1.matchId;
         int id2 = obj2.matchId;
-        // id 1 ve id2 li objeler eslesiyor ise:
+
         if (id1 == id2)
         {
-            // skor ekle
             int scoreValue = obj1.score + obj2.score;
-            // combo sistemini tetikle
             ScoreManager.Instance.AddScore(scoreValue, true);
-            // parcala
             BreakPieces(obj1);
             BreakPieces(obj2);
-            // yok et
-            // yok etmeden once isHeld flag'lerini temizle (destroy edilecek olsa bile)
-            // clear held references on both catchers
-            this.ClearHeldObject();
+            ClearHeldObject();
             other.ClearHeldObject();
             Destroy(obj1.gameObject);
             Destroy(obj2.gameObject);
@@ -125,18 +112,15 @@ public class CatcherManager : MonoBehaviour
         }
         else
         {
-            // yanlis eslesme varsa combo'yu sifirla
             ScoreManager.Instance.ResetCombo();
-            // clear held references
-            this.ClearHeldObject();
+            ClearHeldObject();
             other.ClearHeldObject();
-            // sonra firlat
             ThrowUp(obj1);
             ThrowUp(obj2);
         }
     }
 
-    /// <remarks>Objeyi catcher merkezine alir ve fizik ile kaymasini engeller.</remarks>
+    /// <summary>Objeyi catcher'a kilitler, fiziğini durdurur ve tutuluyor olarak işaretler.</summary>
     private void HoldObject(objectId oid)
     {
         currentState = CatcherState.Magnet;
@@ -155,7 +139,7 @@ public class CatcherManager : MonoBehaviour
         LockHeldObjectToCenter();
     }
 
-    /// <remarks>Tutulan obje referanslarini temizler.</remarks>
+    /// <summary>Tutulan obje referanslarını ve tutuluyor bayrağını temizler.</summary>
     private void ClearHeldObject()
     {
         if (heldObject != null)
@@ -166,7 +150,7 @@ public class CatcherManager : MonoBehaviour
         currentState = CatcherState.Idle;
     }
 
-    /// <remarks>Firlatma baslamadan once magnet referanslarini state'i serbest birakmadan temizler.</remarks>
+    /// <summary>Objeyi fırlatma için serbest bırakır ve geçici olarak tekrar yakalanmasını engeller.</summary>
     private void ReleaseHeldObjectForThrow(objectId oid)
     {
         if (oid != null)
@@ -184,7 +168,7 @@ public class CatcherManager : MonoBehaviour
         currentState = CatcherState.ThrowUp;
     }
 
-    /// <remarks>Objenin gorunen merkezini catcher merkezine hizalar.</remarks>
+    /// <summary>Tutulan objenin görünen merkezini catcher merkezine hizalar.</summary>
     private void LockHeldObjectToCenter()
     {
         if (heldObject == null) return;
@@ -211,7 +195,7 @@ public class CatcherManager : MonoBehaviour
         }
     }
 
-    /// <remarks>Eslesme kaydina sadece sahnedeki gercek catcher trigger'larini alir.</remarks>
+    /// <summary>Bu objede aktif trigger collider olup olmadığını kontrol eder.</summary>
     private bool HasEnabledTriggerCollider()
     {
         Collider[] colliders = GetComponentsInChildren<Collider>();
@@ -224,25 +208,22 @@ public class CatcherManager : MonoBehaviour
         return false;
     }
 
-    // CWalls objelerini acar kapatir
-    /// <remarks>Ilgili duvar objelerinin aktifligini ayarlar.</remarks>
-    void SetCWallsActive(bool state)
+    /// <summary>Catcher ile ilişkili duvar objelerini açar veya kapatır.</summary>
+    private void SetCWallsActive(bool state)
     {
         if (cWalls == null) return;
         foreach (GameObject wall in cWalls) if (wall != null) wall.SetActive(state);
     }
 
-    // Return the object currently tracked by this catcher (no centering search).
-    /// <remarks>Bu catcher'in tuttugu objectId referansini dondurur.</remarks>
+    /// <summary>Bu catcher'ın şu anda tuttuğu objeyi döndürür.</summary>
     private objectId GetObjectInCenter() { return heldObject; }
 
-    /// <remarks>Firlatma coroutine'i: fizik ve duvar kontrolu yapar.</remarks>
+    /// <summary>Yanlış eşleşen objeyi fizik kuvvetiyle yukarı fırlatır.</summary>
     private IEnumerator ThrowUpRoutine(objectId oid)
     {
         ReleaseHeldObjectForThrow(oid);
-        // duvarlari obje firlatilir veya mouse ile tutulursa kapatir
         SetCWallsActive(false);
-        // donuk ve bir anda objeler firlatilmasin diye fiziksel bir hava katar
+
         Rigidbody rb = oid.GetComponentInChildren<Rigidbody>();
         if (rb == null)
         {
@@ -258,10 +239,8 @@ public class CatcherManager : MonoBehaviour
         rb.angularVelocity = Vector3.zero;
 
         float sideOffset = Random.Range(-1f, 1f);
-        // firlatma yonu
         Vector3 throwDir = Vector3.up * Random.Range(1.5f, 2.5f) + Vector3.forward * Random.Range(2f, 3f) + Vector3.right * sideOffset;
         throwDir.Normalize();
-        // objeleri rasgele bir yere firlatir, yukarida da ne kadar bir mesafeye atilacagi var
         rb.AddForce(throwDir * throwUpForce, ForceMode.Impulse);
         rb.AddTorque(Random.insideUnitSphere * 5f, ForceMode.Impulse);
         Debug.Log("Atis yapildi");
@@ -271,41 +250,36 @@ public class CatcherManager : MonoBehaviour
         SetCWallsActive(true);
     }
 
-    /// <remarks>Objeyi fiziksel olarak firlatir ve duvar coroutine baslatir.</remarks>
+    /// <summary>Fırlatma coroutine'ini güvenli şekilde başlatır.</summary>
     private void ThrowUp(objectId oid)
     {
         if (oid == null) return;
         StartCoroutine(ThrowUpRoutine(oid));
     }
 
-    /// <remarks>Objeyi parcalara ayirarak gecici parcaciklar olusturur.</remarks>
-    void BreakPieces(objectId oid)
+    /// <summary>Doğru eşleşen obje için kısa süreli parçalanma efekti üretir.</summary>
+    private void BreakPieces(objectId oid)
     {
         Renderer rend = oid.GetComponentInChildren<Renderer>();
         if (rend == null) return;
         Vector3 center = rend.bounds.center;
-        // kucuk kureler olusturur
+
         for (int i = 0; i < oid.pieceCount; i++)
         {
             Vector3 spawnPos = center + Random.insideUnitSphere * 0.5f;
-            // kucuk kureler olusturur
             GameObject piece = GameObject.CreatePrimitive(PrimitiveType.Sphere);
             piece.transform.position = spawnPos;
             piece.transform.localScale = Vector3.one * 0.2f;
             Rigidbody rb = piece.AddComponent<Rigidbody>();
             rb.mass = 0.1f;
-            // daha gercekci fizik icin
             rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
             Vector3 forceDir = (spawnPos - center).normalized;
-            // patlatma hissi verir
             rb.AddForce(forceDir * Random.Range(2f, 5f), ForceMode.Impulse);
             rb.AddTorque(Random.insideUnitSphere * 5f);
             Renderer r = piece.GetComponent<Renderer>();
-            // her objeye gore renk olustur
-            Material matInstance = new Material(pieceMaterial);
+            Material matInstance = pieceMaterial != null ? new Material(pieceMaterial) : new Material(r.sharedMaterial);
             matInstance.color = oid.effectColor;
             r.material = matInstance;
-            // 2 saniye sonra parcaclar yok olur
             Destroy(piece, 2.0f);
         }
     }

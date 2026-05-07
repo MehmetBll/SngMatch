@@ -2,7 +2,7 @@ using UnityEngine;
 using Random = UnityEngine.Random;
 using UnityEngine.InputSystem;
 
-/// <remarks>Prefab spawn ve surukleme islemleri (mouse/touch).</remarks>
+/// <summary>Prefabları sahneye üretir ve oyuncunun objeleri sürüklemesini yönetir.</summary>
 public class prefabManager : MonoBehaviour
 {
     private Transform _selectedObject;
@@ -26,24 +26,21 @@ public class prefabManager : MonoBehaviour
     [Header("Girdiler ve Katmanlar")]
     [Tooltip("Draggable layer mask")]
     public LayerMask draggableMask;
-    [Tooltip("Zemin raycast icin layer mask")]
-    public LayerMask floorMask;
 
     [Header("Referanslar")]
     [Tooltip("Kullanilacak kamera (varsayilan Camera.main)")]
     public Camera cam;
 
-    /// <remarks>Baslangicta kamera ve prefab spawnlarini ayarlar.</remarks>
-    void Start()
+    /// <summary>Kamera referansını hazırlar, objeleri üretir ve duvar kontrolünü bulur.</summary>
+    private void Start()
     {
-        // raycast: cam main camerayi referans alir, spawn oyunun basinda objeleri spawn eder, cwalls duvarlari kontrol eden scripti sahnede bulur
         if (cam == null) cam = Camera.main;
         SpawnObjects();
         wallsController = FindAnyObjectByType<CWalls>();
     }
 
-    /// <remarks>Input okuma ve obje surukleme mantigini isler.</remarks>
-    void Update()
+    /// <summary>Mouse veya dokunma girdisini okuyarak seçme, sürükleme ve bırakmayı yönetir.</summary>
+    private void Update()
     {
         if (Pointer.current == null) return;
 
@@ -54,8 +51,8 @@ public class prefabManager : MonoBehaviour
         if (Pointer.current.press.wasReleasedThisFrame) ReleaseSelection();
     }
 
-    /// <remarks>Raycast ile draggable objeyi secer ve offset hesaplar.</remarks>
-    void TrySelect(Vector2 screenPos)
+    /// <summary>Ekran pozisyonundan raycast atar ve sürüklenebilir objeyi seçer.</summary>
+    private void TrySelect(Vector2 screenPos)
     {
         ReleaseSelection();
 
@@ -77,8 +74,8 @@ public class prefabManager : MonoBehaviour
         wallsController?.SetWallsActive(false);
     }
 
-    /// <remarks>Secili objeyi birakir ve duvarlari tekrar aktif eder.</remarks>
-    void ReleaseSelection()
+    /// <summary>Seçili objeyi bırakır ve kapatılan duvarları tekrar açar.</summary>
+    private void ReleaseSelection()
     {
         if (_selectedObject != null)
         {
@@ -87,8 +84,8 @@ public class prefabManager : MonoBehaviour
         }
     }
 
-    /// <remarks>Suruklenen objeyi dunyadaki plane uzerinde hareket ettirir.</remarks>
-    void Drag(Vector2 screenPos)
+    /// <summary>Seçili objeyi sabit yükseklikte kamera ray'i ile hareket ettirir.</summary>
+    private void Drag(Vector2 screenPos)
     {
         if (_selectedObject == null) return;
 
@@ -112,8 +109,8 @@ public class prefabManager : MonoBehaviour
         }
     }
 
-    /// <remarks>Draggable layer'ina ait kok transformu dondurur.</remarks>
-    Transform GetDraggableRoot(Transform t)
+    /// <summary>Raycast'in vurduğu objeden Draggable layer'ındaki kök objeyi bulur.</summary>
+    private Transform GetDraggableRoot(Transform t)
     {
         int layer = LayerMask.NameToLayer("Draggable");
         if (t.gameObject.layer == layer) return t;
@@ -121,16 +118,16 @@ public class prefabManager : MonoBehaviour
         return null;
     }
 
-    /// <remarks>Catcher tarafindan tutulan objeyi drag sistemi tekrar hareket ettirmez.</remarks>
-    bool IsHeldByCatcher(Transform t)
+    /// <summary>Objenin catcher tarafından tutulup tutulmadığını kontrol eder.</summary>
+    private bool IsHeldByCatcher(Transform t)
     {
         if (t == null) return false;
         objectId oid = t.GetComponentInParent<objectId>();
         return oid != null && oid.isHeld;
     }
 
-    /// <remarks>Inspector ayarlarına gore ornek prefablar spawn eder.</remarks>
-    void SpawnObjects()
+    /// <summary>Inspector'daki prefabları rastgele pozisyonlarda sahneye üretir.</summary>
+    private void SpawnObjects()
     {
         for (int i = 0; i < spawnCount; i++)
         {
