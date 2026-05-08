@@ -26,6 +26,10 @@ public class GameManager : MonoBehaviour
    [Tooltip("Cikis onay paneli (opsiyonel)")]
    public GameObject exitPanel;
 
+   [Header("Sahne")]
+   [Tooltip("Menu butonuna basildiginda yuklenecek sahne adi")]
+   public string menuSceneName = "menu";
+
    [Tooltip("Ayar paneli acildiginda Time.timeScale olarak atanacak deger. 0 dogrudan atamak UI etkilesimlerini engelliyorsa kucuk bir deger kullanin.")]
    public float pauseTimeScale = 1f;
    [Tooltip("Settings butonuna bastiktan sonra oyunun tamamen donmadan once gececek gercek-sure (saniye)")]
@@ -194,6 +198,13 @@ public class GameManager : MonoBehaviour
    public void ResetGame()
    {
       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+   }
+
+   /// <summary>Menu butonundan cagrilir ve menu sahnesini yukler.</summary>
+   public void GoToMenu()
+   {
+      Time.timeScale = 1f;
+      SceneManager.LoadScene(menuSceneName);
    }
 
    /// <summary>Yakalanan obje sayısını artırır ve toplam hedefe ulaşınca oyunu kazandırır.</summary>

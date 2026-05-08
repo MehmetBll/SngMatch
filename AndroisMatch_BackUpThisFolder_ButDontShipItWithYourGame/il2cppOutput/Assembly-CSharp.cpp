@@ -217,6 +217,7 @@ struct Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3;
 struct MagnetObject_t2219D077C73DC877D6C3116D5F6DD7572AF62C8B;
 struct Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3;
 struct MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553;
+struct MenuManager_t34C8EA4F128D811DE986BE56D7938F2720BA7B16;
 struct Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4;
 struct MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5;
 struct MethodInfo_t;
@@ -301,11 +302,11 @@ struct U3CStartU3Ed__10_t06713955D554742C727996BE112A81AD0BCF3D00;
 struct ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C;
 struct CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD;
 struct WillRenderCanvases_tA4A6E66DBA797DCB45B995DBA449A9D1D80D0FBC;
-struct U3CThrowUpRoutineU3Ed__30_tC9E75AC4C1DE08D407A504F8190077AC7476FBCC;
+struct U3CThrowUpRoutineU3Ed__29_t0AC9AEC9DA8F4D7AE4D8D4ED13FA2D867387BAE7;
 struct U3CStartU3Ed__4_t7AF0F1ABA8D3AE9575A02603D2DC2137FA816557;
 struct FontTextureRebuildCallback_t76D5E172DF8AA57E67763D453AAC40F0961D09B1;
-struct U3CFreezeAfterDelayU3Ed__51_t1D5DF60837D6B755C56F7B5DED74C9D4C5712591;
-struct U3CShowTempMessageU3Ed__44_t887B0E7B20634B86ED73ACC70AD45F346459ACCC;
+struct U3CFreezeAfterDelayU3Ed__53_t22E8FF8745E882D14D682B53FCAB95DE9166C378;
+struct U3CShowTempMessageU3Ed__46_t7ABCBA5DD65C47E0A02D4FE8721F5C5DD5B6339D;
 struct CullStateChangedEvent_t6073CD0D951EC1256BF74B8F9107D68FC89B99B8;
 struct ReapplyDrivenProperties_t3482EA130A01FF7EE2EEFE37F66A5215D08CFE24;
 struct U3CPauseComboCoroutineU3Ed__32_t2C86E2D193A67D7867D1FCFBA2F520646996600B;
@@ -370,16 +371,16 @@ IL2CPP_EXTERN_C RuntimeClass* TextMeshProFloatingText_t833773B79A4826E78EDF2799C
 IL2CPP_EXTERN_C RuntimeClass* U3CAnimatePropertiesU3Ed__6_tF5A2F267919D456EDB1730E0AF6F8776728475FB_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CDisplayTextMeshFloatingTextU3Ed__16_t5CBD7868EB4D3D561D539B99B4541CC014DFF5F0_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CDisplayTextMeshProFloatingTextU3Ed__15_tDFD30981C9C1189D2AC3AA6C07DA7EFE7E1694F3_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CFreezeAfterDelayU3Ed__51_t1D5DF60837D6B755C56F7B5DED74C9D4C5712591_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CFreezeAfterDelayU3Ed__53_t22E8FF8745E882D14D682B53FCAB95DE9166C378_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CPauseComboCoroutineU3Ed__32_t2C86E2D193A67D7867D1FCFBA2F520646996600B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CRevealCharactersU3Ed__7_tB14F85C7FC57BEFD555A1A9CD8D3FF41E0F676F9_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CRevealWordsU3Ed__8_t912CFD430C602C79AE6BC1BC6C4AEBF101B4D7C8_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CShowTempMessageU3Ed__44_t887B0E7B20634B86ED73ACC70AD45F346459ACCC_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CShowTempMessageU3Ed__46_t7ABCBA5DD65C47E0A02D4FE8721F5C5DD5B6339D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CStartU3Ed__10_t06713955D554742C727996BE112A81AD0BCF3D00_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CStartU3Ed__10_tB81FF4C98E539AF1EEA095D6A6C11409A26E7819_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CStartU3Ed__4_t34C4F7117E4A5E63F9D03A9DD3C2493CEB376E75_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CStartU3Ed__4_t7AF0F1ABA8D3AE9575A02603D2DC2137FA816557_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CThrowUpRoutineU3Ed__30_tC9E75AC4C1DE08D407A504F8190077AC7476FBCC_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CThrowUpRoutineU3Ed__29_t0AC9AEC9DA8F4D7AE4D8D4ED13FA2D867387BAE7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CWarpTextU3Ed__7_t81F532662DA2606D7C0F4196B3804AB983C30508_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* UnityAction_1_t690494F0E492A2098660E28B8EB7D71B2C69BE1B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* UnityAction_2_t2654BCB968A8286196F6268276089A674B0A9007_il2cpp_TypeInfo_var;
@@ -393,8 +394,8 @@ IL2CPP_EXTERN_C RuntimeClass* WaitForSecondsRealtime_tA8CE0AAB4B0C872B843E797363
 IL2CPP_EXTERN_C RuntimeClass* WaitForSecondsU5BU5D_t2A9038ECB6E643745AEF2AD9A4F7FFD3D272186E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WordSelectionEvent_t340E6006406B5E90F7190C56218E8F7E3712945E_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____9BB6D14B053DA3BE4213B408394B4522AFF0C9C3BD5A63AD1056B967813F81F9_FieldInfo_var;
-IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____9FBDE5CF1A15814120B4FA4142A5B633ECDE70FDE0564923F670B69D84E14A2F_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____4C642A1454F33245B0B6CB4818C1DBB06CD4E59CC1C61538C1B0A1F29C36A1B8_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____B4C7D0346BEEA5A9B5CDC5FFF67842D3424FB8CC126DF02B4C49FC6A106D50FF_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral000A577FA6F1044FCB37680E918D59D0DA3E7DDA;
 IL2CPP_EXTERN_C String_t* _stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD;
 IL2CPP_EXTERN_C String_t* _stringLiteral010087103A107E8993C24C55FDBDBDAA5D9438F7;
@@ -405,10 +406,12 @@ IL2CPP_EXTERN_C String_t* _stringLiteral0570B799853B77BFC04E0AB8BD83CD1E5089060A
 IL2CPP_EXTERN_C String_t* _stringLiteral0A2AF913B1170FF14D4811339B9091A3DBC2F546;
 IL2CPP_EXTERN_C String_t* _stringLiteral0A5B75A180F8485D63D34FF1F4EDF6699CD0E2E0;
 IL2CPP_EXTERN_C String_t* _stringLiteral0AD3AED61EAC70F650D3FCA99178491EBE77C340;
+IL2CPP_EXTERN_C String_t* _stringLiteral0B5ECFF84CE073C4971D637741C560F910E4D128;
 IL2CPP_EXTERN_C String_t* _stringLiteral0B662801A8588A129F49D202A25CEC195F9CA5E5;
 IL2CPP_EXTERN_C String_t* _stringLiteral0E5ACD8F8AECEE8F67E336B26C4EAF8C98F34BD0;
 IL2CPP_EXTERN_C String_t* _stringLiteral0EF911B4E5C5A3E63DAB6CEA449EF637C363EF9B;
 IL2CPP_EXTERN_C String_t* _stringLiteral15196F05B117690F3E12E56AA0C43803EA0D2A46;
+IL2CPP_EXTERN_C String_t* _stringLiteral161F418B68C39DA1D5762A50ACC03FA5DA0F9A20;
 IL2CPP_EXTERN_C String_t* _stringLiteral16DD21BE77B115D392226EB71A2D3A9FDC29E3F0;
 IL2CPP_EXTERN_C String_t* _stringLiteral1A82671F2C34BEA09C35354DDB899812746CBCF9;
 IL2CPP_EXTERN_C String_t* _stringLiteral1BF20F795791AC67CCC9E2B5B855E3A9D68CDDD6;
@@ -538,6 +541,9 @@ IL2CPP_EXTERN_C const RuntimeMethod* HashSet_1_Remove_mDB11C4E4E7743640CDF88857D
 IL2CPP_EXTERN_C const RuntimeMethod* HashSet_1__ctor_m5E9F59CF707246003DFF177238BC4529ECEBCD36_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* InputControl_1_ReadValue_m362E05F00FE8CF8FC52F0D673291907EC7FA6541_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Clear_mF99932B21C9883F8D329D36A63CB886718B9C18E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* MenuManager_PlayGame_mB5DE2377271DD83EE114E69B5F5A226E3DC1190D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* MenuManager_ToggleSettingsPanel_m5830B9DABB610C5DDBB753F20E591947F0E1F05F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* MenuManager_ToggleShopPanel_m9003F13DBE8411A1B6002FE92D875F7D0FC69C9B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Object_FindAnyObjectByType_TisCWalls_tB909566A7AA4504E4C5BD3137D39068AA95C8F3F_mE2ED200E3E4C5DBC4C3A0A9870DEEC95AB90EDE2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Object_FindFirstObjectByType_TisCanvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26_m18566EA543B536F04C35FD1AAAD66A86D5649418_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Object_FindFirstObjectByType_TisGameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6_mF766559530B489C0F2CD36609162D1A663352C63_RuntimeMethod_var;
@@ -558,16 +564,16 @@ IL2CPP_EXTERN_C const RuntimeMethod* TextConsoleSimulator_ON_TEXT_CHANGED_m050EC
 IL2CPP_EXTERN_C const RuntimeMethod* U3CAnimatePropertiesU3Ed__6_System_Collections_IEnumerator_Reset_m1C76BF8EAC2CDC2BAC58755622763B9318DA51CA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CDisplayTextMeshFloatingTextU3Ed__16_System_Collections_IEnumerator_Reset_m5A7148435B35A0A84329416FF765D45F6AA0F4E1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CDisplayTextMeshProFloatingTextU3Ed__15_System_Collections_IEnumerator_Reset_mCCE19093B7355F3E23834E27A8517661DF833797_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CFreezeAfterDelayU3Ed__51_System_Collections_IEnumerator_Reset_m895B9E55465C7C82DD2509649D3BE8AD891FFBD8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CFreezeAfterDelayU3Ed__53_System_Collections_IEnumerator_Reset_mA31CE7E8D24DDC368CD5F681E389BC8C42AD05B8_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CPauseComboCoroutineU3Ed__32_System_Collections_IEnumerator_Reset_mFC1D4DA2575E2EF5BDD4BF6CD02F5C55E3AC3659_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CRevealCharactersU3Ed__7_System_Collections_IEnumerator_Reset_mD12057609EFCBCA8E7B61B0421D4A7C5A206C8C3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CRevealWordsU3Ed__8_System_Collections_IEnumerator_Reset_mE5E0678716735BDF0D632FE43E392981E75A1C4D_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CShowTempMessageU3Ed__44_System_Collections_IEnumerator_Reset_mE406CF854B066B7048CDDDCA0F26C4E0A99418AA_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CShowTempMessageU3Ed__46_System_Collections_IEnumerator_Reset_mA8A027B2FC048540E0844E0E3F2DAF2BF47DA951_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CStartU3Ed__10_System_Collections_IEnumerator_Reset_m553F892690ED74A33F57B1359743D31F8BB93C2A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CStartU3Ed__10_System_Collections_IEnumerator_Reset_mC9F90586F057E3728D9F93BB0E12197C9B994EEA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CStartU3Ed__4_System_Collections_IEnumerator_Reset_m3EF23BF40634D4262D8A2AE3DB14140FEFB4BF52_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CStartU3Ed__4_System_Collections_IEnumerator_Reset_m9B7AEE80C1E70D2D2FF5811A54AFD6189CD7F5A9_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CThrowUpRoutineU3Ed__30_System_Collections_IEnumerator_Reset_m3442E1B2FE2C20DDD124EE49317FCEC199063730_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CThrowUpRoutineU3Ed__29_System_Collections_IEnumerator_Reset_m9417FF1B92F288D28DE214E5C0ADD5770EFDE5CF_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CWarpTextU3Ed__7_System_Collections_IEnumerator_Reset_mB6C5974E8F57160AE544E1D2FD44621EEF3ACAB5_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_1_AddListener_mEC384A8CFC5D4D41B62B08248A738CF61B82172F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_1_RemoveListener_m580353A1B030A82D1205B9BA94CF3484866C027F_RuntimeMethod_var;
@@ -736,20 +742,20 @@ struct U3CStartU3Ed__10_t06713955D554742C727996BE112A81AD0BCF3D00  : public Runt
 	Benchmark01_UGUI_t7DF9DF96E75AF6072B851B638B90BD76FEE0EFD7* ___U3CU3E4__this;
 	int32_t ___U3CiU3E5__2;
 };
-struct U3CThrowUpRoutineU3Ed__30_tC9E75AC4C1DE08D407A504F8190077AC7476FBCC  : public RuntimeObject
+struct U3CThrowUpRoutineU3Ed__29_t0AC9AEC9DA8F4D7AE4D8D4ED13FA2D867387BAE7  : public RuntimeObject
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
 	CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* ___U3CU3E4__this;
 	objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* ___oid;
 };
-struct U3CFreezeAfterDelayU3Ed__51_t1D5DF60837D6B755C56F7B5DED74C9D4C5712591  : public RuntimeObject
+struct U3CFreezeAfterDelayU3Ed__53_t22E8FF8745E882D14D682B53FCAB95DE9166C378  : public RuntimeObject
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
 	GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* ___U3CU3E4__this;
 };
-struct U3CShowTempMessageU3Ed__44_t887B0E7B20634B86ED73ACC70AD45F346459ACCC  : public RuntimeObject
+struct U3CShowTempMessageU3Ed__46_t7ABCBA5DD65C47E0A02D4FE8721F5C5DD5B6339D  : public RuntimeObject
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
@@ -3413,7 +3419,6 @@ struct Benchmark04_t10F8FE01330047EC5B83FE59EE23381CD2BE2F01  : public MonoBehav
 struct CWalls_tB909566A7AA4504E4C5BD3137D39068AA95C8F3F  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
 	ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* ___wallColliders;
-	Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___GetCollider;
 };
 struct CameraController_t7E0AA7DC0B482A31CC3D60F6032912FE8B581DA8  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -3444,7 +3449,6 @@ struct CameraController_t7E0AA7DC0B482A31CC3D60F6032912FE8B581DA8  : public Mono
 struct CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
 	bool ___isRight;
-	bool ___useRootObjectFromCollaider;
 	bool ___requireNonZeroMatchId;
 	float ___throwUpForce;
 	float ___throwUpStateDuration;
@@ -3464,7 +3468,7 @@ struct ChatController_t21BE953E1D5ADF0BA9F3B03C205203CADDC64C15  : public MonoBe
 };
 struct ContinueUIBuilder_t3293BF6C9C58B8D8BCDD7B20B6DC6ABC2266ACC9  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___btnGO;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___buttonObject;
 	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___messageText;
 	GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* ___gm;
 };
@@ -3490,6 +3494,7 @@ struct GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6  : public MonoBehav
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___gameLost;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___settingsPanel;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___exitPanel;
+	String_t* ___menuSceneName;
 	float ___pauseTimeScale;
 	float ___freezeDelay;
 	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___timerText;
@@ -3518,6 +3523,15 @@ struct GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6  : public MonoBehav
 };
 struct MagnetObject_t2219D077C73DC877D6C3116D5F6DD7572AF62C8B  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+};
+struct MenuManager_t34C8EA4F128D811DE986BE56D7938F2720BA7B16  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___playButton;
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___settingsButton;
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___shopButton;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___settingsPanel;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___shopPanel;
+	String_t* ___inGameSceneName;
 };
 struct ObjectSpin_tE4A801A6C63FE0773DE2FD043571CB80CC9F194B  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -3704,7 +3718,6 @@ struct objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20  : public MonoBehaviou
 	int32_t ___pieceCount;
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___effectColor;
 	bool ___isHeld;
-	int32_t ___U3CscoreValueU3Ek__BackingField;
 };
 struct prefabManager_tF0A2E7BB19D3940BF4E12EA6409D148104699807  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -3718,7 +3731,6 @@ struct prefabManager_tF0A2E7BB19D3940BF4E12EA6409D148104699807  : public MonoBeh
 	float ___posZ;
 	float ___objectHeight;
 	LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB ___draggableMask;
-	LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB ___floorMask;
 	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___cam;
 };
 struct BaseRaycaster_t7DC8158FD3CA0193455344379DD5FF7CD5F1F832  : public UIBehaviour_tB9D4295827BD2EEDEF0749200C6CA7090C742A9D
@@ -5416,7 +5428,7 @@ inline ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* Component_GetCo
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Collider_get_enabled_mDBFB488088ADB14C8016A83EF445653AC5A4A12B (Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Collider_get_isTrigger_mFF457F6AA71D173F9A11BAF00C35E5AE12952F87 (Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, bool ___0_value, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CThrowUpRoutineU3Ed__30__ctor_m2EE30A2CC0CACB48276C2D06EF440B1B3E8FC530 (U3CThrowUpRoutineU3Ed__30_tC9E75AC4C1DE08D407A504F8190077AC7476FBCC* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CThrowUpRoutineU3Ed__29__ctor_m07E0DACB3C2B3D850C0589115D28098EA477F4AF (U3CThrowUpRoutineU3Ed__29_t0AC9AEC9DA8F4D7AE4D8D4ED13FA2D867387BAE7* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* CatcherManager_ThrowUpRoutine_mE006E6EE097331A405F3693F08DB94AB540EA446 (CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* __this, objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* ___0_oid, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, RuntimeObject* ___0_routine, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Random_get_insideUnitSphere_mA488D6859560B73565B8D890ED6B39DB4091C54F (const RuntimeMethod* method) ;
@@ -5439,6 +5451,7 @@ inline Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* GameObject_GetCompone
 {
 	return ((  Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* Renderer_get_sharedMaterial_mA2E0CA0A564617FFC3E0E50947C6300082C35F81 (Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material__ctor_mFCC42FB90257F1E8F7516A8640A79C465A39961C (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___0_source, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_set_color_m5C32DEBB215FF9EE35E7B575297D8C2F29CC2A2D (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Renderer_set_material_m21E88977071E0A914D62F3D9CFF0193B3117C45A (Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* __this, Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___0_value, const RuntimeMethod* method) ;
@@ -5563,18 +5576,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Single_ToString_mE282EDA9CA4F7DF884
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Scene_tA1DC762B79745EB5140F054C884855B922318356 SceneManager_GetActiveScene_m0B320EC4302F51A71495D1CCD1A0FF9C2ED1FDC8 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Scene_get_buildIndex_m82B6E0C96C85C952B7A2D794DB73CDA99AA9A57E (Scene_tA1DC762B79745EB5140F054C884855B922318356* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneManager_LoadScene_m0957E62F2A0A0243C79394E5B74E8EFA86BE5ED1 (int32_t ___0_sceneBuildIndex, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Time_set_timeScale_mEF84EE4B2376A458387648079B426B267862D331 (float ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E (String_t* ___0_sceneName, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_GameWon_m636C306862F85995D61C96FE57CB22EFBE012276 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameManager_ShowTempMessage_m06278FF9CF1C7B881495F89B85893AC5AEFD6F89 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, String_t* ___0_msg, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ScoreManager_TrySpendMoney_mC9B1C1DF60706E5D0AEDB64799090D45255A9DE4 (ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39* __this, int32_t ___0_amount, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_ContinueFromLost_m45A9BD646CF825021E536CD75A45D83122BDA790 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CShowTempMessageU3Ed__44__ctor_m30854FA7F630D71D087CB614CE7FFA43A3E7AAB6 (U3CShowTempMessageU3Ed__44_t887B0E7B20634B86ED73ACC70AD45F346459ACCC* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CShowTempMessageU3Ed__46__ctor_mE894AA97E0D66D17307ADE9A8BADA190EC850606 (U3CShowTempMessageU3Ed__46_t7ABCBA5DD65C47E0A02D4FE8721F5C5DD5B6339D* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_CloseSettingsPanel_m08A5BAD06D9495FE476CD727BF2D466563E35160 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_OpenSettingsPanel_m84A2DDE2D0332852C0CE781E81DB5506BB70A46A (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_timeScale_m1F45A413D4EEA08B1E0988022512C137F6C1E616 (const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Time_set_timeScale_mEF84EE4B2376A458387648079B426B267862D331 (float ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour_StopCoroutine_mB0FC91BE84203BD8E360B3FBAE5B958B4C5ED22A (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* ___0_routine, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameManager_FreezeAfterDelay_mAD69816BC7D5FB5E7F68F070D4ADBBFDE245B198 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFreezeAfterDelayU3Ed__51__ctor_mDCD16CBD095142E66CFA14ACDDEA7F6284DFAE11 (U3CFreezeAfterDelayU3Ed__51_t1D5DF60837D6B755C56F7B5DED74C9D4C5712591* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFreezeAfterDelayU3Ed__53__ctor_mACED6AC13D6E04B91DFA516E90A816F4D78DF5B4 (U3CFreezeAfterDelayU3Ed__53_t22E8FF8745E882D14D682B53FCAB95DE9166C378* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Application_Quit_mE304382DB9A6455C2A474C8F364C7387F37E9281 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_PauseCombo_m36C7DC875DAD5B207D1163FD356C13D5B5DEC85F (ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39* __this, float ___0_duration, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Single_TryParse_mC39FC2D8F1F33DE64685F3A8CE6BDD2164FB9423 (String_t* ___0_s, float* ___1_result, const RuntimeMethod* method) ;
@@ -5591,6 +5605,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_set_mainTexture_m389E048BA9C81B
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Renderer_set_materials_mAB0270CEB5AF2F6A8D21A012E77440DBFCBF9001 (Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* __this, MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D* ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_SetFloorSpriteByIndex_m2E04B3250EAA61BDF0AA10A2929122321C26A87B (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, int32_t ___0_index, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaitForSecondsRealtime__ctor_mBFC1E4F0E042D5EC6E7EEB211A2FE5193A8F6D6F (WaitForSecondsRealtime_tA8CE0AAB4B0C872B843E7973637037D17682BA01* __this, float ___0_time, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_RemoveListener_m0E138F5575CB4363019D3DA570E98FAD502B812C (UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* __this, UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___0_call, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_white_m068F5AF879B0FCA584E3693F762EA41BB65532C6_inline (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void prefabManager_SpawnObjects_m0D9AFCCDFEA39FDE816D8A925882ADEAEB27A804 (prefabManager_tF0A2E7BB19D3940BF4E12EA6409D148104699807* __this, const RuntimeMethod* method) ;
@@ -6014,27 +6029,27 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66687
+// Method Definition Index: 66690
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_OnEnable_mA3D834010DB2D1FB91E8AC57BFEC8BABD5639838 (CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:45>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:41>
 		CatcherManager_RegisterInstance_m046570750521AEF6682E27ABA148274DB7F29A3E(__this, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:45>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:41>
 		return;
 	}
 }
-// Method Definition Index: 66688
+// Method Definition Index: 66691
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_OnDisable_m2BF089699111CAA25DDFD9E7E34A03CC69A65919 (CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:47>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:44>
 		CatcherManager_UnregisterInstance_m5921737A9FFBE61DF39F7512AD654325DE47F820(__this, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:47>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:44>
 		return;
 	}
 }
-// Method Definition Index: 66689
+// Method Definition Index: 66692
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_FixedUpdate_m79A679694DDF695072F04C562E0D0FA3F4E3C230 (CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6044,7 +6059,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_FixedUpdate_m79A679694DDF
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:52>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:49>
 		int32_t L_0 = __this->___currentState;
 		if ((!(((uint32_t)L_0) == ((uint32_t)1))))
 		{
@@ -6064,19 +6079,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_FixedUpdate_m79A679694DDF
 
 IL_0017:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:52>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:49>
 		return;
 	}
 
 IL_0018:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:53>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:50>
 		CatcherManager_LockHeldObjectToCenter_m76AB7D33EE982DCBD3B970259D1B7C597FD440BC(__this, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:54>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:51>
 		return;
 	}
 }
-// Method Definition Index: 66690
+// Method Definition Index: 66693
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_RegisterInstance_m046570750521AEF6682E27ABA148274DB7F29A3E (CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6086,7 +6101,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_RegisterInstance_m0465707
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:59>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:56>
 		bool L_0;
 		L_0 = CatcherManager_HasEnabledTriggerCollider_m260CB8A826B80251575701645B7380BC61A8491C(__this, NULL);
 		if (L_0)
@@ -6095,13 +6110,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_RegisterInstance_m0465707
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:59>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:56>
 		return;
 	}
 
 IL_0009:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:61>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:58>
 		bool L_1 = __this->___isRight;
 		if (!L_1)
 		{
@@ -6109,7 +6124,7 @@ IL_0009:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:61>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:58>
 		il2cpp_codegen_runtime_class_init_inline(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_il2cpp_TypeInfo_var);
 		((CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_StaticFields*)il2cpp_codegen_static_fields_for(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_il2cpp_TypeInfo_var))->___CatcherR = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&((CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_StaticFields*)il2cpp_codegen_static_fields_for(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_il2cpp_TypeInfo_var))->___CatcherR), (void*)__this);
@@ -6118,15 +6133,15 @@ IL_0009:
 
 IL_0018:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:61>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:58>
 		il2cpp_codegen_runtime_class_init_inline(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_il2cpp_TypeInfo_var);
 		((CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_StaticFields*)il2cpp_codegen_static_fields_for(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_il2cpp_TypeInfo_var))->___CatcherL = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&((CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_StaticFields*)il2cpp_codegen_static_fields_for(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_il2cpp_TypeInfo_var))->___CatcherL), (void*)__this);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:62>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:59>
 		return;
 	}
 }
-// Method Definition Index: 66691
+// Method Definition Index: 66694
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_UnregisterInstance_m5921737A9FFBE61DF39F7512AD654325DE47F820 (CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6137,7 +6152,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_UnregisterInstance_m59217
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:67>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:64>
 		bool L_0 = __this->___isRight;
 		if (!L_0)
 		{
@@ -6145,7 +6160,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_UnregisterInstance_m59217
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:69>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:66>
 		il2cpp_codegen_runtime_class_init_inline(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_il2cpp_TypeInfo_var);
 		CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* L_1 = ((CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_StaticFields*)il2cpp_codegen_static_fields_for(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_il2cpp_TypeInfo_var))->___CatcherR;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -6157,7 +6172,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_UnregisterInstance_m59217
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:69>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:66>
 		il2cpp_codegen_runtime_class_init_inline(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_il2cpp_TypeInfo_var);
 		((CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_StaticFields*)il2cpp_codegen_static_fields_for(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_il2cpp_TypeInfo_var))->___CatcherR = (CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&((CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_StaticFields*)il2cpp_codegen_static_fields_for(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_il2cpp_TypeInfo_var))->___CatcherR), (void*)(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4*)NULL);
@@ -6166,7 +6181,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_UnregisterInstance_m59217
 
 IL_001c:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:73>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:70>
 		il2cpp_codegen_runtime_class_init_inline(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_il2cpp_TypeInfo_var);
 		CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* L_3 = ((CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_StaticFields*)il2cpp_codegen_static_fields_for(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_il2cpp_TypeInfo_var))->___CatcherL;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -6178,7 +6193,7 @@ IL_001c:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:73>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:70>
 		il2cpp_codegen_runtime_class_init_inline(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_il2cpp_TypeInfo_var);
 		((CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_StaticFields*)il2cpp_codegen_static_fields_for(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_il2cpp_TypeInfo_var))->___CatcherL = (CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&((CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_StaticFields*)il2cpp_codegen_static_fields_for(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_il2cpp_TypeInfo_var))->___CatcherL), (void*)(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4*)NULL);
@@ -6186,11 +6201,11 @@ IL_001c:
 
 IL_002f:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:75>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:72>
 		return;
 	}
 }
-// Method Definition Index: 66692
+// Method Definition Index: 66695
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_OnTriggerEnter_mC3069EC140D9F23C7723EB9F24854D986AEC3CCA (CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* __this, Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___0_other, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6204,13 +6219,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_OnTriggerEnter_mC3069EC14
 	}
 	objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* V_0 = NULL;
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:81>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:77>
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_0 = ___0_other;
 		NullCheck(L_0);
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_1;
 		L_1 = Component_GetComponentInParent_TisobjectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20_m1EDDC97B0CBD65DC5421C98661A2AB20C69F36C4(L_0, Component_GetComponentInParent_TisobjectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20_m1EDDC97B0CBD65DC5421C98661A2AB20C69F36C4_RuntimeMethod_var);
 		V_0 = L_1;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:82>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:78>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_2 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_3;
@@ -6221,13 +6236,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_OnTriggerEnter_mC3069EC14
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:82>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:78>
 		return;
 	}
 
 IL_0011:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:83>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:79>
 		int32_t L_4 = __this->___currentState;
 		if (!L_4)
 		{
@@ -6235,13 +6250,13 @@ IL_0011:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:83>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:79>
 		return;
 	}
 
 IL_001a:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:85>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:80>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_5 = V_0;
 		NullCheck(L_5);
 		bool L_6 = L_5->___isHeld;
@@ -6265,13 +6280,13 @@ IL_001a:
 
 IL_002f:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:85>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:80>
 		return;
 	}
 
 IL_0030:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:86>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:81>
 		bool L_10 = __this->___requireNonZeroMatchId;
 		if (!L_10)
 		{
@@ -6288,13 +6303,13 @@ IL_0030:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:86>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:81>
 		return;
 	}
 
 IL_0041:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:88>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:82>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_13 = __this->___heldObject;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_14;
@@ -6305,22 +6320,22 @@ IL_0041:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:88>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:82>
 		return;
 	}
 
 IL_0050:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:90>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:84>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_15 = V_0;
 		CatcherManager_HoldObject_m4CB5B622D733A0B2CB9B44D75D943450CC151B96(__this, L_15, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:91>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:85>
 		CatcherManager_TryProcessPairWithOtherCatcher_mD829DE902DE5804466B4BE0BEC6E3C0A0CCE2D5F(__this, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:92>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:86>
 		return;
 	}
 }
-// Method Definition Index: 66693
+// Method Definition Index: 66696
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_TryProcessPairWithOtherCatcher_mD829DE902DE5804466B4BE0BEC6E3C0A0CCE2D5F (CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6338,7 +6353,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_TryProcessPairWithOtherCa
 	int32_t V_4 = 0;
 	CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* G_B3_0 = NULL;
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:98>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:91>
 		bool L_0 = __this->___isRight;
 		if (L_0)
 		{
@@ -6362,7 +6377,7 @@ IL_000f:
 IL_0014:
 	{
 		V_0 = G_B3_0;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:99>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:92>
 		CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* L_3 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_4;
@@ -6373,23 +6388,23 @@ IL_0014:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:99>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:92>
 		return;
 	}
 
 IL_001f:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:100>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:93>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_5;
 		L_5 = CatcherManager_GetObjectInCenter_m19921CFEC8AEDD7FCD24C458066C554FDE02DD84_inline(__this, NULL);
 		V_1 = L_5;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:101>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:94>
 		CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* L_6 = V_0;
 		NullCheck(L_6);
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_7;
 		L_7 = CatcherManager_GetObjectInCenter_m19921CFEC8AEDD7FCD24C458066C554FDE02DD84_inline(L_6, NULL);
 		V_2 = L_7;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:102>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:95>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_8 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_9;
@@ -6412,22 +6427,22 @@ IL_001f:
 
 IL_003f:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:102>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:95>
 		return;
 	}
 
 IL_0040:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:104>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:97>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_12 = V_1;
 		NullCheck(L_12);
 		int32_t L_13 = L_12->___matchId;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:105>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:98>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_14 = V_2;
 		NullCheck(L_14);
 		int32_t L_15 = L_14->___matchId;
 		V_3 = L_15;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:107>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:100>
 		int32_t L_16 = V_3;
 		if ((!(((uint32_t)L_13) == ((uint32_t)L_16))))
 		{
@@ -6435,7 +6450,7 @@ IL_0040:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:110>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:102>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_17 = V_1;
 		NullCheck(L_17);
 		int32_t L_18 = L_17->___score;
@@ -6443,37 +6458,37 @@ IL_0040:
 		NullCheck(L_19);
 		int32_t L_20 = L_19->___score;
 		V_4 = ((int32_t)il2cpp_codegen_add(L_18, L_20));
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:112>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:103>
 		ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39* L_21 = ((ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39_StaticFields*)il2cpp_codegen_static_fields_for(ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39_il2cpp_TypeInfo_var))->___Instance;
 		int32_t L_22 = V_4;
 		NullCheck(L_21);
 		ScoreManager_AddScore_m9D5D2CA64A0F3BE20A4F229B9B7884C3AC90FA55(L_21, L_22, (bool)1, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:114>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:104>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_23 = V_1;
 		CatcherManager_BreakPieces_mB5A5338631FB455FC708CADBC34F722A48162971(__this, L_23, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:115>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:105>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_24 = V_2;
 		CatcherManager_BreakPieces_mB5A5338631FB455FC708CADBC34F722A48162971(__this, L_24, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:119>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:106>
 		CatcherManager_ClearHeldObject_m0D8B9137D29E24EC1DDEEA62FE96892A092A4980(__this, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:120>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:107>
 		CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* L_25 = V_0;
 		NullCheck(L_25);
 		CatcherManager_ClearHeldObject_m0D8B9137D29E24EC1DDEEA62FE96892A092A4980(L_25, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:121>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:108>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_26 = V_1;
 		NullCheck(L_26);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_27;
 		L_27 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_26, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_27, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:122>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:109>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_28 = V_2;
 		NullCheck(L_28);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_29;
 		L_29 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_28, NULL);
 		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_29, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:124>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:111>
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_30 = __this->___gameManager;
 		NullCheck(L_30);
 		GameManager_CaughtDestroy_mD4490C8E5B5A4E84FF4A3BBA23F25BEE2BCF072F(L_30, NULL);
@@ -6482,27 +6497,27 @@ IL_0040:
 
 IL_00a8:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:129>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:115>
 		ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39* L_31 = ((ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39_StaticFields*)il2cpp_codegen_static_fields_for(ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39_il2cpp_TypeInfo_var))->___Instance;
 		NullCheck(L_31);
 		ScoreManager_ResetCombo_mC16462BBCB6BF88D63DFE159EA57E2184A44BD78(L_31, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:131>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:116>
 		CatcherManager_ClearHeldObject_m0D8B9137D29E24EC1DDEEA62FE96892A092A4980(__this, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:132>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:117>
 		CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* L_32 = V_0;
 		NullCheck(L_32);
 		CatcherManager_ClearHeldObject_m0D8B9137D29E24EC1DDEEA62FE96892A092A4980(L_32, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:134>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:118>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_33 = V_1;
 		CatcherManager_ThrowUp_m1B3564C53AEA7F53C6699DFBC10EE80E23639A1A(__this, L_33, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:135>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:119>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_34 = V_2;
 		CatcherManager_ThrowUp_m1B3564C53AEA7F53C6699DFBC10EE80E23639A1A(__this, L_34, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:137>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:121>
 		return;
 	}
 }
-// Method Definition Index: 66694
+// Method Definition Index: 66697
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_HoldObject_m4CB5B622D733A0B2CB9B44D75D943450CC151B96 (CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* __this, objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* ___0_oid, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6513,24 +6528,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_HoldObject_m4CB5B622D733A
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:142>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:126>
 		__this->___currentState = 1;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:143>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:127>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_0 = ___0_oid;
 		NullCheck(L_0);
 		L_0->___isHeld = (bool)1;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:144>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:128>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_1 = ___0_oid;
 		__this->___heldObject = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___heldObject), (void*)L_1);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:145>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:129>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_2 = ___0_oid;
 		NullCheck(L_2);
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_3;
 		L_3 = Component_GetComponentInChildren_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m8D7F962D37E4362174AE5FE843014811F239F155(L_2, Component_GetComponentInChildren_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m8D7F962D37E4362174AE5FE843014811F239F155_RuntimeMethod_var);
 		__this->___heldRigidbody = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___heldRigidbody), (void*)L_3);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:147>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:131>
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_4 = __this->___heldRigidbody;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_5;
@@ -6541,23 +6556,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_HoldObject_m4CB5B622D733A
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:149>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:133>
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_6 = __this->___heldRigidbody;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7;
 		L_7 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		NullCheck(L_6);
 		Rigidbody_set_linearVelocity_m29AE03D5FC079EAD4202FCF72E2AEBDC19363985(L_6, L_7, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:150>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:134>
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_8 = __this->___heldRigidbody;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
 		L_9 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		NullCheck(L_8);
 		Rigidbody_set_angularVelocity_m23266B4E52BF0D2E65CC984AC73CC40B8D4A27E0(L_8, L_9, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:151>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:135>
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_10 = __this->___heldRigidbody;
 		NullCheck(L_10);
 		Rigidbody_set_useGravity_m1B1B22E093F9DC92D7BEEBBE6B02642B3B6C4389(L_10, (bool)0, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:152>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:136>
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_11 = __this->___heldRigidbody;
 		NullCheck(L_11);
 		Rigidbody_set_isKinematic_m6C3FD3EA358DADA3B191F2449CF1C4F8B22695ED(L_11, (bool)1, NULL);
@@ -6565,13 +6580,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_HoldObject_m4CB5B622D733A
 
 IL_0067:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:155>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:139>
 		CatcherManager_LockHeldObjectToCenter_m76AB7D33EE982DCBD3B970259D1B7C597FD440BC(__this, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:156>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:140>
 		return;
 	}
 }
-// Method Definition Index: 66695
+// Method Definition Index: 66698
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_ClearHeldObject_m0D8B9137D29E24EC1DDEEA62FE96892A092A4980 (CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6581,7 +6596,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_ClearHeldObject_m0D8B9137
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:161>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:145>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_0 = __this->___heldObject;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -6592,7 +6607,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_ClearHeldObject_m0D8B9137
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:162>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:146>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_2 = __this->___heldObject;
 		NullCheck(L_2);
 		L_2->___isHeld = (bool)0;
@@ -6600,19 +6615,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_ClearHeldObject_m0D8B9137
 
 IL_001a:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:164>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:148>
 		__this->___heldObject = (objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___heldObject), (void*)(objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20*)NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:165>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:149>
 		__this->___heldRigidbody = (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___heldRigidbody), (void*)(Rigidbody_t268697F5A994213ED97393309870968BC1C7393C*)NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:166>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:150>
 		__this->___currentState = 0;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:167>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:151>
 		return;
 	}
 }
-// Method Definition Index: 66696
+// Method Definition Index: 66699
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_ReleaseHeldObjectForThrow_m087C6CD64FF32FE474433F5541957D7F8914F100 (CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* __this, objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* ___0_oid, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6624,7 +6639,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_ReleaseHeldObjectForThrow
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:172>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:156>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_0 = ___0_oid;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -6635,11 +6650,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_ReleaseHeldObjectForThrow
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:174>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:158>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_2 = ___0_oid;
 		NullCheck(L_2);
 		L_2->___isHeld = (bool)0;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:175>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:159>
 		il2cpp_codegen_runtime_class_init_inline(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_il2cpp_TypeInfo_var);
 		HashSet_1_t20E218B2F4982CF3DE13175226456EE03F500F55* L_3 = ((CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_StaticFields*)il2cpp_codegen_static_fields_for(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_il2cpp_TypeInfo_var))->___ThrowingObjects;
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_4 = ___0_oid;
@@ -6650,7 +6665,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_ReleaseHeldObjectForThrow
 
 IL_001c:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:178>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:162>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_6 = __this->___heldObject;
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_7 = ___0_oid;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -6662,23 +6677,23 @@ IL_001c:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:180>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:164>
 		__this->___heldObject = (objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___heldObject), (void*)(objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20*)NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:181>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:165>
 		__this->___heldRigidbody = (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___heldRigidbody), (void*)(Rigidbody_t268697F5A994213ED97393309870968BC1C7393C*)NULL);
 	}
 
 IL_0038:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:184>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:168>
 		__this->___currentState = 2;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:185>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:169>
 		return;
 	}
 }
-// Method Definition Index: 66697
+// Method Definition Index: 66700
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_LockHeldObjectToCenter_m76AB7D33EE982DCBD3B970259D1B7C597FD440BC (CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6710,7 +6725,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_LockHeldObjectToCenter_m7
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 G_B10_1;
 	memset((&G_B10_1), 0, sizeof(G_B10_1));
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:190>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:174>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_0 = __this->___heldObject;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -6721,13 +6736,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_LockHeldObjectToCenter_m7
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:190>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:174>
 		return;
 	}
 
 IL_000f:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:192>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:176>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2 = __this->___centerPoint;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_3;
@@ -6758,15 +6773,15 @@ IL_002a:
 
 IL_0035:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:193>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:177>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_8 = __this->___heldObject;
 		NullCheck(L_8);
 		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_9;
 		L_9 = Component_GetComponentInChildren_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_m7CBAFA50AB995C9F53D6140718FCD31D7BEC7CC8(L_8, Component_GetComponentInChildren_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_m7CBAFA50AB995C9F53D6140718FCD31D7BEC7CC8_RuntimeMethod_var);
 		V_0 = L_9;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:194>
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:195>
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:196>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:178>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:179>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:180>
 		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_10 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_11;
@@ -6830,12 +6845,12 @@ IL_0077:
 IL_0085:
 	{
 		V_1 = G_B10_0;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:197>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:181>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22 = V_1;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23;
 		L_23 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(G_B10_1, L_22, NULL);
 		V_2 = L_23;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:199>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:183>
 		float L_24;
 		L_24 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_2), NULL);
 		if ((!(((float)L_24) < ((float)(9.99999997E-07f)))))
@@ -6844,13 +6859,13 @@ IL_0085:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:200>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:184>
 		return;
 	}
 
 IL_009c:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:202>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:186>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_25 = __this->___heldObject;
 		NullCheck(L_25);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_26;
@@ -6864,7 +6879,7 @@ IL_009c:
 		L_30 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_28, L_29, NULL);
 		NullCheck(L_27);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_27, L_30, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:204>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:188>
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_31 = __this->___heldRigidbody;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_32;
@@ -6875,7 +6890,7 @@ IL_009c:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:206>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:190>
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_33 = __this->___heldRigidbody;
 		NullCheck(L_33);
 		bool L_34;
@@ -6886,13 +6901,13 @@ IL_009c:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:208>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:192>
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_35 = __this->___heldRigidbody;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_36;
 		L_36 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		NullCheck(L_35);
 		Rigidbody_set_linearVelocity_m29AE03D5FC079EAD4202FCF72E2AEBDC19363985(L_35, L_36, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:209>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:193>
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_37 = __this->___heldRigidbody;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38;
 		L_38 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
@@ -6902,11 +6917,11 @@ IL_009c:
 
 IL_00f3:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:212>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:196>
 		return;
 	}
 }
-// Method Definition Index: 66698
+// Method Definition Index: 66701
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CatcherManager_HasEnabledTriggerCollider_m260CB8A826B80251575701645B7380BC61A8491C (CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6920,10 +6935,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CatcherManager_HasEnabledTriggerCollider
 	int32_t V_1 = 0;
 	Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* V_2 = NULL;
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:217>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:201>
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_0;
 		L_0 = Component_GetComponentsInChildren_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m64EB86DDB49F92CFAAF6003C9EAC7D7D8B0F35DB(__this, Component_GetComponentsInChildren_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m64EB86DDB49F92CFAAF6003C9EAC7D7D8B0F35DB_RuntimeMethod_var);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:218>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:202>
 		V_0 = L_0;
 		V_1 = 0;
 		goto IL_002e;
@@ -6931,14 +6946,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CatcherManager_HasEnabledTriggerCollider
 
 IL_000b:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:218>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:202>
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_1 = V_0;
 		int32_t L_2 = V_1;
 		NullCheck(L_1);
 		int32_t L_3 = L_2;
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_4 = (L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_3));
 		V_2 = L_4;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:220>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:204>
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_5 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_6;
@@ -6969,7 +6984,7 @@ IL_000b:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:221>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:205>
 		return (bool)1;
 	}
 
@@ -6981,7 +6996,7 @@ IL_002a:
 
 IL_002e:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:218>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:202>
 		int32_t L_12 = V_1;
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_13 = V_0;
 		NullCheck(L_13);
@@ -6991,11 +7006,11 @@ IL_002e:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:224>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:208>
 		return (bool)0;
 	}
 }
-// Method Definition Index: 66699
+// Method Definition Index: 66702
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_SetCWallsActive_mFD3824D531560CCD4D868F756A6E050B2810A02B (CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* __this, bool ___0_state, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7008,7 +7023,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_SetCWallsActive_mFD3824D5
 	int32_t V_1 = 0;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_2 = NULL;
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:231>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:214>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_0 = __this->___cWalls;
 		if (L_0)
 		{
@@ -7016,13 +7031,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_SetCWallsActive_mFD3824D5
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:231>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:214>
 		return;
 	}
 
 IL_0009:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:232>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:215>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_1 = __this->___cWalls;
 		V_0 = L_1;
 		V_1 = 0;
@@ -7031,14 +7046,14 @@ IL_0009:
 
 IL_0014:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:232>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:215>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_2 = V_0;
 		int32_t L_3 = V_1;
 		NullCheck(L_2);
 		int32_t L_4 = L_3;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = (L_2)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
 		V_2 = L_5;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:232>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:215>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_7;
@@ -7049,7 +7064,7 @@ IL_0014:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:232>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:215>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = V_2;
 		bool L_9 = ___0_state;
 		NullCheck(L_8);
@@ -7064,7 +7079,7 @@ IL_0028:
 
 IL_002c:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:232>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:215>
 		int32_t L_11 = V_1;
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_12 = V_0;
 		NullCheck(L_12);
@@ -7074,36 +7089,36 @@ IL_002c:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:233>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:216>
 		return;
 	}
 }
-// Method Definition Index: 66700
+// Method Definition Index: 66703
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* CatcherManager_GetObjectInCenter_m19921CFEC8AEDD7FCD24C458066C554FDE02DD84 (CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:237>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:219>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_0 = __this->___heldObject;
 		return L_0;
 	}
 }
-// Method Definition Index: 66701
+// Method Definition Index: 66704
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* CatcherManager_ThrowUpRoutine_mE006E6EE097331A405F3693F08DB94AB540EA446 (CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* __this, objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* ___0_oid, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CThrowUpRoutineU3Ed__30_tC9E75AC4C1DE08D407A504F8190077AC7476FBCC_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CThrowUpRoutineU3Ed__29_t0AC9AEC9DA8F4D7AE4D8D4ED13FA2D867387BAE7_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		U3CThrowUpRoutineU3Ed__30_tC9E75AC4C1DE08D407A504F8190077AC7476FBCC* L_0 = (U3CThrowUpRoutineU3Ed__30_tC9E75AC4C1DE08D407A504F8190077AC7476FBCC*)il2cpp_codegen_object_new(U3CThrowUpRoutineU3Ed__30_tC9E75AC4C1DE08D407A504F8190077AC7476FBCC_il2cpp_TypeInfo_var);
-		U3CThrowUpRoutineU3Ed__30__ctor_m2EE30A2CC0CACB48276C2D06EF440B1B3E8FC530(L_0, 0, NULL);
-		U3CThrowUpRoutineU3Ed__30_tC9E75AC4C1DE08D407A504F8190077AC7476FBCC* L_1 = L_0;
+		U3CThrowUpRoutineU3Ed__29_t0AC9AEC9DA8F4D7AE4D8D4ED13FA2D867387BAE7* L_0 = (U3CThrowUpRoutineU3Ed__29_t0AC9AEC9DA8F4D7AE4D8D4ED13FA2D867387BAE7*)il2cpp_codegen_object_new(U3CThrowUpRoutineU3Ed__29_t0AC9AEC9DA8F4D7AE4D8D4ED13FA2D867387BAE7_il2cpp_TypeInfo_var);
+		U3CThrowUpRoutineU3Ed__29__ctor_m07E0DACB3C2B3D850C0589115D28098EA477F4AF(L_0, 0, NULL);
+		U3CThrowUpRoutineU3Ed__29_t0AC9AEC9DA8F4D7AE4D8D4ED13FA2D867387BAE7* L_1 = L_0;
 		NullCheck(L_1);
 		L_1->___U3CU3E4__this = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this), (void*)__this);
-		U3CThrowUpRoutineU3Ed__30_tC9E75AC4C1DE08D407A504F8190077AC7476FBCC* L_2 = L_1;
+		U3CThrowUpRoutineU3Ed__29_t0AC9AEC9DA8F4D7AE4D8D4ED13FA2D867387BAE7* L_2 = L_1;
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_3 = ___0_oid;
 		NullCheck(L_2);
 		L_2->___oid = L_3;
@@ -7111,7 +7126,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* CatcherManager_ThrowUpRoutine_
 		return L_2;
 	}
 }
-// Method Definition Index: 66702
+// Method Definition Index: 66705
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_ThrowUp_m1B3564C53AEA7F53C6699DFBC10EE80E23639A1A (CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* __this, objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* ___0_oid, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7121,7 +7136,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_ThrowUp_m1B3564C53AEA7F53
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:277>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:256>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_0 = ___0_oid;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -7132,23 +7147,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_ThrowUp_m1B3564C53AEA7F53
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:277>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:256>
 		return;
 	}
 
 IL_000a:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:278>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:257>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_2 = ___0_oid;
 		RuntimeObject* L_3;
 		L_3 = CatcherManager_ThrowUpRoutine_mE006E6EE097331A405F3693F08DB94AB540EA446(__this, L_2, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_4;
 		L_4 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_3, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:279>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:258>
 		return;
 	}
 }
-// Method Definition Index: 66703
+// Method Definition Index: 66706
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_BreakPieces_mB5A5338631FB455FC708CADBC34F722A48162971 (CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* __this, objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* ___0_oid, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7171,17 +7186,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_BreakPieces_mB5A5338631FB
 	memset((&V_4), 0, sizeof(V_4));
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_5;
 	memset((&V_5), 0, sizeof(V_5));
-	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* V_6 = NULL;
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_7;
-	memset((&V_7), 0, sizeof(V_7));
+	Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* V_6 = NULL;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* V_7 = NULL;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_8;
+	memset((&V_8), 0, sizeof(V_8));
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* G_B5_0 = NULL;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* G_B4_0 = NULL;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* G_B6_0 = NULL;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* G_B6_1 = NULL;
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:284>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:263>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_0 = ___0_oid;
 		NullCheck(L_0);
 		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_1;
 		L_1 = Component_GetComponentInChildren_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_m7CBAFA50AB995C9F53D6140718FCD31D7BEC7CC8(L_0, Component_GetComponentInChildren_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_m7CBAFA50AB995C9F53D6140718FCD31D7BEC7CC8_RuntimeMethod_var);
 		V_0 = L_1;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:285>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:264>
 		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_2 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_3;
@@ -7192,13 +7212,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager_BreakPieces_mB5A5338631FB
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:285>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:264>
 		return;
 	}
 
 IL_0011:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:286>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:265>
 		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_4 = V_0;
 		NullCheck(L_4);
 		Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 L_5;
@@ -7207,14 +7227,14 @@ IL_0011:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
 		L_6 = Bounds_get_center_m5B05F81CB835EB6DD8628FDA24B638F477984DC3_inline((&V_2), NULL);
 		V_1 = L_6;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:288>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:267>
 		V_3 = 0;
-		goto IL_00fc;
+		goto IL_011c;
 	}
 
 IL_0027:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:290>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:269>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7 = V_1;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
 		L_8 = Random_get_insideUnitSphere_mA488D6859560B73565B8D890ED6B39DB4091C54F(NULL);
@@ -7223,10 +7243,10 @@ IL_0027:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
 		L_10 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_7, L_9, NULL);
 		V_4 = L_10;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:292>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:270>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11;
 		L_11 = GameObject_CreatePrimitive_m13C0A691E679A83DD595913200A1DD9A906EB47B(0, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:293>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:271>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12 = L_11;
 		NullCheck(L_12);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_13;
@@ -7234,7 +7254,7 @@ IL_0027:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14 = V_4;
 		NullCheck(L_13);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_13, L_14, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:294>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:272>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = L_12;
 		NullCheck(L_15);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_16;
@@ -7245,29 +7265,29 @@ IL_0027:
 		L_18 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_17, (0.200000003f), NULL);
 		NullCheck(L_16);
 		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_16, L_18, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:295>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:273>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19 = L_15;
 		NullCheck(L_19);
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_20;
 		L_20 = GameObject_AddComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m03A761629A3F71B0248F1B26EF612F592B757093(L_19, GameObject_AddComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m03A761629A3F71B0248F1B26EF612F592B757093_RuntimeMethod_var);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:296>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:274>
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_21 = L_20;
 		NullCheck(L_21);
 		Rigidbody_set_mass_mC7F886DEDB57C742A16F8B6B779F69AFE164CA4B(L_21, (0.100000001f), NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:298>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:275>
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_22 = L_21;
 		NullCheck(L_22);
 		Rigidbody_set_collisionDetectionMode_m70A22E9878027BF6D3D7E851A43A8E32B8E02343(L_22, 1, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:299>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:276>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23 = V_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24 = V_1;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_25;
 		L_25 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_23, L_24, NULL);
-		V_7 = L_25;
+		V_8 = L_25;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_26;
-		L_26 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline((&V_7), NULL);
+		L_26 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline((&V_8), NULL);
 		V_5 = L_26;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:301>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:277>
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_27 = L_22;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_28 = V_5;
 		float L_29;
@@ -7276,76 +7296,107 @@ IL_0027:
 		L_30 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_28, L_29, NULL);
 		NullCheck(L_27);
 		Rigidbody_AddForce_mBDBC288D0E266BC1B62E3649B4FCE46E7EA9CCBC(L_27, L_30, 1, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:302>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:278>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_31;
 		L_31 = Random_get_insideUnitSphere_mA488D6859560B73565B8D890ED6B39DB4091C54F(NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32;
 		L_32 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_31, (5.0f), NULL);
 		NullCheck(L_27);
 		Rigidbody_AddTorque_m39C767D6CD12B2D12D575E2B469CB5565BFA30B6(L_27, L_32, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:303>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:279>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_33 = L_19;
 		NullCheck(L_33);
 		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_34;
 		L_34 = GameObject_GetComponent_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_m026EB44DB6238F13E2AFBECF1FBBE924CB1B040A(L_33, GameObject_GetComponent_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_m026EB44DB6238F13E2AFBECF1FBBE924CB1B040A_RuntimeMethod_var);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:305>
+		V_6 = L_34;
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:280>
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_35 = __this->___pieceMaterial;
-		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_36 = (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3*)il2cpp_codegen_object_new(Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3_il2cpp_TypeInfo_var);
-		Material__ctor_mFCC42FB90257F1E8F7516A8640A79C465A39961C(L_36, L_35, NULL);
-		V_6 = L_36;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:306>
-		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_37 = V_6;
-		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_38 = ___0_oid;
-		NullCheck(L_38);
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_39 = L_38->___effectColor;
-		NullCheck(L_37);
-		Material_set_color_m5C32DEBB215FF9EE35E7B575297D8C2F29CC2A2D(L_37, L_39, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:307>
-		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_40 = V_6;
-		NullCheck(L_34);
-		Renderer_set_material_m21E88977071E0A914D62F3D9CFF0193B3117C45A(L_34, L_40, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:309>
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		Object_Destroy_m064F2A066491D2DC4FFCFBDBE5FCFFB807A04436(L_33, (2.0f), NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:288>
-		int32_t L_41 = V_3;
-		V_3 = ((int32_t)il2cpp_codegen_add(L_41, 1));
+		bool L_36;
+		L_36 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_35, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_36)
+		{
+			G_B5_0 = L_33;
+			goto IL_00eb;
+		}
+		G_B4_0 = L_33;
+	}
+	{
+		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_37 = V_6;
+		NullCheck(L_37);
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_38;
+		L_38 = Renderer_get_sharedMaterial_mA2E0CA0A564617FFC3E0E50947C6300082C35F81(L_37, NULL);
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_39 = (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3*)il2cpp_codegen_object_new(Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3_il2cpp_TypeInfo_var);
+		Material__ctor_mFCC42FB90257F1E8F7516A8640A79C465A39961C(L_39, L_38, NULL);
+		G_B6_0 = L_39;
+		G_B6_1 = G_B4_0;
+		goto IL_00f6;
 	}
 
-IL_00fc:
+IL_00eb:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:288>
-		int32_t L_42 = V_3;
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_40 = __this->___pieceMaterial;
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_41 = (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3*)il2cpp_codegen_object_new(Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3_il2cpp_TypeInfo_var);
+		Material__ctor_mFCC42FB90257F1E8F7516A8640A79C465A39961C(L_41, L_40, NULL);
+		G_B6_0 = L_41;
+		G_B6_1 = G_B5_0;
+	}
+
+IL_00f6:
+	{
+		V_7 = G_B6_0;
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:281>
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_42 = V_7;
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_43 = ___0_oid;
 		NullCheck(L_43);
-		int32_t L_44 = L_43->___pieceCount;
-		if ((((int32_t)L_42) < ((int32_t)L_44)))
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_44 = L_43->___effectColor;
+		NullCheck(L_42);
+		Material_set_color_m5C32DEBB215FF9EE35E7B575297D8C2F29CC2A2D(L_42, L_44, NULL);
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:282>
+		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_45 = V_6;
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_46 = V_7;
+		NullCheck(L_45);
+		Renderer_set_material_m21E88977071E0A914D62F3D9CFF0193B3117C45A(L_45, L_46, NULL);
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:283>
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_Destroy_m064F2A066491D2DC4FFCFBDBE5FCFFB807A04436(G_B6_1, (2.0f), NULL);
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:267>
+		int32_t L_47 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add(L_47, 1));
+	}
+
+IL_011c:
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:267>
+		int32_t L_48 = V_3;
+		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_49 = ___0_oid;
+		NullCheck(L_49);
+		int32_t L_50 = L_49->___pieceCount;
+		if ((((int32_t)L_48) < ((int32_t)L_50)))
 		{
 			goto IL_0027;
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:311>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:285>
 		return;
 	}
 }
-// Method Definition Index: 66704
+// Method Definition Index: 66707
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager__ctor_mE0CB96052EE9AD0978267AF0422FAAB0D61B5FCB (CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:20>
-		__this->___useRootObjectFromCollaider = (bool)1;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:22>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:19>
 		__this->___requireNonZeroMatchId = (bool)1;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:24>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:21>
 		__this->___throwUpForce = (10.0f);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:26>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:23>
 		__this->___throwUpStateDuration = (1.20000005f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
 }
-// Method Definition Index: 66705
+// Method Definition Index: 66708
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager__cctor_mB75437529FC61F438DBDD6778F362BA30DA0F342 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7357,7 +7408,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager__cctor_mB75437529FC61F438
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:39>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:36>
 		HashSet_1_t20E218B2F4982CF3DE13175226456EE03F500F55* L_0 = (HashSet_1_t20E218B2F4982CF3DE13175226456EE03F500F55*)il2cpp_codegen_object_new(HashSet_1_t20E218B2F4982CF3DE13175226456EE03F500F55_il2cpp_TypeInfo_var);
 		HashSet_1__ctor_m5E9F59CF707246003DFF177238BC4529ECEBCD36(L_0, HashSet_1__ctor_m5E9F59CF707246003DFF177238BC4529ECEBCD36_RuntimeMethod_var);
 		((CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_StaticFields*)il2cpp_codegen_static_fields_for(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_il2cpp_TypeInfo_var))->___ThrowingObjects = L_0;
@@ -7381,8 +7432,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CatcherManager__cctor_mB75437529FC61F438
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66706
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CThrowUpRoutineU3Ed__30__ctor_m2EE30A2CC0CACB48276C2D06EF440B1B3E8FC530 (U3CThrowUpRoutineU3Ed__30_tC9E75AC4C1DE08D407A504F8190077AC7476FBCC* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+// Method Definition Index: 66709
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CThrowUpRoutineU3Ed__29__ctor_m07E0DACB3C2B3D850C0589115D28098EA477F4AF (U3CThrowUpRoutineU3Ed__29_t0AC9AEC9DA8F4D7AE4D8D4ED13FA2D867387BAE7* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
@@ -7391,15 +7442,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CThrowUpRoutineU3Ed__30__ctor_m2EE30A2
 		return;
 	}
 }
-// Method Definition Index: 66707
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CThrowUpRoutineU3Ed__30_System_IDisposable_Dispose_m9F513AC0335D6F45CA145E0204A1F193EF5A1160 (U3CThrowUpRoutineU3Ed__30_tC9E75AC4C1DE08D407A504F8190077AC7476FBCC* __this, const RuntimeMethod* method) 
+// Method Definition Index: 66710
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CThrowUpRoutineU3Ed__29_System_IDisposable_Dispose_m06234FF529FE9135FFA520E399B9F8F58DDD4613 (U3CThrowUpRoutineU3Ed__29_t0AC9AEC9DA8F4D7AE4D8D4ED13FA2D867387BAE7* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 66708
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CThrowUpRoutineU3Ed__30_MoveNext_m9474925BB9F8A2AFF2E779E1A9510F742D6613B2 (U3CThrowUpRoutineU3Ed__30_tC9E75AC4C1DE08D407A504F8190077AC7476FBCC* __this, const RuntimeMethod* method) 
+// Method Definition Index: 66711
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CThrowUpRoutineU3Ed__29_MoveNext_m5091E6F1A354E58D016884756FB96BCB860203E9 (U3CThrowUpRoutineU3Ed__29_t0AC9AEC9DA8F4D7AE4D8D4ED13FA2D867387BAE7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -7445,22 +7496,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CThrowUpRoutineU3Ed__30_MoveNext_m9474
 IL_001a:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:242>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:224>
 		CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* L_4 = V_1;
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_5 = __this->___oid;
 		NullCheck(L_4);
 		CatcherManager_ReleaseHeldObjectForThrow_m087C6CD64FF32FE474433F5541957D7F8914F100(L_4, L_5, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:244>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:225>
 		CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* L_6 = V_1;
 		NullCheck(L_6);
 		CatcherManager_SetCWallsActive_mFD3824D531560CCD4D868F756A6E050B2810A02B(L_6, (bool)0, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:246>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:227>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_7 = __this->___oid;
 		NullCheck(L_7);
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_8;
 		L_8 = Component_GetComponentInChildren_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m8D7F962D37E4362174AE5FE843014811F239F155(L_7, Component_GetComponentInChildren_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m8D7F962D37E4362174AE5FE843014811F239F155_RuntimeMethod_var);
 		V_2 = L_8;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:247>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:228>
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_9 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_10;
@@ -7471,55 +7522,55 @@ IL_001a:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:249>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:230>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(_stringLiteral3EB1AE75F3097C11A694A2C5634CC4F705D36E81, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:250>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:231>
 		il2cpp_codegen_runtime_class_init_inline(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_il2cpp_TypeInfo_var);
 		HashSet_1_t20E218B2F4982CF3DE13175226456EE03F500F55* L_11 = ((CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_StaticFields*)il2cpp_codegen_static_fields_for(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_il2cpp_TypeInfo_var))->___ThrowingObjects;
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_12 = __this->___oid;
 		NullCheck(L_11);
 		bool L_13;
 		L_13 = HashSet_1_Remove_mDB11C4E4E7743640CDF88857D966A8E1C310ED97(L_11, L_12, HashSet_1_Remove_mDB11C4E4E7743640CDF88857D966A8E1C310ED97_RuntimeMethod_var);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:251>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:232>
 		CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* L_14 = V_1;
 		NullCheck(L_14);
 		L_14->___currentState = 0;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:252>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:233>
 		CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* L_15 = V_1;
 		NullCheck(L_15);
 		CatcherManager_SetCWallsActive_mFD3824D531560CCD4D868F756A6E050B2810A02B(L_15, (bool)1, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:253>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:234>
 		return (bool)0;
 	}
 
 IL_0074:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:255>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:236>
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_16 = V_2;
 		NullCheck(L_16);
 		Rigidbody_set_isKinematic_m6C3FD3EA358DADA3B191F2449CF1C4F8B22695ED(L_16, (bool)0, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:256>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:237>
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_17 = V_2;
 		NullCheck(L_17);
 		Rigidbody_set_useGravity_m1B1B22E093F9DC92D7BEEBBE6B02642B3B6C4389(L_17, (bool)1, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:257>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:238>
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_18 = V_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
 		L_19 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		NullCheck(L_18);
 		Rigidbody_set_linearVelocity_m29AE03D5FC079EAD4202FCF72E2AEBDC19363985(L_18, L_19, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:258>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:239>
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_20 = V_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21;
 		L_21 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		NullCheck(L_20);
 		Rigidbody_set_angularVelocity_m23266B4E52BF0D2E65CC984AC73CC40B8D4A27E0(L_20, L_21, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:260>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:241>
 		float L_22;
 		L_22 = Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494((-1.0f), (1.0f), NULL);
 		V_3 = L_22;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:262>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:242>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23;
 		L_23 = Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline(NULL);
 		float L_24;
@@ -7542,9 +7593,9 @@ IL_0074:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_33;
 		L_33 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_29, L_32, NULL);
 		V_4 = L_33;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:263>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:243>
 		Vector3_Normalize_mC749B887A4C74BA0A2E13E6377F17CCAEB0AADA8_inline((&V_4), NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:265>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:244>
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_34 = V_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_35 = V_4;
 		CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* L_36 = V_1;
@@ -7554,7 +7605,7 @@ IL_0074:
 		L_38 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_35, L_37, NULL);
 		NullCheck(L_34);
 		Rigidbody_AddForce_mBDBC288D0E266BC1B62E3649B4FCE46E7EA9CCBC(L_34, L_38, 1, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:266>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:245>
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_39 = V_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_40;
 		L_40 = Random_get_insideUnitSphere_mA488D6859560B73565B8D890ED6B39DB4091C54F(NULL);
@@ -7562,10 +7613,10 @@ IL_0074:
 		L_41 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_40, (5.0f), NULL);
 		NullCheck(L_39);
 		Rigidbody_AddTorque_m7922F76C73DACF9E1610D72726C01709C14F0937(L_39, L_41, 1, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:267>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:246>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral052EECC484669D6976B03CA1DC7C60FC11BFF2BA, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:268>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:247>
 		CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* L_42 = V_1;
 		NullCheck(L_42);
 		float L_43 = L_42->___throwUpStateDuration;
@@ -7580,44 +7631,44 @@ IL_0074:
 IL_0146:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:269>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:248>
 		il2cpp_codegen_runtime_class_init_inline(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_il2cpp_TypeInfo_var);
 		HashSet_1_t20E218B2F4982CF3DE13175226456EE03F500F55* L_45 = ((CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_StaticFields*)il2cpp_codegen_static_fields_for(CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4_il2cpp_TypeInfo_var))->___ThrowingObjects;
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_46 = __this->___oid;
 		NullCheck(L_45);
 		bool L_47;
 		L_47 = HashSet_1_Remove_mDB11C4E4E7743640CDF88857D966A8E1C310ED97(L_45, L_46, HashSet_1_Remove_mDB11C4E4E7743640CDF88857D966A8E1C310ED97_RuntimeMethod_var);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:270>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:249>
 		CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* L_48 = V_1;
 		NullCheck(L_48);
 		L_48->___currentState = 0;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:271>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:250>
 		CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* L_49 = V_1;
 		NullCheck(L_49);
 		CatcherManager_SetCWallsActive_mFD3824D531560CCD4D868F756A6E050B2810A02B(L_49, (bool)1, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:272>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:251>
 		return (bool)0;
 	}
 }
-// Method Definition Index: 66709
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CThrowUpRoutineU3Ed__30_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mB99A51B98B76CE9E0CCF19A21894B1DED8D5EEB9 (U3CThrowUpRoutineU3Ed__30_tC9E75AC4C1DE08D407A504F8190077AC7476FBCC* __this, const RuntimeMethod* method) 
+// Method Definition Index: 66712
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CThrowUpRoutineU3Ed__29_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m4F9A9C4092A9462B91A09E9B2387CF21D54E6CCD (U3CThrowUpRoutineU3Ed__29_t0AC9AEC9DA8F4D7AE4D8D4ED13FA2D867387BAE7* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current;
 		return L_0;
 	}
 }
-// Method Definition Index: 66710
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CThrowUpRoutineU3Ed__30_System_Collections_IEnumerator_Reset_m3442E1B2FE2C20DDD124EE49317FCEC199063730 (U3CThrowUpRoutineU3Ed__30_tC9E75AC4C1DE08D407A504F8190077AC7476FBCC* __this, const RuntimeMethod* method) 
+// Method Definition Index: 66713
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CThrowUpRoutineU3Ed__29_System_Collections_IEnumerator_Reset_m9417FF1B92F288D28DE214E5C0ADD5770EFDE5CF (U3CThrowUpRoutineU3Ed__29_t0AC9AEC9DA8F4D7AE4D8D4ED13FA2D867387BAE7* __this, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
 		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CThrowUpRoutineU3Ed__30_System_Collections_IEnumerator_Reset_m3442E1B2FE2C20DDD124EE49317FCEC199063730_RuntimeMethod_var)));
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CThrowUpRoutineU3Ed__29_System_Collections_IEnumerator_Reset_m9417FF1B92F288D28DE214E5C0ADD5770EFDE5CF_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 66711
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CThrowUpRoutineU3Ed__30_System_Collections_IEnumerator_get_Current_m0612D2AC10AA64FE66A80436C4450AE252074C30 (U3CThrowUpRoutineU3Ed__30_tC9E75AC4C1DE08D407A504F8190077AC7476FBCC* __this, const RuntimeMethod* method) 
+// Method Definition Index: 66714
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CThrowUpRoutineU3Ed__29_System_Collections_IEnumerator_get_Current_mB786116D0D03F7926145AC6D692EF9852AD05FF1 (U3CThrowUpRoutineU3Ed__29_t0AC9AEC9DA8F4D7AE4D8D4ED13FA2D867387BAE7* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current;
@@ -7632,7 +7683,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CThrowUpRoutineU3Ed__30_Syst
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66712
+// Method Definition Index: 66715
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContinueUIBuilder_Awake_m18EBFEADBEF6B6890186519AFE06224BA3029F04 (ContinueUIBuilder_t3293BF6C9C58B8D8BCDD7B20B6DC6ABC2266ACC9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7689,12 +7740,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContinueUIBuilder_Awake_m18EBFEADBEF6B68
 
 IL_001a:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:19>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:18>
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* L_3;
 		L_3 = Object_FindFirstObjectByType_TisCanvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26_m18566EA543B536F04C35FD1AAAD66A86D5649418(Object_FindFirstObjectByType_TisCanvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26_m18566EA543B536F04C35FD1AAAD66A86D5649418_RuntimeMethod_var);
 		V_0 = L_3;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:20>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:19>
 		Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* L_4 = V_0;
 		bool L_5;
 		L_5 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_4, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
@@ -7704,25 +7755,25 @@ IL_001a:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:22>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:21>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 		GameObject__ctor_m37D512B05D292F954792225E6C6EEE95293A9B88(L_6, _stringLiteralFC075BC3DFE942623230E78DC9D41126E9C003CA, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:23>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:22>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = L_6;
 		NullCheck(L_7);
 		Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* L_8;
 		L_8 = GameObject_AddComponent_TisCanvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26_m13C85FD585C0679530F8B35D0B39D965702FD0F5(L_7, GameObject_AddComponent_TisCanvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26_m13C85FD585C0679530F8B35D0B39D965702FD0F5_RuntimeMethod_var);
 		V_0 = L_8;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:24>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:23>
 		Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* L_9 = V_0;
 		NullCheck(L_9);
 		Canvas_set_renderMode_mD73E953F8A115CF469508448A00D0EDAFAF5AB47(L_9, 0, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:25>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:24>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10 = L_7;
 		NullCheck(L_10);
 		CanvasScaler_t3BC095205EAD308CF3EAC27136A73387AC32FC3B* L_11;
 		L_11 = GameObject_AddComponent_TisCanvasScaler_t3BC095205EAD308CF3EAC27136A73387AC32FC3B_m1D199D3A55BF0356D541CB3048142A8D7E52521A(L_10, GameObject_AddComponent_TisCanvasScaler_t3BC095205EAD308CF3EAC27136A73387AC32FC3B_m1D199D3A55BF0356D541CB3048142A8D7E52521A_RuntimeMethod_var);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:26>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:25>
 		NullCheck(L_10);
 		GraphicRaycaster_t16FC39434AE5B47D3C2993134CDCF7F4AE6A6D7B* L_12;
 		L_12 = GameObject_AddComponent_TisGraphicRaycaster_t16FC39434AE5B47D3C2993134CDCF7F4AE6A6D7B_m308DCE149216D4787C3E6147729C0DF79423E1BF(L_10, GameObject_AddComponent_TisGraphicRaycaster_t16FC39434AE5B47D3C2993134CDCF7F4AE6A6D7B_m308DCE149216D4787C3E6147729C0DF79423E1BF_RuntimeMethod_var);
@@ -7730,7 +7781,7 @@ IL_001a:
 
 IL_004e:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:30>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:28>
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_13 = __this->___gm;
 		NullCheck(L_13);
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_14 = L_13->___continueMessageText;
@@ -7743,11 +7794,11 @@ IL_004e:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:32>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:30>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_16 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 		GameObject__ctor_m37D512B05D292F954792225E6C6EEE95293A9B88(L_16, _stringLiteral5A3FF708AF07D8CC4A1F44F13A9F4000E3B1B649, NULL);
 		V_1 = L_16;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:33>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:31>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17 = V_1;
 		NullCheck(L_17);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_18;
@@ -7758,66 +7809,66 @@ IL_004e:
 		L_20 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_19, NULL);
 		NullCheck(L_18);
 		Transform_SetParent_m9BDD7B7476714B2D7919B10BDC22CE75C0A0A195(L_18, L_20, (bool)0, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:34>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:32>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_21 = V_1;
 		NullCheck(L_21);
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_22;
 		L_22 = GameObject_AddComponent_TisTextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957_m15E50057DA76710B136ADF4E7CA55A463D9DA3EB(L_21, GameObject_AddComponent_TisTextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957_m15E50057DA76710B136ADF4E7CA55A463D9DA3EB_RuntimeMethod_var);
 		__this->___messageText = L_22;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___messageText), (void*)L_22);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:35>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:33>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_23 = __this->___messageText;
 		NullCheck(L_23);
 		VirtualActionInvoker1< bool >::Invoke(25, L_23, (bool)0);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:36>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:34>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_24 = __this->___messageText;
 		NullCheck(L_24);
 		TMP_Text_set_alignment_mE5216A28797987CC19927ED3CB8DFAC438C6B95A(L_24, ((int32_t)514), NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:37>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:35>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_25 = __this->___messageText;
 		NullCheck(L_25);
 		TMP_Text_set_fontSize_m1C3A3BA2BC88E5E1D89375FD35A0AA91E75D3AAD(L_25, (36.0f), NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:38>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:36>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_26 = __this->___messageText;
 		NullCheck(L_26);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_27;
 		L_27 = Component_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m0640480E7E38BB88B0D1F6AD59E697C8EE6AAFA4(L_26, Component_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m0640480E7E38BB88B0D1F6AD59E697C8EE6AAFA4_RuntimeMethod_var);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:39>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:37>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_28 = L_27;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_29;
 		memset((&L_29), 0, sizeof(L_29));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_29), (0.5f), (0.5f), NULL);
 		NullCheck(L_28);
 		RectTransform_set_anchorMin_m931442ABE3368D6D4309F43DF1D64AB64B0F52E3(L_28, L_29, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:40>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:38>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_30 = L_28;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_31;
 		memset((&L_31), 0, sizeof(L_31));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_31), (0.5f), (0.5f), NULL);
 		NullCheck(L_30);
 		RectTransform_set_anchorMax_m52829ABEDD229ABD3DA20BCA676FA1DCA4A39B7D(L_30, L_31, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:41>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:39>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_32 = L_30;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_33;
 		memset((&L_33), 0, sizeof(L_33));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_33), (500.0f), (80.0f), NULL);
 		NullCheck(L_32);
 		RectTransform_set_sizeDelta_mC9A980EA6036E6725EF24CEDF3EE80A9B2B50EE5(L_32, L_33, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:42>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:40>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_34;
 		memset((&L_34), 0, sizeof(L_34));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_34), (0.0f), (-100.0f), NULL);
 		NullCheck(L_32);
 		RectTransform_set_anchoredPosition_mF903ACE04F6959B1CD67E2B94FABC0263068F965(L_32, L_34, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:43>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:41>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_35 = __this->___messageText;
 		NullCheck(L_35);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_35, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:44>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:42>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_36 = V_1;
 		NullCheck(L_36);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_36, (bool)0, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:45>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:43>
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_37 = __this->___gm;
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_38 = __this->___messageText;
 		NullCheck(L_37);
@@ -7828,7 +7879,7 @@ IL_004e:
 
 IL_0141:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:49>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:47>
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_39 = __this->___gm;
 		NullCheck(L_39);
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_40 = L_39->___continueMessageText;
@@ -7838,7 +7889,7 @@ IL_0141:
 
 IL_0152:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:53>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:50>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_41;
 		L_41 = GameObject_Find_m7A669B4EEC2617AB82F6E3FF007CDCD9F21DB300(_stringLiteral981B5847A611BA5106EC8DCCDF6E8144A7BB9D9D, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -7850,12 +7901,12 @@ IL_0152:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:55>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:52>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_43 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 		GameObject__ctor_m37D512B05D292F954792225E6C6EEE95293A9B88(L_43, _stringLiteral981B5847A611BA5106EC8DCCDF6E8144A7BB9D9D, NULL);
-		__this->___btnGO = L_43;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___btnGO), (void*)L_43);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:57>
+		__this->___buttonObject = L_43;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___buttonObject), (void*)L_43);
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:53>
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_44 = __this->___gm;
 		NullCheck(L_44);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_45 = L_44->___gameLost;
@@ -7868,8 +7919,8 @@ IL_0152:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:58>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_47 = __this->___btnGO;
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:54>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_47 = __this->___buttonObject;
 		NullCheck(L_47);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_48;
 		L_48 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_47, NULL);
@@ -7886,8 +7937,8 @@ IL_0152:
 
 IL_01ad:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:60>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_52 = __this->___btnGO;
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:56>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_52 = __this->___buttonObject;
 		NullCheck(L_52);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_53;
 		L_53 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_52, NULL);
@@ -7901,29 +7952,29 @@ IL_01ad:
 
 IL_01c4:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:61>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_56 = __this->___btnGO;
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:58>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_56 = __this->___buttonObject;
 		NullCheck(L_56);
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_57;
 		L_57 = GameObject_AddComponent_TisImage_tBC1D03F63BF71132E9A5E472B8742F172A011E7E_mA327C9E1CA12BC531D587E7567F2067B96E6B6A0(L_56, GameObject_AddComponent_TisImage_tBC1D03F63BF71132E9A5E472B8742F172A011E7E_mA327C9E1CA12BC531D587E7567F2067B96E6B6A0_RuntimeMethod_var);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:62>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:59>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_58;
 		memset((&L_58), 0, sizeof(L_58));
 		Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline((&L_58), (0.899999976f), (0.899999976f), (0.899999976f), (0.949999988f), NULL);
 		NullCheck(L_57);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_57, L_58);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:63>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_59 = __this->___btnGO;
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:60>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_59 = __this->___buttonObject;
 		NullCheck(L_59);
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_60;
 		L_60 = GameObject_AddComponent_TisButton_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098_m60FA17F75591FF93A15D1D1FE5969B8CB9E5FAAC(L_59, GameObject_AddComponent_TisButton_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098_m60FA17F75591FF93A15D1D1FE5969B8CB9E5FAAC_RuntimeMethod_var);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:64>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_61 = __this->___btnGO;
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:61>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_61 = __this->___buttonObject;
 		NullCheck(L_61);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_62;
 		L_62 = GameObject_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m1592DCB5AA07291F73A76006F0913A64DFB8A9C4(L_61, GameObject_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m1592DCB5AA07291F73A76006F0913A64DFB8A9C4_RuntimeMethod_var);
 		V_2 = L_62;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:66>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:63>
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_63 = __this->___gm;
 		NullCheck(L_63);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_64 = L_63->___gameLost;
@@ -7938,28 +7989,28 @@ IL_01c4:
 		G_B12_0 = L_60;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:68>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:65>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_66 = V_2;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_67;
 		memset((&L_67), 0, sizeof(L_67));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_67), (0.5f), (0.5f), NULL);
 		NullCheck(L_66);
 		RectTransform_set_anchorMin_m931442ABE3368D6D4309F43DF1D64AB64B0F52E3(L_66, L_67, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:69>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:66>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_68 = V_2;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_69;
 		memset((&L_69), 0, sizeof(L_69));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_69), (0.5f), (0.5f), NULL);
 		NullCheck(L_68);
 		RectTransform_set_anchorMax_m52829ABEDD229ABD3DA20BCA676FA1DCA4A39B7D(L_68, L_69, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:70>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:67>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_70 = V_2;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_71;
 		memset((&L_71), 0, sizeof(L_71));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_71), (220.0f), (56.0f), NULL);
 		NullCheck(L_70);
 		RectTransform_set_sizeDelta_mC9A980EA6036E6725EF24CEDF3EE80A9B2B50EE5(L_70, L_71, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:71>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:68>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_72 = V_2;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_73;
 		memset((&L_73), 0, sizeof(L_73));
@@ -7972,28 +8023,28 @@ IL_01c4:
 
 IL_026d:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:75>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:72>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_74 = V_2;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_75;
 		memset((&L_75), 0, sizeof(L_75));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_75), (0.5f), (0.0f), NULL);
 		NullCheck(L_74);
 		RectTransform_set_anchorMin_m931442ABE3368D6D4309F43DF1D64AB64B0F52E3(L_74, L_75, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:76>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:73>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_76 = V_2;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_77;
 		memset((&L_77), 0, sizeof(L_77));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_77), (0.5f), (0.0f), NULL);
 		NullCheck(L_76);
 		RectTransform_set_anchorMax_m52829ABEDD229ABD3DA20BCA676FA1DCA4A39B7D(L_76, L_77, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:77>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:74>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_78 = V_2;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_79;
 		memset((&L_79), 0, sizeof(L_79));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_79), (180.0f), (56.0f), NULL);
 		NullCheck(L_78);
 		RectTransform_set_sizeDelta_mC9A980EA6036E6725EF24CEDF3EE80A9B2B50EE5(L_78, L_79, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:78>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:75>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_80 = V_2;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_81;
 		memset((&L_81), 0, sizeof(L_81));
@@ -8005,25 +8056,25 @@ IL_026d:
 
 IL_02c1:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:81>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:78>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_82 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 		GameObject__ctor_m37D512B05D292F954792225E6C6EEE95293A9B88(L_82, _stringLiteral1A82671F2C34BEA09C35354DDB899812746CBCF9, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:82>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:79>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_83 = L_82;
 		NullCheck(L_83);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_84;
 		L_84 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_83, NULL);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_85 = __this->___btnGO;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_85 = __this->___buttonObject;
 		NullCheck(L_85);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_86;
 		L_86 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_85, NULL);
 		NullCheck(L_84);
 		Transform_SetParent_m9BDD7B7476714B2D7919B10BDC22CE75C0A0A195(L_84, L_86, (bool)0, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:83>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:80>
 		NullCheck(L_83);
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_87;
 		L_87 = GameObject_AddComponent_TisTextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957_m15E50057DA76710B136ADF4E7CA55A463D9DA3EB(L_83, GameObject_AddComponent_TisTextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957_m15E50057DA76710B136ADF4E7CA55A463D9DA3EB_RuntimeMethod_var);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:84>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:81>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_88 = L_87;
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_89 = __this->___gm;
 		NullCheck(L_89);
@@ -8034,42 +8085,42 @@ IL_02c1:
 		L_93 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral1D40CEB49C18DD1CC8D6ACE4815904AE7B2B1506, L_92, NULL);
 		NullCheck(L_88);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_88, L_93);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:85>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:82>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_94 = L_88;
 		NullCheck(L_94);
 		TMP_Text_set_alignment_mE5216A28797987CC19927ED3CB8DFAC438C6B95A(L_94, ((int32_t)514), NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:86>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:83>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_95 = L_94;
 		NullCheck(L_95);
 		TMP_Text_set_fontSize_m1C3A3BA2BC88E5E1D89375FD35A0AA91E75D3AAD(L_95, (22.0f), NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:87>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:84>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_96 = L_95;
 		NullCheck(L_96);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_97;
 		L_97 = Component_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m0640480E7E38BB88B0D1F6AD59E697C8EE6AAFA4(L_96, Component_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m0640480E7E38BB88B0D1F6AD59E697C8EE6AAFA4_RuntimeMethod_var);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:88>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:85>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_98 = L_97;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_99;
 		L_99 = Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline(NULL);
 		NullCheck(L_98);
 		RectTransform_set_anchorMin_m931442ABE3368D6D4309F43DF1D64AB64B0F52E3(L_98, L_99, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:89>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:86>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_100 = L_98;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_101;
 		L_101 = Vector2_get_one_m9097EB8DC23C26118A591AF16702796C3EF51DFB_inline(NULL);
 		NullCheck(L_100);
 		RectTransform_set_anchorMax_m52829ABEDD229ABD3DA20BCA676FA1DCA4A39B7D(L_100, L_101, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:90>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:87>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_102;
 		L_102 = Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline(NULL);
 		NullCheck(L_100);
 		RectTransform_set_sizeDelta_mC9A980EA6036E6725EF24CEDF3EE80A9B2B50EE5(L_100, L_102, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:91>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:88>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_103;
 		L_103 = Color_get_black_mB50217951591A045844C61E7FF31EEE3FEF16737_inline(NULL);
 		NullCheck(L_96);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_96, L_103);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:93>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:90>
 		NullCheck(G_B14_0);
 		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_104;
 		L_104 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(G_B14_0, NULL);
@@ -8077,7 +8128,7 @@ IL_02c1:
 		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_105, __this, (intptr_t)((void*)ContinueUIBuilder_U3CAwakeU3Eb__3_0_m3EB3D8E992BE9AA002C6183328195A757890446F_RuntimeMethod_var), NULL);
 		NullCheck(L_104);
 		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_104, L_105, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:95>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:91>
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_106 = __this->___gm;
 		NullCheck(L_106);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_107 = L_106->___gameLost;
@@ -8090,8 +8141,8 @@ IL_02c1:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:95>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_109 = __this->___btnGO;
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:91>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_109 = __this->___buttonObject;
 		NullCheck(L_109);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_109, (bool)0, NULL);
 		return;
@@ -8099,12 +8150,12 @@ IL_02c1:
 
 IL_0383:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:99>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:95>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_110;
 		L_110 = GameObject_Find_m7A669B4EEC2617AB82F6E3FF007CDCD9F21DB300(_stringLiteral981B5847A611BA5106EC8DCCDF6E8144A7BB9D9D, NULL);
-		__this->___btnGO = L_110;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___btnGO), (void*)L_110);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:100>
+		__this->___buttonObject = L_110;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___buttonObject), (void*)L_110);
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:96>
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_111 = __this->___gm;
 		NullCheck(L_111);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_112 = L_111->___gameLost;
@@ -8117,19 +8168,19 @@ IL_0383:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:100>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_114 = __this->___btnGO;
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:96>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_114 = __this->___buttonObject;
 		NullCheck(L_114);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_114, (bool)0, NULL);
 	}
 
 IL_03b2:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:102>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:98>
 		return;
 	}
 }
-// Method Definition Index: 66713
+// Method Definition Index: 66716
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContinueUIBuilder_Update_m82FDC3CC8CF3FE48053AFEA12FEC720A88B9663A (ContinueUIBuilder_t3293BF6C9C58B8D8BCDD7B20B6DC6ABC2266ACC9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8139,7 +8190,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContinueUIBuilder_Update_m82FDC3CC8CF3FE
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:106>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:103>
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_0 = __this->___gm;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -8150,14 +8201,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContinueUIBuilder_Update_m82FDC3CC8CF3FE
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:106>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:103>
 		return;
 	}
 
 IL_000f:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:108>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___btnGO;
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:104>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___buttonObject;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_3;
 		L_3 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_2, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
@@ -8179,7 +8230,7 @@ IL_000f:
 		}
 	}
 	{
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___btnGO;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___buttonObject;
 		NullCheck(L_7);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8;
 		L_8 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_7, NULL);
@@ -8201,8 +8252,8 @@ IL_000f:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:110>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_14 = __this->___btnGO;
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:106>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_14 = __this->___buttonObject;
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_15 = __this->___gm;
 		NullCheck(L_15);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_16 = L_15->___gameLost;
@@ -8215,11 +8266,11 @@ IL_000f:
 
 IL_0072:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:112>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:108>
 		return;
 	}
 }
-// Method Definition Index: 66714
+// Method Definition Index: 66717
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContinueUIBuilder__ctor_mF4C2492E302E24299BB325115CB443F09591CC93 (ContinueUIBuilder_t3293BF6C9C58B8D8BCDD7B20B6DC6ABC2266ACC9* __this, const RuntimeMethod* method) 
 {
 	{
@@ -8227,15 +8278,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContinueUIBuilder__ctor_mF4C2492E302E242
 		return;
 	}
 }
-// Method Definition Index: 66715
+// Method Definition Index: 66718
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContinueUIBuilder_U3CAwakeU3Eb__3_0_m3EB3D8E992BE9AA002C6183328195A757890446F (ContinueUIBuilder_t3293BF6C9C58B8D8BCDD7B20B6DC6ABC2266ACC9* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:93>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:90>
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_0 = __this->___gm;
 		NullCheck(L_0);
 		GameManager_TryContinue_mF6D150646380EE1E71D6F375999F61C7105D6472(L_0, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:93>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ContinueUIBuilder.cs:90>
 		return;
 	}
 }
@@ -8247,17 +8298,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContinueUIBuilder_U3CAwakeU3Eb__3_0_m3EB
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66716
+// Method Definition Index: 66719
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CWalls_Start_mB8C4345285A601FB5DBAEBD29A03FB9FE911BE3D (CWalls_tB909566A7AA4504E4C5BD3137D39068AA95C8F3F* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CWalls.cs:10>
-		CWalls_SetWallsActive_m952197863D8D4AE4E995DBF5D7DA75FEFCB8B733(__this, (bool)1, NULL);
 		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CWalls.cs:11>
+		CWalls_SetWallsActive_m952197863D8D4AE4E995DBF5D7DA75FEFCB8B733(__this, (bool)1, NULL);
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CWalls.cs:12>
 		return;
 	}
 }
-// Method Definition Index: 66717
+// Method Definition Index: 66720
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CWalls_Awake_mEC251515D9FAC129D477E052654AF03FAB2D3AB6 (CWalls_tB909566A7AA4504E4C5BD3137D39068AA95C8F3F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8267,22 +8318,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CWalls_Awake_mEC251515D9FAC129D477E05265
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CWalls.cs:15>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CWalls.cs:17>
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_0;
 		L_0 = Component_GetComponentsInChildren_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m64EB86DDB49F92CFAAF6003C9EAC7D7D8B0F35DB(__this, Component_GetComponentsInChildren_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m64EB86DDB49F92CFAAF6003C9EAC7D7D8B0F35DB_RuntimeMethod_var);
 		__this->___wallColliders = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___wallColliders), (void*)L_0);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CWalls.cs:16>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CWalls.cs:18>
 		return;
 	}
 }
-// Method Definition Index: 66718
+// Method Definition Index: 66721
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CWalls_SetWallsActive_m952197863D8D4AE4E995DBF5D7DA75FEFCB8B733 (CWalls_tB909566A7AA4504E4C5BD3137D39068AA95C8F3F* __this, bool ___0_active, const RuntimeMethod* method) 
 {
 	ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* V_0 = NULL;
 	int32_t V_1 = 0;
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CWalls.cs:19>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CWalls.cs:22>
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_0 = __this->___wallColliders;
 		V_0 = L_0;
 		V_1 = 0;
@@ -8291,13 +8342,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CWalls_SetWallsActive_m952197863D8D4AE4E
 
 IL_000b:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CWalls.cs:19>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CWalls.cs:22>
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_1 = V_0;
 		int32_t L_2 = V_1;
 		NullCheck(L_1);
 		int32_t L_3 = L_2;
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_4 = (L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_3));
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CWalls.cs:21>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CWalls.cs:24>
 		bool L_5 = ___0_active;
 		NullCheck(L_4);
 		Collider_set_enabled_m8D5C3B5047592D227A52560FC9723D176E209F70(L_4, L_5, NULL);
@@ -8307,7 +8358,7 @@ IL_000b:
 
 IL_0018:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CWalls.cs:19>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CWalls.cs:22>
 		int32_t L_7 = V_1;
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_8 = V_0;
 		NullCheck(L_8);
@@ -8317,11 +8368,11 @@ IL_0018:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CWalls.cs:23>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CWalls.cs:26>
 		return;
 	}
 }
-// Method Definition Index: 66719
+// Method Definition Index: 66722
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CWalls__ctor_m13C8638E4427D0043CC91F4FB5B104CC21857AD0 (CWalls_tB909566A7AA4504E4C5BD3137D39068AA95C8F3F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -8337,7 +8388,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CWalls__ctor_m13C8638E4427D0043CC91F4FB5
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66720
+// Method Definition Index: 66723
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_Start_m87A71D65F3171A58DBDDBFB03832ADA65643D0E2 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8365,12 +8416,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_Start_m87A71D65F3171A58DBDDB
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* G_B21_0 = NULL;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* G_B24_0 = NULL;
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:87>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:90>
 		float L_0 = __this->___gameTime;
 		__this->____timer = L_0;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:88>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:91>
 		GameManager_UpdateTimerUI_m4AF067747EE379059EAFEA45D8ED5E26CC20A629(__this, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:89>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:92>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___gameWon;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_2;
@@ -8381,7 +8432,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_Start_m87A71D65F3171A58DBDDB
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:89>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:92>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___gameWon;
 		NullCheck(L_3);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)0, NULL);
@@ -8390,14 +8441,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_Start_m87A71D65F3171A58DBDDB
 
 IL_002e:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:90>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:93>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(_stringLiteral010087103A107E8993C24C55FDBDBDAA5D9438F7, NULL);
 	}
 
 IL_0038:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:91>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:94>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___gameLost;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_5;
@@ -8408,7 +8459,7 @@ IL_0038:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:91>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:94>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___gameLost;
 		NullCheck(L_6);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, (bool)0, NULL);
@@ -8417,14 +8468,14 @@ IL_0038:
 
 IL_0054:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:92>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:95>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(_stringLiteral99AE920B694CDEAE10FD20742178AA8A045D8C15, NULL);
 	}
 
 IL_005e:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:93>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:96>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___settingsPanel;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_8;
@@ -8435,7 +8486,7 @@ IL_005e:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:93>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:96>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = __this->___settingsPanel;
 		NullCheck(L_9);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_9, (bool)0, NULL);
@@ -8443,7 +8494,7 @@ IL_005e:
 
 IL_0078:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:94>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:97>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10 = __this->___exitPanel;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_11;
@@ -8454,7 +8505,7 @@ IL_0078:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:94>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:97>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12 = __this->___exitPanel;
 		NullCheck(L_12);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_12, (bool)0, NULL);
@@ -8462,9 +8513,9 @@ IL_0078:
 
 IL_0092:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:95>
-		GameManager_UpdateContinueCostUI_m80A8F056A0711E0738B705D7F6B266DA9B77EACF(__this, NULL);
 		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:98>
+		GameManager_UpdateContinueCostUI_m80A8F056A0711E0738B705D7F6B266DA9B77EACF(__this, NULL);
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:100>
 		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_13 = __this->___floorRenderer;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_14;
@@ -8485,14 +8536,14 @@ IL_0092:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:100>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:102>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17 = __this->___floorObject;
 		NullCheck(L_17);
 		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_18;
 		L_18 = GameObject_GetComponentInChildren_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_m00AEA903DE8DEC35B61502F098729637D21B6FDB(L_17, GameObject_GetComponentInChildren_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_m00AEA903DE8DEC35B61502F098729637D21B6FDB_RuntimeMethod_var);
 		__this->___floorRenderer = L_18;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___floorRenderer), (void*)L_18);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:101>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:103>
 		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_19 = __this->___floorRenderer;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_20;
@@ -8503,25 +8554,25 @@ IL_0092:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:102>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:104>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(_stringLiteral98DC610AD7C9EC67314EB5BF2C4B14353613DBC9, NULL);
 	}
 
 IL_00dd:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:105>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:107>
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_21 = __this->____floorUIImageComp;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_22;
 		L_22 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_21, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_22)
 		{
-			goto IL_01f7;
+			goto IL_01c3;
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:107>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:109>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_23 = __this->___floorUIImageObject;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_24;
@@ -8711,11 +8762,11 @@ IL_01c3:
 
 IL_01f7:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:135>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:134>
 		return;
 	}
 }
-// Method Definition Index: 66721
+// Method Definition Index: 66724
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_OnValidate_m5514649E1C8220AFFB5D9D6596DF213C403DDB78 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8729,14 +8780,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_OnValidate_m5514649E1C8220AF
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:140>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:139>
 		GameManager_UpdateContinueCostUI_m80A8F056A0711E0738B705D7F6B266DA9B77EACF(__this, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:142>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:140>
 		int32_t L_0 = __this->___extraUses;
 		int32_t L_1;
 		L_1 = Mathf_Max_m7FA442918DE37E3A00106D1F2E789D65829792B8_inline(0, L_0, NULL);
 		__this->___extraUses = L_1;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:143>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:141>
 		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_2 = __this->___floorRenderer;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_3;
@@ -8757,14 +8808,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_OnValidate_m5514649E1C8220AF
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:145>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:143>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___floorObject;
 		NullCheck(L_6);
 		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_7;
 		L_7 = GameObject_GetComponentInChildren_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_m00AEA903DE8DEC35B61502F098729637D21B6FDB(L_6, GameObject_GetComponentInChildren_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_m00AEA903DE8DEC35B61502F098729637D21B6FDB_RuntimeMethod_var);
 		__this->___floorRenderer = L_7;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___floorRenderer), (void*)L_7);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:146>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:144>
 		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_8 = __this->___floorRenderer;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_9;
@@ -8775,14 +8826,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_OnValidate_m5514649E1C8220AF
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:147>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:145>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(_stringLiteral98DC610AD7C9EC67314EB5BF2C4B14353613DBC9, NULL);
 	}
 
 IL_005d:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:149>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:147>
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_10 = __this->____floorUIImageComp;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_11;
@@ -8793,7 +8844,7 @@ IL_005d:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:151>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:149>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12 = __this->___floorUIImageObject;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_13;
@@ -8804,7 +8855,7 @@ IL_005d:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:153>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:151>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_14 = __this->___floorUIImageObject;
 		NullCheck(L_14);
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_15;
@@ -8815,7 +8866,7 @@ IL_005d:
 
 IL_008a:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:155>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:153>
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_16 = __this->____floorUIImageComp;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_17;
@@ -8836,7 +8887,7 @@ IL_008a:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:157>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:155>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_20 = __this->___floorObject;
 		NullCheck(L_20);
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_21;
@@ -8847,11 +8898,11 @@ IL_008a:
 
 IL_00b7:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:160>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:158>
 		return;
 	}
 }
-// Method Definition Index: 66722
+// Method Definition Index: 66725
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_UpdateContinueCostUI_m80A8F056A0711E0738B705D7F6B266DA9B77EACF (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8863,7 +8914,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_UpdateContinueCostUI_m80A8F0
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:165>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:163>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_0 = __this->___continueCostText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -8874,7 +8925,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_UpdateContinueCostUI_m80A8F0
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:167>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:165>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_2 = __this->___continueCostText;
 		int32_t* L_3 = (int32_t*)(&__this->___continueCost);
 		String_t* L_4;
@@ -8887,15 +8938,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_UpdateContinueCostUI_m80A8F0
 
 IL_0033:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:169>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:167>
 		return;
 	}
 }
-// Method Definition Index: 66723
+// Method Definition Index: 66726
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_Update_m7F29D8E933B8D21D2E67507979C0F12ACF87BB41 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:173>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:172>
 		bool L_0 = __this->____gameEnd;
 		if (!L_0)
 		{
@@ -8903,25 +8954,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_Update_m7F29D8E933B8D21D2E67
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:173>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:172>
 		return;
 	}
 
 IL_0009:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:175>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:174>
 		float L_1 = __this->____timer;
 		float L_2;
 		L_2 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		__this->____timer = ((float)il2cpp_codegen_subtract(L_1, L_2));
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:176>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:175>
 		float L_3 = __this->____timer;
 		float L_4;
 		L_4 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline(L_3, (0.0f), NULL);
 		__this->____timer = L_4;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:177>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:176>
 		GameManager_UpdateTimerUI_m4AF067747EE379059EAFEA45D8ED5E26CC20A629(__this, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:179>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:178>
 		float L_5 = __this->____timer;
 		if ((!(((float)L_5) <= ((float)(0.0f)))))
 		{
@@ -8929,17 +8980,17 @@ IL_0009:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:181>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:180>
 		GameManager_GameLost_m5D7D1D235EE55C82AF246C6DCF25E6B5A8688797(__this, NULL);
 	}
 
 IL_004a:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:184>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:182>
 		return;
 	}
 }
-// Method Definition Index: 66724
+// Method Definition Index: 66727
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_UpdateTimerUI_m4AF067747EE379059EAFEA45D8ED5E26CC20A629 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8952,7 +9003,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_UpdateTimerUI_m4AF067747EE37
 	}
 	float V_0 = 0.0f;
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:189>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:187>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_0 = __this->___timerText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -8963,7 +9014,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_UpdateTimerUI_m4AF067747EE37
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:191>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:189>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_2 = __this->___timerText;
 		float L_3 = __this->____timer;
 		float L_4;
@@ -8978,14 +9029,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_UpdateTimerUI_m4AF067747EE37
 
 IL_002d:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:195>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:193>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(_stringLiteral5A5C4FE8A11987CE59E6DA87E499C6894FDD2CE2, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:197>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:195>
 		return;
 	}
 }
-// Method Definition Index: 66725
+// Method Definition Index: 66728
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_ResetGame_mAA7635DBAEDF23E8D37A64870D9D66D0A695D20C (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8997,7 +9048,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_ResetGame_mAA7635DBAEDF23E8D
 	Scene_tA1DC762B79745EB5140F054C884855B922318356 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:202>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:200>
 		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
 		Scene_tA1DC762B79745EB5140F054C884855B922318356 L_0;
 		L_0 = SceneManager_GetActiveScene_m0B320EC4302F51A71495D1CCD1A0FF9C2ED1FDC8(NULL);
@@ -9005,18 +9056,38 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_ResetGame_mAA7635DBAEDF23E8D
 		int32_t L_1;
 		L_1 = Scene_get_buildIndex_m82B6E0C96C85C952B7A2D794DB73CDA99AA9A57E((&V_0), NULL);
 		SceneManager_LoadScene_m0957E62F2A0A0243C79394E5B74E8EFA86BE5ED1(L_1, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:203>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:201>
 		return;
 	}
 }
-// Method Definition Index: 66726
+// Method Definition Index: 66729
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_GoToMenu_mCD2382DFBEDFA8B644932FC4FE1BFBB88BAE310D (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:206>
+		Time_set_timeScale_mEF84EE4B2376A458387648079B426B267862D331((1.0f), NULL);
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:207>
+		String_t* L_0 = __this->___menuSceneName;
+		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E(L_0, NULL);
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:208>
+		return;
+	}
+}
+// Method Definition Index: 66730
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_ObjectCaught_mB610BD2FD0D7B63C575D6294349B03D368D7F569 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:207>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:213>
 		int32_t L_0 = __this->___caughtObjects;
 		__this->___caughtObjects = ((int32_t)il2cpp_codegen_add(L_0, 1));
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:208>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:214>
 		int32_t L_1 = __this->___caughtObjects;
 		int32_t L_2 = __this->___totalObjects;
 		if ((((int32_t)L_1) < ((int32_t)L_2)))
@@ -9025,17 +9096,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_ObjectCaught_mB610BD2FD0D7B6
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:210>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:216>
 		GameManager_GameWon_m636C306862F85995D61C96FE57CB22EFBE012276(__this, NULL);
 	}
 
 IL_0022:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:212>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:218>
 		return;
 	}
 }
-// Method Definition Index: 66727
+// Method Definition Index: 66731
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_GameWon_m636C306862F85995D61C96FE57CB22EFBE012276 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9048,7 +9119,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_GameWon_m636C306862F85995D61
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:216>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:223>
 		bool L_0 = __this->____gameEnd;
 		if (!L_0)
 		{
@@ -9056,18 +9127,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_GameWon_m636C306862F85995D61
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:217>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:224>
 		return;
 	}
 
 IL_0009:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:218>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:225>
 		__this->____gameEnd = (bool)1;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:219>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:226>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral3BF20E466DFA81EB23BA3F0AEAA0B955C4E7A7D5, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:220>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:227>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___gameWon;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_2;
@@ -9078,7 +9149,7 @@ IL_0009:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:222>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:229>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___gameWon;
 		NullCheck(L_3);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)1, NULL);
@@ -9087,14 +9158,14 @@ IL_0009:
 
 IL_0035:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:226>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:233>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(_stringLiteral010087103A107E8993C24C55FDBDBDAA5D9438F7, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:228>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:235>
 		return;
 	}
 }
-// Method Definition Index: 66728
+// Method Definition Index: 66732
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_GameLost_m5D7D1D235EE55C82AF246C6DCF25E6B5A8688797 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9107,7 +9178,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_GameLost_m5D7D1D235EE55C82AF
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:232>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:240>
 		bool L_0 = __this->____gameEnd;
 		if (!L_0)
 		{
@@ -9115,18 +9186,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_GameLost_m5D7D1D235EE55C82AF
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:233>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:241>
 		return;
 	}
 
 IL_0009:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:234>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:242>
 		__this->____gameEnd = (bool)1;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:235>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:243>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral378454FA34A2AFB2123643AEECBFD610E941B350, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:236>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:244>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___gameLost;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_2;
@@ -9137,7 +9208,7 @@ IL_0009:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:238>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:246>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___gameLost;
 		NullCheck(L_3);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)1, NULL);
@@ -9146,14 +9217,14 @@ IL_0009:
 
 IL_0035:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:242>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:250>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(_stringLiteral99AE920B694CDEAE10FD20742178AA8A045D8C15, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:244>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:252>
 		return;
 	}
 }
-// Method Definition Index: 66729
+// Method Definition Index: 66733
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_ContinueFromLost_m45A9BD646CF825021E536CD75A45D83122BDA790 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9167,7 +9238,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_ContinueFromLost_m45A9BD646C
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:250>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:257>
 		ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39* L_0 = ((ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39_StaticFields*)il2cpp_codegen_static_fields_for(ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39_il2cpp_TypeInfo_var))->___Instance;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -9178,18 +9249,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_ContinueFromLost_m45A9BD646C
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:252>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:259>
 		RuntimeObject* L_2;
 		L_2 = GameManager_ShowTempMessage_m06278FF9CF1C7B881495F89B85893AC5AEFD6F89(__this, _stringLiteralB83CC1AAC90598A2D59AD83001F747E46B795F9F, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_3;
 		L_3 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_2, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:253>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:260>
 		return;
 	}
 
 IL_0020:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:256>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:263>
 		ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39* L_4 = ((ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39_StaticFields*)il2cpp_codegen_static_fields_for(ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39_il2cpp_TypeInfo_var))->___Instance;
 		int32_t L_5 = __this->___continueCost;
 		NullCheck(L_4);
@@ -9201,13 +9272,13 @@ IL_0020:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:259>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:265>
 		__this->____gameEnd = (bool)0;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:260>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:266>
 		float L_7 = __this->____timer;
 		float L_8 = __this->___continueTimeBonus;
 		__this->____timer = ((float)il2cpp_codegen_add(L_7, L_8));
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:261>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:267>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = __this->___gameLost;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_10;
@@ -9218,7 +9289,7 @@ IL_0020:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:263>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:269>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = __this->___gameLost;
 		NullCheck(L_11);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_11, (bool)0, NULL);
@@ -9226,14 +9297,14 @@ IL_0020:
 
 IL_0066:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:266>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:272>
 		int32_t L_12 = __this->___continueCost;
 		int32_t L_13;
 		L_13 = Mathf_Max_m7FA442918DE37E3A00106D1F2E789D65829792B8_inline(1, ((int32_t)il2cpp_codegen_multiply(L_12, 2)), NULL);
 		__this->___continueCost = L_13;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:267>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:273>
 		GameManager_UpdateContinueCostUI_m80A8F056A0711E0738B705D7F6B266DA9B77EACF(__this, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:269>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:274>
 		int32_t* L_14 = (int32_t*)(&__this->___continueCost);
 		String_t* L_15;
 		L_15 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_14, NULL);
@@ -9246,42 +9317,42 @@ IL_0066:
 
 IL_009b:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:274>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:278>
 		RuntimeObject* L_17;
 		L_17 = GameManager_ShowTempMessage_m06278FF9CF1C7B881495F89B85893AC5AEFD6F89(__this, _stringLiteralB83CC1AAC90598A2D59AD83001F747E46B795F9F, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_18;
 		L_18 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_17, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:276>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:280>
 		return;
 	}
 }
-// Method Definition Index: 66730
+// Method Definition Index: 66734
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_TryContinue_mF6D150646380EE1E71D6F375999F61C7105D6472 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:282>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:285>
 		GameManager_ContinueFromLost_m45A9BD646CF825021E536CD75A45D83122BDA790(__this, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:283>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:286>
 		return;
 	}
 }
-// Method Definition Index: 66731
+// Method Definition Index: 66735
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameManager_ShowTempMessage_m06278FF9CF1C7B881495F89B85893AC5AEFD6F89 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, String_t* ___0_msg, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CShowTempMessageU3Ed__44_t887B0E7B20634B86ED73ACC70AD45F346459ACCC_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CShowTempMessageU3Ed__46_t7ABCBA5DD65C47E0A02D4FE8721F5C5DD5B6339D_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		U3CShowTempMessageU3Ed__44_t887B0E7B20634B86ED73ACC70AD45F346459ACCC* L_0 = (U3CShowTempMessageU3Ed__44_t887B0E7B20634B86ED73ACC70AD45F346459ACCC*)il2cpp_codegen_object_new(U3CShowTempMessageU3Ed__44_t887B0E7B20634B86ED73ACC70AD45F346459ACCC_il2cpp_TypeInfo_var);
-		U3CShowTempMessageU3Ed__44__ctor_m30854FA7F630D71D087CB614CE7FFA43A3E7AAB6(L_0, 0, NULL);
-		U3CShowTempMessageU3Ed__44_t887B0E7B20634B86ED73ACC70AD45F346459ACCC* L_1 = L_0;
+		U3CShowTempMessageU3Ed__46_t7ABCBA5DD65C47E0A02D4FE8721F5C5DD5B6339D* L_0 = (U3CShowTempMessageU3Ed__46_t7ABCBA5DD65C47E0A02D4FE8721F5C5DD5B6339D*)il2cpp_codegen_object_new(U3CShowTempMessageU3Ed__46_t7ABCBA5DD65C47E0A02D4FE8721F5C5DD5B6339D_il2cpp_TypeInfo_var);
+		U3CShowTempMessageU3Ed__46__ctor_mE894AA97E0D66D17307ADE9A8BADA190EC850606(L_0, 0, NULL);
+		U3CShowTempMessageU3Ed__46_t7ABCBA5DD65C47E0A02D4FE8721F5C5DD5B6339D* L_1 = L_0;
 		NullCheck(L_1);
 		L_1->___U3CU3E4__this = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this), (void*)__this);
-		U3CShowTempMessageU3Ed__44_t887B0E7B20634B86ED73ACC70AD45F346459ACCC* L_2 = L_1;
+		U3CShowTempMessageU3Ed__46_t7ABCBA5DD65C47E0A02D4FE8721F5C5DD5B6339D* L_2 = L_1;
 		String_t* L_3 = ___0_msg;
 		NullCheck(L_2);
 		L_2->___msg = L_3;
@@ -9289,14 +9360,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameManager_ShowTempMessage_m0
 		return L_2;
 	}
 }
-// Method Definition Index: 66732
+// Method Definition Index: 66736
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_CaughtDestroy_mD4490C8E5B5A4E84FF4A3BBA23F25BEE2BCF072F (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:301>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:304>
 		int32_t L_0 = __this->___destroyOb;
 		__this->___destroyOb = ((int32_t)il2cpp_codegen_add(L_0, 2));
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:303>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:305>
 		int32_t L_1 = __this->___destroyOb;
 		int32_t L_2 = __this->___totalObjects;
 		if ((((int32_t)L_1) < ((int32_t)L_2)))
@@ -9312,17 +9383,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_CaughtDestroy_mD4490C8E5B5A4
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:305>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:307>
 		GameManager_GameWon_m636C306862F85995D61C96FE57CB22EFBE012276(__this, NULL);
 	}
 
 IL_002a:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:308>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:309>
 		return;
 	}
 }
-// Method Definition Index: 66733
+// Method Definition Index: 66737
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_ToggleSettingsPanel_mF1557A7BAD919914F5F3F6028B918A6CE8AF7B0E (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9373,27 +9444,27 @@ IL_0023:
 		return;
 	}
 }
-// Method Definition Index: 66734
+// Method Definition Index: 66738
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_OnSettingsButtonPressed_m675D8C0B8AF44A26FD5DF697B6A02953890FE948 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:322>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:321>
 		GameManager_OpenSettingsPanel_m84A2DDE2D0332852C0CE781E81DB5506BB70A46A(__this, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:323>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:322>
 		return;
 	}
 }
-// Method Definition Index: 66735
+// Method Definition Index: 66739
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_OnSettingsExitButtonPressed_mA0A235FEB3023AFB1EEAAFB48F4449FF2113E380 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:329>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:327>
 		GameManager_CloseSettingsPanel_m08A5BAD06D9495FE476CD727BF2D466563E35160(__this, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:330>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:328>
 		return;
 	}
 }
-// Method Definition Index: 66736
+// Method Definition Index: 66740
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_OpenSettingsPanel_m84A2DDE2D0332852C0CE781E81DB5506BB70A46A (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9403,7 +9474,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_OpenSettingsPanel_m84A2DDE2D
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:335>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:333>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___settingsPanel;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -9414,13 +9485,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_OpenSettingsPanel_m84A2DDE2D
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:335>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:333>
 		return;
 	}
 
 IL_000f:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:337>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:335>
 		bool L_2 = __this->____gameEnd;
 		if (L_2)
 		{
@@ -9437,24 +9508,24 @@ IL_000f:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:339>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:337>
 		float L_5;
 		L_5 = Time_get_timeScale_m1F45A413D4EEA08B1E0988022512C137F6C1E616(NULL);
 		__this->____prevTimeScale = L_5;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:340>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:338>
 		float L_6 = __this->___pauseTimeScale;
 		Time_set_timeScale_mEF84EE4B2376A458387648079B426B267862D331(L_6, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:341>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:339>
 		__this->____pausedBySettings = (bool)1;
 	}
 
 IL_0041:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:343>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:341>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___settingsPanel;
 		NullCheck(L_7);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_7, (bool)1, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:345>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:343>
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_8 = __this->____freezeCoroutine;
 		if (!L_8)
 		{
@@ -9462,25 +9533,25 @@ IL_0041:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:345>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:343>
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_9 = __this->____freezeCoroutine;
 		MonoBehaviour_StopCoroutine_mB0FC91BE84203BD8E360B3FBAE5B958B4C5ED22A(__this, L_9, NULL);
 	}
 
 IL_0061:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:346>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:344>
 		RuntimeObject* L_10;
 		L_10 = GameManager_FreezeAfterDelay_mAD69816BC7D5FB5E7F68F070D4ADBBFDE245B198(__this, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_11;
 		L_11 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_10, NULL);
 		__this->____freezeCoroutine = L_11;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____freezeCoroutine), (void*)L_11);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:347>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:345>
 		return;
 	}
 }
-// Method Definition Index: 66737
+// Method Definition Index: 66741
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_CloseSettingsPanel_m08A5BAD06D9495FE476CD727BF2D466563E35160 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9490,7 +9561,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_CloseSettingsPanel_m08A5BAD0
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:352>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:350>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___settingsPanel;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -9501,17 +9572,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_CloseSettingsPanel_m08A5BAD0
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:352>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:350>
 		return;
 	}
 
 IL_000f:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:353>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:351>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___settingsPanel;
 		NullCheck(L_2);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:355>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:353>
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_3 = __this->____freezeCoroutine;
 		if (!L_3)
 		{
@@ -9519,17 +9590,17 @@ IL_000f:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:357>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:355>
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_4 = __this->____freezeCoroutine;
 		MonoBehaviour_StopCoroutine_mB0FC91BE84203BD8E360B3FBAE5B958B4C5ED22A(__this, L_4, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:358>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:356>
 		__this->____freezeCoroutine = (Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____freezeCoroutine), (void*)(Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B*)NULL);
 	}
 
 IL_0036:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:360>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:358>
 		bool L_5 = __this->____isFrozenBySettings;
 		if (L_5)
 		{
@@ -9546,41 +9617,41 @@ IL_0036:
 
 IL_0046:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:362>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:360>
 		float L_7 = __this->____prevTimeScale;
 		Time_set_timeScale_mEF84EE4B2376A458387648079B426B267862D331(L_7, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:363>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:361>
 		__this->____pausedBySettings = (bool)0;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:364>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:362>
 		__this->____isFrozenBySettings = (bool)0;
 	}
 
 IL_005f:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:366>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:364>
 		return;
 	}
 }
-// Method Definition Index: 66738
+// Method Definition Index: 66742
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameManager_FreezeAfterDelay_mAD69816BC7D5FB5E7F68F070D4ADBBFDE245B198 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CFreezeAfterDelayU3Ed__51_t1D5DF60837D6B755C56F7B5DED74C9D4C5712591_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CFreezeAfterDelayU3Ed__53_t22E8FF8745E882D14D682B53FCAB95DE9166C378_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		U3CFreezeAfterDelayU3Ed__51_t1D5DF60837D6B755C56F7B5DED74C9D4C5712591* L_0 = (U3CFreezeAfterDelayU3Ed__51_t1D5DF60837D6B755C56F7B5DED74C9D4C5712591*)il2cpp_codegen_object_new(U3CFreezeAfterDelayU3Ed__51_t1D5DF60837D6B755C56F7B5DED74C9D4C5712591_il2cpp_TypeInfo_var);
-		U3CFreezeAfterDelayU3Ed__51__ctor_mDCD16CBD095142E66CFA14ACDDEA7F6284DFAE11(L_0, 0, NULL);
-		U3CFreezeAfterDelayU3Ed__51_t1D5DF60837D6B755C56F7B5DED74C9D4C5712591* L_1 = L_0;
+		U3CFreezeAfterDelayU3Ed__53_t22E8FF8745E882D14D682B53FCAB95DE9166C378* L_0 = (U3CFreezeAfterDelayU3Ed__53_t22E8FF8745E882D14D682B53FCAB95DE9166C378*)il2cpp_codegen_object_new(U3CFreezeAfterDelayU3Ed__53_t22E8FF8745E882D14D682B53FCAB95DE9166C378_il2cpp_TypeInfo_var);
+		U3CFreezeAfterDelayU3Ed__53__ctor_mACED6AC13D6E04B91DFA516E90A816F4D78DF5B4(L_0, 0, NULL);
+		U3CFreezeAfterDelayU3Ed__53_t22E8FF8745E882D14D682B53FCAB95DE9166C378* L_1 = L_0;
 		NullCheck(L_1);
 		L_1->___U3CU3E4__this = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this), (void*)__this);
 		return L_1;
 	}
 }
-// Method Definition Index: 66739
+// Method Definition Index: 66743
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_ToggleExitPanel_m33BB9BDF8DBBF61F6C819358B5C9C08A8CA6538D (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9590,7 +9661,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_ToggleExitPanel_m33BB9BDF8DB
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:386>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:383>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___exitPanel;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -9601,13 +9672,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_ToggleExitPanel_m33BB9BDF8DB
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:386>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:383>
 		return;
 	}
 
 IL_000f:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:387>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:384>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___exitPanel;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___exitPanel;
 		NullCheck(L_3);
@@ -9615,11 +9686,11 @@ IL_000f:
 		L_4 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_3, NULL);
 		NullCheck(L_2);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)((((int32_t)L_4) == ((int32_t)0))? 1 : 0), NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:388>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:385>
 		return;
 	}
 }
-// Method Definition Index: 66740
+// Method Definition Index: 66744
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_OpenExitPanel_m4A63EBADA88733625A2850EC7B75709AFC980418 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9629,7 +9700,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_OpenExitPanel_m4A63EBADA8873
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:393>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:390>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___exitPanel;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -9640,21 +9711,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_OpenExitPanel_m4A63EBADA8873
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:393>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:390>
 		return;
 	}
 
 IL_000f:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:394>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:391>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___exitPanel;
 		NullCheck(L_2);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)1, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:395>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:392>
 		return;
 	}
 }
-// Method Definition Index: 66741
+// Method Definition Index: 66745
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_CloseExitPanel_m52489BBCE228F35FEC5FEDE08E2B07C80F53AD96 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9664,7 +9735,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_CloseExitPanel_m52489BBCE228
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:400>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:397>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___exitPanel;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -9675,21 +9746,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_CloseExitPanel_m52489BBCE228
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:400>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:397>
 		return;
 	}
 
 IL_000f:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:401>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:398>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___exitPanel;
 		NullCheck(L_2);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:402>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:399>
 		return;
 	}
 }
-// Method Definition Index: 66742
+// Method Definition Index: 66746
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_ExitGame_m9F891C333D9746F17AB10CBB7705806877941C78 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9699,14 +9770,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_ExitGame_m9F891C333D9746F17A
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:411>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:407>
 		il2cpp_codegen_runtime_class_init_inline(Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
 		Application_Quit_mE304382DB9A6455C2A474C8F364C7387F37E9281(NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:413>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:409>
 		return;
 	}
 }
-// Method Definition Index: 66743
+// Method Definition Index: 66747
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_UseComboFreeze_mC9709D324F90338FCA90AD06CD1BCADD0362B137 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9720,7 +9791,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_UseComboFreeze_mC9709D324F90
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:418>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:414>
 		ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39* L_0 = ((ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39_StaticFields*)il2cpp_codegen_static_fields_for(ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39_il2cpp_TypeInfo_var))->___Instance;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -9731,18 +9802,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_UseComboFreeze_mC9709D324F90
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:418>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:414>
 		return;
 	}
 
 IL_000e:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:419>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:415>
 		ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39* L_2 = ((ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39_StaticFields*)il2cpp_codegen_static_fields_for(ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39_il2cpp_TypeInfo_var))->___Instance;
 		float L_3 = __this->___comboFreezeDuration;
 		NullCheck(L_2);
 		ScoreManager_PauseCombo_m36C7DC875DAD5B207D1163FD356C13D5B5DEC85F(L_2, L_3, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:420>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:416>
 		float* L_4 = (float*)(&__this->___comboFreezeDuration);
 		String_t* L_5;
 		L_5 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972(L_4, NULL);
@@ -9750,11 +9821,11 @@ IL_000e:
 		L_6 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteral0B662801A8588A129F49D202A25CEC195F9CA5E5, L_5, _stringLiteralDAF2BD03270A51BF9C135F3694DCAD2D3E66F465, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_6, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:421>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:417>
 		return;
 	}
 }
-// Method Definition Index: 66744
+// Method Definition Index: 66748
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_UseExtraTimeOnce_m3E5AD029A91C50F78527860D156D7B1E5415AFA1 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9777,7 +9848,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_UseExtraTimeOnce_m3E5AD029A9
 	int32_t V_3 = 0;
 	String_t* G_B17_0 = NULL;
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:427>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:422>
 		bool L_0 = __this->____gameEnd;
 		if (!L_0)
 		{
@@ -9785,13 +9856,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_UseExtraTimeOnce_m3E5AD029A9
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:427>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:422>
 		return;
 	}
 
 IL_0009:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:428>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:423>
 		int32_t L_1 = __this->____extraRemaining;
 		if ((((int32_t)L_1) > ((int32_t)0)))
 		{
@@ -9799,24 +9870,24 @@ IL_0009:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:430>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:425>
 		RuntimeObject* L_2;
 		L_2 = GameManager_ShowTempMessage_m06278FF9CF1C7B881495F89B85893AC5AEFD6F89(__this, _stringLiteral61ABD708ECC1CD516DB02B9DD1FD2CC32662E070, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_3;
 		L_3 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_2, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:431>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:426>
 		return;
 	}
 
 IL_0025:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:433>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:428>
 		int32_t L_4 = __this->____extraRemaining;
 		__this->____extraRemaining = ((int32_t)il2cpp_codegen_subtract(L_4, 1));
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:435>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:430>
 		float L_5 = __this->____timer;
 		V_0 = L_5;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:436>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:431>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_6 = __this->___extraTargetTimerText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_7;
@@ -9827,7 +9898,7 @@ IL_0025:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:438>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:433>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_8 = __this->___extraTargetTimerText;
 		NullCheck(L_8);
 		String_t* L_9;
@@ -9840,21 +9911,21 @@ IL_0025:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:440>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:435>
 		float L_11 = __this->____timer;
 		V_0 = L_11;
 	}
 
 IL_0063:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:443>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:438>
 		float L_12 = V_0;
 		float L_13 = __this->___extraTimeAmount;
 		V_0 = ((float)il2cpp_codegen_add(L_12, L_13));
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:445>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:440>
 		float L_14 = V_0;
 		__this->____timer = L_14;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:446>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:441>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_15 = __this->___timerText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_16;
@@ -9865,7 +9936,7 @@ IL_0063:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:447>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:442>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_17 = __this->___timerText;
 		float L_18 = __this->____timer;
 		float L_19;
@@ -9879,7 +9950,7 @@ IL_0063:
 
 IL_009f:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:449>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:444>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_21 = __this->___extraTargetTimerText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_22;
@@ -9890,7 +9961,7 @@ IL_009f:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:450>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:445>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_23 = __this->___extraTargetTimerText;
 		float L_24 = V_0;
 		int32_t L_25;
@@ -9904,7 +9975,7 @@ IL_009f:
 
 IL_00c6:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:452>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:447>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_27 = __this->___extraButtonObject;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_28;
@@ -9922,7 +9993,7 @@ IL_00c6:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:454>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:449>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_30 = __this->___extraButtonObject;
 		NullCheck(L_30);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_30, (bool)0, NULL);
@@ -9930,7 +10001,7 @@ IL_00c6:
 
 IL_00e9:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:457>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:452>
 		int32_t L_31 = __this->____extraRemaining;
 		if ((((int32_t)L_31) > ((int32_t)0)))
 		{
@@ -9955,7 +10026,7 @@ IL_00f9:
 IL_010e:
 	{
 		V_1 = G_B17_0;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:458>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:453>
 		float L_36 = __this->___extraTimeAmount;
 		int32_t L_37;
 		L_37 = Mathf_CeilToInt_mF2BF9F4261B3431DC20E10A46CFEEED103C48963_inline(L_36, NULL);
@@ -9969,7 +10040,7 @@ IL_010e:
 		L_41 = GameManager_ShowTempMessage_m06278FF9CF1C7B881495F89B85893AC5AEFD6F89(__this, L_40, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_42;
 		L_42 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_41, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:459>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:454>
 		float* L_43 = (float*)(&__this->___extraTimeAmount);
 		String_t* L_44;
 		L_44 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972(L_43, NULL);
@@ -9980,11 +10051,11 @@ IL_010e:
 		L_47 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(_stringLiteral7BBEC04106B1DA5E3360256FACF5A508D3FE5ECF, L_44, _stringLiteralC0915C235B14FB2BA6CEFB36F9CB95B7B8D92093, L_46, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_47, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:460>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:455>
 		return;
 	}
 }
-// Method Definition Index: 66745
+// Method Definition Index: 66749
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_SetFloorSpriteByIndex_m2E04B3250EAA61BDF0AA10A2929122321C26A87B (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, int32_t ___0_index, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9998,7 +10069,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_SetFloorSpriteByIndex_m2E04B
 	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* G_B6_0 = NULL;
 	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* G_B8_0 = NULL;
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:466>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:460>
 		ImageU5BU5D_t8869694C217655DA7B1315DC02C80F1308B78B78* L_0 = __this->___bgImages;
 		if (L_0)
 		{
@@ -10006,13 +10077,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_SetFloorSpriteByIndex_m2E04B
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:466>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:460>
 		return;
 	}
 
 IL_0009:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:467>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:461>
 		int32_t L_1 = ___0_index;
 		if ((((int32_t)L_1) < ((int32_t)0)))
 		{
@@ -10031,13 +10102,13 @@ IL_0009:
 
 IL_0018:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:467>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:461>
 		return;
 	}
 
 IL_0019:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:469>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:463>
 		ImageU5BU5D_t8869694C217655DA7B1315DC02C80F1308B78B78* L_4 = __this->___bgImages;
 		int32_t L_5 = ___0_index;
 		NullCheck(L_4);
@@ -10067,7 +10138,7 @@ IL_0028:
 IL_002d:
 	{
 		V_0 = G_B8_0;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:470>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:464>
 		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_10 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_11;
@@ -10078,20 +10149,20 @@ IL_002d:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:470>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:464>
 		return;
 	}
 
 IL_0038:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:472>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:466>
 		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_12 = V_0;
 		GameManager_ApplyFloorSprite_mAA7E769969F8437C685C6DC62D4D47B89F71BBCC(__this, L_12, (bool)1, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:473>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:467>
 		return;
 	}
 }
-// Method Definition Index: 66746
+// Method Definition Index: 66750
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_SetFloorFromImage_mD6D1DBD3E3F70A97442D937D350EF3E3DCD0E2F2 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* ___0_img, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10101,7 +10172,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_SetFloorFromImage_mD6D1DBD3E
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:479>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:472>
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_0 = ___0_img;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -10127,23 +10198,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_SetFloorFromImage_mD6D1DBD3E
 
 IL_0017:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:479>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:472>
 		return;
 	}
 
 IL_0018:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:480>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:473>
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_5 = ___0_img;
 		NullCheck(L_5);
 		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_6;
 		L_6 = Image_get_sprite_mB2AA377708722E100574F6F75BC102513BB3BCB1_inline(L_5, NULL);
 		GameManager_ApplyFloorSprite_mAA7E769969F8437C685C6DC62D4D47B89F71BBCC(__this, L_6, (bool)1, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:481>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:474>
 		return;
 	}
 }
-// Method Definition Index: 66747
+// Method Definition Index: 66751
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_ApplyFloorSprite_mAA7E769969F8437C685C6DC62D4D47B89F71BBCC (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___0_s, bool ___1_fromButton, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10162,7 +10233,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_ApplyFloorSprite_mAA7E769969
 	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* V_3 = NULL;
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:487>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:479>
 		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_0 = ___0_s;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -10173,13 +10244,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_ApplyFloorSprite_mAA7E769969
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:487>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:479>
 		return;
 	}
 
 IL_000a:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:488>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:480>
 		bool L_2 = __this->___changeOnlyFromButtons;
 		if (!L_2)
 		{
@@ -10194,13 +10265,13 @@ IL_000a:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:488>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:480>
 		return;
 	}
 
 IL_0016:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:490>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:482>
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_4 = __this->____floorUIImageComp;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_5;
@@ -10211,7 +10282,7 @@ IL_0016:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:490>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:482>
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_6 = __this->____floorUIImageComp;
 		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_7 = ___0_s;
 		NullCheck(L_6);
@@ -10220,7 +10291,7 @@ IL_0016:
 
 IL_0030:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:492>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:484>
 		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_8 = __this->___floorRenderer;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_9;
@@ -10244,29 +10315,29 @@ IL_0030:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:494>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:486>
 		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_13 = __this->___floorRenderer;
 		NullCheck(L_13);
 		MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D* L_14;
 		L_14 = Renderer_get_materials_m43D33328432700524EAEAB093C67AE5689976118(L_13, NULL);
 		V_0 = L_14;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:495>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:487>
 		V_1 = (bool)0;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:496>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:488>
 		V_2 = 0;
 		goto IL_00cd;
 	}
 
 IL_0064:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:498>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:490>
 		MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D* L_15 = V_0;
 		int32_t L_16 = V_2;
 		NullCheck(L_15);
 		int32_t L_17 = L_16;
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_18 = (L_15)->GetAt(static_cast<il2cpp_array_size_t>(L_17));
 		V_3 = L_18;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:499>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:491>
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_19 = V_3;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_20;
@@ -10277,7 +10348,7 @@ IL_0064:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:501>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:493>
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_21 = V_3;
 		NullCheck(L_21);
 		bool L_22;
@@ -10288,7 +10359,7 @@ IL_0064:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:503>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:495>
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_23 = V_3;
 		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_24 = ___0_s;
 		NullCheck(L_24);
@@ -10296,14 +10367,14 @@ IL_0064:
 		L_25 = Sprite_get_texture_mEEA6640C1B5D38F84CB64C775B201D7D9F48E045(L_24, NULL);
 		NullCheck(L_23);
 		Material_SetTexture_m06083C3F52EF02FFB1177901D9907314F280F9A5(L_23, _stringLiteral67BEC592386C17C68CF044FFB14169A1073AC7EB, L_25, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:504>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:496>
 		V_1 = (bool)1;
 		goto IL_00c9;
 	}
 
 IL_0093:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:506>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:498>
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_26 = V_3;
 		NullCheck(L_26);
 		bool L_27;
@@ -10314,7 +10385,7 @@ IL_0093:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:508>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:500>
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_28 = V_3;
 		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_29 = ___0_s;
 		NullCheck(L_29);
@@ -10322,7 +10393,7 @@ IL_0093:
 		L_30 = Sprite_get_texture_mEEA6640C1B5D38F84CB64C775B201D7D9F48E045(L_29, NULL);
 		NullCheck(L_28);
 		Material_SetTexture_m06083C3F52EF02FFB1177901D9907314F280F9A5(L_28, _stringLiteral4B8146FB95E4F51B29DA41EB5F6D60F8FD0ECF21, L_30, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:509>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:501>
 		V_1 = (bool)1;
 		goto IL_00c9;
 	}
@@ -10332,7 +10403,7 @@ IL_00b5:
 	}
 	try
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:515>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:507>
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_31 = V_3;
 		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_32 = ___0_s;
 		NullCheck(L_32);
@@ -10340,9 +10411,9 @@ IL_00b5:
 		L_33 = Sprite_get_texture_mEEA6640C1B5D38F84CB64C775B201D7D9F48E045(L_32, NULL);
 		NullCheck(L_31);
 		Material_set_mainTexture_m389E048BA9C81B603EBF36BD792212B296317AC0(L_31, L_33, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:516>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:508>
 		V_1 = (bool)1;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:517>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:509>
 		goto IL_00c9;
 	}
 	catch(Il2CppExceptionWrapper& e)
@@ -10358,22 +10429,22 @@ IL_00b5:
 CATCH_00c6:
 	{
 		RuntimeObject* L_34 = ((RuntimeObject*)IL2CPP_GET_ACTIVE_EXCEPTION(RuntimeObject*));;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:518>
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:518>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:510>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:510>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_00c9;
 	}
 
 IL_00c9:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:496>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:488>
 		int32_t L_35 = V_2;
 		V_2 = ((int32_t)il2cpp_codegen_add(L_35, 1));
 	}
 
 IL_00cd:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:496>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:488>
 		int32_t L_36 = V_2;
 		MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D* L_37 = V_0;
 		NullCheck(L_37);
@@ -10383,7 +10454,7 @@ IL_00cd:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:521>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:513>
 		bool L_38 = V_1;
 		if (!L_38)
 		{
@@ -10391,7 +10462,7 @@ IL_00cd:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:524>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:515>
 		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_39 = __this->___floorRenderer;
 		MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D* L_40 = V_0;
 		NullCheck(L_39);
@@ -10401,80 +10472,89 @@ IL_00cd:
 
 IL_00e3:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:528>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:519>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(_stringLiteral0AD3AED61EAC70F650D3FCA99178491EBE77C340, NULL);
 	}
 
 IL_00ed:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:531>
-		return;
-	}
-}
-// Method Definition Index: 66748
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_SetBG0_m80074C415EBFC8341E96E4521DE422382CA9E449 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
-{
-	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:535>
-		GameManager_SetFloorSpriteByIndex_m2E04B3250EAA61BDF0AA10A2929122321C26A87B(__this, 0, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:535>
-		return;
-	}
-}
-// Method Definition Index: 66749
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_SetBG1_mCE295C41BE8E082E445BFB7E20F0C6C1C6B6F14D (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
-{
-	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:536>
-		GameManager_SetFloorSpriteByIndex_m2E04B3250EAA61BDF0AA10A2929122321C26A87B(__this, 1, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:536>
-		return;
-	}
-}
-// Method Definition Index: 66750
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_SetBG2_m8CB70CB3EB0F16A81FA39403EEB55F50EA05D5D0 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
-{
-	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:537>
-		GameManager_SetFloorSpriteByIndex_m2E04B3250EAA61BDF0AA10A2929122321C26A87B(__this, 2, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:537>
-		return;
-	}
-}
-// Method Definition Index: 66751
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_SetBG3_m955320DF8DB235A0AFAF8B274132A393B5D99B1F (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
-{
-	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:538>
-		GameManager_SetFloorSpriteByIndex_m2E04B3250EAA61BDF0AA10A2929122321C26A87B(__this, 3, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:538>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:522>
 		return;
 	}
 }
 // Method Definition Index: 66752
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_SetBG0_m80074C415EBFC8341E96E4521DE422382CA9E449 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:525>
+		GameManager_SetFloorSpriteByIndex_m2E04B3250EAA61BDF0AA10A2929122321C26A87B(__this, 0, NULL);
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:525>
+		return;
+	}
+}
+// Method Definition Index: 66753
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_SetBG1_mCE295C41BE8E082E445BFB7E20F0C6C1C6B6F14D (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:527>
+		GameManager_SetFloorSpriteByIndex_m2E04B3250EAA61BDF0AA10A2929122321C26A87B(__this, 1, NULL);
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:527>
+		return;
+	}
+}
+// Method Definition Index: 66754
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_SetBG2_m8CB70CB3EB0F16A81FA39403EEB55F50EA05D5D0 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:529>
+		GameManager_SetFloorSpriteByIndex_m2E04B3250EAA61BDF0AA10A2929122321C26A87B(__this, 2, NULL);
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:529>
+		return;
+	}
+}
+// Method Definition Index: 66755
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_SetBG3_m955320DF8DB235A0AFAF8B274132A393B5D99B1F (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:531>
+		GameManager_SetFloorSpriteByIndex_m2E04B3250EAA61BDF0AA10A2929122321C26A87B(__this, 3, NULL);
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:531>
+		return;
+	}
+}
+// Method Definition Index: 66756
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager__ctor_mF453CED520617BFB65C52405A964E06CF17DB368 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0B5ECFF84CE073C4971D637741C560F910E4D128);
+		s_Il2CppMethodInitialized = true;
+	}
 	{
 		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:12>
 		__this->___gameTime = (30.0f);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:30>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:31>
+		__this->___menuSceneName = _stringLiteral0B5ECFF84CE073C4971D637741C560F910E4D128;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___menuSceneName), (void*)_stringLiteral0B5ECFF84CE073C4971D637741C560F910E4D128);
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:34>
 		__this->___pauseTimeScale = (1.0f);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:32>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:36>
 		__this->___freezeDelay = (0.5f);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:39>
-		__this->___comboFreezeDuration = (2.0f);
 		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:43>
+		__this->___comboFreezeDuration = (2.0f);
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:47>
 		__this->___continueCost = ((int32_t)20);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:45>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:49>
 		__this->___continueTimeBonus = (20.0f);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:53>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:57>
 		__this->___extraUses = 1;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:58>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:62>
 		__this->___extraTimeAmount = (10.0f);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:72>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:74>
 		__this->___changeOnlyFromButtons = (bool)1;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:79>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:82>
 		__this->____prevTimeScale = (1.0f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
@@ -10488,8 +10568,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager__ctor_mF453CED520617BFB65C52
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66753
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFreezeAfterDelayU3Ed__51__ctor_mDCD16CBD095142E66CFA14ACDDEA7F6284DFAE11 (U3CFreezeAfterDelayU3Ed__51_t1D5DF60837D6B755C56F7B5DED74C9D4C5712591* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+// Method Definition Index: 66757
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFreezeAfterDelayU3Ed__53__ctor_mACED6AC13D6E04B91DFA516E90A816F4D78DF5B4 (U3CFreezeAfterDelayU3Ed__53_t22E8FF8745E882D14D682B53FCAB95DE9166C378* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
@@ -10498,15 +10578,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFreezeAfterDelayU3Ed__51__ctor_mDCD16
 		return;
 	}
 }
-// Method Definition Index: 66754
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFreezeAfterDelayU3Ed__51_System_IDisposable_Dispose_m8AC3E3D5EA9FC6E9DC5B64929342A3B942BB8A22 (U3CFreezeAfterDelayU3Ed__51_t1D5DF60837D6B755C56F7B5DED74C9D4C5712591* __this, const RuntimeMethod* method) 
+// Method Definition Index: 66758
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFreezeAfterDelayU3Ed__53_System_IDisposable_Dispose_mCE9E1E41BB99588EA7DAD028AB287B933915BDF5 (U3CFreezeAfterDelayU3Ed__53_t22E8FF8745E882D14D682B53FCAB95DE9166C378* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 66755
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CFreezeAfterDelayU3Ed__51_MoveNext_mD5DB1A920B30E7539B60EC957A6DC36E5E2FD02D (U3CFreezeAfterDelayU3Ed__51_t1D5DF60837D6B755C56F7B5DED74C9D4C5712591* __this, const RuntimeMethod* method) 
+// Method Definition Index: 66759
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CFreezeAfterDelayU3Ed__53_MoveNext_m3CA605C29621FB1F5885E146C8E1B6F336A7BDA3 (U3CFreezeAfterDelayU3Ed__53_t22E8FF8745E882D14D682B53FCAB95DE9166C378* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -10542,7 +10622,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CFreezeAfterDelayU3Ed__51_MoveNext_mD5
 IL_0017:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:371>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:369>
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_4 = V_1;
 		NullCheck(L_4);
 		float L_5 = L_4->___freezeDelay;
@@ -10557,7 +10637,7 @@ IL_0017:
 IL_0038:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:372>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:370>
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_7 = V_1;
 		NullCheck(L_7);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = L_7->___settingsPanel;
@@ -10584,51 +10664,51 @@ IL_0038:
 
 IL_005a:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:374>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:372>
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_13 = V_1;
 		NullCheck(L_13);
 		L_13->____freezeCoroutine = (Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_13->____freezeCoroutine), (void*)(Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B*)NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:375>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:373>
 		return (bool)0;
 	}
 
 IL_0063:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:377>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:375>
 		Time_set_timeScale_mEF84EE4B2376A458387648079B426B267862D331((0.0f), NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:378>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:376>
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_14 = V_1;
 		NullCheck(L_14);
 		L_14->____isFrozenBySettings = (bool)1;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:379>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:377>
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_15 = V_1;
 		NullCheck(L_15);
 		L_15->____freezeCoroutine = (Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_15->____freezeCoroutine), (void*)(Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B*)NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:380>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:378>
 		return (bool)0;
 	}
 }
-// Method Definition Index: 66756
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CFreezeAfterDelayU3Ed__51_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD9F8524A2511CA58DD4F33775CAAC4EA1FC06B68 (U3CFreezeAfterDelayU3Ed__51_t1D5DF60837D6B755C56F7B5DED74C9D4C5712591* __this, const RuntimeMethod* method) 
+// Method Definition Index: 66760
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CFreezeAfterDelayU3Ed__53_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mC0A06E055110FE091179F799486F530C05817AE8 (U3CFreezeAfterDelayU3Ed__53_t22E8FF8745E882D14D682B53FCAB95DE9166C378* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current;
 		return L_0;
 	}
 }
-// Method Definition Index: 66757
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFreezeAfterDelayU3Ed__51_System_Collections_IEnumerator_Reset_m895B9E55465C7C82DD2509649D3BE8AD891FFBD8 (U3CFreezeAfterDelayU3Ed__51_t1D5DF60837D6B755C56F7B5DED74C9D4C5712591* __this, const RuntimeMethod* method) 
+// Method Definition Index: 66761
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFreezeAfterDelayU3Ed__53_System_Collections_IEnumerator_Reset_mA31CE7E8D24DDC368CD5F681E389BC8C42AD05B8 (U3CFreezeAfterDelayU3Ed__53_t22E8FF8745E882D14D682B53FCAB95DE9166C378* __this, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
 		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CFreezeAfterDelayU3Ed__51_System_Collections_IEnumerator_Reset_m895B9E55465C7C82DD2509649D3BE8AD891FFBD8_RuntimeMethod_var)));
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CFreezeAfterDelayU3Ed__53_System_Collections_IEnumerator_Reset_mA31CE7E8D24DDC368CD5F681E389BC8C42AD05B8_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 66758
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CFreezeAfterDelayU3Ed__51_System_Collections_IEnumerator_get_Current_m71EF7B63C266A995BBCDF50E8A7E7CB92CAE1552 (U3CFreezeAfterDelayU3Ed__51_t1D5DF60837D6B755C56F7B5DED74C9D4C5712591* __this, const RuntimeMethod* method) 
+// Method Definition Index: 66762
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CFreezeAfterDelayU3Ed__53_System_Collections_IEnumerator_get_Current_m8CE0308D44A31E289AB657E30658406B05FAC88A (U3CFreezeAfterDelayU3Ed__53_t22E8FF8745E882D14D682B53FCAB95DE9166C378* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current;
@@ -10643,8 +10723,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CFreezeAfterDelayU3Ed__51_Sy
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66759
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CShowTempMessageU3Ed__44__ctor_m30854FA7F630D71D087CB614CE7FFA43A3E7AAB6 (U3CShowTempMessageU3Ed__44_t887B0E7B20634B86ED73ACC70AD45F346459ACCC* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+// Method Definition Index: 66763
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CShowTempMessageU3Ed__46__ctor_mE894AA97E0D66D17307ADE9A8BADA190EC850606 (U3CShowTempMessageU3Ed__46_t7ABCBA5DD65C47E0A02D4FE8721F5C5DD5B6339D* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
@@ -10653,15 +10733,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CShowTempMessageU3Ed__44__ctor_m30854F
 		return;
 	}
 }
-// Method Definition Index: 66760
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CShowTempMessageU3Ed__44_System_IDisposable_Dispose_m503763926849C4AA605389132BA777294EBCC7C7 (U3CShowTempMessageU3Ed__44_t887B0E7B20634B86ED73ACC70AD45F346459ACCC* __this, const RuntimeMethod* method) 
+// Method Definition Index: 66764
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CShowTempMessageU3Ed__46_System_IDisposable_Dispose_mC8EBA5C29E0C34D34B04A5C3737D8AF1DE86845F (U3CShowTempMessageU3Ed__46_t7ABCBA5DD65C47E0A02D4FE8721F5C5DD5B6339D* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 66761
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CShowTempMessageU3Ed__44_MoveNext_m8BBF4E176F05BB5552734A188DB84A8F9FE17688 (U3CShowTempMessageU3Ed__44_t887B0E7B20634B86ED73ACC70AD45F346459ACCC* __this, const RuntimeMethod* method) 
+// Method Definition Index: 66765
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CShowTempMessageU3Ed__46_MoveNext_m9BA2E957F6C91F4610017FF3DF591E0A7FD37B76 (U3CShowTempMessageU3Ed__46_t7ABCBA5DD65C47E0A02D4FE8721F5C5DD5B6339D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -10698,7 +10778,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CShowTempMessageU3Ed__44_MoveNext_m8BB
 IL_0017:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:288>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:291>
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_4 = V_1;
 		NullCheck(L_4);
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_5 = L_4->___continueMessageText;
@@ -10711,20 +10791,20 @@ IL_0017:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:289>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:292>
 		return (bool)0;
 	}
 
 IL_002e:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:291>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:294>
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_7 = V_1;
 		NullCheck(L_7);
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_8 = L_7->___continueMessageText;
 		String_t* L_9 = __this->___msg;
 		NullCheck(L_8);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_8, L_9);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:292>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:295>
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_10 = V_1;
 		NullCheck(L_10);
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_11 = L_10->___continueMessageText;
@@ -10733,7 +10813,7 @@ IL_002e:
 		L_12 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_11, NULL);
 		NullCheck(L_12);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_12, (bool)1, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:293>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:296>
 		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_13 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
 		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_13, (2.0f), NULL);
 		__this->___U3CU3E2__current = L_13;
@@ -10745,13 +10825,13 @@ IL_002e:
 IL_0069:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:294>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:297>
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_14 = V_1;
 		NullCheck(L_14);
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_15 = L_14->___continueMessageText;
 		NullCheck(L_15);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_15, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:295>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:298>
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_16 = V_1;
 		NullCheck(L_16);
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_17 = L_16->___continueMessageText;
@@ -10760,29 +10840,29 @@ IL_0069:
 		L_18 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_17, NULL);
 		NullCheck(L_18);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_18, (bool)0, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:296>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/GameManager.cs:299>
 		return (bool)0;
 	}
 }
-// Method Definition Index: 66762
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CShowTempMessageU3Ed__44_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m4F093136928122CE918AFBA490CB0D5131D1F6DB (U3CShowTempMessageU3Ed__44_t887B0E7B20634B86ED73ACC70AD45F346459ACCC* __this, const RuntimeMethod* method) 
+// Method Definition Index: 66766
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CShowTempMessageU3Ed__46_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m183D2DE037593CF7AFFB24A04F9EB61F2F7B804C (U3CShowTempMessageU3Ed__46_t7ABCBA5DD65C47E0A02D4FE8721F5C5DD5B6339D* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current;
 		return L_0;
 	}
 }
-// Method Definition Index: 66763
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CShowTempMessageU3Ed__44_System_Collections_IEnumerator_Reset_mE406CF854B066B7048CDDDCA0F26C4E0A99418AA (U3CShowTempMessageU3Ed__44_t887B0E7B20634B86ED73ACC70AD45F346459ACCC* __this, const RuntimeMethod* method) 
+// Method Definition Index: 66767
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CShowTempMessageU3Ed__46_System_Collections_IEnumerator_Reset_mA8A027B2FC048540E0844E0E3F2DAF2BF47DA951 (U3CShowTempMessageU3Ed__46_t7ABCBA5DD65C47E0A02D4FE8721F5C5DD5B6339D* __this, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
 		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CShowTempMessageU3Ed__44_System_Collections_IEnumerator_Reset_mE406CF854B066B7048CDDDCA0F26C4E0A99418AA_RuntimeMethod_var)));
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CShowTempMessageU3Ed__46_System_Collections_IEnumerator_Reset_mA8A027B2FC048540E0844E0E3F2DAF2BF47DA951_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 66764
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CShowTempMessageU3Ed__44_System_Collections_IEnumerator_get_Current_mD2DE9D5FCF8714805F6C854535152319490CAA3F (U3CShowTempMessageU3Ed__44_t887B0E7B20634B86ED73ACC70AD45F346459ACCC* __this, const RuntimeMethod* method) 
+// Method Definition Index: 66768
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CShowTempMessageU3Ed__46_System_Collections_IEnumerator_get_Current_m377F431D0D3424499808C26CDD83FEC51AA70449 (U3CShowTempMessageU3Ed__46_t7ABCBA5DD65C47E0A02D4FE8721F5C5DD5B6339D* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current;
@@ -10797,7 +10877,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CShowTempMessageU3Ed__44_Sys
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66765
+// Method Definition Index: 66769
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MagnetObject__ctor_m8699A3A52813D3028A0FF307472E12BB76A36F6E (MagnetObject_t2219D077C73DC877D6C3116D5F6DD7572AF62C8B* __this, const RuntimeMethod* method) 
 {
 	{
@@ -10813,37 +10893,483 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MagnetObject__ctor_m8699A3A52813D3028A0F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66766
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t objectId_get_scoreValue_mB3FD3E488724A0D8084D269E9C1E0C8C50BE738E (objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* __this, const RuntimeMethod* method) 
+// Method Definition Index: 66770
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MenuManager_Awake_mBE6CB23506EC05F5ED24A23ED037C9B2E33C4DD6 (MenuManager_t34C8EA4F128D811DE986BE56D7938F2720BA7B16* __this, const RuntimeMethod* method) 
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/objectId.cs:24>
-		int32_t L_0 = __this->___U3CscoreValueU3Ek__BackingField;
-		return L_0;
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MenuManager_PlayGame_mB5DE2377271DD83EE114E69B5F5A226E3DC1190D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MenuManager_ToggleSettingsPanel_m5830B9DABB610C5DDBB753F20E591947F0E1F05F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MenuManager_ToggleShopPanel_m9003F13DBE8411A1B6002FE92D875F7D0FC69C9B_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
 	}
-}
-// Method Definition Index: 66767
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void objectId_set_scoreValue_m57BB9555C8AE28E5AF87805539F386F16D4CB74B (objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* __this, int32_t ___0_value, const RuntimeMethod* method) 
-{
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/objectId.cs:24>
-		int32_t L_0 = ___0_value;
-		__this->___U3CscoreValueU3Ek__BackingField = L_0;
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:29>
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_0 = __this->___playButton;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_002a;
+		}
+	}
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:29>
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_2 = __this->___playButton;
+		NullCheck(L_2);
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_3;
+		L_3 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_2, NULL);
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_4 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_4, __this, (intptr_t)((void*)MenuManager_PlayGame_mB5DE2377271DD83EE114E69B5F5A226E3DC1190D_RuntimeMethod_var), NULL);
+		NullCheck(L_3);
+		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_3, L_4, NULL);
+	}
+
+IL_002a:
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:30>
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_5 = __this->___settingsButton;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_6;
+		L_6 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_5, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_6)
+		{
+			goto IL_0054;
+		}
+	}
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:30>
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_7 = __this->___settingsButton;
+		NullCheck(L_7);
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_8;
+		L_8 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_7, NULL);
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_9 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_9, __this, (intptr_t)((void*)MenuManager_ToggleSettingsPanel_m5830B9DABB610C5DDBB753F20E591947F0E1F05F_RuntimeMethod_var), NULL);
+		NullCheck(L_8);
+		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_8, L_9, NULL);
+	}
+
+IL_0054:
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:31>
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_10 = __this->___shopButton;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_11;
+		L_11 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_10, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_11)
+		{
+			goto IL_007e;
+		}
+	}
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:31>
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_12 = __this->___shopButton;
+		NullCheck(L_12);
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_13;
+		L_13 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_12, NULL);
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_14 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_14, __this, (intptr_t)((void*)MenuManager_ToggleShopPanel_m9003F13DBE8411A1B6002FE92D875F7D0FC69C9B_RuntimeMethod_var), NULL);
+		NullCheck(L_13);
+		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_13, L_14, NULL);
+	}
+
+IL_007e:
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:33>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = __this->___settingsPanel;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_16;
+		L_16 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_15, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_16)
+		{
+			goto IL_0098;
+		}
+	}
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:33>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17 = __this->___settingsPanel;
+		NullCheck(L_17);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_17, (bool)0, NULL);
+	}
+
+IL_0098:
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:34>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18 = __this->___shopPanel;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_19;
+		L_19 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_18, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_19)
+		{
+			goto IL_00b2;
+		}
+	}
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:34>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_20 = __this->___shopPanel;
+		NullCheck(L_20);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_20, (bool)0, NULL);
+	}
+
+IL_00b2:
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:35>
 		return;
 	}
 }
-// Method Definition Index: 66768
+// Method Definition Index: 66771
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MenuManager_OnDestroy_mFBF80FEA30D1D03A34673E4E67F36764F05FA96E (MenuManager_t34C8EA4F128D811DE986BE56D7938F2720BA7B16* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MenuManager_PlayGame_mB5DE2377271DD83EE114E69B5F5A226E3DC1190D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MenuManager_ToggleSettingsPanel_m5830B9DABB610C5DDBB753F20E591947F0E1F05F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MenuManager_ToggleShopPanel_m9003F13DBE8411A1B6002FE92D875F7D0FC69C9B_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:40>
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_0 = __this->___playButton;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_002a;
+		}
+	}
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:40>
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_2 = __this->___playButton;
+		NullCheck(L_2);
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_3;
+		L_3 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_2, NULL);
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_4 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_4, __this, (intptr_t)((void*)MenuManager_PlayGame_mB5DE2377271DD83EE114E69B5F5A226E3DC1190D_RuntimeMethod_var), NULL);
+		NullCheck(L_3);
+		UnityEvent_RemoveListener_m0E138F5575CB4363019D3DA570E98FAD502B812C(L_3, L_4, NULL);
+	}
+
+IL_002a:
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:41>
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_5 = __this->___settingsButton;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_6;
+		L_6 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_5, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_6)
+		{
+			goto IL_0054;
+		}
+	}
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:41>
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_7 = __this->___settingsButton;
+		NullCheck(L_7);
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_8;
+		L_8 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_7, NULL);
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_9 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_9, __this, (intptr_t)((void*)MenuManager_ToggleSettingsPanel_m5830B9DABB610C5DDBB753F20E591947F0E1F05F_RuntimeMethod_var), NULL);
+		NullCheck(L_8);
+		UnityEvent_RemoveListener_m0E138F5575CB4363019D3DA570E98FAD502B812C(L_8, L_9, NULL);
+	}
+
+IL_0054:
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:42>
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_10 = __this->___shopButton;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_11;
+		L_11 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_10, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_11)
+		{
+			goto IL_007e;
+		}
+	}
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:42>
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_12 = __this->___shopButton;
+		NullCheck(L_12);
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_13;
+		L_13 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_12, NULL);
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_14 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_14, __this, (intptr_t)((void*)MenuManager_ToggleShopPanel_m9003F13DBE8411A1B6002FE92D875F7D0FC69C9B_RuntimeMethod_var), NULL);
+		NullCheck(L_13);
+		UnityEvent_RemoveListener_m0E138F5575CB4363019D3DA570E98FAD502B812C(L_13, L_14, NULL);
+	}
+
+IL_007e:
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:43>
+		return;
+	}
+}
+// Method Definition Index: 66772
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MenuManager_PlayGame_mB5DE2377271DD83EE114E69B5F5A226E3DC1190D (MenuManager_t34C8EA4F128D811DE986BE56D7938F2720BA7B16* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:48>
+		Time_set_timeScale_mEF84EE4B2376A458387648079B426B267862D331((1.0f), NULL);
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:49>
+		String_t* L_0 = __this->___inGameSceneName;
+		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E(L_0, NULL);
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:50>
+		return;
+	}
+}
+// Method Definition Index: 66773
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MenuManager_ToggleSettingsPanel_m5830B9DABB610C5DDBB753F20E591947F0E1F05F (MenuManager_t34C8EA4F128D811DE986BE56D7938F2720BA7B16* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:55>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___settingsPanel;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:55>
+		return;
+	}
+
+IL_000f:
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:56>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___settingsPanel;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___settingsPanel;
+		NullCheck(L_3);
+		bool L_4;
+		L_4 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_3, NULL);
+		NullCheck(L_2);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)((((int32_t)L_4) == ((int32_t)0))? 1 : 0), NULL);
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:58>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___settingsPanel;
+		NullCheck(L_5);
+		bool L_6;
+		L_6 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_5, NULL);
+		if (!L_6)
+		{
+			goto IL_004f;
+		}
+	}
+	{
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___shopPanel;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_8;
+		L_8 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_7, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_8)
+		{
+			goto IL_004f;
+		}
+	}
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:59>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = __this->___shopPanel;
+		NullCheck(L_9);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_9, (bool)0, NULL);
+	}
+
+IL_004f:
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:60>
+		return;
+	}
+}
+// Method Definition Index: 66774
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MenuManager_ToggleShopPanel_m9003F13DBE8411A1B6002FE92D875F7D0FC69C9B (MenuManager_t34C8EA4F128D811DE986BE56D7938F2720BA7B16* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:65>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___shopPanel;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:65>
+		return;
+	}
+
+IL_000f:
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:66>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___shopPanel;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___shopPanel;
+		NullCheck(L_3);
+		bool L_4;
+		L_4 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_3, NULL);
+		NullCheck(L_2);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)((((int32_t)L_4) == ((int32_t)0))? 1 : 0), NULL);
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:68>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___shopPanel;
+		NullCheck(L_5);
+		bool L_6;
+		L_6 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_5, NULL);
+		if (!L_6)
+		{
+			goto IL_004f;
+		}
+	}
+	{
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___settingsPanel;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_8;
+		L_8 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_7, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_8)
+		{
+			goto IL_004f;
+		}
+	}
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:69>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = __this->___settingsPanel;
+		NullCheck(L_9);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_9, (bool)0, NULL);
+	}
+
+IL_004f:
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:70>
+		return;
+	}
+}
+// Method Definition Index: 66775
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MenuManager_CloseSettingsPanel_m8B06552BFE44496F5A71FE82F4736AE8A83E34A8 (MenuManager_t34C8EA4F128D811DE986BE56D7938F2720BA7B16* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:75>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___settingsPanel;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:76>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___settingsPanel;
+		NullCheck(L_2);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
+	}
+
+IL_001a:
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:77>
+		return;
+	}
+}
+// Method Definition Index: 66776
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MenuManager_CloseShopPanel_m82D508CC7B04E36C57CC7AE59FD52A67EC3FB551 (MenuManager_t34C8EA4F128D811DE986BE56D7938F2720BA7B16* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:82>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___shopPanel;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:83>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___shopPanel;
+		NullCheck(L_2);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
+	}
+
+IL_001a:
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:84>
+		return;
+	}
+}
+// Method Definition Index: 66777
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MenuManager__ctor_m07A22DFDD90E3164393F8BDE06DAEF5AFA786CF2 (MenuManager_t34C8EA4F128D811DE986BE56D7938F2720BA7B16* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral161F418B68C39DA1D5762A50ACC03FA5DA0F9A20);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/MenuManager.cs:24>
+		__this->___inGameSceneName = _stringLiteral161F418B68C39DA1D5762A50ACC03FA5DA0F9A20;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___inGameSceneName), (void*)_stringLiteral161F418B68C39DA1D5762A50ACC03FA5DA0F9A20);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 66778
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void objectId_Awake_m9DF4DAA3EA363C33B456678292A588F8D98E0DEB (objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/objectId.cs:29>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/objectId.cs:25>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
 		L_0 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		NullCheck(L_0);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1;
 		L_1 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_0, NULL);
 		__this->___originalPosition = L_1;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/objectId.cs:30>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/objectId.cs:26>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
 		L_2 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		NullCheck(L_2);
@@ -10851,11 +11377,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void objectId_Awake_m9DF4DAA3EA363C33B4566782
 		L_3 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_2, NULL);
 		__this->___prefabName = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___prefabName), (void*)L_3);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/objectId.cs:31>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/objectId.cs:27>
 		return;
 	}
 }
-// Method Definition Index: 66769
+// Method Definition Index: 66779
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool objectId_IsMatch_m457646E30E6004F40A4F5FBE0F907B434679E8A8 (objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* __this, objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* ___0_other, bool ___1_requireNonZero, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10865,7 +11391,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool objectId_IsMatch_m457646E30E6004F40A4F5F
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/objectId.cs:35>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/objectId.cs:32>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_0 = ___0_other;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -10876,13 +11402,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool objectId_IsMatch_m457646E30E6004F40A4F5F
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/objectId.cs:35>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/objectId.cs:32>
 		return (bool)0;
 	}
 
 IL_000b:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/objectId.cs:36>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/objectId.cs:33>
 		bool L_2 = ___1_requireNonZero;
 		if (!L_2)
 		{
@@ -10890,7 +11416,7 @@ IL_000b:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/objectId.cs:38>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/objectId.cs:35>
 		int32_t L_3 = __this->___matchId;
 		if (!L_3)
 		{
@@ -10909,13 +11435,13 @@ IL_000b:
 
 IL_001e:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/objectId.cs:39>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/objectId.cs:36>
 		return (bool)0;
 	}
 
 IL_0020:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/objectId.cs:41>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/objectId.cs:38>
 		int32_t L_6 = __this->___matchId;
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_7 = ___0_other;
 		NullCheck(L_7);
@@ -10923,7 +11449,7 @@ IL_0020:
 		return (bool)((((int32_t)L_6) == ((int32_t)L_8))? 1 : 0);
 	}
 }
-// Method Definition Index: 66770
+// Method Definition Index: 66780
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void objectId__ctor_m1302C35A81E2DE5A45B8DD2609AE57F313CCE12D (objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* __this, const RuntimeMethod* method) 
 {
 	{
@@ -10947,7 +11473,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void objectId__ctor_m1302C35A81E2DE5A45B8DD26
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66771
+// Method Definition Index: 66781
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void prefabManager_Start_m2998E372E6BF960174E716B6601CBCAFEF982E77 (prefabManager_tF0A2E7BB19D3940BF4E12EA6409D148104699807* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10958,7 +11484,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void prefabManager_Start_m2998E372E6BF960174E
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:40>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:37>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_0 = __this->___cam;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -10969,7 +11495,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void prefabManager_Start_m2998E372E6BF960174E
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:40>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:37>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_2;
 		L_2 = Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF(NULL);
 		__this->___cam = L_2;
@@ -10978,19 +11504,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void prefabManager_Start_m2998E372E6BF960174E
 
 IL_0019:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:41>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:38>
 		prefabManager_SpawnObjects_m0D9AFCCDFEA39FDE816D8A925882ADEAEB27A804(__this, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:42>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:39>
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		CWalls_tB909566A7AA4504E4C5BD3137D39068AA95C8F3F* L_3;
 		L_3 = Object_FindAnyObjectByType_TisCWalls_tB909566A7AA4504E4C5BD3137D39068AA95C8F3F_mE2ED200E3E4C5DBC4C3A0A9870DEEC95AB90EDE2(Object_FindAnyObjectByType_TisCWalls_tB909566A7AA4504E4C5BD3137D39068AA95C8F3F_mE2ED200E3E4C5DBC4C3A0A9870DEEC95AB90EDE2_RuntimeMethod_var);
 		__this->___wallsController = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___wallsController), (void*)L_3);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:43>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:40>
 		return;
 	}
 }
-// Method Definition Index: 66772
+// Method Definition Index: 66782
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void prefabManager_Update_m1621FC40C87E42D37278F35629FD283A24CAEF0F (prefabManager_tF0A2E7BB19D3940BF4E12EA6409D148104699807* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11003,7 +11529,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void prefabManager_Update_m1621FC40C87E42D372
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:48>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:45>
 		Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* L_0;
 		L_0 = Pointer_get_current_m207443803344C305DEAAEBA56C445980D6C22CB3_inline(NULL);
 		if (L_0)
@@ -11012,13 +11538,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void prefabManager_Update_m1621FC40C87E42D372
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:48>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:45>
 		return;
 	}
 
 IL_0008:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:50>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:47>
 		Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* L_1;
 		L_1 = Pointer_get_current_m207443803344C305DEAAEBA56C445980D6C22CB3_inline(NULL);
 		NullCheck(L_1);
@@ -11028,7 +11554,7 @@ IL_0008:
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_3;
 		L_3 = InputControl_1_ReadValue_m362E05F00FE8CF8FC52F0D673291907EC7FA6541(L_2, InputControl_1_ReadValue_m362E05F00FE8CF8FC52F0D673291907EC7FA6541_RuntimeMethod_var);
 		V_0 = L_3;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:52>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:49>
 		Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* L_4;
 		L_4 = Pointer_get_current_m207443803344C305DEAAEBA56C445980D6C22CB3_inline(NULL);
 		NullCheck(L_4);
@@ -11043,14 +11569,14 @@ IL_0008:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:52>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:49>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_7 = V_0;
 		prefabManager_TrySelect_mD2AA72E4E15B1B29D42AF90540921EC5EC3CF030(__this, L_7, NULL);
 	}
 
 IL_0030:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:53>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:50>
 		Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* L_8;
 		L_8 = Pointer_get_current_m207443803344C305DEAAEBA56C445980D6C22CB3_inline(NULL);
 		NullCheck(L_8);
@@ -11075,14 +11601,14 @@ IL_0030:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:53>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:50>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_13 = V_0;
 		prefabManager_Drag_m816A22BFDD050606E35D3BE4FBE418FF53731E61(__this, L_13, NULL);
 	}
 
 IL_0056:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:54>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:51>
 		Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* L_14;
 		L_14 = Pointer_get_current_m207443803344C305DEAAEBA56C445980D6C22CB3_inline(NULL);
 		NullCheck(L_14);
@@ -11097,17 +11623,17 @@ IL_0056:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:54>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:51>
 		prefabManager_ReleaseSelection_m0BB00DD1AFE8C6E92A1DB4B9984D1A68620DF646(__this, NULL);
 	}
 
 IL_006d:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:55>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:52>
 		return;
 	}
 }
-// Method Definition Index: 66773
+// Method Definition Index: 66783
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void prefabManager_TrySelect_mD2AA72E4E15B1B29D42AF90540921EC5EC3CF030 (prefabManager_tF0A2E7BB19D3940BF4E12EA6409D148104699807* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_screenPos, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11127,9 +11653,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void prefabManager_TrySelect_mD2AA72E4E15B1B2
 	CWalls_tB909566A7AA4504E4C5BD3137D39068AA95C8F3F* G_B12_0 = NULL;
 	CWalls_tB909566A7AA4504E4C5BD3137D39068AA95C8F3F* G_B11_0 = NULL;
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:60>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:57>
 		prefabManager_ReleaseSelection_m0BB00DD1AFE8C6E92A1DB4B9984D1A68620DF646(__this, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:62>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:59>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_0 = __this->___cam;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -11155,7 +11681,7 @@ IL_001b:
 IL_0021:
 	{
 		V_0 = G_B3_0;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:63>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:60>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_4 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_5;
@@ -11166,13 +11692,13 @@ IL_0021:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:63>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:60>
 		return;
 	}
 
 IL_002c:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:65>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:62>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_6 = V_0;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_7 = ___0_screenPos;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
@@ -11180,7 +11706,7 @@ IL_002c:
 		NullCheck(L_6);
 		Ray_t2B1742D7958DC05BDC3EFC7461D3593E1430DC00 L_9;
 		L_9 = Camera_ScreenPointToRay_m2887B9A49880B7AB670C57D66B67D6A6689FE315(L_6, L_8, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:66>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:63>
 		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_10 = __this->___draggableMask;
 		int32_t L_11;
 		L_11 = LayerMask_op_Implicit_m7F5A5B9D079281AC445ED39DEE1FCFA9D795810D(L_10, NULL);
@@ -11193,19 +11719,19 @@ IL_002c:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:66>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:63>
 		return;
 	}
 
 IL_0052:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:68>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:65>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_13;
 		L_13 = RaycastHit_get_transform_m89DB7FCFC50E0213A37CBE089400064B8FA19155((&V_1), NULL);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_14;
 		L_14 = prefabManager_GetDraggableRoot_m335EBC56A00CD339FEB8B43CCA51A5EF4E06156F(__this, L_13, NULL);
 		V_2 = L_14;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:69>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:66>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_16;
@@ -11227,31 +11753,31 @@ IL_0052:
 
 IL_0072:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:69>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:66>
 		return;
 	}
 
 IL_0073:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:71>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:68>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_19 = V_2;
 		__this->____selectedObject = L_19;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____selectedObject), (void*)L_19);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:73>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:70>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_20 = __this->____selectedObject;
 		NullCheck(L_20);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21;
 		L_21 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_20, NULL);
 		V_3 = L_21;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:74>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:71>
 		float L_22 = __this->___objectHeight;
 		(&V_3)->___y = L_22;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:75>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:72>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_23 = __this->____selectedObject;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24 = V_3;
 		NullCheck(L_23);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_23, L_24, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:76>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:73>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_25 = __this->____selectedObject;
 		NullCheck(L_25);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_26;
@@ -11261,7 +11787,7 @@ IL_0073:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_28;
 		L_28 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_26, L_27, NULL);
 		__this->____offset = L_28;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:77>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:74>
 		CWalls_tB909566A7AA4504E4C5BD3137D39068AA95C8F3F* L_29 = __this->___wallsController;
 		CWalls_tB909566A7AA4504E4C5BD3137D39068AA95C8F3F* L_30 = L_29;
 		if (L_30)
@@ -11279,11 +11805,11 @@ IL_00c7:
 	{
 		NullCheck(G_B12_0);
 		CWalls_SetWallsActive_m952197863D8D4AE4E995DBF5D7DA75FEFCB8B733(G_B12_0, (bool)0, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:78>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:75>
 		return;
 	}
 }
-// Method Definition Index: 66774
+// Method Definition Index: 66784
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void prefabManager_ReleaseSelection_m0BB00DD1AFE8C6E92A1DB4B9984D1A68620DF646 (prefabManager_tF0A2E7BB19D3940BF4E12EA6409D148104699807* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11295,7 +11821,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void prefabManager_ReleaseSelection_m0BB00DD1
 	CWalls_tB909566A7AA4504E4C5BD3137D39068AA95C8F3F* G_B3_0 = NULL;
 	CWalls_tB909566A7AA4504E4C5BD3137D39068AA95C8F3F* G_B2_0 = NULL;
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:83>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:80>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->____selectedObject;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -11306,7 +11832,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void prefabManager_ReleaseSelection_m0BB00DD1
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:85>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:82>
 		CWalls_tB909566A7AA4504E4C5BD3137D39068AA95C8F3F* L_2 = __this->___wallsController;
 		CWalls_tB909566A7AA4504E4C5BD3137D39068AA95C8F3F* L_3 = L_2;
 		if (L_3)
@@ -11328,18 +11854,18 @@ IL_001a:
 
 IL_0020:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:86>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:83>
 		__this->____selectedObject = (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____selectedObject), (void*)(Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)NULL);
 	}
 
 IL_0027:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:88>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:85>
 		return;
 	}
 }
-// Method Definition Index: 66775
+// Method Definition Index: 66785
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void prefabManager_Drag_m816A22BFDD050606E35D3BE4FBE418FF53731E61 (prefabManager_tF0A2E7BB19D3940BF4E12EA6409D148104699807* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_screenPos, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11358,7 +11884,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void prefabManager_Drag_m816A22BFDD050606E35D
 	memset((&V_4), 0, sizeof(V_4));
 	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* G_B7_0 = NULL;
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:93>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:90>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->____selectedObject;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -11369,13 +11895,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void prefabManager_Drag_m816A22BFDD050606E35D
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:93>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:90>
 		return;
 	}
 
 IL_000f:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:95>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:92>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2 = __this->____selectedObject;
 		bool L_3;
 		L_3 = prefabManager_IsHeldByCatcher_m5E31EAE980BF28458B4A2A57CFEE34F952F66549(__this, L_2, NULL);
@@ -11385,15 +11911,15 @@ IL_000f:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:97>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:94>
 		prefabManager_ReleaseSelection_m0BB00DD1AFE8C6E92A1DB4B9984D1A68620DF646(__this, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:98>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:95>
 		return;
 	}
 
 IL_0024:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:101>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:98>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_4 = __this->___cam;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_5;
@@ -11419,7 +11945,7 @@ IL_0039:
 IL_003f:
 	{
 		V_0 = G_B7_0;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:102>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:99>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_8 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_9;
@@ -11430,13 +11956,13 @@ IL_003f:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:102>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:99>
 		return;
 	}
 
 IL_004a:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:104>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:101>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_10 = V_0;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_11 = ___0_screenPos;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
@@ -11445,7 +11971,7 @@ IL_004a:
 		Ray_t2B1742D7958DC05BDC3EFC7461D3593E1430DC00 L_13;
 		L_13 = Camera_ScreenPointToRay_m2887B9A49880B7AB670C57D66B67D6A6689FE315(L_10, L_12, NULL);
 		V_1 = L_13;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:105>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:102>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
 		L_14 = Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline(NULL);
 		float L_15 = __this->___objectHeight;
@@ -11453,7 +11979,7 @@ IL_004a:
 		memset((&L_16), 0, sizeof(L_16));
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_16), (0.0f), L_15, (0.0f), NULL);
 		Plane__ctor_m2BFB65EBFF51123791878684ECC375B99FAD10A2_inline((&V_2), L_14, L_16, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:106>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:103>
 		Ray_t2B1742D7958DC05BDC3EFC7461D3593E1430DC00 L_17 = V_1;
 		bool L_18;
 		L_18 = Plane_Raycast_mC6D25A732413A2694A75CB0F2F9E75DEDDA117F0_inline((&V_2), L_17, (&V_3), NULL);
@@ -11463,21 +11989,21 @@ IL_004a:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:108>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:105>
 		float L_19 = V_3;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20;
 		L_20 = Ray_GetPoint_mAF4E1D38026156E6434EF2BED2420ED5236392AF((&V_1), L_19, NULL);
 		V_4 = L_20;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:109>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:106>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21 = V_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22 = __this->____offset;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23;
 		L_23 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_21, L_22, NULL);
 		V_4 = L_23;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:110>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:107>
 		float L_24 = __this->___objectHeight;
 		(&V_4)->___y = L_24;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:111>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:108>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_25 = __this->____selectedObject;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_26 = V_4;
 		NullCheck(L_25);
@@ -11486,11 +12012,11 @@ IL_004a:
 
 IL_00b7:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:113>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:110>
 		return;
 	}
 }
-// Method Definition Index: 66776
+// Method Definition Index: 66786
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* prefabManager_GetDraggableRoot_m335EBC56A00CD339FEB8B43CCA51A5EF4E06156F (prefabManager_tF0A2E7BB19D3940BF4E12EA6409D148104699807* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_t, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11502,11 +12028,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 	}
 	int32_t V_0 = 0;
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:118>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:115>
 		int32_t L_0;
 		L_0 = LayerMask_NameToLayer_m2764C530EDA9EC3226A36E3FD43E020B413AF139(_stringLiteralB7C3E38023440A913D87DDEF57E8163964A4EE8B, NULL);
 		V_0 = L_0;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:119>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:116>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1 = ___0_t;
 		NullCheck(L_1);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
@@ -11521,14 +12047,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:119>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:116>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5 = ___0_t;
 		return L_5;
 	}
 
 IL_001b:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:120>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:117>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6 = ___0_t;
 		NullCheck(L_6);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
@@ -11559,7 +12085,7 @@ IL_001b:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:120>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:117>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_14 = ___0_t;
 		NullCheck(L_14);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15;
@@ -11569,11 +12095,11 @@ IL_001b:
 
 IL_0043:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:121>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:118>
 		return (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)NULL;
 	}
 }
-// Method Definition Index: 66777
+// Method Definition Index: 66787
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool prefabManager_IsHeldByCatcher_m5E31EAE980BF28458B4A2A57CFEE34F952F66549 (prefabManager_tF0A2E7BB19D3940BF4E12EA6409D148104699807* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_t, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11585,7 +12111,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool prefabManager_IsHeldByCatcher_m5E31EAE98
 	}
 	objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* V_0 = NULL;
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:127>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:124>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ___0_t;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -11596,19 +12122,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool prefabManager_IsHeldByCatcher_m5E31EAE98
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:127>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:124>
 		return (bool)0;
 	}
 
 IL_000b:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:128>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:125>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2 = ___0_t;
 		NullCheck(L_2);
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_3;
 		L_3 = Component_GetComponentInParent_TisobjectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20_m1EDDC97B0CBD65DC5421C98661A2AB20C69F36C4(L_2, Component_GetComponentInParent_TisobjectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20_m1EDDC97B0CBD65DC5421C98661A2AB20C69F36C4_RuntimeMethod_var);
 		V_0 = L_3;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:129>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:126>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_4 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_5;
@@ -11630,7 +12156,7 @@ IL_0022:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 66778
+// Method Definition Index: 66788
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void prefabManager_SpawnObjects_m0D9AFCCDFEA39FDE816D8A925882ADEAEB27A804 (prefabManager_tF0A2E7BB19D3940BF4E12EA6409D148104699807* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11648,18 +12174,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void prefabManager_SpawnObjects_m0D9AFCCDFEA3
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_4;
 	memset((&V_4), 0, sizeof(V_4));
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:135>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:132>
 		V_0 = 0;
 		goto IL_0090;
 	}
 
 IL_0007:
 	{
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:134>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:135>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:136>
 		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:137>
 		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:138>
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:139>
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:140>
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:141>
 		float L_0 = __this->___posX;
 		float L_1 = __this->___posX;
 		float L_2;
@@ -11673,7 +12199,7 @@ IL_0007:
 		float L_8;
 		L_8 = Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494(((-L_6)), L_7, NULL);
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&V_1), L_2, L_5, L_8, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:142>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:139>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_9 = __this->___prefabs;
 		V_2 = L_9;
 		V_3 = 0;
@@ -11682,20 +12208,20 @@ IL_0007:
 
 IL_004e:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:142>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:139>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_10 = V_2;
 		int32_t L_11 = V_3;
 		NullCheck(L_10);
 		int32_t L_12 = L_11;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13 = (L_10)->GetAt(static_cast<il2cpp_array_size_t>(L_12));
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:144>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:141>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14 = V_1;
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_15;
 		L_15 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_16;
 		L_16 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4(L_13, L_14, L_15, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:145>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:142>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17 = L_16;
 		NullCheck(L_17);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_18;
@@ -11704,10 +12230,10 @@ IL_004e:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
 		L_19 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_18, NULL);
 		V_4 = L_19;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:146>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:143>
 		float L_20 = __this->___objectHeight;
 		(&V_4)->___y = L_20;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:147>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:144>
 		NullCheck(L_17);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_21;
 		L_21 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_17, NULL);
@@ -11720,7 +12246,7 @@ IL_004e:
 
 IL_0086:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:142>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:139>
 		int32_t L_24 = V_3;
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_25 = V_2;
 		NullCheck(L_25);
@@ -11730,14 +12256,14 @@ IL_0086:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:135>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:132>
 		int32_t L_26 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_26, 1));
 	}
 
 IL_0090:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:135>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:132>
 		int32_t L_27 = V_0;
 		int32_t L_28 = __this->___spawnCount;
 		if ((((int32_t)L_27) < ((int32_t)L_28)))
@@ -11746,11 +12272,11 @@ IL_0090:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:150>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/prefabsManager.cs:147>
 		return;
 	}
 }
-// Method Definition Index: 66779
+// Method Definition Index: 66789
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void prefabManager__ctor_m2CA9936698450FD3EEF8557F0E35510FC4BFB487 (prefabManager_tF0A2E7BB19D3940BF4E12EA6409D148104699807* __this, const RuntimeMethod* method) 
 {
 	{
@@ -11776,7 +12302,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void prefabManager__ctor_m2CA9936698450FD3EEF
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66780
+// Method Definition Index: 66790
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_Awake_mB3BB0D0448D4C240C4572B7395AF328615E76D8A (ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11789,7 +12315,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_Awake_mB3BB0D0448D4C240C457
 	}
 	int32_t V_0 = 0;
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:52>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:54>
 		ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39* L_0 = ((ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39_StaticFields*)il2cpp_codegen_static_fields_for(ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39_il2cpp_TypeInfo_var))->___Instance;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -11800,7 +12326,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_Awake_mB3BB0D0448D4C240C457
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:54>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:56>
 		((ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39_StaticFields*)il2cpp_codegen_static_fields_for(ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39_il2cpp_TypeInfo_var))->___Instance = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&((ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39_StaticFields*)il2cpp_codegen_static_fields_for(ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39_il2cpp_TypeInfo_var))->___Instance), (void*)__this);
 		goto IL_0020;
@@ -11808,7 +12334,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_Awake_mB3BB0D0448D4C240C457
 
 IL_0015:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:57>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:59>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
 		L_2 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -11817,22 +12343,22 @@ IL_0015:
 
 IL_0020:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:59>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:61>
 		int32_t L_3;
 		L_3 = PlayerPrefs_GetInt_m8AD1FA8BA54CC6CE2B2AEEE36B6D75587BB1692D(_stringLiteral0A2AF913B1170FF14D4811339B9091A3DBC2F546, 0, NULL);
 		V_0 = L_3;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:60>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:62>
 		int32_t L_4 = V_0;
 		__this->___score = L_4;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:61>
-		ScoreManager_UpdateScoreText_m149884DF970DFA252BAFD5F7325859F5EC6A4D6B(__this, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:62>
-		ScoreManager_UpdateMoneyText_mEACE136162B5253B7ECEB872B30DF5DEEF73B4C9(__this, NULL);
 		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:63>
+		ScoreManager_UpdateScoreText_m149884DF970DFA252BAFD5F7325859F5EC6A4D6B(__this, NULL);
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:64>
+		ScoreManager_UpdateMoneyText_mEACE136162B5253B7ECEB872B30DF5DEEF73B4C9(__this, NULL);
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:65>
 		return;
 	}
 }
-// Method Definition Index: 66781
+// Method Definition Index: 66791
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_Update_m68EC29B04B4118B51E293C1C3077D87FF3FE7811 (ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11843,7 +12369,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_Update_m68EC29B04B4118B51E2
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:68>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:70>
 		bool L_0 = __this->___comboActive;
 		if (!L_0)
 		{
@@ -11851,7 +12377,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_Update_m68EC29B04B4118B51E2
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:71>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:72>
 		bool L_1 = __this->___comboPaused;
 		if (L_1)
 		{
@@ -11859,12 +12385,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_Update_m68EC29B04B4118B51E2
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:73>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:74>
 		float L_2 = __this->___comboTimer;
 		float L_3;
 		L_3 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		__this->___comboTimer = ((float)il2cpp_codegen_add(L_2, L_3));
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:74>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:75>
 		float L_4 = __this->___comboTimer;
 		float L_5 = __this->___comboTimeout;
 		if ((!(((float)L_4) > ((float)L_5))))
@@ -11873,13 +12399,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_Update_m68EC29B04B4118B51E2
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:76>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:77>
 		ScoreManager_ResetCombo_mC16462BBCB6BF88D63DFE159EA57E2184A44BD78(__this, NULL);
 	}
 
 IL_0036:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:79>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:80>
 		ScoreManager_UpdateComboTimerText_m98601A632B2CC71543F3C9F60B38C6DCD5E5D1A0(__this, NULL);
 		return;
 	}
@@ -11909,7 +12435,7 @@ IL_005b:
 		return;
 	}
 }
-// Method Definition Index: 66782
+// Method Definition Index: 66792
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_AddScore_m9D5D2CA64A0F3BE20A4F229B9B7884C3AC90FA55 (ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39* __this, int32_t ___0_value, bool ___1_isCombo, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11965,21 +12491,21 @@ IL_002b:
 		int32_t L_8 = __this->___score;
 		int32_t L_9 = V_1;
 		__this->___score = ((int32_t)il2cpp_codegen_add(L_8, L_9));
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:108>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:107>
 		int32_t L_10 = __this->___score;
 		PlayerPrefs_SetInt_m956D3E2DB966F20CF42F842880DDF9E2BE94D948(_stringLiteral0A2AF913B1170FF14D4811339B9091A3DBC2F546, L_10, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:109>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:108>
 		PlayerPrefs_Save_m82567E045D69C838112EA204B60C144D4C1EA3AE(NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:110>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:109>
 		ScoreManager_UpdateScoreText_m149884DF970DFA252BAFD5F7325859F5EC6A4D6B(__this, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:112>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:111>
 		int32_t L_11 = ___0_value;
 		int32_t L_12 = V_0;
 		float L_13 = __this->___moneyPerScore;
 		int32_t L_14;
 		L_14 = Mathf_CeilToInt_mF2BF9F4261B3431DC20E10A46CFEEED103C48963_inline(((float)il2cpp_codegen_multiply(((float)((int32_t)il2cpp_codegen_multiply(L_11, L_12))), L_13)), NULL);
 		V_2 = L_14;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:113>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:112>
 		int32_t L_15 = V_2;
 		if ((((int32_t)L_15) <= ((int32_t)0)))
 		{
@@ -11987,20 +12513,20 @@ IL_002b:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:115>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:114>
 		int32_t L_16 = V_2;
 		ScoreManager_AddMoney_m9CA92D6A5EB695A8343931AF92E98A4E5E6E4606(__this, L_16, NULL);
 	}
 
 IL_008f:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:117>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:116>
 		ScoreManager_UpdateComboText_m39B886F511E921F43CE89A3FECCD886DCF352D4C(__this, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:118>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:117>
 		return;
 	}
 }
-// Method Definition Index: 66783
+// Method Definition Index: 66793
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_UpdateScoreText_m149884DF970DFA252BAFD5F7325859F5EC6A4D6B (ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12011,7 +12537,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_UpdateScoreText_m149884DF97
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:123>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:122>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_0 = __this->___MainScoreText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -12022,7 +12548,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_UpdateScoreText_m149884DF97
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:124>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:123>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_2 = __this->___MainScoreText;
 		int32_t* L_3 = (int32_t*)(&__this->___sessionScore);
 		String_t* L_4;
@@ -12035,11 +12561,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_UpdateScoreText_m149884DF97
 
 IL_002e:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:125>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:124>
 		return;
 	}
 }
-// Method Definition Index: 66784
+// Method Definition Index: 66794
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_UpdateEndGameTexts_m0D3957417451535C566242064066101E645C01C5 (ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12051,7 +12577,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_UpdateEndGameTexts_m0D39574
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:132>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:129>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_0 = __this->___winSessionScoreText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -12062,7 +12588,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_UpdateEndGameTexts_m0D39574
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:133>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:130>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_2 = __this->___winSessionScoreText;
 		int32_t* L_3 = (int32_t*)(&__this->___sessionScore);
 		String_t* L_4;
@@ -12075,7 +12601,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_UpdateEndGameTexts_m0D39574
 
 IL_002e:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:134>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:131>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_6 = __this->___winTotalScoreText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_7;
@@ -12086,7 +12612,7 @@ IL_002e:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:135>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:132>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_8 = __this->___winTotalScoreText;
 		int32_t* L_9 = (int32_t*)(&__this->___score);
 		String_t* L_10;
@@ -12099,7 +12625,7 @@ IL_002e:
 
 IL_005c:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:137>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:133>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_12 = __this->___loseSessionScoreText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_13;
@@ -12110,7 +12636,7 @@ IL_005c:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:138>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:134>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_14 = __this->___loseSessionScoreText;
 		int32_t* L_15 = (int32_t*)(&__this->___sessionScore);
 		String_t* L_16;
@@ -12123,7 +12649,7 @@ IL_005c:
 
 IL_008a:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:139>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:135>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_18 = __this->___loseTotalScoreText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_19;
@@ -12134,7 +12660,7 @@ IL_008a:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:140>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:136>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_20 = __this->___loseTotalScoreText;
 		int32_t* L_21 = (int32_t*)(&__this->___score);
 		String_t* L_22;
@@ -12147,11 +12673,11 @@ IL_008a:
 
 IL_00b8:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:141>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:137>
 		return;
 	}
 }
-// Method Definition Index: 66785
+// Method Definition Index: 66795
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_ResetPersistentScore_m23BD854389576BB77098308AB6ADD62FFAB29206 (ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12161,39 +12687,39 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_ResetPersistentScore_m23BD8
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:146>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:142>
 		PlayerPrefs_DeleteKey_mF3A7857B52DCEF4139843CD28716788624C2AD30(_stringLiteral0A2AF913B1170FF14D4811339B9091A3DBC2F546, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:147>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:143>
 		PlayerPrefs_Save_m82567E045D69C838112EA204B60C144D4C1EA3AE(NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:148>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:144>
 		__this->___score = 0;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:149>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:145>
 		ScoreManager_UpdateScoreText_m149884DF970DFA252BAFD5F7325859F5EC6A4D6B(__this, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:150>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:146>
 		return;
 	}
 }
-// Method Definition Index: 66786
+// Method Definition Index: 66796
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_ResetCombo_mC16462BBCB6BF88D63DFE159EA57E2184A44BD78 (ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:155>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:151>
 		__this->___comboCount = 0;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:156>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:152>
 		__this->___comboActive = (bool)0;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:157>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:153>
 		__this->___comboTimer = (0.0f);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:158>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:154>
 		ScoreManager_UpdateComboText_m39B886F511E921F43CE89A3FECCD886DCF352D4C(__this, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:159>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:155>
 		return;
 	}
 }
-// Method Definition Index: 66787
+// Method Definition Index: 66797
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_AddMoney_m9CA92D6A5EB695A8343931AF92E98A4E5E6E4606 (ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39* __this, int32_t ___0_amount, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:164>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:160>
 		int32_t L_0 = ___0_amount;
 		if ((((int32_t)L_0) > ((int32_t)0)))
 		{
@@ -12201,27 +12727,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_AddMoney_m9CA92D6A5EB695A83
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:164>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:160>
 		return;
 	}
 
 IL_0005:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:165>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:161>
 		int32_t L_1 = __this->___money;
 		int32_t L_2 = ___0_amount;
 		__this->___money = ((int32_t)il2cpp_codegen_add(L_1, L_2));
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:166>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:162>
 		ScoreManager_UpdateMoneyText_mEACE136162B5253B7ECEB872B30DF5DEEF73B4C9(__this, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:167>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:163>
 		return;
 	}
 }
-// Method Definition Index: 66788
+// Method Definition Index: 66798
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ScoreManager_TrySpendMoney_mC9B1C1DF60706E5D0AEDB64799090D45255A9DE4 (ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39* __this, int32_t ___0_amount, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:173>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:168>
 		int32_t L_0 = ___0_amount;
 		if ((((int32_t)L_0) > ((int32_t)0)))
 		{
@@ -12229,13 +12755,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ScoreManager_TrySpendMoney_mC9B1C1DF6070
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:173>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:168>
 		return (bool)1;
 	}
 
 IL_0006:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:174>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:169>
 		int32_t L_1 = __this->___money;
 		int32_t L_2 = ___0_amount;
 		if ((((int32_t)L_1) < ((int32_t)L_2)))
@@ -12244,23 +12770,23 @@ IL_0006:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:176>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:171>
 		int32_t L_3 = __this->___money;
 		int32_t L_4 = ___0_amount;
 		__this->___money = ((int32_t)il2cpp_codegen_subtract(L_3, L_4));
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:177>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:172>
 		ScoreManager_UpdateMoneyText_mEACE136162B5253B7ECEB872B30DF5DEEF73B4C9(__this, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:178>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:173>
 		return (bool)1;
 	}
 
 IL_0025:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:180>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:175>
 		return (bool)0;
 	}
 }
-// Method Definition Index: 66789
+// Method Definition Index: 66799
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_UpdateMoneyText_mEACE136162B5253B7ECEB872B30DF5DEEF73B4C9 (ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12270,7 +12796,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_UpdateMoneyText_mEACE136162
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:186>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:181>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_0 = __this->___moneyText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -12281,24 +12807,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_UpdateMoneyText_mEACE136162
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:186>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:181>
 		return;
 	}
 
 IL_000f:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:187>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:182>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_2 = __this->___moneyText;
 		int32_t* L_3 = (int32_t*)(&__this->___money);
 		String_t* L_4;
 		L_4 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_3, NULL);
 		NullCheck(L_2);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_2, L_4);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:188>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:183>
 		return;
 	}
 }
-// Method Definition Index: 66790
+// Method Definition Index: 66800
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_UpdateComboText_m39B886F511E921F43CE89A3FECCD886DCF352D4C (ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12310,7 +12836,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_UpdateComboText_m39B886F511
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:193>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:188>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_0 = __this->___comboText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -12321,7 +12847,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_UpdateComboText_m39B886F511
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:195>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:190>
 		int32_t L_2 = __this->___comboCount;
 		if ((((int32_t)L_2) <= ((int32_t)1)))
 		{
@@ -12329,7 +12855,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_UpdateComboText_m39B886F511
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:197>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:191>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_3 = __this->___comboText;
 		int32_t L_4 = __this->___comboCount;
 		int32_t L_5 = L_4;
@@ -12343,7 +12869,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_UpdateComboText_m39B886F511
 
 IL_0039:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:200>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:193>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_8 = __this->___comboText;
 		NullCheck(L_8);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_8, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
@@ -12351,17 +12877,17 @@ IL_0039:
 
 IL_0049:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:202>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:195>
 		ScoreManager_UpdateComboTimerText_m98601A632B2CC71543F3C9F60B38C6DCD5E5D1A0(__this, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:203>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:196>
 		return;
 	}
 }
-// Method Definition Index: 66791
+// Method Definition Index: 66801
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_PauseCombo_m36C7DC875DAD5B207D1163FD356C13D5B5DEC85F (ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39* __this, float ___0_duration, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:209>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:201>
 		bool L_0 = __this->___comboActive;
 		if (!L_0)
 		{
@@ -12385,23 +12911,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_PauseCombo_m36C7DC875DAD5B2
 
 IL_0018:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:209>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:201>
 		return;
 	}
 
 IL_0019:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:210>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:202>
 		float L_3 = ___0_duration;
 		RuntimeObject* L_4;
 		L_4 = ScoreManager_PauseComboCoroutine_mE271BB7664D94D229BEB50EF434BBCCC94B489C9(__this, L_3, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_5;
 		L_5 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_4, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:211>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:203>
 		return;
 	}
 }
-// Method Definition Index: 66792
+// Method Definition Index: 66802
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ScoreManager_PauseComboCoroutine_mE271BB7664D94D229BEB50EF434BBCCC94B489C9 (ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39* __this, float ___0_duration, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12424,7 +12950,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ScoreManager_PauseComboCorouti
 		return L_2;
 	}
 }
-// Method Definition Index: 66793
+// Method Definition Index: 66803
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_UpdateComboTimerText_m98601A632B2CC71543F3C9F60B38C6DCD5E5D1A0 (ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12438,7 +12964,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_UpdateComboTimerText_m98601
 	}
 	float V_0 = 0.0f;
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:226>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:218>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_0 = __this->___comboTimerText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -12449,13 +12975,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_UpdateComboTimerText_m98601
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:227>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:219>
 		return;
 	}
 
 IL_000f:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:229>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:221>
 		bool L_2 = __this->___comboActive;
 		if (!L_2)
 		{
@@ -12463,13 +12989,13 @@ IL_000f:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:232>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:223>
 		float L_3 = __this->___comboTimeout;
 		float L_4 = __this->___comboTimer;
 		float L_5;
 		L_5 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline((0.0f), ((float)il2cpp_codegen_subtract(L_3, L_4)), NULL);
 		V_0 = L_5;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:233>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:224>
 		bool L_6 = __this->___comboPaused;
 		if (!L_6)
 		{
@@ -12477,7 +13003,7 @@ IL_000f:
 		}
 	}
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:234>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:225>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_7 = __this->___comboTimerText;
 		float L_8 = V_0;
 		float L_9 = L_8;
@@ -12491,7 +13017,7 @@ IL_000f:
 
 IL_0053:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:236>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:227>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_12 = __this->___comboTimerText;
 		float L_13 = V_0;
 		float L_14 = L_13;
@@ -12505,32 +13031,32 @@ IL_0053:
 
 IL_006f:
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:240>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:231>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_17 = __this->___comboTimerText;
 		NullCheck(L_17);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_17, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:242>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:233>
 		return;
 	}
 }
-// Method Definition Index: 66794
+// Method Definition Index: 66804
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager_AddScore_mD0892948C003C34C1BA5570845F7BA0ABB36C9D1 (ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:248>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:238>
 		int32_t L_0 = ___0_value;
 		ScoreManager_AddScore_m9D5D2CA64A0F3BE20A4F229B9B7884C3AC90FA55(__this, L_0, (bool)0, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:249>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:239>
 		return;
 	}
 }
-// Method Definition Index: 66795
+// Method Definition Index: 66805
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager__ctor_mE5C264C34A9CBBAB72DCF99CCCC9841AF8F9FEE6 (ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:39>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:40>
 		__this->___moneyPerScore = (0.100000001f);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:43>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:44>
 		__this->___comboTimeout = (2.0f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
@@ -12544,7 +13070,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreManager__ctor_mE5C264C34A9CBBAB72DC
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66796
+// Method Definition Index: 66806
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CPauseComboCoroutineU3Ed__32__ctor_mB59D3BC8BF169BE3FE992B1971F75C4238FC81D6 (U3CPauseComboCoroutineU3Ed__32_t2C86E2D193A67D7867D1FCFBA2F520646996600B* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
@@ -12554,14 +13080,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CPauseComboCoroutineU3Ed__32__ctor_mB5
 		return;
 	}
 }
-// Method Definition Index: 66797
+// Method Definition Index: 66807
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CPauseComboCoroutineU3Ed__32_System_IDisposable_Dispose_m3292EF694159F8447CF00775117F851B970432CF (U3CPauseComboCoroutineU3Ed__32_t2C86E2D193A67D7867D1FCFBA2F520646996600B* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 66798
+// Method Definition Index: 66808
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CPauseComboCoroutineU3Ed__32_MoveNext_m0B30D535E0764B943228547716BC27046F0DF612 (U3CPauseComboCoroutineU3Ed__32_t2C86E2D193A67D7867D1FCFBA2F520646996600B* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12597,15 +13123,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CPauseComboCoroutineU3Ed__32_MoveNext_
 IL_0017:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:216>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:208>
 		ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39* L_4 = V_1;
 		NullCheck(L_4);
 		L_4->___comboPaused = (bool)1;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:217>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:209>
 		ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39* L_5 = V_1;
 		NullCheck(L_5);
 		ScoreManager_UpdateComboTimerText_m98601A632B2CC71543F3C9F60B38C6DCD5E5D1A0(L_5, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:218>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:210>
 		float L_6 = __this->___duration;
 		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_7 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
 		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_7, L_6, NULL);
@@ -12618,19 +13144,19 @@ IL_0017:
 IL_0045:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:219>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:211>
 		ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39* L_8 = V_1;
 		NullCheck(L_8);
 		L_8->___comboPaused = (bool)0;
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:220>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:212>
 		ScoreManager_t86D4A06D4B38717B8C529883F37DA25BA5750F39* L_9 = V_1;
 		NullCheck(L_9);
 		ScoreManager_UpdateComboTimerText_m98601A632B2CC71543F3C9F60B38C6DCD5E5D1A0(L_9, NULL);
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:221>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/ScoreManager.cs:213>
 		return (bool)0;
 	}
 }
-// Method Definition Index: 66799
+// Method Definition Index: 66809
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CPauseComboCoroutineU3Ed__32_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m15710507C90A1004A23299FB6473CB020B443D6E (U3CPauseComboCoroutineU3Ed__32_t2C86E2D193A67D7867D1FCFBA2F520646996600B* __this, const RuntimeMethod* method) 
 {
 	{
@@ -12638,7 +13164,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CPauseComboCoroutineU3Ed__32
 		return L_0;
 	}
 }
-// Method Definition Index: 66800
+// Method Definition Index: 66810
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CPauseComboCoroutineU3Ed__32_System_Collections_IEnumerator_Reset_mFC1D4DA2575E2EF5BDD4BF6CD02F5C55E3AC3659 (U3CPauseComboCoroutineU3Ed__32_t2C86E2D193A67D7867D1FCFBA2F520646996600B* __this, const RuntimeMethod* method) 
 {
 	{
@@ -12647,7 +13173,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CPauseComboCoroutineU3Ed__32_System_Co
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CPauseComboCoroutineU3Ed__32_System_Collections_IEnumerator_Reset_mFC1D4DA2575E2EF5BDD4BF6CD02F5C55E3AC3659_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 66801
+// Method Definition Index: 66811
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CPauseComboCoroutineU3Ed__32_System_Collections_IEnumerator_get_Current_m80D33679A0BADB7658FAE2BFE2D4725F807813D1 (U3CPauseComboCoroutineU3Ed__32_t2C86E2D193A67D7867D1FCFBA2F520646996600B* __this, const RuntimeMethod* method) 
 {
 	{
@@ -12663,7 +13189,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CPauseComboCoroutineU3Ed__32
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66802
+// Method Definition Index: 66812
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ChatController_OnEnable_m025CE203564D82A1CDCE5E5719DB07E29811D0B7 (ChatController_t21BE953E1D5ADF0BA9F3B03C205203CADDC64C15* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12688,7 +13214,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ChatController_OnEnable_m025CE203564D82A
 		return;
 	}
 }
-// Method Definition Index: 66803
+// Method Definition Index: 66813
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ChatController_OnDisable_mD49D03719CAEBB3F59F24A7FA8F4FD30C8B54E46 (ChatController_t21BE953E1D5ADF0BA9F3B03C205203CADDC64C15* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12713,7 +13239,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ChatController_OnDisable_mD49D03719CAEBB
 		return;
 	}
 }
-// Method Definition Index: 66804
+// Method Definition Index: 66814
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ChatController_AddToChatOutput_m9AB8FA8A32EA23F2E55795D8301ED0BF6A59F722 (ChatController_t21BE953E1D5ADF0BA9F3B03C205203CADDC64C15* __this, String_t* ___0_newText, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12851,7 +13377,7 @@ IL_00da:
 		return;
 	}
 }
-// Method Definition Index: 66805
+// Method Definition Index: 66815
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ChatController__ctor_m39C05E9EB8C8C40664D5655BCAB9EEBCB31F9719 (ChatController_t21BE953E1D5ADF0BA9F3B03C205203CADDC64C15* __this, const RuntimeMethod* method) 
 {
 	{
@@ -12867,7 +13393,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ChatController__ctor_m39C05E9EB8C8C40664
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66806
+// Method Definition Index: 66816
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DropdownSample_OnButtonClick_mF83641F913F3455A3AE6ADCEA5DEB2A323FCB58F (DropdownSample_tCE5EBEBD2E880BDC4DF110CCD08388269E021100* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12933,7 +13459,7 @@ IL_0050:
 		return;
 	}
 }
-// Method Definition Index: 66807
+// Method Definition Index: 66817
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DropdownSample__ctor_m0F0C6DD803E99B2C15F3369ABD94EC273FADC75B (DropdownSample_tCE5EBEBD2E880BDC4DF110CCD08388269E021100* __this, const RuntimeMethod* method) 
 {
 	{
@@ -12949,7 +13475,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DropdownSample__ctor_m0F0C6DD803E99B2C15
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66808
+// Method Definition Index: 66818
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnvMapAnimator_Awake_m1D86ECDDD4A7A6DF98748B11BAC74D2D3B2F9435 (EnvMapAnimator_tFBDB01D5863979E446E8FF4A3A9C1EA6933D38DB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12975,7 +13501,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnvMapAnimator_Awake_m1D86ECDDD4A7A6DF98
 		return;
 	}
 }
-// Method Definition Index: 66809
+// Method Definition Index: 66819
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* EnvMapAnimator_Start_mB8A6567BB58BDFD0FC70980AFA952748DF1E80E9 (EnvMapAnimator_tFBDB01D5863979E446E8FF4A3A9C1EA6933D38DB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12994,7 +13520,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* EnvMapAnimator_Start_mB8A6567B
 		return L_1;
 	}
 }
-// Method Definition Index: 66810
+// Method Definition Index: 66820
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnvMapAnimator__ctor_m465E8527E49D1AA672A9A8A3B96FE78C24D11138 (EnvMapAnimator_tFBDB01D5863979E446E8FF4A3A9C1EA6933D38DB* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13010,7 +13536,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnvMapAnimator__ctor_m465E8527E49D1AA672
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66811
+// Method Definition Index: 66821
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__4__ctor_m432062D94FDEF42B01FAB69EBC06A4D137C525C2 (U3CStartU3Ed__4_t7AF0F1ABA8D3AE9575A02603D2DC2137FA816557* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
@@ -13020,14 +13546,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__4__ctor_m432062D94FDEF42B0
 		return;
 	}
 }
-// Method Definition Index: 66812
+// Method Definition Index: 66822
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__4_System_IDisposable_Dispose_m8088B5A404D1CB754E73D37137F9A288E47E7E9C (U3CStartU3Ed__4_t7AF0F1ABA8D3AE9575A02603D2DC2137FA816557* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 66813
+// Method Definition Index: 66823
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CStartU3Ed__4_MoveNext_mF689BF83350416D2071533C92042BF12AC52F0C0 (U3CStartU3Ed__4_t7AF0F1ABA8D3AE9575A02603D2DC2137FA816557* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13118,7 +13644,7 @@ IL_00a0:
 		goto IL_002d;
 	}
 }
-// Method Definition Index: 66814
+// Method Definition Index: 66824
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CStartU3Ed__4_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mA3CCB9B113B234F43186B26439E10AD6609DD565 (U3CStartU3Ed__4_t7AF0F1ABA8D3AE9575A02603D2DC2137FA816557* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13126,7 +13652,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CStartU3Ed__4_System_Collect
 		return L_0;
 	}
 }
-// Method Definition Index: 66815
+// Method Definition Index: 66825
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__4_System_Collections_IEnumerator_Reset_m3EF23BF40634D4262D8A2AE3DB14140FEFB4BF52 (U3CStartU3Ed__4_t7AF0F1ABA8D3AE9575A02603D2DC2137FA816557* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13135,7 +13661,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__4_System_Collections_IEnum
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CStartU3Ed__4_System_Collections_IEnumerator_Reset_m3EF23BF40634D4262D8A2AE3DB14140FEFB4BF52_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 66816
+// Method Definition Index: 66826
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CStartU3Ed__4_System_Collections_IEnumerator_get_Current_mB1C119A46A09AD8F0D4DE964F6B335BE2A460FAA (U3CStartU3Ed__4_t7AF0F1ABA8D3AE9575A02603D2DC2137FA816557* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13151,41 +13677,41 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CStartU3Ed__4_System_Collect
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66817
+// Method Definition Index: 66827
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____9BB6D14B053DA3BE4213B408394B4522AFF0C9C3BD5A63AD1056B967813F81F9_FieldInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____9FBDE5CF1A15814120B4FA4142A5B633ECDE70FDE0564923F670B69D84E14A2F_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____4C642A1454F33245B0B6CB4818C1DBB06CD4E59CC1C61538C1B0A1F29C36A1B8_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____B4C7D0346BEEA5A9B5CDC5FFF67842D3424FB8CC126DF02B4C49FC6A106D50FF_FieldInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
 		il2cpp_codegen_initobj((&V_0), sizeof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E));
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)2814));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)2851));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = L_0;
-		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____9FBDE5CF1A15814120B4FA4142A5B633ECDE70FDE0564923F670B69D84E14A2F_FieldInfo_var) };
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____B4C7D0346BEEA5A9B5CDC5FFF67842D3424FB8CC126DF02B4C49FC6A106D50FF_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_1, L_2, NULL);
 		(&V_0)->___FilePathsData = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___FilePathsData), (void*)L_1);
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)1592));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)1609));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = L_3;
-		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____9BB6D14B053DA3BE4213B408394B4522AFF0C9C3BD5A63AD1056B967813F81F9_FieldInfo_var) };
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____4C642A1454F33245B0B6CB4818C1DBB06CD4E59CC1C61538C1B0A1F29C36A1B8_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_4, L_5, NULL);
 		(&V_0)->___TypesData = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___TypesData), (void*)L_4);
-		(&V_0)->___TotalFiles = ((int32_t)42);
-		(&V_0)->___TotalTypes = ((int32_t)48);
+		(&V_0)->___TotalFiles = ((int32_t)43);
+		(&V_0)->___TotalTypes = ((int32_t)49);
 		(&V_0)->___IsEditorOnly = (bool)0;
 		MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E L_6 = V_0;
 		return L_6;
 	}
 }
-// Method Definition Index: 66818
+// Method Definition Index: 66828
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tC95F24D0C6E6B77389433852BB389F39C692926E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13271,7 +13797,7 @@ IL2CPP_EXTERN_C void MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_ma
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66819
+// Method Definition Index: 66829
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Il2CppChar TMP_DigitValidator_Validate_m786CF8A4D85EB9E1BE8785A58007F8796991BDB9 (TMP_DigitValidator_t1C162B062ED9C2BB89E448EAA6D43CC4B82D4B14* __this, String_t** ___0_text, int32_t* ___1_pos, Il2CppChar ___2_ch, const RuntimeMethod* method) 
 {
 	{
@@ -13317,7 +13843,7 @@ IL_0022:
 		return 0;
 	}
 }
-// Method Definition Index: 66820
+// Method Definition Index: 66830
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_DigitValidator__ctor_m9DC5F1168E5F4963C063C88384ADEBA8980BBFE0 (TMP_DigitValidator_t1C162B062ED9C2BB89E448EAA6D43CC4B82D4B14* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13333,7 +13859,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_DigitValidator__ctor_m9DC5F1168E5F49
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66821
+// Method Definition Index: 66831
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Il2CppChar TMP_PhoneNumberValidator_Validate_mE50FE1DE042CE58055C824840D77FCDA6A2AF4D3 (TMP_PhoneNumberValidator_t0746D23F4BE9695B737D9997BCD6A3B3F916B48C* __this, String_t** ___0_text, int32_t* ___1_pos, Il2CppChar ___2_ch, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13934,7 +14460,7 @@ IL_0205:
 		return L_119;
 	}
 }
-// Method Definition Index: 66822
+// Method Definition Index: 66832
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_PhoneNumberValidator__ctor_m70833F265A016119F88136746B4C59F45B5E067D (TMP_PhoneNumberValidator_t0746D23F4BE9695B737D9997BCD6A3B3F916B48C* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13950,7 +14476,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_PhoneNumberValidator__ctor_m70833F26
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66823
+// Method Definition Index: 66833
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CharacterSelectionEvent_t5D7AF67F47A37175CF8615AD66DEC4A0AA021392* TMP_TextEventHandler_get_onCharacterSelection_mA62049738125E3C48405E6DFF09E2D42300BE8C3 (TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13959,7 +14485,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CharacterSelectionEvent_t5D7AF67F47A37175CF86
 		return L_0;
 	}
 }
-// Method Definition Index: 66824
+// Method Definition Index: 66834
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventHandler_set_onCharacterSelection_m6B85C54F4E751BF080324D94FB8DA6286CD5A43C (TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* __this, CharacterSelectionEvent_t5D7AF67F47A37175CF8615AD66DEC4A0AA021392* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -13971,7 +14497,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventHandler_set_onCharacterSele
 		return;
 	}
 }
-// Method Definition Index: 66825
+// Method Definition Index: 66835
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SpriteSelectionEvent_t770551D2973013622C464E817FA74D53BCD4FD95* TMP_TextEventHandler_get_onSpriteSelection_m95CDEB7394FFF38F310717EEEFDCD481D96A5E82 (TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13980,7 +14506,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SpriteSelectionEvent_t770551D2973013622C464E8
 		return L_0;
 	}
 }
-// Method Definition Index: 66826
+// Method Definition Index: 66836
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventHandler_set_onSpriteSelection_mFFBD9D70A791A3F2065C1063F258465EDA8AC2C5 (TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* __this, SpriteSelectionEvent_t770551D2973013622C464E817FA74D53BCD4FD95* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -13992,7 +14518,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventHandler_set_onSpriteSelecti
 		return;
 	}
 }
-// Method Definition Index: 66827
+// Method Definition Index: 66837
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WordSelectionEvent_t340E6006406B5E90F7190C56218E8F7E3712945E* TMP_TextEventHandler_get_onWordSelection_mF22771B4213EEB3AEFCDA390A4FF28FED5D9184C (TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* __this, const RuntimeMethod* method) 
 {
 	{
@@ -14001,7 +14527,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WordSelectionEvent_t340E6006406B5E90F7190C562
 		return L_0;
 	}
 }
-// Method Definition Index: 66828
+// Method Definition Index: 66838
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventHandler_set_onWordSelection_mA7EB31AF14EAADD968857DDAC994F7728B7B02E3 (TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* __this, WordSelectionEvent_t340E6006406B5E90F7190C56218E8F7E3712945E* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -14013,7 +14539,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventHandler_set_onWordSelection
 		return;
 	}
 }
-// Method Definition Index: 66829
+// Method Definition Index: 66839
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LineSelectionEvent_t526120C6113E0638913B951E3D1D7B1CF94F0880* TMP_TextEventHandler_get_onLineSelection_mDDF07E7000993FCD6EAF2FBD2D2226EB66273908 (TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* __this, const RuntimeMethod* method) 
 {
 	{
@@ -14022,7 +14548,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LineSelectionEvent_t526120C6113E0638913B951E3
 		return L_0;
 	}
 }
-// Method Definition Index: 66830
+// Method Definition Index: 66840
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventHandler_set_onLineSelection_m098580AA8098939290113692072E18F9A293B427 (TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* __this, LineSelectionEvent_t526120C6113E0638913B951E3D1D7B1CF94F0880* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -14034,7 +14560,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventHandler_set_onLineSelection
 		return;
 	}
 }
-// Method Definition Index: 66831
+// Method Definition Index: 66841
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LinkSelectionEvent_t5CE74F742D231580ED2C810ECE394E1A2BC81B3D* TMP_TextEventHandler_get_onLinkSelection_m87FB9EABE7F917B2F910A18A3B5F1AE3020D976D (TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* __this, const RuntimeMethod* method) 
 {
 	{
@@ -14043,7 +14569,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LinkSelectionEvent_t5CE74F742D231580ED2C810EC
 		return L_0;
 	}
 }
-// Method Definition Index: 66832
+// Method Definition Index: 66842
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventHandler_set_onLinkSelection_m6741C71F7E218C744CD7AA18B7456382E4B703FF (TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* __this, LinkSelectionEvent_t5CE74F742D231580ED2C810ECE394E1A2BC81B3D* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -14055,7 +14581,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventHandler_set_onLinkSelection
 		return;
 	}
 }
-// Method Definition Index: 66833
+// Method Definition Index: 66843
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventHandler_Awake_mE2D7EB8218B248F11BE54C507396B9B6B12E0052 (TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14156,7 +14682,7 @@ IL_007e:
 		return;
 	}
 }
-// Method Definition Index: 66834
+// Method Definition Index: 66844
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventHandler_LateUpdate_mBF0056A3C00834477F7D221BEE17C26784559DE1 (TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14523,7 +15049,7 @@ IL_0256:
 		return;
 	}
 }
-// Method Definition Index: 66835
+// Method Definition Index: 66845
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventHandler_OnPointerEnter_mF5B4CCF0C9F2EFE24B6D4C7B31C620C91ABBC07A (TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* __this, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* ___0_eventData, const RuntimeMethod* method) 
 {
 	{
@@ -14531,7 +15057,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventHandler_OnPointerEnter_mF5B
 		return;
 	}
 }
-// Method Definition Index: 66836
+// Method Definition Index: 66846
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventHandler_OnPointerExit_mC0561024D04FED2D026BEB3EC183550092823AE6 (TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* __this, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* ___0_eventData, const RuntimeMethod* method) 
 {
 	{
@@ -14539,7 +15065,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventHandler_OnPointerExit_mC056
 		return;
 	}
 }
-// Method Definition Index: 66837
+// Method Definition Index: 66847
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventHandler_SendOnCharacterSelection_m5A891393BC3211CFEF2390B5E9899129CBDAC189 (TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* __this, Il2CppChar ___0_character, int32_t ___1_characterIndex, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14573,7 +15099,7 @@ IL_0015:
 		return;
 	}
 }
-// Method Definition Index: 66838
+// Method Definition Index: 66848
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventHandler_SendOnSpriteSelection_m8242C5F9626A3C1330927FEACF3ECAD287500475 (TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* __this, Il2CppChar ___0_character, int32_t ___1_characterIndex, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14607,7 +15133,7 @@ IL_0015:
 		return;
 	}
 }
-// Method Definition Index: 66839
+// Method Definition Index: 66849
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventHandler_SendOnWordSelection_mCB9E9ACB06AC524273C163743C9191CAF9C1FD33 (TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* __this, String_t* ___0_word, int32_t ___1_charIndex, int32_t ___2_length, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14642,7 +15168,7 @@ IL_0016:
 		return;
 	}
 }
-// Method Definition Index: 66840
+// Method Definition Index: 66850
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventHandler_SendOnLineSelection_mF0691C407CA44C2E8F2D7CD6C9C2099693CBE7A6 (TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* __this, String_t* ___0_line, int32_t ___1_charIndex, int32_t ___2_length, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14677,7 +15203,7 @@ IL_0016:
 		return;
 	}
 }
-// Method Definition Index: 66841
+// Method Definition Index: 66851
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventHandler_SendOnLinkSelection_m2809D6FFF57FAE45DC5BB4DD579328535E255A02 (TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* __this, String_t* ___0_linkID, String_t* ___1_linkText, int32_t ___2_linkIndex, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14712,7 +15238,7 @@ IL_0016:
 		return;
 	}
 }
-// Method Definition Index: 66842
+// Method Definition Index: 66852
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventHandler__ctor_mADE4C28CAE14991CF0B1CC1A9D0EBAF0CF1107AB (TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14771,7 +15297,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventHandler__ctor_mADE4C28CAE14
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66843
+// Method Definition Index: 66853
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharacterSelectionEvent__ctor_m054FE9253D3C4478F57DE900A15AC9A61EC3C11E (CharacterSelectionEvent_t5D7AF67F47A37175CF8615AD66DEC4A0AA021392* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14793,7 +15319,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharacterSelectionEvent__ctor_m054FE9253
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66844
+// Method Definition Index: 66854
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpriteSelectionEvent__ctor_m89C1D1F720F140491B28D9B32B0C7202EE8C4963 (SpriteSelectionEvent_t770551D2973013622C464E817FA74D53BCD4FD95* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14815,7 +15341,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpriteSelectionEvent__ctor_m89C1D1F720F1
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66845
+// Method Definition Index: 66855
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WordSelectionEvent__ctor_m3F52F327A9627042EDB065C1080CEB764F1154F2 (WordSelectionEvent_t340E6006406B5E90F7190C56218E8F7E3712945E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14837,7 +15363,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WordSelectionEvent__ctor_m3F52F327A96270
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66846
+// Method Definition Index: 66856
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LineSelectionEvent__ctor_m419828B3E32BC3F6F5AAC88D7B90CF50A74C80B2 (LineSelectionEvent_t526120C6113E0638913B951E3D1D7B1CF94F0880* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14859,7 +15385,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LineSelectionEvent__ctor_m419828B3E32BC3
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66847
+// Method Definition Index: 66857
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkSelectionEvent__ctor_m4083D6FF46F61AAF956F77FFE849B5166E2579BC (LinkSelectionEvent_t5CE74F742D231580ED2C810ECE394E1A2BC81B3D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14881,7 +15407,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LinkSelectionEvent__ctor_m4083D6FF46F61A
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66848
+// Method Definition Index: 66858
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Benchmark01_Start_m6CF91B0D99B3AC9317731D0C08B2EDA6AA56B9E9 (Benchmark01_t5B476C61575B5B6B64FA318EE0B32114E702DD5D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14900,7 +15426,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Benchmark01_Start_m6CF91B0D99B
 		return L_1;
 	}
 }
-// Method Definition Index: 66849
+// Method Definition Index: 66859
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Benchmark01__ctor_m9E12F5F809E8FF4A6EEFCDB016C1F884716347C4 (Benchmark01_t5B476C61575B5B6B64FA318EE0B32114E702DD5D* __this, const RuntimeMethod* method) 
 {
 	{
@@ -14916,7 +15442,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Benchmark01__ctor_m9E12F5F809E8FF4A6EEFC
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66850
+// Method Definition Index: 66860
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__10__ctor_m242187966C9D563957FB0F76C467B25C25D91D69 (U3CStartU3Ed__10_tB81FF4C98E539AF1EEA095D6A6C11409A26E7819* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
@@ -14926,14 +15452,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__10__ctor_m242187966C9D5639
 		return;
 	}
 }
-// Method Definition Index: 66851
+// Method Definition Index: 66861
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__10_System_IDisposable_Dispose_m7AD303D116E090426086312CD69BFA256CD28B0D (U3CStartU3Ed__10_tB81FF4C98E539AF1EEA095D6A6C11409A26E7819* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 66852
+// Method Definition Index: 66862
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CStartU3Ed__10_MoveNext_m5F93878ED8166F8F4507EE8353856FAEABBBF1C9 (U3CStartU3Ed__10_tB81FF4C98E539AF1EEA095D6A6C11409A26E7819* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15375,7 +15901,7 @@ IL_02a0:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 66853
+// Method Definition Index: 66863
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CStartU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m8F5CE0A24226CB5F890D4C2A9FAD81A2696CE6F6 (U3CStartU3Ed__10_tB81FF4C98E539AF1EEA095D6A6C11409A26E7819* __this, const RuntimeMethod* method) 
 {
 	{
@@ -15383,7 +15909,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CStartU3Ed__10_System_Collec
 		return L_0;
 	}
 }
-// Method Definition Index: 66854
+// Method Definition Index: 66864
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__10_System_Collections_IEnumerator_Reset_m553F892690ED74A33F57B1359743D31F8BB93C2A (U3CStartU3Ed__10_tB81FF4C98E539AF1EEA095D6A6C11409A26E7819* __this, const RuntimeMethod* method) 
 {
 	{
@@ -15392,7 +15918,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__10_System_Collections_IEnu
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CStartU3Ed__10_System_Collections_IEnumerator_Reset_m553F892690ED74A33F57B1359743D31F8BB93C2A_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 66855
+// Method Definition Index: 66865
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CStartU3Ed__10_System_Collections_IEnumerator_get_Current_m50D65AEFE4D08E48AC72E017E00CD43273E1BDBD (U3CStartU3Ed__10_tB81FF4C98E539AF1EEA095D6A6C11409A26E7819* __this, const RuntimeMethod* method) 
 {
 	{
@@ -15408,7 +15934,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CStartU3Ed__10_System_Collec
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66856
+// Method Definition Index: 66866
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Benchmark01_UGUI_Start_m565A619941AAFFC17BB16A4A73DF63F7E54E3AFA (Benchmark01_UGUI_t7DF9DF96E75AF6072B851B638B90BD76FEE0EFD7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15427,7 +15953,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Benchmark01_UGUI_Start_m565A61
 		return L_1;
 	}
 }
-// Method Definition Index: 66857
+// Method Definition Index: 66867
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Benchmark01_UGUI__ctor_m9DCE74210552C6961BF7460C1F812E484771F8EB (Benchmark01_UGUI_t7DF9DF96E75AF6072B851B638B90BD76FEE0EFD7* __this, const RuntimeMethod* method) 
 {
 	{
@@ -15443,7 +15969,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Benchmark01_UGUI__ctor_m9DCE74210552C696
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66858
+// Method Definition Index: 66868
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__10__ctor_m515F107569D5BDE7C81F5DFDAB4A298A5399EB5A (U3CStartU3Ed__10_t06713955D554742C727996BE112A81AD0BCF3D00* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
@@ -15453,14 +15979,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__10__ctor_m515F107569D5BDE7
 		return;
 	}
 }
-// Method Definition Index: 66859
+// Method Definition Index: 66869
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__10_System_IDisposable_Dispose_mFFD5DC6FCF8EC489FF249BE7F91D4336F2AD76AC (U3CStartU3Ed__10_t06713955D554742C727996BE112A81AD0BCF3D00* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 66860
+// Method Definition Index: 66870
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CStartU3Ed__10_MoveNext_mDCA96D0D1226C44C15F1FD85518F0711E6B395D9 (U3CStartU3Ed__10_t06713955D554742C727996BE112A81AD0BCF3D00* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15838,7 +16364,7 @@ IL_0228:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 66861
+// Method Definition Index: 66871
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CStartU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m109B5747CD8D1CF40DAC526C54BFB07223E1FB46 (U3CStartU3Ed__10_t06713955D554742C727996BE112A81AD0BCF3D00* __this, const RuntimeMethod* method) 
 {
 	{
@@ -15846,7 +16372,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CStartU3Ed__10_System_Collec
 		return L_0;
 	}
 }
-// Method Definition Index: 66862
+// Method Definition Index: 66872
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__10_System_Collections_IEnumerator_Reset_mC9F90586F057E3728D9F93BB0E12197C9B994EEA (U3CStartU3Ed__10_t06713955D554742C727996BE112A81AD0BCF3D00* __this, const RuntimeMethod* method) 
 {
 	{
@@ -15855,7 +16381,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__10_System_Collections_IEnu
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CStartU3Ed__10_System_Collections_IEnumerator_Reset_mC9F90586F057E3728D9F93BB0E12197C9B994EEA_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 66863
+// Method Definition Index: 66873
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CStartU3Ed__10_System_Collections_IEnumerator_get_Current_mA4DCEFD742C012A03C20EF42A873B5BFF07AF87A (U3CStartU3Ed__10_t06713955D554742C727996BE112A81AD0BCF3D00* __this, const RuntimeMethod* method) 
 {
 	{
@@ -15871,7 +16397,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CStartU3Ed__10_System_Collec
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66864
+// Method Definition Index: 66874
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Benchmark02_Start_mB56F21A9861A3DAF9F4E7F1DD4A023E05B379E29 (Benchmark02_t4F19F4C449CC8F7FAAED31A6C1D03F4192B3C7E8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16208,7 +16734,7 @@ IL_02b2:
 		return;
 	}
 }
-// Method Definition Index: 66865
+// Method Definition Index: 66875
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Benchmark02__ctor_mE5DCB1CF4C1FDBA742B51B11427B9DE209630BF1 (Benchmark02_t4F19F4C449CC8F7FAAED31A6C1D03F4192B3C7E8* __this, const RuntimeMethod* method) 
 {
 	{
@@ -16226,7 +16752,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Benchmark02__ctor_mE5DCB1CF4C1FDBA742B51
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66866
+// Method Definition Index: 66876
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Benchmark03_Awake_mDEE8E96AE811C5A84CB2C04440CD4662E2F918D3 (Benchmark03_t20465BC4BB859B19BA37877E83DC8946576C359D* __this, const RuntimeMethod* method) 
 {
 	{
@@ -16234,7 +16760,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Benchmark03_Awake_mDEE8E96AE811C5A84CB2C
 		return;
 	}
 }
-// Method Definition Index: 66867
+// Method Definition Index: 66877
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Benchmark03_Start_mCCFD9402E218265F6D34A1EA7ACCD3AD3D80380D (Benchmark03_t20465BC4BB859B19BA37877E83DC8946576C359D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16519,7 +17045,7 @@ IL_0212:
 		return;
 	}
 }
-// Method Definition Index: 66868
+// Method Definition Index: 66878
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Benchmark03__ctor_m8A29BB2CC6375B2D3D57B5A90D18F2435352E5F6 (Benchmark03_t20465BC4BB859B19BA37877E83DC8946576C359D* __this, const RuntimeMethod* method) 
 {
 	{
@@ -16545,7 +17071,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Benchmark03__ctor_m8A29BB2CC6375B2D3D57B
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66869
+// Method Definition Index: 66879
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Benchmark04_Start_mD2F5056019DD08B3DB897F6D194E86AB66E92F90 (Benchmark04_t10F8FE01330047EC5B83FE59EE23381CD2BE2F01* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16725,7 +17251,7 @@ IL_0139:
 		return;
 	}
 }
-// Method Definition Index: 66870
+// Method Definition Index: 66880
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Benchmark04__ctor_m282E4E495D8D1921A87481729549B68BEDAD2D27 (Benchmark04_t10F8FE01330047EC5B83FE59EE23381CD2BE2F01* __this, const RuntimeMethod* method) 
 {
 	{
@@ -16747,7 +17273,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Benchmark04__ctor_m282E4E495D8D1921A8748
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66871
+// Method Definition Index: 66881
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraController_Awake_m2D75756734457ADE0F15F191B63521A47C426788 (CameraController_t7E0AA7DC0B482A31CC3D60F6032912FE8B581DA8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16820,7 +17346,7 @@ IL_002e:
 		return;
 	}
 }
-// Method Definition Index: 66872
+// Method Definition Index: 66882
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraController_Start_m749E20374F32FF190EC51D70C717A8117934F2A5 (CameraController_t7E0AA7DC0B482A31CC3D60F6032912FE8B581DA8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16863,7 +17389,7 @@ IL_002f:
 		return;
 	}
 }
-// Method Definition Index: 66873
+// Method Definition Index: 66883
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraController_LateUpdate_m07E7F5C7D91713F8BB489480304D130570D7858F (CameraController_t7E0AA7DC0B482A31CC3D60F6032912FE8B581DA8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17039,7 +17565,7 @@ IL_0172:
 		return;
 	}
 }
-// Method Definition Index: 66874
+// Method Definition Index: 66884
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraController_GetPlayerInput_m31AE86C54785402EB078A40F37D83FEA9216388F (CameraController_t7E0AA7DC0B482A31CC3D60F6032912FE8B581DA8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17683,7 +18209,7 @@ IL_0517:
 		return;
 	}
 }
-// Method Definition Index: 66875
+// Method Definition Index: 66885
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraController__ctor_mE37608FBFBF61F76A1E0EEACF79B040321476878 (CameraController_t7E0AA7DC0B482A31CC3D60F6032912FE8B581DA8* __this, const RuntimeMethod* method) 
 {
 	{
@@ -17729,7 +18255,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraController__ctor_mE37608FBFBF61F76
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66876
+// Method Definition Index: 66886
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSpin_Awake_mC05FEB5A72FED289171C58787FE09DBD9356FC72 (ObjectSpin_tE4A801A6C63FE0773DE2FD043571CB80CC9F194B* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17812,7 +18338,7 @@ IL_0054:
 		return;
 	}
 }
-// Method Definition Index: 66877
+// Method Definition Index: 66887
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSpin_Update_m7FB0886C3E6D76C0020E4D38DC1C44AB70BF3695 (ObjectSpin_tE4A801A6C63FE0773DE2FD043571CB80CC9F194B* __this, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -17940,7 +18466,7 @@ IL_009b:
 		return;
 	}
 }
-// Method Definition Index: 66878
+// Method Definition Index: 66888
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSpin__ctor_mA786C14AE887FF4012A35FAB3DF59ECF6A77835A (ObjectSpin_tE4A801A6C63FE0773DE2FD043571CB80CC9F194B* __this, const RuntimeMethod* method) 
 {
 	{
@@ -17975,7 +18501,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSpin__ctor_mA786C14AE887FF4012A35F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66879
+// Method Definition Index: 66889
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShaderPropAnimator_Awake_m3D158D58F1840CBDA3B887326275893121E31371 (ShaderPropAnimator_t768B23A41FC3CFB5B3C2501C2411B4DEBA296906* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18001,7 +18527,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShaderPropAnimator_Awake_m3D158D58F1840C
 		return;
 	}
 }
-// Method Definition Index: 66880
+// Method Definition Index: 66890
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShaderPropAnimator_Start_mEF0B5D3EE00206199ABB80CE893AA85DF3FE5C88 (ShaderPropAnimator_t768B23A41FC3CFB5B3C2501C2411B4DEBA296906* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18014,7 +18540,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShaderPropAnimator_Start_mEF0B5D3EE00206
 		return;
 	}
 }
-// Method Definition Index: 66881
+// Method Definition Index: 66891
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ShaderPropAnimator_AnimateProperties_m9F466F9C9554AA7488F4607E7FAC9A5C61F46D56 (ShaderPropAnimator_t768B23A41FC3CFB5B3C2501C2411B4DEBA296906* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18033,7 +18559,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ShaderPropAnimator_AnimateProp
 		return L_1;
 	}
 }
-// Method Definition Index: 66882
+// Method Definition Index: 66892
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShaderPropAnimator__ctor_m51C29C66EFD7FCA3AE68CDEFD38A4A89BF48220B (ShaderPropAnimator_t768B23A41FC3CFB5B3C2501C2411B4DEBA296906* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18049,7 +18575,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShaderPropAnimator__ctor_m51C29C66EFD7FC
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66883
+// Method Definition Index: 66893
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimatePropertiesU3Ed__6__ctor_m2B0F8A634812D7FE998DD35188C5F07797E4FB0D (U3CAnimatePropertiesU3Ed__6_tF5A2F267919D456EDB1730E0AF6F8776728475FB* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
@@ -18059,14 +18585,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimatePropertiesU3Ed__6__ctor_m2B0F8
 		return;
 	}
 }
-// Method Definition Index: 66884
+// Method Definition Index: 66894
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimatePropertiesU3Ed__6_System_IDisposable_Dispose_mCF53541AABFDC14249868837689AC287470F4E71 (U3CAnimatePropertiesU3Ed__6_tF5A2F267919D456EDB1730E0AF6F8776728475FB* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 66885
+// Method Definition Index: 66895
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CAnimatePropertiesU3Ed__6_MoveNext_mB9586A9B61959C3BC38EFB8FC83109785F93F6AC (U3CAnimatePropertiesU3Ed__6_tF5A2F267919D456EDB1730E0AF6F8776728475FB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18161,7 +18687,7 @@ IL_008c:
 		goto IL_0033;
 	}
 }
-// Method Definition Index: 66886
+// Method Definition Index: 66896
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimatePropertiesU3Ed__6_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m7A34F7423FA726A91524CBA0CDD2A25E4AF8EE95 (U3CAnimatePropertiesU3Ed__6_tF5A2F267919D456EDB1730E0AF6F8776728475FB* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18169,7 +18695,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimatePropertiesU3Ed__6_Sy
 		return L_0;
 	}
 }
-// Method Definition Index: 66887
+// Method Definition Index: 66897
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimatePropertiesU3Ed__6_System_Collections_IEnumerator_Reset_m1C76BF8EAC2CDC2BAC58755622763B9318DA51CA (U3CAnimatePropertiesU3Ed__6_tF5A2F267919D456EDB1730E0AF6F8776728475FB* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18178,7 +18704,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimatePropertiesU3Ed__6_System_Colle
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CAnimatePropertiesU3Ed__6_System_Collections_IEnumerator_Reset_m1C76BF8EAC2CDC2BAC58755622763B9318DA51CA_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 66888
+// Method Definition Index: 66898
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimatePropertiesU3Ed__6_System_Collections_IEnumerator_get_Current_m289720A67EB6696F350EAC41DAAE3B917031B7EA (U3CAnimatePropertiesU3Ed__6_tF5A2F267919D456EDB1730E0AF6F8776728475FB* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18194,7 +18720,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimatePropertiesU3Ed__6_Sy
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66889
+// Method Definition Index: 66899
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleScript_Start_mC4159EF79F863FBD86AEA2B81D86FDF04834A6F8 (SimpleScript_t2024C71CEB7376A61970D719F7476FCEB3390DBF* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18232,7 +18758,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleScript_Start_mC4159EF79F863FBD86AE
 		return;
 	}
 }
-// Method Definition Index: 66890
+// Method Definition Index: 66900
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleScript_Update_mBD8A31D53D01FEBB9B432077599239AC6A5DEAFE (SimpleScript_t2024C71CEB7376A61970D719F7476FCEB3390DBF* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18256,7 +18782,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleScript_Update_mBD8A31D53D01FEBB9B4
 		return;
 	}
 }
-// Method Definition Index: 66891
+// Method Definition Index: 66901
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleScript__ctor_mC91E912195EEE18292A8FCA7650739E3DDB81807 (SimpleScript_t2024C71CEB7376A61970D719F7476FCEB3390DBF* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18272,7 +18798,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleScript__ctor_mC91E912195EEE18292A8
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66892
+// Method Definition Index: 66902
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SkewTextExample_Awake_m2D48E0903620C2D870D5176FCFD12A8989801C93 (SkewTextExample_t23E1D8362105119C600703D984514C02617441D1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18294,7 +18820,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SkewTextExample_Awake_m2D48E0903620C2D87
 		return;
 	}
 }
-// Method Definition Index: 66893
+// Method Definition Index: 66903
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SkewTextExample_Start_m7577B96B07C4EB0666BF6F028074176258009690 (SkewTextExample_t23E1D8362105119C600703D984514C02617441D1* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18307,7 +18833,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SkewTextExample_Start_m7577B96B07C4EB066
 		return;
 	}
 }
-// Method Definition Index: 66894
+// Method Definition Index: 66904
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* SkewTextExample_CopyAnimationCurve_mD2C2C4CA7AFBAAC9F4B04CB2896DB9B32B015ACB (SkewTextExample_t23E1D8362105119C600703D984514C02617441D1* __this, AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* ___0_curve, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18332,7 +18858,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD9991
 		return L_1;
 	}
 }
-// Method Definition Index: 66895
+// Method Definition Index: 66905
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* SkewTextExample_WarpText_m462DE1568957770D72704E93D2461D8371C0D362 (SkewTextExample_t23E1D8362105119C600703D984514C02617441D1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18351,7 +18877,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* SkewTextExample_WarpText_m462D
 		return L_1;
 	}
 }
-// Method Definition Index: 66896
+// Method Definition Index: 66906
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SkewTextExample__ctor_m711325FB390A6DFA994B6ADF746C9EBF846A0A22 (SkewTextExample_t23E1D8362105119C600703D984514C02617441D1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18414,7 +18940,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SkewTextExample__ctor_m711325FB390A6DFA9
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66897
+// Method Definition Index: 66907
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWarpTextU3Ed__7__ctor_m39944C7E44F317ACDEC971C8FF2DEC8EA1CCC1C2 (U3CWarpTextU3Ed__7_t81F532662DA2606D7C0F4196B3804AB983C30508* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
@@ -18424,14 +18950,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWarpTextU3Ed__7__ctor_m39944C7E44F317
 		return;
 	}
 }
-// Method Definition Index: 66898
+// Method Definition Index: 66908
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWarpTextU3Ed__7_System_IDisposable_Dispose_m54C900BFB8433103FA97A4E50B2C941D431B5A51 (U3CWarpTextU3Ed__7_t81F532662DA2606D7C0F4196B3804AB983C30508* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 66899
+// Method Definition Index: 66909
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CWarpTextU3Ed__7_MoveNext_m50CEEC92FE0C83768B366E9F9B5B1C9DEF85928E (U3CWarpTextU3Ed__7_t81F532662DA2606D7C0F4196B3804AB983C30508* __this, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -19110,7 +19636,7 @@ IL_0596:
 		goto IL_0089;
 	}
 }
-// Method Definition Index: 66900
+// Method Definition Index: 66910
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CWarpTextU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m79CB1783D2DD0399E051969089A36819EDC66FCB (U3CWarpTextU3Ed__7_t81F532662DA2606D7C0F4196B3804AB983C30508* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19118,7 +19644,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CWarpTextU3Ed__7_System_Coll
 		return L_0;
 	}
 }
-// Method Definition Index: 66901
+// Method Definition Index: 66911
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWarpTextU3Ed__7_System_Collections_IEnumerator_Reset_mB6C5974E8F57160AE544E1D2FD44621EEF3ACAB5 (U3CWarpTextU3Ed__7_t81F532662DA2606D7C0F4196B3804AB983C30508* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19127,7 +19653,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWarpTextU3Ed__7_System_Collections_IE
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CWarpTextU3Ed__7_System_Collections_IEnumerator_Reset_mB6C5974E8F57160AE544E1D2FD44621EEF3ACAB5_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 66902
+// Method Definition Index: 66912
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CWarpTextU3Ed__7_System_Collections_IEnumerator_get_Current_m5BDAFBB20F42A6E9EC65B6A2365F5AD98F42A1C5 (U3CWarpTextU3Ed__7_t81F532662DA2606D7C0F4196B3804AB983C30508* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19143,7 +19669,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CWarpTextU3Ed__7_System_Coll
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66903
+// Method Definition Index: 66913
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TeleType_Awake_m8D56A3C1E06AD96B35B88C3AA8C61FB2A03E627D (TeleType_tA6F2E696EFE0B4124756D8810A7AAFB7829EE2F5* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19175,7 +19701,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TeleType_Awake_m8D56A3C1E06AD96B35B88C3A
 		return;
 	}
 }
-// Method Definition Index: 66904
+// Method Definition Index: 66914
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TeleType_Start_m3BFE1E2B1BB5ED247DED9DBEF293FCCBD63760C6 (TeleType_tA6F2E696EFE0B4124756D8810A7AAFB7829EE2F5* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19194,7 +19720,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TeleType_Start_m3BFE1E2B1BB5ED
 		return L_1;
 	}
 }
-// Method Definition Index: 66905
+// Method Definition Index: 66915
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TeleType__ctor_m824BBE09CC217EB037FFB36756726A9C946526D0 (TeleType_tA6F2E696EFE0B4124756D8810A7AAFB7829EE2F5* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19223,7 +19749,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TeleType__ctor_m824BBE09CC217EB037FFB367
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66906
+// Method Definition Index: 66916
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__4__ctor_m7CB9C7DF4657B7B70F6ED6EEB00C0F422D8B0CAA (U3CStartU3Ed__4_t34C4F7117E4A5E63F9D03A9DD3C2493CEB376E75* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
@@ -19233,14 +19759,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__4__ctor_m7CB9C7DF4657B7B70
 		return;
 	}
 }
-// Method Definition Index: 66907
+// Method Definition Index: 66917
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__4_System_IDisposable_Dispose_mA57DA4D469190B581B5DCB406E9FB70DD33511F2 (U3CStartU3Ed__4_t34C4F7117E4A5E63F9D03A9DD3C2493CEB376E75* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 66908
+// Method Definition Index: 66918
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CStartU3Ed__4_MoveNext_mE1C3343B7258BAADC74C1A060E71C28951D39D45 (U3CStartU3Ed__4_t34C4F7117E4A5E63F9D03A9DD3C2493CEB376E75* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19410,7 +19936,7 @@ IL_012e:
 		goto IL_005d;
 	}
 }
-// Method Definition Index: 66909
+// Method Definition Index: 66919
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CStartU3Ed__4_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m1819CF068B92E7EA9EEFD7F93CA316F38DF644BA (U3CStartU3Ed__4_t34C4F7117E4A5E63F9D03A9DD3C2493CEB376E75* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19418,7 +19944,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CStartU3Ed__4_System_Collect
 		return L_0;
 	}
 }
-// Method Definition Index: 66910
+// Method Definition Index: 66920
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__4_System_Collections_IEnumerator_Reset_m9B7AEE80C1E70D2D2FF5811A54AFD6189CD7F5A9 (U3CStartU3Ed__4_t34C4F7117E4A5E63F9D03A9DD3C2493CEB376E75* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19427,7 +19953,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__4_System_Collections_IEnum
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CStartU3Ed__4_System_Collections_IEnumerator_Reset_m9B7AEE80C1E70D2D2FF5811A54AFD6189CD7F5A9_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 66911
+// Method Definition Index: 66921
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CStartU3Ed__4_System_Collections_IEnumerator_get_Current_m5C22C5D235424F0613697F05E72ADB4D1A3420C8 (U3CStartU3Ed__4_t34C4F7117E4A5E63F9D03A9DD3C2493CEB376E75* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19443,7 +19969,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CStartU3Ed__4_System_Collect
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66912
+// Method Definition Index: 66922
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextConsoleSimulator_Awake_m55D28DC1F590D98621B0284B53C8A22D07CD3F7C (TextConsoleSimulator_t986082F574CD2A38D6E40D856C6A9926D7EF49D2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19465,7 +19991,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextConsoleSimulator_Awake_m55D28DC1F590
 		return;
 	}
 }
-// Method Definition Index: 66913
+// Method Definition Index: 66923
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextConsoleSimulator_Start_m5667F64AE1F48EBA2FF1B3D2D53E2AFCAB738B39 (TextConsoleSimulator_t986082F574CD2A38D6E40D856C6A9926D7EF49D2* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19479,7 +20005,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextConsoleSimulator_Start_m5667F64AE1F4
 		return;
 	}
 }
-// Method Definition Index: 66914
+// Method Definition Index: 66924
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextConsoleSimulator_OnEnable_mDF58D349E4D62866410AAA376BE5BBAE4153FF95 (TextConsoleSimulator_t986082F574CD2A38D6E40D856C6A9926D7EF49D2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19503,7 +20029,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextConsoleSimulator_OnEnable_mDF58D349E
 		return;
 	}
 }
-// Method Definition Index: 66915
+// Method Definition Index: 66925
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextConsoleSimulator_OnDisable_m4B3A741D6C5279590453148419B422E8D7314689 (TextConsoleSimulator_t986082F574CD2A38D6E40D856C6A9926D7EF49D2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19527,7 +20053,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextConsoleSimulator_OnDisable_m4B3A741D
 		return;
 	}
 }
-// Method Definition Index: 66916
+// Method Definition Index: 66926
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextConsoleSimulator_ON_TEXT_CHANGED_m050ECF4852B6A82000133662D6502577DFD57C3A (TextConsoleSimulator_t986082F574CD2A38D6E40D856C6A9926D7EF49D2* __this, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_obj, const RuntimeMethod* method) 
 {
 	{
@@ -19537,7 +20063,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextConsoleSimulator_ON_TEXT_CHANGED_m05
 		return;
 	}
 }
-// Method Definition Index: 66917
+// Method Definition Index: 66927
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TextConsoleSimulator_RevealCharacters_mAA4D3653F05692839313CE180250A44378024E52 (TextConsoleSimulator_t986082F574CD2A38D6E40D856C6A9926D7EF49D2* __this, TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___0_textComponent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19561,7 +20087,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TextConsoleSimulator_RevealCha
 		return L_2;
 	}
 }
-// Method Definition Index: 66918
+// Method Definition Index: 66928
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TextConsoleSimulator_RevealWords_m0E52802FD4239665709F086E6E0B235CDE67E9B1 (TextConsoleSimulator_t986082F574CD2A38D6E40D856C6A9926D7EF49D2* __this, TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___0_textComponent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19581,7 +20107,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TextConsoleSimulator_RevealWor
 		return L_1;
 	}
 }
-// Method Definition Index: 66919
+// Method Definition Index: 66929
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextConsoleSimulator__ctor_mBDDE8A2DCED8B140D78D5FE560897665753AB025 (TextConsoleSimulator_t986082F574CD2A38D6E40D856C6A9926D7EF49D2* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19597,7 +20123,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextConsoleSimulator__ctor_mBDDE8A2DCED8
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66920
+// Method Definition Index: 66930
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRevealCharactersU3Ed__7__ctor_m40A144070AB46560F2B3919EA5CB8BD51F8DDF45 (U3CRevealCharactersU3Ed__7_tB14F85C7FC57BEFD555A1A9CD8D3FF41E0F676F9* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
@@ -19607,14 +20133,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRevealCharactersU3Ed__7__ctor_m40A144
 		return;
 	}
 }
-// Method Definition Index: 66921
+// Method Definition Index: 66931
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRevealCharactersU3Ed__7_System_IDisposable_Dispose_m7942532282ACF3B429FAD926284352907FFE087B (U3CRevealCharactersU3Ed__7_tB14F85C7FC57BEFD555A1A9CD8D3FF41E0F676F9* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 66922
+// Method Definition Index: 66932
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CRevealCharactersU3Ed__7_MoveNext_m2D07AF9391894BCE39624FA2DCFA87AC6F8119AE (U3CRevealCharactersU3Ed__7_tB14F85C7FC57BEFD555A1A9CD8D3FF41E0F676F9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19748,7 +20274,7 @@ IL_00e3:
 		goto IL_005f;
 	}
 }
-// Method Definition Index: 66923
+// Method Definition Index: 66933
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRevealCharactersU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m754C680B2751A9F05DBF253431A3CB42885F7854 (U3CRevealCharactersU3Ed__7_tB14F85C7FC57BEFD555A1A9CD8D3FF41E0F676F9* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19756,7 +20282,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRevealCharactersU3Ed__7_Sys
 		return L_0;
 	}
 }
-// Method Definition Index: 66924
+// Method Definition Index: 66934
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRevealCharactersU3Ed__7_System_Collections_IEnumerator_Reset_mD12057609EFCBCA8E7B61B0421D4A7C5A206C8C3 (U3CRevealCharactersU3Ed__7_tB14F85C7FC57BEFD555A1A9CD8D3FF41E0F676F9* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19765,7 +20291,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRevealCharactersU3Ed__7_System_Collec
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CRevealCharactersU3Ed__7_System_Collections_IEnumerator_Reset_mD12057609EFCBCA8E7B61B0421D4A7C5A206C8C3_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 66925
+// Method Definition Index: 66935
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRevealCharactersU3Ed__7_System_Collections_IEnumerator_get_Current_m9FD7DAB922AE6A58166112C295ABFF6E19E1D186 (U3CRevealCharactersU3Ed__7_tB14F85C7FC57BEFD555A1A9CD8D3FF41E0F676F9* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19781,7 +20307,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRevealCharactersU3Ed__7_Sys
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66926
+// Method Definition Index: 66936
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRevealWordsU3Ed__8__ctor_mDF8D4C69F022D088AFC0E109FC0DBE0C9B938CAC (U3CRevealWordsU3Ed__8_t912CFD430C602C79AE6BC1BC6C4AEBF101B4D7C8* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
@@ -19791,14 +20317,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRevealWordsU3Ed__8__ctor_mDF8D4C69F02
 		return;
 	}
 }
-// Method Definition Index: 66927
+// Method Definition Index: 66937
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRevealWordsU3Ed__8_System_IDisposable_Dispose_m2F2F21F38D2DD8AE3D066E64850D404497A131C5 (U3CRevealWordsU3Ed__8_t912CFD430C602C79AE6BC1BC6C4AEBF101B4D7C8* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 66928
+// Method Definition Index: 66938
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CRevealWordsU3Ed__8_MoveNext_mC5102728A86DCB2171E54CFEDFA7BE6F29AB355C (U3CRevealWordsU3Ed__8_t912CFD430C602C79AE6BC1BC6C4AEBF101B4D7C8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19975,7 +20501,7 @@ IL_0132:
 		goto IL_006b;
 	}
 }
-// Method Definition Index: 66929
+// Method Definition Index: 66939
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRevealWordsU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m4D9A6269831C00345D245D0EED2E5FC20BBF4683 (U3CRevealWordsU3Ed__8_t912CFD430C602C79AE6BC1BC6C4AEBF101B4D7C8* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19983,7 +20509,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRevealWordsU3Ed__8_System_C
 		return L_0;
 	}
 }
-// Method Definition Index: 66930
+// Method Definition Index: 66940
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRevealWordsU3Ed__8_System_Collections_IEnumerator_Reset_mE5E0678716735BDF0D632FE43E392981E75A1C4D (U3CRevealWordsU3Ed__8_t912CFD430C602C79AE6BC1BC6C4AEBF101B4D7C8* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19992,7 +20518,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRevealWordsU3Ed__8_System_Collections
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CRevealWordsU3Ed__8_System_Collections_IEnumerator_Reset_mE5E0678716735BDF0D632FE43E392981E75A1C4D_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 66931
+// Method Definition Index: 66941
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRevealWordsU3Ed__8_System_Collections_IEnumerator_get_Current_m3E9D4960A972BD7601F6454E6F9A614AA21D553E (U3CRevealWordsU3Ed__8_t912CFD430C602C79AE6BC1BC6C4AEBF101B4D7C8* __this, const RuntimeMethod* method) 
 {
 	{
@@ -20008,7 +20534,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRevealWordsU3Ed__8_System_C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66932
+// Method Definition Index: 66942
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshProFloatingText_Awake_m600F1825C26BB683047156FD815AE4376D2672F2 (TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20045,7 +20571,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshProFloatingText_Awake_m600F1825C
 		return;
 	}
 }
-// Method Definition Index: 66933
+// Method Definition Index: 66943
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshProFloatingText_Start_m8121246A4310A0014ECA36144B9DCE093FE8AE49 (TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20249,7 +20775,7 @@ IL_020f:
 		return;
 	}
 }
-// Method Definition Index: 66934
+// Method Definition Index: 66944
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TextMeshProFloatingText_DisplayTextMeshProFloatingText_mA1E370089458CD380E9BA7740C2BC2032F084148 (TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20268,7 +20794,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TextMeshProFloatingText_Displa
 		return L_1;
 	}
 }
-// Method Definition Index: 66935
+// Method Definition Index: 66945
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TextMeshProFloatingText_DisplayTextMeshFloatingText_mA02B20CF33E43FE99FD5F1B90F7F350262F0BEBE (TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20287,7 +20813,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TextMeshProFloatingText_Displa
 		return L_1;
 	}
 }
-// Method Definition Index: 66936
+// Method Definition Index: 66946
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshProFloatingText__ctor_mD08AF0FB6944A51BC6EA15D6BE4E33AA4A916E3E (TextMeshProFloatingText_t833773B79A4826E78EDF2799C157B0EC3ACACB31* __this, const RuntimeMethod* method) 
 {
 	{
@@ -20303,7 +20829,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshProFloatingText__ctor_mD08AF0FB6
 		return;
 	}
 }
-// Method Definition Index: 66937
+// Method Definition Index: 66947
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshProFloatingText__cctor_m272097816057A64A9FFE16F69C6844DCF88E9557 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20442,7 +20968,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshProFloatingText__cctor_m27209781
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66938
+// Method Definition Index: 66948
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CDisplayTextMeshFloatingTextU3Ed__16__ctor_m1ECB51A93EE3B236301948784A3260FD72814923 (U3CDisplayTextMeshFloatingTextU3Ed__16_t5CBD7868EB4D3D561D539B99B4541CC014DFF5F0* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
@@ -20452,14 +20978,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CDisplayTextMeshFloatingTextU3Ed__16__
 		return;
 	}
 }
-// Method Definition Index: 66939
+// Method Definition Index: 66949
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CDisplayTextMeshFloatingTextU3Ed__16_System_IDisposable_Dispose_m461761745A9C5FF4F7995C3DB33DB43848AEB05B (U3CDisplayTextMeshFloatingTextU3Ed__16_t5CBD7868EB4D3D561D539B99B4541CC014DFF5F0* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 66940
+// Method Definition Index: 66950
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CDisplayTextMeshFloatingTextU3Ed__16_MoveNext_m1FC162511DF31A9CDBD0101083FBCB11380554C4 (U3CDisplayTextMeshFloatingTextU3Ed__16_t5CBD7868EB4D3D561D539B99B4541CC014DFF5F0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20773,7 +21299,7 @@ IL_0277:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 66941
+// Method Definition Index: 66951
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CDisplayTextMeshFloatingTextU3Ed__16_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m6A5E330ACDAD25422A7D642301F58E6C1EE1B041 (U3CDisplayTextMeshFloatingTextU3Ed__16_t5CBD7868EB4D3D561D539B99B4541CC014DFF5F0* __this, const RuntimeMethod* method) 
 {
 	{
@@ -20781,7 +21307,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CDisplayTextMeshFloatingText
 		return L_0;
 	}
 }
-// Method Definition Index: 66942
+// Method Definition Index: 66952
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CDisplayTextMeshFloatingTextU3Ed__16_System_Collections_IEnumerator_Reset_m5A7148435B35A0A84329416FF765D45F6AA0F4E1 (U3CDisplayTextMeshFloatingTextU3Ed__16_t5CBD7868EB4D3D561D539B99B4541CC014DFF5F0* __this, const RuntimeMethod* method) 
 {
 	{
@@ -20790,7 +21316,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CDisplayTextMeshFloatingTextU3Ed__16_S
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CDisplayTextMeshFloatingTextU3Ed__16_System_Collections_IEnumerator_Reset_m5A7148435B35A0A84329416FF765D45F6AA0F4E1_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 66943
+// Method Definition Index: 66953
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CDisplayTextMeshFloatingTextU3Ed__16_System_Collections_IEnumerator_get_Current_m066140B8D4CD5DE3527A3A05183AE89B487B5D55 (U3CDisplayTextMeshFloatingTextU3Ed__16_t5CBD7868EB4D3D561D539B99B4541CC014DFF5F0* __this, const RuntimeMethod* method) 
 {
 	{
@@ -20806,7 +21332,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CDisplayTextMeshFloatingText
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66944
+// Method Definition Index: 66954
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CDisplayTextMeshProFloatingTextU3Ed__15__ctor_mD3C24C6814482113FD231827E550FBBCC91424A0 (U3CDisplayTextMeshProFloatingTextU3Ed__15_tDFD30981C9C1189D2AC3AA6C07DA7EFE7E1694F3* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
@@ -20816,14 +21342,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CDisplayTextMeshProFloatingTextU3Ed__1
 		return;
 	}
 }
-// Method Definition Index: 66945
+// Method Definition Index: 66955
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CDisplayTextMeshProFloatingTextU3Ed__15_System_IDisposable_Dispose_m83285E807FA4462B99B68D1EB12B2360238C53EB (U3CDisplayTextMeshProFloatingTextU3Ed__15_tDFD30981C9C1189D2AC3AA6C07DA7EFE7E1694F3* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 66946
+// Method Definition Index: 66956
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CDisplayTextMeshProFloatingTextU3Ed__15_MoveNext_m588E025C05E03684A11ABC91B50734A349D28CC8 (U3CDisplayTextMeshProFloatingTextU3Ed__15_tDFD30981C9C1189D2AC3AA6C07DA7EFE7E1694F3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21137,7 +21663,7 @@ IL_0277:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 66947
+// Method Definition Index: 66957
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CDisplayTextMeshProFloatingTextU3Ed__15_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2412DC176F8CA3096658EB0E27AC28218DAEC03A (U3CDisplayTextMeshProFloatingTextU3Ed__15_tDFD30981C9C1189D2AC3AA6C07DA7EFE7E1694F3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -21145,7 +21671,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CDisplayTextMeshProFloatingT
 		return L_0;
 	}
 }
-// Method Definition Index: 66948
+// Method Definition Index: 66958
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CDisplayTextMeshProFloatingTextU3Ed__15_System_Collections_IEnumerator_Reset_mCCE19093B7355F3E23834E27A8517661DF833797 (U3CDisplayTextMeshProFloatingTextU3Ed__15_tDFD30981C9C1189D2AC3AA6C07DA7EFE7E1694F3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -21154,7 +21680,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CDisplayTextMeshProFloatingTextU3Ed__1
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CDisplayTextMeshProFloatingTextU3Ed__15_System_Collections_IEnumerator_Reset_mCCE19093B7355F3E23834E27A8517661DF833797_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 66949
+// Method Definition Index: 66959
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CDisplayTextMeshProFloatingTextU3Ed__15_System_Collections_IEnumerator_get_Current_mE53E0B4DBE6AF5DAC110C3F626B34C5965845E54 (U3CDisplayTextMeshProFloatingTextU3Ed__15_tDFD30981C9C1189D2AC3AA6C07DA7EFE7E1694F3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -21170,7 +21696,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CDisplayTextMeshProFloatingT
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66950
+// Method Definition Index: 66960
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshSpawner_Awake_m9A84A570D2582918A6B1287139527E9AB2CF088D (TextMeshSpawner_tB6905931E9BE4D7A2A2E37A51E221A7B462D75BB* __this, const RuntimeMethod* method) 
 {
 	{
@@ -21178,7 +21704,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshSpawner_Awake_m9A84A570D2582918A
 		return;
 	}
 }
-// Method Definition Index: 66951
+// Method Definition Index: 66961
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshSpawner_Start_m3EE98071CA27A18904B859A0A6B215BDFEB50A66 (TextMeshSpawner_tB6905931E9BE4D7A2A2E37A51E221A7B462D75BB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21360,7 +21886,7 @@ IL_0159:
 		return;
 	}
 }
-// Method Definition Index: 66952
+// Method Definition Index: 66962
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshSpawner__ctor_m8409A62C31C4A6B6CEC2F48F1DC9777460C28233 (TextMeshSpawner_tB6905931E9BE4D7A2A2E37A51E221A7B462D75BB* __this, const RuntimeMethod* method) 
 {
 	{
@@ -21378,7 +21904,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextMeshSpawner__ctor_m8409A62C31C4A6B6C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66953
+// Method Definition Index: 66963
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMPro_InstructionOverlay_Awake_m0F92D44F62A9AC086DE3DF1E4C7BFAF645EE7084 (TMPro_InstructionOverlay_t1CFD12C64F70D5D2FBE29466015C02776A406B62* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21487,7 +22013,7 @@ IL_0009:
 		return;
 	}
 }
-// Method Definition Index: 66954
+// Method Definition Index: 66964
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMPro_InstructionOverlay_Set_FrameCounter_Position_m3CC1B812C740BAE87C6B5CA94DC64E6131F42A7C (TMPro_InstructionOverlay_t1CFD12C64F70D5D2FBE29466015C02776A406B62* __this, int32_t ___0_anchor_position, const RuntimeMethod* method) 
 {
 	{
@@ -21600,7 +22126,7 @@ IL_00bc:
 		return;
 	}
 }
-// Method Definition Index: 66955
+// Method Definition Index: 66965
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMPro_InstructionOverlay__ctor_m247258528E488171765F77A9A3C6B7E079E64839 (TMPro_InstructionOverlay_t1CFD12C64F70D5D2FBE29466015C02776A406B62* __this, const RuntimeMethod* method) 
 {
 	{
@@ -21626,7 +22152,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMPro_InstructionOverlay__ctor_m24725852
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66956
+// Method Definition Index: 66966
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_ExampleScript_01_Awake_m6E620605AE9CCC3789A2D5CFD841E5DAB8592063 (TMP_ExampleScript_01_t12A14830C25DE1BA02443B22907A196BE4B44305* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21771,7 +22297,7 @@ IL_0040:
 		return;
 	}
 }
-// Method Definition Index: 66957
+// Method Definition Index: 66967
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_ExampleScript_01_Update_m3D4A9AB04728F0ABD4C7C8A462E2C811308D97A1 (TMP_ExampleScript_01_t12A14830C25DE1BA02443B22907A196BE4B44305* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21805,7 +22331,7 @@ IL_0033:
 		return;
 	}
 }
-// Method Definition Index: 66958
+// Method Definition Index: 66968
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_ExampleScript_01__ctor_m43F9206FDB1606CD28F1A441188E777546CFEA2A (TMP_ExampleScript_01_t12A14830C25DE1BA02443B22907A196BE4B44305* __this, const RuntimeMethod* method) 
 {
 	{
@@ -21829,7 +22355,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_ExampleScript_01__ctor_m43F9206FDB16
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66959
+// Method Definition Index: 66969
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_FrameRateCounter_Awake_m99156EF53E5848DE83107BFAC803C33DC964265C (TMP_FrameRateCounter_t65C436069EE403C827CBE41C38F5B5C9D2FC946B* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21932,7 +22458,7 @@ IL_0009:
 		return;
 	}
 }
-// Method Definition Index: 66960
+// Method Definition Index: 66970
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_FrameRateCounter_Start_m9B5D0A86D174DA019F3EB5C6E9BD54634B2F909A (TMP_FrameRateCounter_t65C436069EE403C827CBE41C38F5B5C9D2FC946B* __this, const RuntimeMethod* method) 
 {
 	{
@@ -21946,7 +22472,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_FrameRateCounter_Start_m9B5D0A86D174
 		return;
 	}
 }
-// Method Definition Index: 66961
+// Method Definition Index: 66971
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_FrameRateCounter_Update_m5251EE9AC9DCB99D0871EE83624C8A9012E6A079 (TMP_FrameRateCounter_t65C436069EE403C827CBE41C38F5B5C9D2FC946B* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22069,7 +22595,7 @@ IL_00d0:
 		return;
 	}
 }
-// Method Definition Index: 66962
+// Method Definition Index: 66972
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_FrameRateCounter_Set_FrameCounter_Position_m1CC40A8236B2161050D19C4B2EBFF34B96645723 (TMP_FrameRateCounter_t65C436069EE403C827CBE41C38F5B5C9D2FC946B* __this, int32_t ___0_anchor_position, const RuntimeMethod* method) 
 {
 	{
@@ -22229,7 +22755,7 @@ IL_0149:
 		return;
 	}
 }
-// Method Definition Index: 66963
+// Method Definition Index: 66973
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_FrameRateCounter__ctor_mD8804AE37CED37A01DF943624D3C2C48FBC9AE43 (TMP_FrameRateCounter_t65C436069EE403C827CBE41C38F5B5C9D2FC946B* __this, const RuntimeMethod* method) 
 {
 	{
@@ -22257,7 +22783,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_FrameRateCounter__ctor_mD8804AE37CED
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66964
+// Method Definition Index: 66974
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnEnable_mABF0C00DDBB37230534C49AD9CA342D96757AA3E (TMP_TextEventCheck_tC19A6E94690E74ED73926E8EDC5F611501DC6233* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22350,7 +22876,7 @@ IL_00ae:
 		return;
 	}
 }
-// Method Definition Index: 66965
+// Method Definition Index: 66975
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnDisable_m4AE76C19CBF131CB80B73A7C71378CA063CFC4C6 (TMP_TextEventCheck_tC19A6E94690E74ED73926E8EDC5F611501DC6233* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22435,7 +22961,7 @@ IL_009d:
 		return;
 	}
 }
-// Method Definition Index: 66966
+// Method Definition Index: 66976
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnCharacterSelection_mB421E2CFB617397137CF1AE9CC2F49E46EB3F0AE (TMP_TextEventCheck_tC19A6E94690E74ED73926E8EDC5F611501DC6233* __this, Il2CppChar ___0_c, int32_t ___1_index, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22479,7 +23005,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnCharacterSelection_
 		return;
 	}
 }
-// Method Definition Index: 66967
+// Method Definition Index: 66977
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnSpriteSelection_mD88D899DE3321CC15502BB1174709BE290AB6215 (TMP_TextEventCheck_tC19A6E94690E74ED73926E8EDC5F611501DC6233* __this, Il2CppChar ___0_c, int32_t ___1_index, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22523,7 +23049,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnSpriteSelection_mD8
 		return;
 	}
 }
-// Method Definition Index: 66968
+// Method Definition Index: 66978
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnWordSelection_m180B102DAED1F3313F2F4BB6CF588FF96C8CAB79 (TMP_TextEventCheck_tC19A6E94690E74ED73926E8EDC5F611501DC6233* __this, String_t* ___0_word, int32_t ___1_firstCharacterIndex, int32_t ___2_length, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22574,7 +23100,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnWordSelection_m180B
 		return;
 	}
 }
-// Method Definition Index: 66969
+// Method Definition Index: 66979
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnLineSelection_mE0538FFAFE04A286F937907D0E4664338DCF1559 (TMP_TextEventCheck_tC19A6E94690E74ED73926E8EDC5F611501DC6233* __this, String_t* ___0_lineText, int32_t ___1_firstCharacterIndex, int32_t ___2_length, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22625,7 +23151,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnLineSelection_mE053
 		return;
 	}
 }
-// Method Definition Index: 66970
+// Method Definition Index: 66980
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck_OnLinkSelection_m72BF9241651D44805590F1DBADF2FD864D209779 (TMP_TextEventCheck_tC19A6E94690E74ED73926E8EDC5F611501DC6233* __this, String_t* ___0_linkID, String_t* ___1_linkText, int32_t ___2_linkIndex, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22700,7 +23226,7 @@ IL_0025:
 		return;
 	}
 }
-// Method Definition Index: 66971
+// Method Definition Index: 66981
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck__ctor_m8F6CDB8774BDF6C6B909919393AC0290BA2BB0AF (TMP_TextEventCheck_tC19A6E94690E74ED73926E8EDC5F611501DC6233* __this, const RuntimeMethod* method) 
 {
 	{
@@ -22716,7 +23242,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextEventCheck__ctor_m8F6CDB8774BDF6
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66972
+// Method Definition Index: 66982
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextInfoDebugTool__ctor_m54C6EE99B1DC2B4DE1F8E870974B3B41B970C37E (TMP_TextInfoDebugTool_tC8728D25321C0091ECD61B136B0E3A5B4AB4B76F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -22732,7 +23258,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextInfoDebugTool__ctor_m54C6EE99B1D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66973
+// Method Definition Index: 66983
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_A_Awake_m662ED2E3CDB7AE16174109344A01A50AF3C44797 (TMP_TextSelector_A_t088F530FC9DE9E7B6AC9720D50A05B757189B294* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22763,7 +23289,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_A_Awake_m662ED2E3CDB7AE
 		return;
 	}
 }
-// Method Definition Index: 66974
+// Method Definition Index: 66984
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_A_LateUpdate_m1A711EC87962C6C5A7157414CD059D984D3BD55B (TMP_TextSelector_A_t088F530FC9DE9E7B6AC9720D50A05B757189B294* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23230,7 +23756,7 @@ IL_0358:
 		return;
 	}
 }
-// Method Definition Index: 66975
+// Method Definition Index: 66985
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_A_OnPointerEnter_m747F05CBEF90BF713BF726E47CA37DC86D9B439A (TMP_TextSelector_A_t088F530FC9DE9E7B6AC9720D50A05B757189B294* __this, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* ___0_eventData, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23250,7 +23776,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_A_OnPointerEnter_m747F0
 		return;
 	}
 }
-// Method Definition Index: 66976
+// Method Definition Index: 66986
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_A_OnPointerExit_m5D7D8A07591506FB7291E84A951AB5C43DAA5503 (TMP_TextSelector_A_t088F530FC9DE9E7B6AC9720D50A05B757189B294* __this, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* ___0_eventData, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23270,7 +23796,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_A_OnPointerExit_m5D7D8A
 		return;
 	}
 }
-// Method Definition Index: 66977
+// Method Definition Index: 66987
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_A__ctor_m4C56A438A3140D5CF9C7AFB8466E11142F4FA3BE (TMP_TextSelector_A_t088F530FC9DE9E7B6AC9720D50A05B757189B294* __this, const RuntimeMethod* method) 
 {
 	{
@@ -23292,7 +23818,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_A__ctor_m4C56A438A3140D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 66978
+// Method Definition Index: 66988
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_Awake_m773D4C87E67823272DBF597B9CADE82DD3BFFD87 (TMP_TextSelector_B_t57166268B8E5437286F55085EA19969D0A528CC2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23385,7 +23911,7 @@ IL_0049:
 		return;
 	}
 }
-// Method Definition Index: 66979
+// Method Definition Index: 66989
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_OnEnable_m8DA695DB0913F7123C4ADAFD5BEAB4424FA5861B (TMP_TextSelector_B_t57166268B8E5437286F55085EA19969D0A528CC2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23409,7 +23935,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_OnEnable_m8DA695DB091
 		return;
 	}
 }
-// Method Definition Index: 66980
+// Method Definition Index: 66990
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_OnDisable_mF2EF7AE0E015218AB77936BD5FD6863F7788F11D (TMP_TextSelector_B_t57166268B8E5437286F55085EA19969D0A528CC2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23433,7 +23959,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_OnDisable_mF2EF7AE0E0
 		return;
 	}
 }
-// Method Definition Index: 66981
+// Method Definition Index: 66991
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_ON_TEXT_CHANGED_m5B53EF1608E98B6A56AAA386085A3216B35A51EE (TMP_TextSelector_B_t57166268B8E5437286F55085EA19969D0A528CC2* __this, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_obj, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23473,7 +23999,7 @@ IL_0024:
 		return;
 	}
 }
-// Method Definition Index: 66982
+// Method Definition Index: 66992
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_LateUpdate_mE1B3969D788695E37240927FC6B1827CC6DD5EFF (TMP_TextSelector_B_t57166268B8E5437286F55085EA19969D0A528CC2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24387,7 +24913,7 @@ IL_06b7:
 		return;
 	}
 }
-// Method Definition Index: 66983
+// Method Definition Index: 66993
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_OnPointerEnter_mBAF5711E20E579D21258BD4040454A64E1134D98 (TMP_TextSelector_B_t57166268B8E5437286F55085EA19969D0A528CC2* __this, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* ___0_eventData, const RuntimeMethod* method) 
 {
 	{
@@ -24397,7 +24923,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_OnPointerEnter_mBAF57
 		return;
 	}
 }
-// Method Definition Index: 66984
+// Method Definition Index: 66994
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_OnPointerExit_m40ED8F7E47FF6FD8B38BE96B2216267F61509D65 (TMP_TextSelector_B_t57166268B8E5437286F55085EA19969D0A528CC2* __this, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* ___0_eventData, const RuntimeMethod* method) 
 {
 	{
@@ -24407,7 +24933,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_OnPointerExit_m40ED8F
 		return;
 	}
 }
-// Method Definition Index: 66985
+// Method Definition Index: 66995
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_OnPointerClick_m773B56D918B1D0F73C5ABC0EB22FD34D39AFBB97 (TMP_TextSelector_B_t57166268B8E5437286F55085EA19969D0A528CC2* __this, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* ___0_eventData, const RuntimeMethod* method) 
 {
 	{
@@ -24415,7 +24941,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_OnPointerClick_m773B5
 		return;
 	}
 }
-// Method Definition Index: 66986
+// Method Definition Index: 66996
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_OnPointerUp_mF409D728900872CC323B18DDA7F91265058BE772 (TMP_TextSelector_B_t57166268B8E5437286F55085EA19969D0A528CC2* __this, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* ___0_eventData, const RuntimeMethod* method) 
 {
 	{
@@ -24423,7 +24949,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_OnPointerUp_mF409D728
 		return;
 	}
 }
-// Method Definition Index: 66987
+// Method Definition Index: 66997
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B_RestoreCachedVertexAttributes_m1FD258EC7A53C8E1ECB18EB6FFEFC6239780C398 (TMP_TextSelector_B_t57166268B8E5437286F55085EA19969D0A528CC2* __this, int32_t ___0_index, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -24922,7 +25448,7 @@ IL_001a:
 		return;
 	}
 }
-// Method Definition Index: 66988
+// Method Definition Index: 66998
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B__ctor_mB45DD6360094ADBEF5E8020E8C62404B7E45E301 (TMP_TextSelector_B_t57166268B8E5437286F55085EA19969D0A528CC2* __this, const RuntimeMethod* method) 
 {
 	{
@@ -24939,11 +25465,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_TextSelector_B__ctor_mB45DD6360094AD
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 66700
+// Method Definition Index: 66703
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* CatcherManager_GetObjectInCenter_m19921CFEC8AEDD7FCD24C458066C554FDE02DD84_inline (CatcherManager_tD3B667905FE0820277FA4039600FD7C2643328E4* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:237>
+		//<source_info:/Users/sng/Documents/GitHub/SngMatch/Assets/Script/CatcherManager.cs:219>
 		objectId_t4CF629C6D31B0CA7AD7FB22D8AF742A6C96ADB20* L_0 = __this->___heldObject;
 		return L_0;
 	}
@@ -25331,7 +25857,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED02
 		return L_0;
 	}
 }
-// Method Definition Index: 58838
+// Method Definition Index: 58841
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline (Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* __this, const RuntimeMethod* method) 
 {
 	{
@@ -25439,7 +25965,7 @@ IL_000c:
 		return L_2;
 	}
 }
-// Method Definition Index: 59141
+// Method Definition Index: 59144
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* Image_get_sprite_mB2AA377708722E100574F6F75BC102513BB3BCB1_inline (Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -25622,7 +26148,7 @@ IL_0009:
 		return L_1;
 	}
 }
-// Method Definition Index: 54142
+// Method Definition Index: 54145
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR SubmitEvent_tF7E2843B6A79D94B8EEEA259707F77BD1773B500* TMP_InputField_get_onSubmit_mAA494FA0B3CFFB2916B399BD5D87C2E1AA637B90_inline (TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -25631,7 +26157,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR SubmitEvent_tF7E2843B6A79D94B8EEE
 		return L_0;
 	}
 }
-// Method Definition Index: 53791
+// Method Definition Index: 53794
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t TMP_Dropdown_get_value_m5916A6D1897431E8ED789FEC24551A311D1B5C70_inline (TMP_Dropdown_t73B37BFDA0D005451C7B750938AFB1748E5EA504* __this, const RuntimeMethod* method) 
 {
 	{
@@ -25674,7 +26200,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t String_get_Length_m42625D
 		return L_0;
 	}
 }
-// Method Definition Index: 66823
+// Method Definition Index: 66833
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR CharacterSelectionEvent_t5D7AF67F47A37175CF8615AD66DEC4A0AA021392* TMP_TextEventHandler_get_onCharacterSelection_mA62049738125E3C48405E6DFF09E2D42300BE8C3_inline (TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* __this, const RuntimeMethod* method) 
 {
 	{
@@ -25683,7 +26209,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR CharacterSelectionEvent_t5D7AF67F
 		return L_0;
 	}
 }
-// Method Definition Index: 66825
+// Method Definition Index: 66835
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR SpriteSelectionEvent_t770551D2973013622C464E817FA74D53BCD4FD95* TMP_TextEventHandler_get_onSpriteSelection_m95CDEB7394FFF38F310717EEEFDCD481D96A5E82_inline (TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* __this, const RuntimeMethod* method) 
 {
 	{
@@ -25692,7 +26218,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR SpriteSelectionEvent_t770551D2973
 		return L_0;
 	}
 }
-// Method Definition Index: 66827
+// Method Definition Index: 66837
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR WordSelectionEvent_t340E6006406B5E90F7190C56218E8F7E3712945E* TMP_TextEventHandler_get_onWordSelection_mF22771B4213EEB3AEFCDA390A4FF28FED5D9184C_inline (TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* __this, const RuntimeMethod* method) 
 {
 	{
@@ -25701,7 +26227,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR WordSelectionEvent_t340E6006406B5
 		return L_0;
 	}
 }
-// Method Definition Index: 66829
+// Method Definition Index: 66839
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR LineSelectionEvent_t526120C6113E0638913B951E3D1D7B1CF94F0880* TMP_TextEventHandler_get_onLineSelection_mDDF07E7000993FCD6EAF2FBD2D2226EB66273908_inline (TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* __this, const RuntimeMethod* method) 
 {
 	{
@@ -25710,7 +26236,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR LineSelectionEvent_t526120C6113E0
 		return L_0;
 	}
 }
-// Method Definition Index: 66831
+// Method Definition Index: 66841
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR LinkSelectionEvent_t5CE74F742D231580ED2C810ECE394E1A2BC81B3D* TMP_TextEventHandler_get_onLinkSelection_m87FB9EABE7F917B2F910A18A3B5F1AE3020D976D_inline (TMP_TextEventHandler_t1B20EF196557E1AC0E6AB6AACFA95740CC17A333* __this, const RuntimeMethod* method) 
 {
 	{
@@ -25719,7 +26245,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR LinkSelectionEvent_t5CE74F742D231
 		return L_0;
 	}
 }
-// Method Definition Index: 54672
+// Method Definition Index: 54675
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160* TMP_Text_get_font_m1F5E907B9181A54212FBD8123242583C1CA4BE2A_inline (TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* __this, const RuntimeMethod* method) 
 {
 	{
@@ -25728,7 +26254,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TMP_FontAsset_t923BF2F78D7C5AC363
 		return L_0;
 	}
 }
-// Method Definition Index: 53671
+// Method Definition Index: 53674
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* TMP_Asset_get_material_m07049B602215CAF85CF38354ABDFA593BB517655_inline (TMP_Asset_t135A047D4F5CBBA9CD356B762B55AB164122B969* __this, const RuntimeMethod* method) 
 {
 	{
@@ -25737,7 +26263,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Material_t18053F08F347D0DCA5E1140
 		return L_0;
 	}
 }
-// Method Definition Index: 54755
+// Method Definition Index: 54758
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_t3A076A19AF26E22A128C32B5C19804DDD2877607* TMP_Text_get_fontFeatures_mB68611B8CC517E049004F25EB9966F1CC3830499_inline (TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* __this, const RuntimeMethod* method) 
 {
 	{
@@ -26016,7 +26542,7 @@ IL_0065:
 		return L_17;
 	}
 }
-// Method Definition Index: 54802
+// Method Definition Index: 54805
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool TMP_Text_get_havePropertiesChanged_m42ECC7D1CA0DF6E59ACF761EB20635E81FCB8EFF_inline (TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* __this, const RuntimeMethod* method) 
 {
 	{
