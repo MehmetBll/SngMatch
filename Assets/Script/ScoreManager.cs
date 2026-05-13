@@ -32,7 +32,7 @@ public class ScoreManager : MonoBehaviour
     public TextMeshProUGUI loseTotalScoreText;
 
     [Header("Para Sistemi")]
-    [Tooltip("Mevcut para miktari (runtime)")]
+    [Tooltip("Kalici toplam para bakiyesi")]
     public int money = 0;
     [Tooltip("Para Text (TMP)")]
     public TextMeshProUGUI moneyText;
@@ -58,8 +58,8 @@ public class ScoreManager : MonoBehaviour
         else
             Destroy(gameObject);
 
-        int saved = PlayerPrefs.GetInt("TotalScore", 0);
-        score = saved;
+        score = PlayerPrefs.GetInt("TotalScore", 0);
+        money = CurrencyWallet.Balance;
         UpdateScoreText();
         UpdateMoneyText();
     }
@@ -158,7 +158,7 @@ public class ScoreManager : MonoBehaviour
     public void AddMoney(int amount)
     {
         if (amount <= 0) return;
-        money += amount;
+        money = CurrencyWallet.Add(amount);
         UpdateMoneyText();
     }
 
@@ -166,9 +166,9 @@ public class ScoreManager : MonoBehaviour
     public bool TrySpendMoney(int amount)
     {
         if (amount <= 0) return true;
-        if (money >= amount)
+        if (CurrencyWallet.TrySpend(amount))
         {
-            money -= amount;
+            money = CurrencyWallet.Balance;
             UpdateMoneyText();
             return true;
         }
@@ -178,6 +178,7 @@ public class ScoreManager : MonoBehaviour
     /// <summary>Mevcut para miktarını UI yazısına basar.</summary>
     private void UpdateMoneyText()
     {
+        money = CurrencyWallet.Balance;
         if (moneyText == null) return;
         moneyText.text = money.ToString();
     }
@@ -196,10 +197,17 @@ public class ScoreManager : MonoBehaviour
     }
 
     /// <summary>Aktif combo zamanlayıcısını verilen süre kadar dondurur.</summary>
+    public bool TryPauseCombo(float duration)
+    {
+        if (!comboActive || comboPaused || duration <= 0f) return false;
+        StartCoroutine(PauseComboCoroutine(duration));
+        return true;
+    }
+
+    /// <summary>Eski buton baglantilari icin uyumluluk metodudur.</summary>
     public void PauseCombo(float duration)
     {
-        if (!comboActive || comboPaused || duration <= 0f) return;
-        StartCoroutine(PauseComboCoroutine(duration));
+        TryPauseCombo(duration);
     }
 
     /// <summary>Combo dondurma durumunu başlatır, bekler ve tekrar açar.</summary>

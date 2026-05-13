@@ -53,6 +53,7 @@ TemporaryDependencyNodeTargetIdentifier=netstandard2.1
 Assets/Script/
  CatcherManager.cs
  ContinueUIBuilder.cs
+ CurrencyWallet.cs
  CWalls.cs
  GameManager.cs
  MagnetObject.cs

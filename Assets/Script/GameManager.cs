@@ -41,6 +41,11 @@ public class GameManager : MonoBehaviour
    [Header("Guclendirmeler")]
    [Tooltip("Combo dondurucu suresi (saniye)")]
    public float comboFreezeDuration = 2f;
+   [Tooltip("Inspector'da freeze butonu buraya ata (opsiyonel). Haklar bittiginde devre disi birakilir.")]
+   public GameObject freezeButtonObject;
+   [Tooltip("Freeze hak sayisini gosteren TMP (opsiyonel)")]
+   public TextMeshProUGUI freezeUsesText;
+   private int _freezeRemaining = 0;
 
    [Header("Devam Ayarlari")]
    [Tooltip("Bir devam icin gereken para miktari")]
@@ -53,11 +58,13 @@ public class GameManager : MonoBehaviour
    public TextMeshProUGUI continueCostText;
 
    [Header("Extra Haklari")]
-   [Tooltip("Bir oyuncunun sahip oldugu ekstra kullanma hak sayisi (adet)")]
+   [Tooltip("Eski ayar: Extra haklari artik shop satin alimi ile CurrencyWallet'tan gelir.")]
    public int extraUses = 1;
    private int _extraRemaining = 0;
    [Tooltip("Inspector'da ekstra butonu buraya ata (opsiyonel). Buton, haklar bittiginde devre disi birakilir.")]
    public GameObject extraButtonObject;
+   [Tooltip("Extra hak sayisini gosteren TMP (opsiyonel)")]
+   public TextMeshProUGUI extraUsesText;
    [Tooltip("Her kullanista eklenecek ekstra sure (saniye)")]
    public float extraTimeAmount = 10f;
 
@@ -128,9 +135,8 @@ public class GameManager : MonoBehaviour
          }
       }
 
-      _extraRemaining = Mathf.Max(0, extraUses);
-      if (extraButtonObject != null)
-         extraButtonObject.SetActive(_extraRemaining > 0);
+      RefreshPowerupUsesFromWallet();
+      UpdatePowerupUI();
    }
 
    /// <summary>Inspector değişikliklerinde değerleri güvenli aralıkta tutar ve referansları tazeler.</summary>
@@ -412,20 +418,40 @@ public class GameManager : MonoBehaviour
    public void UseComboFreeze()
    {
       if (ScoreManager.Instance == null) return;
-      ScoreManager.Instance.PauseCombo(comboFreezeDuration);
-      Debug.Log("Combo Freeze kullanildi: " + comboFreezeDuration + "s");
+
+      RefreshPowerupUsesFromWallet();
+      if (_freezeRemaining <= 0)
+      {
+         StartCoroutine(ShowTempMessage("Freeze hakki yok"));
+         UpdatePowerupUI();
+         return;
+      }
+
+      if (!ScoreManager.Instance.TryPauseCombo(comboFreezeDuration))
+      {
+         StartCoroutine(ShowTempMessage("Aktif combo yok"));
+         return;
+      }
+
+      CurrencyWallet.TryUseFreeze();
+      RefreshPowerupUsesFromWallet();
+      UpdatePowerupUI();
+      Debug.Log("Combo Freeze kullanildi: " + comboFreezeDuration + "s, remaining: " + _freezeRemaining);
    }
 
    /// <summary>Hak varsa oyuna ekstra süre ekler ve hak bitince butonu kapatır.</summary>
    public void UseExtraTimeOnce()
    {
       if (_gameEnd) return;
+      RefreshPowerupUsesFromWallet();
       if (_extraRemaining <= 0)
       {
          StartCoroutine(ShowTempMessage("Ekstra hak kalmadi"));
+         UpdatePowerupUI();
          return;
       }
-      _extraRemaining--;
+      CurrencyWallet.TryUseExtra();
+      RefreshPowerupUsesFromWallet();
 
       float newTimeValue = _timer;
       if (extraTargetTimerText != null)
@@ -444,14 +470,46 @@ public class GameManager : MonoBehaviour
       if (extraTargetTimerText != null)
          extraTargetTimerText.text = Mathf.CeilToInt(newTimeValue).ToString();
 
-      if (extraButtonObject != null && _extraRemaining <= 0)
-      {
-         extraButtonObject.SetActive(false);
-      }
+      UpdatePowerupUI();
 
       string remText = _extraRemaining > 0 ? $" ({_extraRemaining} hak kaldı)" : "";
       StartCoroutine(ShowTempMessage("+" + Mathf.CeilToInt(extraTimeAmount) + " saniye eklendi" + remText));
       Debug.Log("Extra time used: " + extraTimeAmount + "s, remaining: " + _extraRemaining);
+   }
+
+   /// <summary>Kalici kayittaki guclendirme haklarini runtime sayaclara ceker.</summary>
+   private void RefreshPowerupUsesFromWallet()
+   {
+      _extraRemaining = CurrencyWallet.ExtraUses;
+      _freezeRemaining = CurrencyWallet.FreezeUses;
+   }
+
+   /// <summary>Guclendirme butonlarini ve hak sayisi yazilarini gunceller.</summary>
+   private void UpdatePowerupUI()
+   {
+      if (extraButtonObject != null)
+      {
+         Button button = extraButtonObject.GetComponent<Button>();
+         if (button != null)
+            button.interactable = _extraRemaining > 0;
+         else
+            extraButtonObject.SetActive(_extraRemaining > 0);
+      }
+
+      if (freezeButtonObject != null)
+      {
+         Button button = freezeButtonObject.GetComponent<Button>();
+         if (button != null)
+            button.interactable = _freezeRemaining > 0;
+         else
+            freezeButtonObject.SetActive(_freezeRemaining > 0);
+      }
+
+      if (extraUsesText != null)
+         extraUsesText.text = _extraRemaining.ToString();
+
+      if (freezeUsesText != null)
+         freezeUsesText.text = _freezeRemaining.ToString();
    }
 
    /// <summary>Verilen index ile bgImages listesinden zemin görseli seçer.</summary>
