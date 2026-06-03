@@ -4,7 +4,7 @@ using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-/// <summary>Ana menüde Play, Settings ve Shop butonlarının davranışlarını yönetir.</summary>
+/// <summary>Ana menude Play, Settings ve Shop butonlarinin davranislarini yonetir.</summary>
 public class MenuManager : MonoBehaviour
 {
     [System.Serializable]
@@ -23,17 +23,17 @@ public class MenuManager : MonoBehaviour
     }
 
     [Header("Butonlar")]
-    [Tooltip("Oyunu başlatan ve InGame sahnesine geçen buton")]
+    [Tooltip("Oyunu baslatan ve InGame sahnesine gecen buton")]
     public Button playButton;
-    [Tooltip("Ayarlar panelini açıp kapatan buton")]
+    [Tooltip("Ayarlar panelini acip kapatan buton")]
     public Button settingsButton;
-    [Tooltip("Shop panelini açıp kapatan buton")]
+    [Tooltip("Shop panelini acip kapatan buton")]
     public Button shopButton;
 
     [Header("Paneller")]
-    [Tooltip("Settings butonuna basıldığında açılıp kapanacak panel")]
+    [Tooltip("Settings butonuna basildiginda acilip kapanacak panel")]
     public GameObject settingsPanel;
-    [Tooltip("Shop butonuna basıldığında açılıp kapanacak panel")]
+    [Tooltip("Shop butonuna basildiginda acilip kapanacak panel")]
     public GameObject shopPanel;
 
     [Header("Para UI")]
@@ -61,12 +61,12 @@ public class MenuManager : MonoBehaviour
     public TextMeshProUGUI extraOwnedText;
 
     [Header("Sahne")]
-    [Tooltip("Play butonuna basıldığında yüklenecek sahne adı")]
+    [Tooltip("Play butonuna basildiginda yuklenecek sahne adi")]
     public string inGameSceneName = "InGame";
 
     private UnityAction[] shopBuyActions;
 
-    /// <summary>Buton tıklamalarını bağlar ve menü panellerini başlangıçta kapatır.</summary>
+    /// <summary>Buton tiklamalarini baglar ve menu panellerini baslangicta kapatir.</summary>
     private void Awake()
     {
         if (playButton != null) playButton.onClick.AddListener(PlayGame);
@@ -90,7 +90,7 @@ public class MenuManager : MonoBehaviour
         UpdateShopUI();
     }
 
-    /// <summary>Script kapanırken buton dinleyicilerini temizler.</summary>
+    /// <summary>Script kapanirken buton dinleyicilerini temizler.</summary>
     private void OnDestroy()
     {
         if (playButton != null) playButton.onClick.RemoveListener(PlayGame);
@@ -101,14 +101,14 @@ public class MenuManager : MonoBehaviour
         UnbindShopButtons();
     }
 
-    /// <summary>Oyunu başlatır ve InGame sahnesini yükler.</summary>
+    /// <summary>Oyunu baslatir ve InGame sahnesini yukler.</summary>
     public void PlayGame()
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(inGameSceneName);
     }
 
-    /// <summary>Settings panelini açıksa kapatır, kapalıysa açar.</summary>
+    /// <summary>Settings panelini aciksa kapatir, kapaliysa acar.</summary>
     public void ToggleSettingsPanel()
     {
         if (settingsPanel == null) return;
@@ -118,7 +118,7 @@ public class MenuManager : MonoBehaviour
             shopPanel.SetActive(false);
     }
 
-    /// <summary>Shop panelini açıksa kapatır, kapalıysa açar.</summary>
+    /// <summary>Shop panelini aciksa kapatir, kapaliysa acar.</summary>
     public void ToggleShopPanel()
     {
         if (shopPanel == null) return;
@@ -130,14 +130,14 @@ public class MenuManager : MonoBehaviour
             settingsPanel.SetActive(false);
     }
 
-    /// <summary>Settings panelini kapatır.</summary>
+    /// <summary>Settings panelini kapatir.</summary>
     public void CloseSettingsPanel()
     {
         if (settingsPanel != null)
             settingsPanel.SetActive(false);
     }
 
-    /// <summary>Shop panelini kapatır.</summary>
+    /// <summary>Shop panelini kapatir.</summary>
     public void CloseShopPanel()
     {
         if (shopPanel != null)

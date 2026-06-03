@@ -2,14 +2,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-/// <summary>Devam butonu ve mesaj yazısı eksikse bunları oyun başında otomatik oluşturur.</summary>
+/// <summary>Devam butonu ve mesaj yazisi eksikse bunlari oyun basinda otomatik olusturur.</summary>
 public class ContinueUIBuilder : MonoBehaviour
 {
     private GameObject buttonObject;
     private TextMeshProUGUI messageText;
     private GameManager gm;
 
-    /// <summary>Canvas, devam mesajı ve devam butonunu hazırlar; butonu GameManager'a bağlar.</summary>
+    /// <summary>Canvas, devam mesaji ve devam butonunu hazirlar; butonu GameManager'a baglar.</summary>
     private void Awake()
     {
         gm = FindFirstObjectByType<GameManager>();
@@ -97,7 +97,7 @@ public class ContinueUIBuilder : MonoBehaviour
         }
     }
 
-    /// <summary>Devam butonunun görünürlüğünü kaybetme panelinin durumuna göre günceller.</summary>
+    /// <summary>Devam butonunun gorunurlugunu kaybetme panelinin durumuna gore gunceller.</summary>
     private void Update()
     {
         if (gm == null) return;

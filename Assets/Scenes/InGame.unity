@@ -1892,6 +1892,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   cam: {fileID: 330585545}
+  enablePhoneShake: 1
+  phoneShakeJiggler: {fileID: 0}
 --- !u!4 &549376963
 Transform:
   m_ObjectHideFlags: 0
@@ -6733,6 +6735,83 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1815051309}
   m_CullTransparentMesh: 1
+--- !u!1 &1964602097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1964602099}
+  - component: {fileID: 1964602098}
+  m_Layer: 0
+  m_Name: ShakeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1964602098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964602097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c3b2f0a4d4d4e2d9b7a2c5e8f6a1b90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PhoneShakeObjectJiggler
+  objectsToShake:
+  - {fileID: 5447911256226605517, guid: c2c4e6774e94ec4468e0d3eb7217189c, type: 3}
+  - {fileID: 5616088541985443967, guid: 32699a72b41c9eb40b27a235463abd70, type: 3}
+  - {fileID: 259519909637523971, guid: 0561d4382afcfb5449f7767cfe61183e, type: 3}
+  - {fileID: 2956912805063938730, guid: 7fb37adba1b6d06478557b1f3f45397b, type: 3}
+  - {fileID: 4118041897402017834, guid: 6a38f76ff71843a4c972c5079b8c43d8, type: 3}
+  - {fileID: 9167148371076708010, guid: 171e957bfd2c5b5469aa784a8fe98cce, type: 3}
+  - {fileID: 861522112262739014, guid: f489ad07e6ddedc43b50ccbf20255aa3, type: 3}
+  - {fileID: 5488999123205451769, guid: 34144b1623b85bd46b68475a71aac1d1, type: 3}
+  - {fileID: 5064062252041441048, guid: 46c99a223417c474d8e30a279274b7a9, type: 3}
+  - {fileID: 3721536348172106020, guid: 7907a779c0520ea4ca4c1295aab35102, type: 3}
+  - {fileID: 6767445686803682217, guid: 59488165d1e4fa240af2e280cd36b4e3, type: 3}
+  - {fileID: 8419243529392760293, guid: 217f3583d5f5e9a4b859272da42dbe87, type: 3}
+  - {fileID: 3892872225606181829, guid: a6750df4b5e61d240aa88199b8eb0c7a, type: 3}
+  - {fileID: 3921830088254284642, guid: 4350a22b45fa0fa47b61037edfd3b6cd, type: 3}
+  - {fileID: 8133645373440369921, guid: 272bccd7d3ad9ae4d992e9169ed5d1d6, type: 3}
+  - {fileID: 2071377171004096656, guid: 963028a3464ae62448b27b5caf27ac3c, type: 3}
+  - {fileID: 5121364717566330878, guid: 78a4837bf3b291240bdc6af78bc99d21, type: 3}
+  - {fileID: 4264076140944702099, guid: b54b10f873501064e8509a0ba4db019b, type: 3}
+  - {fileID: 3343708194656902469, guid: b127ed464d2f0634482d6231c443a4ed, type: 3}
+  - {fileID: 1592751902686494245, guid: 9eb1e8d8bc222724aad1384327bfae45, type: 3}
+  - {fileID: 8427897605922716037, guid: e0a5b1f41fade044f9bc0385a50cbb71, type: 3}
+  autoRegisterScenePrefabs: 1
+  shakeThreshold: 0.8
+  maxShakeStrength: 2.2
+  shakeCooldown: 0.25
+  accelerationSmoothing: 0.12
+  sideImpulse: 4
+  upwardImpulse: 1.2
+  torqueImpulse: 5
+  maxSideImpulse: 7
+  affectHeldObjects: 0
+  testWithSKey: 1
+--- !u!4 &1964602099
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964602097}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1225.4854, y: 1174.7362, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1995079086
 GameObject:
   m_ObjectHideFlags: 0
@@ -7676,3 +7755,4 @@ SceneRoots:
   - {fileID: 500605914}
   - {fileID: 1597229351}
   - {fileID: 848078697}
+  - {fileID: 1964602099}

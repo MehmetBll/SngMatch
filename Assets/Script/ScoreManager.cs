@@ -2,7 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 
-/// <summary>Skor, kalıcı toplam skor, para ve combo sistemini yönetir.</summary>
+/// <summary>Skor, kalici toplam skor, para ve combo sistemini yonetir.</summary>
 public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager Instance;
@@ -48,7 +48,7 @@ public class ScoreManager : MonoBehaviour
     private bool comboActive = false;
     private bool comboPaused = false;
 
-    /// <summary>Tek ScoreManager örneğini kurar, kayıtlı toplam skoru yükler ve UI'ı günceller.</summary>
+    /// <summary>Tek ScoreManager ornegini kurar, kayitli toplam skoru yukler ve UI'i gunceller.</summary>
     private void Awake()
     {
         if (Instance == null)
@@ -64,7 +64,7 @@ public class ScoreManager : MonoBehaviour
         UpdateMoneyText();
     }
 
-    /// <summary>Combo aktifken combo süresini takip eder; süre biterse combo'yu sıfırlar.</summary>
+    /// <summary>Combo aktifken combo suresini takip eder; sure biterse combo'yu sifirlar.</summary>
     private void Update()
     {
         if (comboActive)
@@ -86,7 +86,7 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
-    /// <summary>Skor ekler, combo çarpanını uygular, toplam skoru kaydeder ve para kazandırır.</summary>
+    /// <summary>Skor ekler, combo carpanini uygular, toplam skoru kaydeder ve para kazandirir.</summary>
     public void AddScore(int value, bool isCombo = false)
     {
         if (isCombo)
@@ -116,14 +116,14 @@ public class ScoreManager : MonoBehaviour
         UpdateComboText();
     }
 
-    /// <summary>Bu elde kazanılan skoru ana skor yazısına basar.</summary>
+    /// <summary>Bu elde kazanilan skoru ana skor yazisina basar.</summary>
     private void UpdateScoreText()
     {
         if (MainScoreText != null)
             MainScoreText.text = SessionScoreLabel + sessionScore;
     }
 
-    /// <summary>Kazanma ve kaybetme panellerindeki skor yazılarını günceller.</summary>
+    /// <summary>Kazanma ve kaybetme panellerindeki skor yazilarini gunceller.</summary>
     public void UpdateEndGameTexts()
     {
         if (winSessionScoreText != null)
@@ -136,7 +136,7 @@ public class ScoreManager : MonoBehaviour
             loseTotalScoreText.text = TotalScoreLabel + score;
     }
 
-    /// <summary>Kayıtlı toplam skoru sıfırlar ve UI'ı günceller.</summary>
+    /// <summary>Kayitli toplam skoru sifirlar ve UI'i gunceller.</summary>
     public void ResetPersistentScore()
     {
         PlayerPrefs.DeleteKey("TotalScore");
@@ -145,7 +145,7 @@ public class ScoreManager : MonoBehaviour
         UpdateScoreText();
     }
 
-    /// <summary>Combo sayacını, combo durumunu ve combo süresini sıfırlar.</summary>
+    /// <summary>Combo sayacini, combo durumunu ve combo suresini sifirlar.</summary>
     public void ResetCombo()
     {
         comboCount = 0;
@@ -154,7 +154,7 @@ public class ScoreManager : MonoBehaviour
         UpdateComboText();
     }
 
-    /// <summary>Para ekler ve para yazısını günceller.</summary>
+    /// <summary>Para ekler ve para yazisini gunceller.</summary>
     public void AddMoney(int amount)
     {
         if (amount <= 0) return;
@@ -162,7 +162,7 @@ public class ScoreManager : MonoBehaviour
         UpdateMoneyText();
     }
 
-    /// <summary>Yeterli para varsa harcar ve true döner; yetmezse false döner.</summary>
+    /// <summary>Yeterli para varsa harcar ve true doner; yetmezse false doner.</summary>
     public bool TrySpendMoney(int amount)
     {
         if (amount <= 0) return true;
@@ -175,7 +175,7 @@ public class ScoreManager : MonoBehaviour
         return false;
     }
 
-    /// <summary>Mevcut para miktarını UI yazısına basar.</summary>
+    /// <summary>Mevcut para miktarini UI yazisina basar.</summary>
     private void UpdateMoneyText()
     {
         money = CurrencyWallet.Balance;
@@ -183,7 +183,7 @@ public class ScoreManager : MonoBehaviour
         moneyText.text = money.ToString();
     }
 
-    /// <summary>Combo sayısını ve combo süresi yazısını günceller.</summary>
+    /// <summary>Combo sayisini ve combo suresi yazisini gunceller.</summary>
     private void UpdateComboText()
     {
         if (comboText != null)
@@ -196,7 +196,7 @@ public class ScoreManager : MonoBehaviour
         UpdateComboTimerText();
     }
 
-    /// <summary>Aktif combo zamanlayıcısını verilen süre kadar dondurur.</summary>
+    /// <summary>Aktif combo zamanlayicisini verilen sure kadar dondurur.</summary>
     public bool TryPauseCombo(float duration)
     {
         if (!comboActive || comboPaused || duration <= 0f) return false;
@@ -210,7 +210,7 @@ public class ScoreManager : MonoBehaviour
         TryPauseCombo(duration);
     }
 
-    /// <summary>Combo dondurma durumunu başlatır, bekler ve tekrar açar.</summary>
+    /// <summary>Combo dondurma durumunu baslatir, bekler ve tekrar acar.</summary>
     private IEnumerator PauseComboCoroutine(float duration)
     {
         comboPaused = true;
@@ -220,7 +220,7 @@ public class ScoreManager : MonoBehaviour
         UpdateComboTimerText();
     }
 
-    /// <summary>Combo süresinin kalan zamanını veya donduruldu bilgisini UI'a yazar.</summary>
+    /// <summary>Combo suresinin kalan zamanini veya donduruldu bilgisini UI'a yazar.</summary>
     private void UpdateComboTimerText()
     {
         if (comboTimerText == null)

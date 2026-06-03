@@ -1,22 +1,22 @@
 using UnityEngine;
 
-/// <summary>Çocuk collider'lardan oluşan duvarları topluca açıp kapatır.</summary>
+/// <summary>Cocuk collider'lardan olusan duvarlari topluca acip kapatir.</summary>
 public class CWalls : MonoBehaviour
 {
     private Collider[] wallColliders;
 
-    /// <summary>Oyun başında duvar collider'larını aktif hale getirir.</summary>
+    /// <summary>Oyun basinda duvar collider'larini aktif hale getirir.</summary>
     private void Start()
     {
         SetWallsActive(true);
     }
 
-    /// <summary>Bu objenin altındaki tüm collider referanslarını toplar.</summary>
+    /// <summary>Bu objenin altindaki tum collider referanslarini toplar.</summary>
     private void Awake()
     {
         wallColliders = GetComponentsInChildren<Collider>();
     }
-    /// <summary>Duvar collider'larını aktif veya pasif yapar.</summary>
+    /// <summary>Duvar collider'larini aktif veya pasif yapar.</summary>
     public void SetWallsActive(bool active)
     {
         foreach (var col in wallColliders)

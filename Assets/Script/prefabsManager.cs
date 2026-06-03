@@ -1,8 +1,9 @@
 using UnityEngine;
 using Random = UnityEngine.Random;
 using UnityEngine.InputSystem;
+using System.Collections.Generic;
 
-/// <summary>Prefabları sahneye üretir ve oyuncunun objeleri sürüklemesini yönetir.</summary>
+/// <summary>Prefablari sahneye uretir ve oyuncunun objeleri suruklemesini yonetir.</summary>
 public class prefabManager : MonoBehaviour
 {
     private Transform _selectedObject;
@@ -31,15 +32,24 @@ public class prefabManager : MonoBehaviour
     [Tooltip("Kullanilacak kamera (varsayilan Camera.main)")]
     public Camera cam;
 
-    /// <summary>Kamera referansını hazırlar, objeleri üretir ve duvar kontrolünü bulur.</summary>
+    [Header("Telefon Sallama")]
+    [Tooltip("Telefon sallandiginda spawn edilen objelere fiziksel sallanma uygula.")]
+    public bool enablePhoneShake = true;
+    [Tooltip("Bos birakilirsa bu objeye otomatik PhoneShakeObjectJiggler eklenir.")]
+    public PhoneShakeObjectJiggler phoneShakeJiggler;
+
+    private readonly List<GameObject> spawnedObjects = new List<GameObject>();
+
+    /// <summary>Kamera referansini hazirlar, objeleri uretir ve duvar kontrolunu bulur.</summary>
     private void Start()
     {
         if (cam == null) cam = Camera.main;
+        PreparePhoneShake();
         SpawnObjects();
         wallsController = FindAnyObjectByType<CWalls>();
     }
 
-    /// <summary>Mouse veya dokunma girdisini okuyarak seçme, sürükleme ve bırakmayı yönetir.</summary>
+    /// <summary>Mouse veya dokunma girdisini okuyarak secme, surukleme ve birakmayi yonetir.</summary>
     private void Update()
     {
         if (Pointer.current == null) return;
@@ -51,7 +61,7 @@ public class prefabManager : MonoBehaviour
         if (Pointer.current.press.wasReleasedThisFrame) ReleaseSelection();
     }
 
-    /// <summary>Ekran pozisyonundan raycast atar ve sürüklenebilir objeyi seçer.</summary>
+    /// <summary>Ekran pozisyonundan raycast atar ve suruklenebilir objeyi secer.</summary>
     private void TrySelect(Vector2 screenPos)
     {
         ReleaseSelection();
@@ -74,7 +84,7 @@ public class prefabManager : MonoBehaviour
         wallsController?.SetWallsActive(false);
     }
 
-    /// <summary>Seçili objeyi bırakır ve kapatılan duvarları tekrar açar.</summary>
+    /// <summary>Secili objeyi birakir ve kapatilan duvarlari tekrar acar.</summary>
     private void ReleaseSelection()
     {
         if (_selectedObject != null)
@@ -84,7 +94,7 @@ public class prefabManager : MonoBehaviour
         }
     }
 
-    /// <summary>Seçili objeyi sabit yükseklikte kamera ray'i ile hareket ettirir.</summary>
+    /// <summary>Secili objeyi sabit yukseklikte kamera ray'i ile hareket ettirir.</summary>
     private void Drag(Vector2 screenPos)
     {
         if (_selectedObject == null) return;
@@ -109,7 +119,7 @@ public class prefabManager : MonoBehaviour
         }
     }
 
-    /// <summary>Raycast'in vurduğu objeden Draggable layer'ındaki kök objeyi bulur.</summary>
+    /// <summary>Raycast'in vurdugu objeden Draggable layer'indaki kok objeyi bulur.</summary>
     private Transform GetDraggableRoot(Transform t)
     {
         int layer = LayerMask.NameToLayer("Draggable");
@@ -118,7 +128,7 @@ public class prefabManager : MonoBehaviour
         return null;
     }
 
-    /// <summary>Objenin catcher tarafından tutulup tutulmadığını kontrol eder.</summary>
+    /// <summary>Objenin catcher tarafindan tutulup tutulmadigini kontrol eder.</summary>
     private bool IsHeldByCatcher(Transform t)
     {
         if (t == null) return false;
@@ -126,9 +136,11 @@ public class prefabManager : MonoBehaviour
         return oid != null && oid.isHeld;
     }
 
-    /// <summary>Inspector'daki prefabları rastgele pozisyonlarda sahneye üretir.</summary>
+    /// <summary>Inspector'daki prefablari rastgele pozisyonlarda sahneye uretir.</summary>
     private void SpawnObjects()
     {
+        spawnedObjects.Clear();
+
         for (int i = 0; i < spawnCount; i++)
         {
             Vector3 randomPoz = new Vector3(
@@ -142,7 +154,24 @@ public class prefabManager : MonoBehaviour
                 Vector3 p = spawned.transform.position;
                 p.y = objectHeight;
                 spawned.transform.position = p;
+                spawnedObjects.Add(spawned);
             }
         }
+
+        if (enablePhoneShake)
+            phoneShakeJiggler?.RegisterObjects(spawnedObjects.ToArray());
+    }
+
+    /// <summary>Telefon sallama yoneticisini hazirlar.</summary>
+    private void PreparePhoneShake()
+    {
+        if (!enablePhoneShake)
+            return;
+
+        if (phoneShakeJiggler == null)
+            phoneShakeJiggler = GetComponent<PhoneShakeObjectJiggler>();
+
+        if (phoneShakeJiggler == null)
+            phoneShakeJiggler = gameObject.AddComponent<PhoneShakeObjectJiggler>();
     }
 }

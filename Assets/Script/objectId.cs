@@ -1,6 +1,6 @@
 using UnityEngine;
 
-/// <summary>Objenin eşleşme kimliğini, skor değerini ve efekt bilgilerini tutar.</summary>
+/// <summary>Objenin eslesme kimligini, skor degerini ve efekt bilgilerini tutar.</summary>
 public class objectId : MonoBehaviour
 {
     [Header("Obje Verileri")]
@@ -19,14 +19,14 @@ public class objectId : MonoBehaviour
     [Tooltip("Runtime: nesne catcher tarafindan tutuluyor mu")]
     public bool isHeld = false;
 
-    /// <summary>Obje oluşunca başlangıç pozisyonunu ve prefab adını kaydeder.</summary>
+    /// <summary>Obje olusunca baslangic pozisyonunu ve prefab adini kaydeder.</summary>
     private void Awake()
     {
         originalPosition = transform.position;
         prefabName = gameObject.name;
     }
 
-    /// <summary>Başka bir objectId ile eşleşip eşleşmediğini kontrol eder.</summary>
+    /// <summary>Baska bir objectId ile eslesip eslesmedigini kontrol eder.</summary>
     public bool IsMatch(objectId other, bool requireNonZero = true)
     {
         if (other == null) return false;
