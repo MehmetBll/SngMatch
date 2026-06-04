@@ -172,6 +172,9 @@ public class prefabManager : MonoBehaviour
             phoneShakeJiggler = GetComponent<PhoneShakeObjectJiggler>();
 
         if (phoneShakeJiggler == null)
+            phoneShakeJiggler = FindAnyObjectByType<PhoneShakeObjectJiggler>();
+
+        if (phoneShakeJiggler == null)
             phoneShakeJiggler = gameObject.AddComponent<PhoneShakeObjectJiggler>();
     }
 }

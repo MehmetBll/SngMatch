@@ -23,6 +23,14 @@ public class PhoneShakeObjectJiggler : MonoBehaviour
     [Range(0.01f, 0.5f)]
     public float accelerationSmoothing = 0.12f;
 
+    [Header("Yon Esleme")]
+    [Tooltip("Telefon sag/sol sallaninca objeler dunya X ekseninde hareket eder. Ters tepki verirse ac.")]
+    public bool invertHorizontalShake = false;
+    [Tooltip("Telefon yukari/asagi sallaninca objeler dunya Z ekseninde hareket eder. Ters tepki verirse ac.")]
+    public bool invertVerticalShake = false;
+    [Tooltip("Aciksa en guclu sallama ekseni secilir; boylece asagi sallama sag/sola kaymaz.")]
+    public bool useDominantShakeAxis = true;
+
     [Header("Obje Tepkisi")]
     [Tooltip("Yatay sallanma kuvveti.")]
     public float sideImpulse = 4f;
@@ -36,7 +44,7 @@ public class PhoneShakeObjectJiggler : MonoBehaviour
     public bool affectHeldObjects = false;
 
     [Header("Editor Test")]
-    [Tooltip("Unity Editor Play Mode'da S tusuna basinca sallama efekti denensin.")]
+    [Tooltip("Unity Editor Play Mode'da WASD veya ok tuslariyla sallama yonu denensin.")]
     public bool testWithSKey = true;
 
     private readonly List<PrefabShake> targets = new List<PrefabShake>();
@@ -62,9 +70,9 @@ public class PhoneShakeObjectJiggler : MonoBehaviour
         if (Time.timeScale <= 0f)
             return;
 
-        if (testWithSKey && Keyboard.current != null && Keyboard.current.sKey.wasPressedThisFrame)
+        if (testWithSKey && TryReadEditorTestDirection(out Vector3 testDirection))
         {
-            ApplyShake(Vector3.right, maxShakeStrength);
+            ApplyShake(testDirection, maxShakeStrength);
             nextAllowedShakeTime = Time.unscaledTime + shakeCooldown;
             return;
         }
@@ -143,16 +151,31 @@ public class PhoneShakeObjectJiggler : MonoBehaviour
         return true;
     }
 
+    private bool TryReadEditorTestDirection(out Vector3 testDirection)
+    {
+        testDirection = Vector3.zero;
+
+        Keyboard keyboard = Keyboard.current;
+        if (keyboard == null)
+            return false;
+
+        if (keyboard.aKey.wasPressedThisFrame || keyboard.leftArrowKey.wasPressedThisFrame)
+            testDirection = Vector3.left;
+        else if (keyboard.dKey.wasPressedThisFrame || keyboard.rightArrowKey.wasPressedThisFrame)
+            testDirection = Vector3.right;
+        else if (keyboard.sKey.wasPressedThisFrame || keyboard.downArrowKey.wasPressedThisFrame)
+            testDirection = Vector3.down;
+        else if (keyboard.wKey.wasPressedThisFrame || keyboard.upArrowKey.wasPressedThisFrame)
+            testDirection = Vector3.up;
+
+        return testDirection != Vector3.zero;
+    }
+
     private void ApplyShake(Vector3 shakeDirection, float shakeStrength)
     {
         RemoveMissingTargets();
 
-        Vector3 planarDirection = new Vector3(shakeDirection.x, 0f, shakeDirection.y);
-        if (planarDirection.sqrMagnitude < 0.001f)
-            planarDirection = Vector3.right;
-
-        planarDirection.y = 0f;
-        planarDirection.Normalize();
+        Vector3 planarDirection = GetPlanarShakeDirection(shakeDirection);
 
         float normalizedStrength = Mathf.InverseLerp(shakeThreshold, maxShakeStrength, shakeStrength);
         float sideForce = Mathf.Min(sideImpulse * normalizedStrength, maxSideImpulse);
@@ -168,6 +191,26 @@ public class PhoneShakeObjectJiggler : MonoBehaviour
 
             target.ApplyPhoneShake(impulse, torque, affectHeldObjects);
         }
+    }
+
+    private Vector3 GetPlanarShakeDirection(Vector3 shakeDirection)
+    {
+        float horizontal = invertHorizontalShake ? -shakeDirection.x : shakeDirection.x;
+        float vertical = invertVerticalShake ? -shakeDirection.y : shakeDirection.y;
+
+        if (useDominantShakeAxis)
+        {
+            if (Mathf.Abs(horizontal) > Mathf.Abs(vertical))
+                vertical = 0f;
+            else
+                horizontal = 0f;
+        }
+
+        Vector3 planarDirection = new Vector3(horizontal, 0f, vertical);
+        if (planarDirection.sqrMagnitude < 0.001f)
+            planarDirection = Vector3.right;
+
+        return planarDirection.normalized;
     }
 
     private void RemoveMissingTargets()

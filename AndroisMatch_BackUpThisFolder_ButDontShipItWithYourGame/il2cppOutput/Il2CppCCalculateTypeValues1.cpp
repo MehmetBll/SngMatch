@@ -35860,6 +35860,9 @@ struct PhoneShakeObjectJiggler_tB2583F99F048CF39967E94C1D19D2912F8C6EA26  : publ
 	float ___maxShakeStrength;
 	float ___shakeCooldown;
 	float ___accelerationSmoothing;
+	bool ___invertHorizontalShake;
+	bool ___invertVerticalShake;
+	bool ___useDominantShakeAxis;
 	float ___sideImpulse;
 	float ___upwardImpulse;
 	float ___torqueImpulse;

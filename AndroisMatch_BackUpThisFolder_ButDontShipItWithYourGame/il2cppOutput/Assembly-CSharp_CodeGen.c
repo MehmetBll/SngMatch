@@ -135,7 +135,9 @@ extern void PhoneShakeObjectJiggler_RegisterObject_mB1A2BC4CF612D5A1263012F01C57
 extern void PhoneShakeObjectJiggler_RegisterScenePrefabs_m6E4D8B84A07BD6E206EEC5A3E0D5165F66235F2D (void);
 extern void PhoneShakeObjectJiggler_RegisterObjects_m6760D134942F053DF77171929101F6460F2FE462 (void);
 extern void PhoneShakeObjectJiggler_TryReadAcceleration_m7AD094A842980FDA3ADF0CC5569BD3261BC86B7F (void);
+extern void PhoneShakeObjectJiggler_TryReadEditorTestDirection_mB9EBE35A5E1AA3C6EADE8A03E544A169BE636FA0 (void);
 extern void PhoneShakeObjectJiggler_ApplyShake_mD7214687535C62FF2ABCF114913D52CBB5864A2A (void);
+extern void PhoneShakeObjectJiggler_GetPlanarShakeDirection_mD7A3670E833CCECD3E50B8FED9E3B7E405AA02A4 (void);
 extern void PhoneShakeObjectJiggler_RemoveMissingTargets_mAB9024EBD21C6ACDDAEB6159446982F66B1CDC2E (void);
 extern void PhoneShakeObjectJiggler_ResetAccelerationSamples_mF6131C6EF82E6912E0EA2B0E6635806B1BC7738A (void);
 extern void PhoneShakeObjectJiggler__ctor_m7CECE4203707594E9FBC7A707BD27B96E28C5368 (void);
@@ -443,7 +445,7 @@ extern void U3CWarpTextU3Ed__8_MoveNext_mCE7A826C5E4854C2C509C77BD18F5A9B6D691B0
 extern void U3CWarpTextU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD80368E9B7E259311C03E406B75161ED6F7618E3 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19 (void);
-static Il2CppMethodPointer s_methodPointers[436] = 
+static Il2CppMethodPointer s_methodPointers[438] = 
 {
 	CatcherManager_OnEnable_mA3D834010DB2D1FB91E8AC57BFEC8BABD5639838,
 	CatcherManager_OnDisable_m2BF089699111CAA25DDFD9E7E34A03CC69A65919,
@@ -573,7 +575,9 @@ static Il2CppMethodPointer s_methodPointers[436] =
 	PhoneShakeObjectJiggler_RegisterScenePrefabs_m6E4D8B84A07BD6E206EEC5A3E0D5165F66235F2D,
 	PhoneShakeObjectJiggler_RegisterObjects_m6760D134942F053DF77171929101F6460F2FE462,
 	PhoneShakeObjectJiggler_TryReadAcceleration_m7AD094A842980FDA3ADF0CC5569BD3261BC86B7F,
+	PhoneShakeObjectJiggler_TryReadEditorTestDirection_mB9EBE35A5E1AA3C6EADE8A03E544A169BE636FA0,
 	PhoneShakeObjectJiggler_ApplyShake_mD7214687535C62FF2ABCF114913D52CBB5864A2A,
+	PhoneShakeObjectJiggler_GetPlanarShakeDirection_mD7A3670E833CCECD3E50B8FED9E3B7E405AA02A4,
 	PhoneShakeObjectJiggler_RemoveMissingTargets_mAB9024EBD21C6ACDDAEB6159446982F66B1CDC2E,
 	PhoneShakeObjectJiggler_ResetAccelerationSamples_mF6131C6EF82E6912E0EA2B0E6635806B1BC7738A,
 	PhoneShakeObjectJiggler__ctor_m7CECE4203707594E9FBC7A707BD27B96E28C5368,
@@ -882,7 +886,7 @@ static Il2CppMethodPointer s_methodPointers[436] =
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42,
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19,
 };
-static const int32_t s_InvokerIndices[436] = 
+static const int32_t s_InvokerIndices[438] = 
 {
 	13221,
 	13221,
@@ -1012,7 +1016,9 @@ static const int32_t s_InvokerIndices[436] =
 	13221,
 	10065,
 	6901,
+	6901,
 	5283,
+	8950,
 	13221,
 	13221,
 	13221,
@@ -1325,7 +1331,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	436,
+	438,
 	s_methodPointers,
 	0,
 	NULL,
