@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 public class PhoneShakeObjectJiggler : MonoBehaviour
 {
     [Header("Sallanacak Objeler")]
-    [Tooltip("Opsiyonel: Sahnede hazir duran objeleri buraya ekleyebilirsin. Spawn edilen prefablar prefabsManager tarafindan otomatik eklenir.")]
+    [Tooltip("Opsiyonel: Sahnede hazir duran objeleri buraya ekleyebilirsin. Spawn edilen prefablar prefab yoneticisi tarafindan otomatik eklenir.")]
     public GameObject[] objectsToShake;
     [Tooltip("Aciksa sahnedeki objectId tasiyan prefab objeleri baslangicta otomatik bulunur.")]
     public bool autoRegisterScenePrefabs = true;

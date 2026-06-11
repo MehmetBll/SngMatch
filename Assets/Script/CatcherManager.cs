@@ -37,6 +37,12 @@ public class CatcherManager : MonoBehaviour
     private static CatcherManager CatcherL;
     private static CatcherManager CatcherR;
 
+    private void Awake()
+    {
+        if (gameManager == null)
+            gameManager = FindFirstObjectByType<GameManager>();
+    }
+
     /// <summary>Script aktiflesince sol veya sag catcher referansini kaydeder.</summary>
     private void OnEnable() { RegisterInstance(); }
 
@@ -100,7 +106,9 @@ public class CatcherManager : MonoBehaviour
         if (id1 == id2)
         {
             int scoreValue = obj1.score + obj2.score;
-            ScoreManager.Instance.AddScore(scoreValue, true);
+            if (ScoreManager.Instance != null)
+                ScoreManager.Instance.AddScore(scoreValue, true);
+
             BreakPieces(obj1);
             BreakPieces(obj2);
             ClearHeldObject();
@@ -108,11 +116,16 @@ public class CatcherManager : MonoBehaviour
             Destroy(obj1.gameObject);
             Destroy(obj2.gameObject);
 
-            gameManager.CaughtDestroy();
+            if (gameManager != null)
+                gameManager.CaughtDestroy();
+            else
+                Debug.LogWarning("CatcherManager: GameManager bulunamadi, eslesen obje sayisi guncellenemedi.");
         }
         else
         {
-            ScoreManager.Instance.ResetCombo();
+            if (ScoreManager.Instance != null)
+                ScoreManager.Instance.ResetCombo();
+
             ClearHeldObject();
             other.ClearHeldObject();
             ThrowUp(obj1);
@@ -212,7 +225,11 @@ public class CatcherManager : MonoBehaviour
     private void SetCWallsActive(bool state)
     {
         if (cWalls == null) return;
-        foreach (GameObject wall in cWalls) if (wall != null) wall.SetActive(state);
+        foreach (GameObject wall in cWalls)
+        {
+            if (wall != null)
+                wall.SetActive(state);
+        }
     }
 
     /// <summary>Bu catcher'in su anda tuttugu objeyi dondurur.</summary>
@@ -221,13 +238,16 @@ public class CatcherManager : MonoBehaviour
     /// <summary>Yanlis eslesen objeyi fizik kuvvetiyle yukari firlatir.</summary>
     private IEnumerator ThrowUpRoutine(objectId oid)
     {
+        if (oid == null)
+            yield break;
+
         ReleaseHeldObjectForThrow(oid);
         SetCWallsActive(false);
 
         Rigidbody rb = oid.GetComponentInChildren<Rigidbody>();
         if (rb == null)
         {
-            Debug.LogError("child rb yok");
+            Debug.LogWarning("CatcherManager: Firlatilacak objede Rigidbody bulunamadi.");
             ThrowingObjects.Remove(oid);
             currentState = CatcherState.Idle;
             SetCWallsActive(true);
@@ -243,7 +263,6 @@ public class CatcherManager : MonoBehaviour
         throwDir.Normalize();
         rb.AddForce(throwDir * throwUpForce, ForceMode.Impulse);
         rb.AddTorque(Random.insideUnitSphere * 5f, ForceMode.Impulse);
-        Debug.Log("Atis yapildi");
         yield return new WaitForSeconds(throwUpStateDuration);
         ThrowingObjects.Remove(oid);
         currentState = CatcherState.Idle;
@@ -260,11 +279,14 @@ public class CatcherManager : MonoBehaviour
     /// <summary>Dogru eslesen obje icin kisa sureli parcalanma efekti uretir.</summary>
     private void BreakPieces(objectId oid)
     {
+        if (oid == null) return;
+
         Renderer rend = oid.GetComponentInChildren<Renderer>();
         if (rend == null) return;
         Vector3 center = rend.bounds.center;
 
-        for (int i = 0; i < oid.pieceCount; i++)
+        int pieceCount = Mathf.Max(0, oid.pieceCount);
+        for (int i = 0; i < pieceCount; i++)
         {
             Vector3 spawnPos = center + Random.insideUnitSphere * 0.5f;
             GameObject piece = GameObject.CreatePrimitive(PrimitiveType.Sphere);
@@ -274,6 +296,9 @@ public class CatcherManager : MonoBehaviour
             rb.mass = 0.1f;
             rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
             Vector3 forceDir = (spawnPos - center).normalized;
+            if (forceDir == Vector3.zero)
+                forceDir = Random.onUnitSphere;
+
             rb.AddForce(forceDir * Random.Range(2f, 5f), ForceMode.Impulse);
             rb.AddTorque(Random.insideUnitSphere * 5f);
             Renderer r = piece.GetComponent<Renderer>();

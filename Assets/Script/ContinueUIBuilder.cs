@@ -78,7 +78,7 @@ public class ContinueUIBuilder : MonoBehaviour
             GameObject label = new GameObject("Text");
             label.transform.SetParent(buttonObject.transform, false);
             var labelTMP = label.AddComponent<TextMeshProUGUI>();
-            labelTMP.text = $"Devam ({gm.continueCost} altin)";
+            labelTMP.text = $"Devam Et ({gm.continueCost}$)";
             labelTMP.alignment = TextAlignmentOptions.Center;
             labelTMP.fontSize = 22;
             RectTransform lr = labelTMP.GetComponent<RectTransform>();
@@ -86,13 +86,18 @@ public class ContinueUIBuilder : MonoBehaviour
             lr.anchorMax = Vector2.one;
             lr.sizeDelta = Vector2.zero;
             labelTMP.color = Color.black;
+            if (gm.continueCostText == null)
+                gm.continueCostText = labelTMP;
 
-            btn.onClick.AddListener(() => { gm.TryContinue(); });
+            btn.onClick.AddListener(gm.TryContinue);
             if (gm.gameLost == null) buttonObject.SetActive(false);
         }
         else
         {
             buttonObject = GameObject.Find("ContinueButton");
+            if (gm.continueCostText == null)
+                gm.continueCostText = buttonObject.GetComponentInChildren<TextMeshProUGUI>();
+
             if (gm.gameLost == null) buttonObject.SetActive(false);
         }
     }

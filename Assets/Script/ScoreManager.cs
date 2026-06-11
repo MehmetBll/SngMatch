@@ -7,7 +7,7 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager Instance;
     private const string SessionScoreLabel = "El skoru: ";
-    private const string TotalScoreLabel = "Total Skor: ";
+    private const string TotalScoreLabel = "Toplam skor: ";
 
     [Header("Skor UI")]
     [Tooltip("Ek session skor Text'i (TMP)")]
@@ -56,12 +56,21 @@ public class ScoreManager : MonoBehaviour
             Instance = this;
         }
         else
+        {
             Destroy(gameObject);
+            return;
+        }
 
         score = PlayerPrefs.GetInt("TotalScore", 0);
         money = CurrencyWallet.Balance;
         UpdateScoreText();
         UpdateMoneyText();
+    }
+
+    private void OnDestroy()
+    {
+        if (Instance == this)
+            Instance = null;
     }
 
     /// <summary>Combo aktifken combo suresini takip eder; sure biterse combo'yu sifirlar.</summary>
@@ -143,6 +152,7 @@ public class ScoreManager : MonoBehaviour
         PlayerPrefs.Save();
         score = 0;
         UpdateScoreText();
+        UpdateEndGameTexts();
     }
 
     /// <summary>Combo sayacini, combo durumunu ve combo suresini sifirlar.</summary>
@@ -172,6 +182,8 @@ public class ScoreManager : MonoBehaviour
             UpdateMoneyText();
             return true;
         }
+
+        UpdateMoneyText();
         return false;
     }
 

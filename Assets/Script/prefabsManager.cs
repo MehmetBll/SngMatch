@@ -44,9 +44,9 @@ public class prefabManager : MonoBehaviour
     private void Start()
     {
         if (cam == null) cam = Camera.main;
+        wallsController = FindAnyObjectByType<CWalls>();
         PreparePhoneShake();
         SpawnObjects();
-        wallsController = FindAnyObjectByType<CWalls>();
     }
 
     /// <summary>Mouse veya dokunma girdisini okuyarak secme, surukleme ve birakmayi yonetir.</summary>
@@ -122,9 +122,17 @@ public class prefabManager : MonoBehaviour
     /// <summary>Raycast'in vurdugu objeden Draggable layer'indaki kok objeyi bulur.</summary>
     private Transform GetDraggableRoot(Transform t)
     {
+        if (t == null) return null;
+
         int layer = LayerMask.NameToLayer("Draggable");
-        if (t.gameObject.layer == layer) return t;
-        if (t.parent != null && t.parent.gameObject.layer == layer) return t.parent;
+        while (t != null)
+        {
+            if (t.gameObject.layer == layer)
+                return t;
+
+            t = t.parent;
+        }
+
         return null;
     }
 
@@ -140,20 +148,23 @@ public class prefabManager : MonoBehaviour
     private void SpawnObjects()
     {
         spawnedObjects.Clear();
+        if (prefabs == null || prefabs.Length == 0 || spawnCount <= 0)
+            return;
 
         for (int i = 0; i < spawnCount; i++)
         {
-            Vector3 randomPoz = new Vector3(
-                Random.Range(-posX, posX),
-                Random.Range(posY, posY),
-                Random.Range(-posZ, posZ)
-            );
             foreach (GameObject prefab in prefabs)
             {
-                GameObject spawned = Instantiate(prefab, randomPoz, Quaternion.identity);
-                Vector3 p = spawned.transform.position;
-                p.y = objectHeight;
-                spawned.transform.position = p;
+                if (prefab == null)
+                    continue;
+
+                Vector3 randomPosition = new Vector3(
+                    Random.Range(-Mathf.Abs(posX), Mathf.Abs(posX)),
+                    posY,
+                    Random.Range(-Mathf.Abs(posZ), Mathf.Abs(posZ))
+                );
+
+                GameObject spawned = Instantiate(prefab, randomPosition, Quaternion.identity);
                 spawnedObjects.Add(spawned);
             }
         }

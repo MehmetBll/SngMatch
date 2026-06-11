@@ -105,7 +105,23 @@ public class MenuManager : MonoBehaviour
     public void PlayGame()
     {
         Time.timeScale = 1f;
+        ClearEditorVolumeSelection();
         SceneManager.LoadScene(inGameSceneName);
+    }
+
+    private static void ClearEditorVolumeSelection()
+    {
+#if UNITY_EDITOR
+        UnityEngine.Object activeObject = UnityEditor.Selection.activeObject;
+        if (activeObject == null)
+            return;
+
+        if (activeObject is UnityEngine.Rendering.Volume ||
+            activeObject is GameObject gameObject && gameObject.GetComponent<UnityEngine.Rendering.Volume>() != null)
+        {
+            UnityEditor.Selection.activeObject = null;
+        }
+#endif
     }
 
     /// <summary>Settings panelini aciksa kapatir, kapaliysa acar.</summary>
@@ -266,13 +282,14 @@ public class MenuManager : MonoBehaviour
             if (item == null)
                 continue;
 
+            int price = Mathf.Max(0, item.price);
             bool purchased = CurrencyWallet.IsPurchased(GetShopItemId(item, i));
 
             if (item.priceText != null)
-                item.priceText.text = purchased ? "Alindi" : item.price.ToString() + "$";
+                item.priceText.text = purchased ? "Alindi" : price + "$";
 
             if (item.buyButton != null)
-                item.buyButton.interactable = !purchased && balance >= item.price;
+                item.buyButton.interactable = !purchased && balance >= price;
 
             if (item.purchasedIndicator != null)
                 item.purchasedIndicator.SetActive(purchased);
@@ -290,12 +307,14 @@ public class MenuManager : MonoBehaviour
     private void UpdatePowerupShopUI()
     {
         int balance = CurrencyWallet.Balance;
+        int freezePrice = Mathf.Max(0, freezeUsePrice);
+        int extraPrice = Mathf.Max(0, extraUsePrice);
 
         if (freezePriceText != null)
-            freezePriceText.text = freezeUsePrice.ToString() + "$";
+            freezePriceText.text = freezePrice + "$";
 
         if (extraPriceText != null)
-            extraPriceText.text = extraUsePrice.ToString() + "$";
+            extraPriceText.text = extraPrice + "$";
 
         if (freezeOwnedText != null)
             freezeOwnedText.text = CurrencyWallet.FreezeUses.ToString();
@@ -304,9 +323,9 @@ public class MenuManager : MonoBehaviour
             extraOwnedText.text = CurrencyWallet.ExtraUses.ToString();
 
         if (buyFreezeButton != null)
-            buyFreezeButton.interactable = balance >= freezeUsePrice;
+            buyFreezeButton.interactable = balance >= freezePrice;
 
         if (buyExtraButton != null)
-            buyExtraButton.interactable = balance >= extraUsePrice;
+            buyExtraButton.interactable = balance >= extraPrice;
     }
 }

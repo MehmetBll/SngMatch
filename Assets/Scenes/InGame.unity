@@ -6791,6 +6791,9 @@ MonoBehaviour:
   maxShakeStrength: 2.2
   shakeCooldown: 0.25
   accelerationSmoothing: 0.12
+  invertHorizontalShake: 1
+  invertVerticalShake: 1
+  useDominantShakeAxis: 1
   sideImpulse: 4
   upwardImpulse: 1.2
   torqueImpulse: 5
@@ -6805,7 +6808,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1964602097}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1225.4854, y: 1174.7362, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7747,6 +7750,7 @@ SceneRoots:
   - {fileID: 687920956}
   - {fileID: 2133210060}
   - {fileID: 907015619}
+  - {fileID: 1964602099}
   - {fileID: 549376963}
   - {fileID: 343553254}
   - {fileID: 1574091679}
@@ -7755,4 +7759,3 @@ SceneRoots:
   - {fileID: 500605914}
   - {fileID: 1597229351}
   - {fileID: 848078697}
-  - {fileID: 1964602099}

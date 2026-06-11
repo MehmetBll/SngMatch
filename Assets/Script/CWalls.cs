@@ -14,14 +14,24 @@ public class CWalls : MonoBehaviour
     /// <summary>Bu objenin altindaki tum collider referanslarini toplar.</summary>
     private void Awake()
     {
-        wallColliders = GetComponentsInChildren<Collider>();
+        CacheColliders();
     }
+
     /// <summary>Duvar collider'larini aktif veya pasif yapar.</summary>
     public void SetWallsActive(bool active)
     {
-        foreach (var col in wallColliders)
+        if (wallColliders == null || wallColliders.Length == 0)
+            CacheColliders();
+
+        foreach (Collider col in wallColliders)
         {
-            col.enabled = active;
+            if (col != null)
+                col.enabled = active;
         }
+    }
+
+    private void CacheColliders()
+    {
+        wallColliders = GetComponentsInChildren<Collider>();
     }
 }
